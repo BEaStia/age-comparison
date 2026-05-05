@@ -52,8 +52,8 @@
       footer:
         'Собрано из CSV в <code>data/raw</code>. Нажмите на любую картинку, чтобы открыть увеличенную версию. Статический сайт предназначен для GitHub Pages.',
       crosstabLabel: {
-        initiator_group_x_decision_domain: "initiator_group x decision_domain",
-        faction_type_x_decision_domain: "faction_type x decision_domain",
+        initiator_group_x_decision_domain: "Группы инициаторов и домены решений",
+        faction_type_x_decision_domain: "Типы фракций и домены решений",
       },
       crosstabDescription: {
         initiator_group_x_decision_domain:
@@ -103,8 +103,8 @@
       footer:
         'Built from CSV files in <code>data/raw</code>. Click any image to open a larger view. This static site is designed for GitHub Pages.',
       crosstabLabel: {
-        initiator_group_x_decision_domain: "initiator_group x decision_domain",
-        faction_type_x_decision_domain: "faction_type x decision_domain",
+        initiator_group_x_decision_domain: "Initiator groups and decision domains",
+        faction_type_x_decision_domain: "Faction types and decision domains",
       },
       crosstabDescription: {
         initiator_group_x_decision_domain:
@@ -612,6 +612,29 @@
     },
   };
 
+  const PERIOD_LABELS = {
+    ru: {
+      empire_1801_1917: "Российская империя",
+      revolution_1917_1924: "Революция и ранний СССР",
+      stalin_1924_1953: "Сталинский период",
+      poststalin_1953_1964: "Постсталинский период",
+      lateussr_1964_1985: "Поздний СССР",
+      perestroika_1985_1991: "Перестройка",
+      rf_1991_2026: "Российская Федерация",
+      other: "Другое",
+    },
+    en: {
+      empire_1801_1917: "Russian Empire",
+      revolution_1917_1924: "Revolution / early Soviet",
+      stalin_1924_1953: "Stalin era",
+      poststalin_1953_1964: "Post-Stalin / Khrushchev",
+      lateussr_1964_1985: "Late Soviet",
+      perestroika_1985_1991: "Perestroika",
+      rf_1991_2026: "Russian Federation",
+      other: "Other",
+    },
+  };
+
   const DIMENSION_LABELS = {
     ru: {
       initiator_group: {
@@ -688,27 +711,6 @@
         reformist_power_center: "Reformist power center",
         personal_network: "Personal network",
       },
-    },
-  };
-
-  const PERIOD_LABELS = {
-    ru: {
-      empire_1801_1917: "Российская империя",
-      revolution_1917_1924: "Революция и ранний СССР",
-      stalin_1924_1953: "Сталинский период",
-      poststalin_1953_1964: "Постсталинский период",
-      lateussr_1964_1985: "Поздний СССР",
-      perestroika_1985_1991: "Перестройка",
-      rf_1991_2026: "Российская Федерация",
-    },
-    en: {
-      empire_1801_1917: "Russian Empire",
-      revolution_1917_1924: "Revolution / early Soviet",
-      stalin_1924_1953: "Stalin era",
-      poststalin_1953_1964: "Post-Stalin / Khrushchev",
-      lateussr_1964_1985: "Late Soviet",
-      perestroika_1985_1991: "Perestroika",
-      rf_1991_2026: "Russian Federation",
     },
   };
 
@@ -951,7 +953,7 @@
     const dimension = tab === "faction_type_x_decision_domain" ? "faction_type" : "initiator_group";
     const labels = DIMENSION_LABELS[state.lang][dimension] || {};
     const fallback = DIMENSION_LABELS[state.lang].decision_domain || {};
-    return labels[key] || fallback[key] || key;
+    return labels[key] || fallback[key] || prettifyKey(key);
   }
 
   function labelForEventType(key) {
@@ -964,6 +966,12 @@
 
   function labelForPeriod(key) {
     return PERIOD_LABELS[state.lang][key] || key;
+  }
+
+  function prettifyKey(key) {
+    return String(key)
+      .replaceAll("_", " ")
+      .replace(/\b\w/g, (letter) => letter.toUpperCase());
   }
 
   function sectionFigures(groupId, sectionId) {
