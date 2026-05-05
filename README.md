@@ -107,6 +107,24 @@ python -m power_age.cli summary
 pytest
 ```
 
+## GitHub Pages
+
+Для публикации статической версии:
+
+1. Закоммить изменения и отправь репозиторий на GitHub.
+2. Открой `Settings -> Pages`.
+3. В `Build and deployment` выбери `Deploy from a branch`.
+4. В `Branch` выбери `main` и папку `/docs`.
+5. Сохрани настройки.
+
+После публикации GitHub Pages будет показывать сайт из `docs/index.html`.
+
+Если графики были перегенерированы, обнови копии для Pages:
+
+```bash
+cp outputs/figures/*.png docs/figures/
+```
+
 ## Elite Addendum
 
 Проект подключен к двум стартовым аддон-датасетам:

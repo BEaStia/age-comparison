@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Power Age</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f7f9;
+        --text: #1d232b;
+        --muted: #5f6b7a;
+        --line: #d9dee6;
+        --panel: #ffffff;
+        --accent: #1f5a7a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        line-height: 1.55;
+      }
+
+      header,
+      main,
+      footer {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 42px 0 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(32px, 4vw, 54px);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .lead {
+        max-width: 880px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 22px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .meta span {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 10px;
+        background: #fff;
+      }
+
+      .section {
+        padding: 26px 0;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: 24px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      figure {
+        margin: 0;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        overflow: hidden;
+      }
+
+      figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: #fff;
+      }
+
+      figcaption {
+        padding: 12px 14px 14px;
+        border-top: 1px solid var(--line);
+      }
+
+      figcaption strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      figcaption span {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .wide {
+        grid-column: 1 / -1;
+      }
+
+      .note {
+        max-width: 900px;
+        color: var(--muted);
+      }
+
+      code {
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 1px 5px;
+        background: #fff;
+      }
+
+      footer {
+        padding: 28px 0 42px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Power Age</h1>
+      <p class="lead">
+        Минимальный исследовательский прототип по возрасту правящей элиты России,
+        СССР и РФ в 1801-2026 годах: биологический возраст, политический возраст,
+        обновление core elite и исторические события.
+      </p>
+      <div class="meta">
+        <span>1801-2026</span>
+        <span>110 персон</span>
+        <span>125 influence intervals</span>
+        <span>MVP dataset</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Графики</h2>
+        <div class="grid">
+          <figure class="wide">
+            <img src="figures/core_elite_aging_dashboard.png" alt="Core elite aging dashboard">
+            <figcaption>
+              <strong>Core elite aging dashboard</strong>
+              <span>Средний возраст, доли 60+/70+, renewal 5y и размер учтенной elite sample.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/ruler_age_timeline.png" alt="Возраст правителя и события">
+            <figcaption>
+              <strong>Возраст правителя и события</strong>
+              <span>Линия возраста правителя с точками исторических событий.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/ruler_vs_core_age.png" alt="Возраст правителя против core elite">
+            <figcaption>
+              <strong>Правитель против core elite</strong>
+              <span>Сравнение возраста правителя со средним и взвешенным возрастом ядра власти.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/biological_vs_political_age.png" alt="Биологический и политический возраст">
+            <figcaption>
+              <strong>Биологический и политический возраст</strong>
+              <span>Разделение физического возраста и длительности нахождения в политическом контуре.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/core_elite_age.png" alt="Средний возраст core elite">
+            <figcaption>
+              <strong>Средний возраст core elite</strong>
+              <span>Обычное и influence-weighted среднее по активной core elite.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/institution_composition.png" alt="Институциональный состав core elite">
+            <figcaption>
+              <strong>Институциональный состав</strong>
+              <span>Доли институтов по сумме influence_weight в активной core elite.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/period_age_boxplots.png" alt="Возраст core elite по периодам">
+            <figcaption>
+              <strong>Возраст по периодам</strong>
+              <span>Boxplot распределения возраста core elite по историческим периодам.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Ограничения</h2>
+        <p class="note">
+          Это MVP, а не академически проверенный датасет. Многие
+          <code>political_entry_date</code>, <code>elite_entry_date</code> и
+          <code>ruling_circle_entry_date</code> приблизительные. Curated influence
+          intervals нужны для первых графиков и последующей ручной проверки.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Собрано из CSV в <code>data/raw</code>. Графики генерируются командой
+      <code>python -m power_age.cli plot</code>.
+    </footer>
+  </body>
+</html>
