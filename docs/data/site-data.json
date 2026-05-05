@@ -1,0 +1,793 @@
+{
+  "meta": {
+    "years": {
+      "start": 1801,
+      "end": 2026
+    },
+    "counts": {
+      "persons": 128,
+      "events": 163,
+      "elite_events": 144,
+      "factions": 62,
+      "person_factions": 202
+    }
+  },
+  "insights": [
+    {
+      "key": "ruler_vs_political",
+      "ru": "Возраст правителя почти линейно связан с политическим возрастом: r=0.933.",
+      "en": "Ruler age is tightly aligned with political age: r=0.933."
+    },
+    {
+      "key": "age_vs_renewal",
+      "ru": "Чем старше core elite, тем слабее renewal_5y: r=-0.449.",
+      "en": "Older core elite coincides with weaker renewal_5y: r=-0.449."
+    },
+    {
+      "key": "ruler_vs_core",
+      "ru": "Возраст правителя сильнее совпадает со взвешенным возрастом core elite, чем с простым средним: r=0.822 против r=0.704.",
+      "en": "Ruler age aligns more strongly with weighted core age than with plain mean age: r=0.822 vs r=0.704."
+    },
+    {
+      "key": "fragmentation_signal",
+      "ru": "Событийная фрагментация и число elite-initiated событий движутся слабо совместно; сама fragmentation_index остаётся полезным индикатором концентрации власти.",
+      "en": "Event fragmentation and the number of elite-initiated events move only weakly together; fragmentation_index remains a useful concentration signal."
+    }
+  ],
+  "correlations": {
+    "elite": {
+      "ruler_age": {
+        "ruler_age": 1.0,
+        "ruler_political_age": 0.933,
+        "core_mean_age": 0.704,
+        "core_weighted_mean_age": 0.822,
+        "core_share_60_plus": 0.614,
+        "core_share_70_plus": 0.352,
+        "renewal_5y": -0.282
+      },
+      "ruler_political_age": {
+        "ruler_age": 0.933,
+        "ruler_political_age": 1.0,
+        "core_mean_age": 0.54,
+        "core_weighted_mean_age": 0.676,
+        "core_share_60_plus": 0.497,
+        "core_share_70_plus": 0.275,
+        "renewal_5y": -0.215
+      },
+      "core_mean_age": {
+        "ruler_age": 0.704,
+        "ruler_political_age": 0.54,
+        "core_mean_age": 1.0,
+        "core_weighted_mean_age": 0.98,
+        "core_share_60_plus": 0.863,
+        "core_share_70_plus": 0.629,
+        "renewal_5y": -0.449
+      },
+      "core_weighted_mean_age": {
+        "ruler_age": 0.822,
+        "ruler_political_age": 0.676,
+        "core_mean_age": 0.98,
+        "core_weighted_mean_age": 1.0,
+        "core_share_60_plus": 0.842,
+        "core_share_70_plus": 0.578,
+        "renewal_5y": -0.43
+      },
+      "core_share_60_plus": {
+        "ruler_age": 0.614,
+        "ruler_political_age": 0.497,
+        "core_mean_age": 0.863,
+        "core_weighted_mean_age": 0.842,
+        "core_share_60_plus": 1.0,
+        "core_share_70_plus": 0.596,
+        "renewal_5y": -0.289
+      },
+      "core_share_70_plus": {
+        "ruler_age": 0.352,
+        "ruler_political_age": 0.275,
+        "core_mean_age": 0.629,
+        "core_weighted_mean_age": 0.578,
+        "core_share_60_plus": 0.596,
+        "core_share_70_plus": 1.0,
+        "renewal_5y": -0.308
+      },
+      "renewal_5y": {
+        "ruler_age": -0.282,
+        "ruler_political_age": -0.215,
+        "core_mean_age": -0.449,
+        "core_weighted_mean_age": -0.43,
+        "core_share_60_plus": -0.289,
+        "core_share_70_plus": -0.308,
+        "renewal_5y": 1.0
+      }
+    },
+    "faction": {
+      "normalized_power_share": {
+        "normalized_power_share": 1.0,
+        "mean_age": -0.3,
+        "weighted_mean_age": -0.294,
+        "mean_political_age": -0.358,
+        "weighted_mean_political_age": -0.352,
+        "members_count": 0.259,
+        "raw_power_share": 0.774
+      },
+      "mean_age": {
+        "normalized_power_share": -0.3,
+        "mean_age": 1.0,
+        "weighted_mean_age": 0.999,
+        "mean_political_age": 0.891,
+        "weighted_mean_political_age": 0.887,
+        "members_count": 0.07,
+        "raw_power_share": -0.287
+      },
+      "weighted_mean_age": {
+        "normalized_power_share": -0.294,
+        "mean_age": 0.999,
+        "weighted_mean_age": 1.0,
+        "mean_political_age": 0.895,
+        "weighted_mean_political_age": 0.892,
+        "members_count": 0.096,
+        "raw_power_share": -0.268
+      },
+      "mean_political_age": {
+        "normalized_power_share": -0.358,
+        "mean_age": 0.891,
+        "weighted_mean_age": 0.895,
+        "mean_political_age": 1.0,
+        "weighted_mean_political_age": 0.999,
+        "members_count": 0.171,
+        "raw_power_share": -0.271
+      },
+      "weighted_mean_political_age": {
+        "normalized_power_share": -0.352,
+        "mean_age": 0.887,
+        "weighted_mean_age": 0.892,
+        "mean_political_age": 0.999,
+        "weighted_mean_political_age": 1.0,
+        "members_count": 0.194,
+        "raw_power_share": -0.253
+      },
+      "members_count": {
+        "normalized_power_share": 0.259,
+        "mean_age": 0.07,
+        "weighted_mean_age": 0.096,
+        "mean_political_age": 0.171,
+        "weighted_mean_political_age": 0.194,
+        "members_count": 1.0,
+        "raw_power_share": 0.622
+      },
+      "raw_power_share": {
+        "normalized_power_share": 0.774,
+        "mean_age": -0.287,
+        "weighted_mean_age": -0.268,
+        "mean_political_age": -0.271,
+        "weighted_mean_political_age": -0.253,
+        "members_count": 0.622,
+        "raw_power_share": 1.0
+      }
+    },
+    "faction_type": {
+      "normalized_power_share": {
+        "normalized_power_share": 1.0,
+        "mean_age": -0.302,
+        "weighted_mean_age": -0.295,
+        "mean_political_age": -0.367,
+        "weighted_mean_political_age": -0.359,
+        "factions_count": 0.025,
+        "total_power": 0.368
+      },
+      "mean_age": {
+        "normalized_power_share": -0.302,
+        "mean_age": 1.0,
+        "weighted_mean_age": 0.998,
+        "mean_political_age": 0.887,
+        "weighted_mean_political_age": 0.881,
+        "factions_count": 0.038,
+        "total_power": 0.025
+      },
+      "weighted_mean_age": {
+        "normalized_power_share": -0.295,
+        "mean_age": 0.998,
+        "weighted_mean_age": 1.0,
+        "mean_political_age": 0.889,
+        "weighted_mean_political_age": 0.888,
+        "factions_count": 0.028,
+        "total_power": 0.054
+      },
+      "mean_political_age": {
+        "normalized_power_share": -0.367,
+        "mean_age": 0.887,
+        "weighted_mean_age": 0.889,
+        "mean_political_age": 1.0,
+        "weighted_mean_political_age": 0.998,
+        "factions_count": 0.025,
+        "total_power": 0.118
+      },
+      "weighted_mean_political_age": {
+        "normalized_power_share": -0.359,
+        "mean_age": 0.881,
+        "weighted_mean_age": 0.888,
+        "mean_political_age": 0.998,
+        "weighted_mean_political_age": 1.0,
+        "factions_count": 0.017,
+        "total_power": 0.144
+      },
+      "factions_count": {
+        "normalized_power_share": 0.025,
+        "mean_age": 0.038,
+        "weighted_mean_age": 0.028,
+        "mean_political_age": 0.025,
+        "weighted_mean_political_age": 0.017,
+        "factions_count": 1.0,
+        "total_power": 0.324
+      },
+      "total_power": {
+        "normalized_power_share": 0.368,
+        "mean_age": 0.025,
+        "weighted_mean_age": 0.054,
+        "mean_political_age": 0.118,
+        "weighted_mean_political_age": 0.144,
+        "factions_count": 0.324,
+        "total_power": 1.0
+      }
+    },
+    "event": {
+      "core_mean_age": {
+        "core_mean_age": 1.0,
+        "core_weighted_mean_age": 0.98,
+        "renewal_5y": -0.449,
+        "fragmentation_index": 0.225,
+        "elite_initiated_events_count": 0.082,
+        "elite_initiated_max_severity": 0.11
+      },
+      "core_weighted_mean_age": {
+        "core_mean_age": 0.98,
+        "core_weighted_mean_age": 1.0,
+        "renewal_5y": -0.43,
+        "fragmentation_index": 0.215,
+        "elite_initiated_events_count": 0.123,
+        "elite_initiated_max_severity": 0.167
+      },
+      "renewal_5y": {
+        "core_mean_age": -0.449,
+        "core_weighted_mean_age": -0.43,
+        "renewal_5y": 1.0,
+        "fragmentation_index": -0.202,
+        "elite_initiated_events_count": 0.257,
+        "elite_initiated_max_severity": 0.203
+      },
+      "fragmentation_index": {
+        "core_mean_age": 0.225,
+        "core_weighted_mean_age": 0.215,
+        "renewal_5y": -0.202,
+        "fragmentation_index": 1.0,
+        "elite_initiated_events_count": -0.09,
+        "elite_initiated_max_severity": -0.015
+      },
+      "elite_initiated_events_count": {
+        "core_mean_age": 0.082,
+        "core_weighted_mean_age": 0.123,
+        "renewal_5y": 0.257,
+        "fragmentation_index": -0.09,
+        "elite_initiated_events_count": 1.0,
+        "elite_initiated_max_severity": 0.758
+      },
+      "elite_initiated_max_severity": {
+        "core_mean_age": 0.11,
+        "core_weighted_mean_age": 0.167,
+        "renewal_5y": 0.203,
+        "fragmentation_index": -0.015,
+        "elite_initiated_events_count": 0.758,
+        "elite_initiated_max_severity": 1.0
+      }
+    }
+  },
+  "cross_tabs": {
+    "initiator_group_x_decision_domain": {
+      "rows": [
+        "imp_bureaucratic_reformers",
+        "technocrats",
+        "siloviki",
+        "rev_bolshevik_center",
+        "stalin_security_apparatus",
+        "perestroika_gorbachev_reformers",
+        "central_leader",
+        "imp_military_aristocracy",
+        "imp_foreign_policy_chancery",
+        "imp_finance_modernizers"
+      ],
+      "cols": [
+        "foreign_policy_military",
+        "economic_policy",
+        "security",
+        "constitutional",
+        "elite_governance",
+        "foreign_policy",
+        "finance",
+        "administration",
+        "military",
+        "political_institutions"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_totals": [
+        6,
+        5,
+        3,
+        5,
+        4,
+        4,
+        5,
+        3,
+        4,
+        2
+      ],
+      "col_totals": [
+        7,
+        3,
+        5,
+        5,
+        4,
+        3,
+        5,
+        5,
+        2,
+        2
+      ]
+    },
+    "faction_type_x_decision_domain": {
+      "rows": [
+        "functional",
+        "bureaucratic_ideological",
+        "security",
+        "personal_power_center",
+        "party_apparatus",
+        "institutional",
+        "party_revolutionary",
+        "military",
+        "reformist_power_center",
+        "personal_network"
+      ],
+      "cols": [
+        "foreign_policy_military",
+        "economic_policy",
+        "security",
+        "constitutional",
+        "elite_governance",
+        "foreign_policy",
+        "finance",
+        "administration",
+        "military",
+        "political_institutions"
+      ],
+      "matrix": [
+        [
+          4,
+          1,
+          0,
+          0,
+          1,
+          4,
+          3,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          4,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          4,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_totals": [
+        15,
+        9,
+        10,
+        8,
+        4,
+        3,
+        5,
+        3,
+        4,
+        2
+      ],
+      "col_totals": [
+        10,
+        4,
+        11,
+        10,
+        8,
+        7,
+        3,
+        6,
+        0,
+        4
+      ]
+    }
+  },
+  "event_summaries": {
+    "periods": [
+      {
+        "period_id": "1801-1917",
+        "label": "Russian Empire",
+        "events_count": 37,
+        "mean_severity": 4.51,
+        "max_severity": 5
+      },
+      {
+        "period_id": "1917-1924",
+        "label": "Revolution / early Soviet",
+        "events_count": 17,
+        "mean_severity": 4.71,
+        "max_severity": 5
+      },
+      {
+        "period_id": "1924-1953",
+        "label": "Stalin era",
+        "events_count": 21,
+        "mean_severity": 4.71,
+        "max_severity": 5
+      },
+      {
+        "period_id": "1953-1964",
+        "label": "Post-Stalin / Khrushchev",
+        "events_count": 12,
+        "mean_severity": 4.67,
+        "max_severity": 5
+      },
+      {
+        "period_id": "1964-1985",
+        "label": "Late Soviet",
+        "events_count": 14,
+        "mean_severity": 3.86,
+        "max_severity": 5
+      },
+      {
+        "period_id": "1985-1991",
+        "label": "Perestroika",
+        "events_count": 17,
+        "mean_severity": 4.76,
+        "max_severity": 5
+      },
+      {
+        "period_id": "1991-2026",
+        "label": "Russian Federation",
+        "events_count": 42,
+        "mean_severity": 4.55,
+        "max_severity": 5
+      }
+    ],
+    "top_severity_5": [
+      {
+        "date": "1826-07-15",
+        "event_id": "emp_1826_third_section",
+        "event_name": "Создание Третьего отделения"
+      },
+      {
+        "date": "1830-11-29",
+        "event_id": "emp_1830_polish_suppression",
+        "event_name": "Подавление Польского восстания 1830–1831"
+      },
+      {
+        "date": "1853-10-16",
+        "event_id": "emp_1853_crimean_war_initiation",
+        "event_name": "Начало Крымской войны"
+      },
+      {
+        "date": "1861-03-03",
+        "event_id": "emp_1861_serfdom_abolition",
+        "event_name": "Отмена крепостного права"
+      },
+      {
+        "date": "1863-01-22",
+        "event_id": "emp_1863_polish_suppression",
+        "event_name": "Подавление Январского восстания"
+      },
+      {
+        "date": "1864-11-20",
+        "event_id": "emp_1864_judicial_reform",
+        "event_name": "Судебная реформа Александра II"
+      },
+      {
+        "date": "1874-01-13",
+        "event_id": "emp_1874_military_reform_conscription",
+        "event_name": "Воинская реформа и всеобщая воинская повинность"
+      },
+      {
+        "date": "1877-04-24",
+        "event_id": "emp_1877_russo_turkish_war",
+        "event_name": "Русско-турецкая война 1877–1878"
+      },
+      {
+        "date": "1881-08-14",
+        "event_id": "emp_1881_counter_reforms_start",
+        "event_name": "Положение о мерах к охранению государственного порядка"
+      },
+      {
+        "date": "1891-05-31",
+        "event_id": "emp_1891_trans_siberian_start",
+        "event_name": "Начало строительства Транссибирской магистрали"
+      },
+      {
+        "date": "1897-01-03",
+        "event_id": "emp_1897_gold_standard",
+        "event_name": "Денежная реформа Витте: золотой стандарт"
+      },
+      {
+        "date": "1904-02-08",
+        "event_id": "emp_1904_russo_japanese_war",
+        "event_name": "Русско-японская война"
+      },
+      {
+        "date": "1905-10-30",
+        "event_id": "emp_1905_october_manifesto",
+        "event_name": "Манифест 17 октября"
+      },
+      {
+        "date": "1906-04-23",
+        "event_id": "emp_1906_fundamental_laws",
+        "event_name": "Основные государственные законы 1906 года"
+      },
+      {
+        "date": "1906-04-27",
+        "event_id": "emp_1906_duma_creation",
+        "event_name": "Открытие Первой Государственной думы"
+      },
+      {
+        "date": "1906-11-09",
+        "event_id": "emp_1906_stolypin_agrarian_reform",
+        "event_name": "Начало столыпинской аграрной реформы"
+      },
+      {
+        "date": "1907-06-16",
+        "event_id": "emp_1907_june_coup",
+        "event_name": "Третьеиюньский переворот"
+      },
+      {
+        "date": "1914-08-01",
+        "event_id": "emp_1914_ww1_entry",
+        "event_name": "Вступление России в Первую мировую войну"
+      },
+      {
+        "date": "1917-07-01",
+        "event_id": "prov_1917_june_offensive",
+        "event_name": "Июньское наступление 1917 года"
+      },
+      {
+        "date": "1917-11-08",
+        "event_id": "sov_1917_decree_land",
+        "event_name": "Декрет о земле"
+      }
+    ],
+    "low_confidence": [
+      {
+        "date": "1998-08-17",
+        "event_id": "rf_1998_default",
+        "event_name": "Дефолт 1998 года",
+        "confidence": 0.55
+      }
+    ]
+  }
+}

@@ -27,6 +27,17 @@
 - `sources_early_elite_addendum.csv` - источники для раннего elite seed dataset.
 
 Многие значения `political_entry_date`, `elite_entry_date` и `ruling_circle_entry_date` в стартовом файле приблизительные и требуют ручной проверки.
+События в `events.csv` дополнены слоем elite-initiated интерпретации:
+
+- `elite_initiated` - событие как решение элиты или правителя;
+- `initiator_type` - тип инициатора: ruler, government, party, security и т.д.;
+- `initiator_person_id` - ключевой инициатор, если он есть;
+- `initiator_group` - фракция или контур власти, если его можно указать;
+- `confidence` - уверенность в такой трактовке;
+- `decision_domain` - домен решения;
+- `event_scope` - масштаб события.
+
+Часть событий в этом слое является representative date или агрегированной датой процесса. Для них нужна ручная проверка источников.
 
 ## Установка
 
@@ -117,6 +128,13 @@ PNG-файлы сохраняются в `outputs/figures`.
 python -m power_age.cli summary
 ```
 
+События:
+
+```bash
+python -m power_age.cli event-summary
+python -m power_age.cli plot-events
+```
+
 ## Тесты
 
 ```bash
@@ -134,6 +152,8 @@ pytest
 5. Сохрани настройки.
 
 После публикации GitHub Pages будет показывать сайт из `docs/index.html`.
+На странице есть переключатель `RU/EN`, блок с выводами по корреляциям,
+событийный слой, кросс-табы и увеличение графиков по клику.
 
 Если графики были перегенерированы, обнови копии для Pages:
 
@@ -214,6 +234,17 @@ python -m power_age.cli faction-summary
 - `factions_lateussr_1964_1985.png`
 - `factions_perestroika_1985_1991.png`
 - `factions_rf_1991_2026.png`
+
+Событийные processed-файлы:
+
+- `data/processed/events_with_faction_context.csv`
+
+Событийные графики:
+
+- `events_by_year.png`
+- `events_by_period.png`
+- `events_by_domain.png`
+- `event_severity_timeline.png`
 
 Фракционные принадлежности требуют ручной проверки источников и sensitivity analysis. Они являются исследовательскими аннотациями, а не фактом.
 

@@ -99,10 +99,13 @@ def validate_events(events: pd.DataFrame, persons: pd.DataFrame, factions: pd.Da
         _check_range(events, "confidence", "events", errors, low=0, high=1)
 
     if "elite_initiated" in events.columns:
-        invalid = events[
-            events["elite_initiated"].notna()
-            & ~events["elite_initiated"].map(lambda value: isinstance(value, bool))
-        ]
+        if not pd.api.types.is_bool_dtype(events["elite_initiated"]):
+            invalid = events[
+                events["elite_initiated"].notna()
+                & ~events["elite_initiated"].map(lambda value: isinstance(value, bool))
+            ]
+        else:
+            invalid = events.iloc[0:0]
         for index, row in invalid.iterrows():
             errors.append(
                 f"events: row {index} event_id={row.get('event_id', '')} has non-bool elite_initiated"

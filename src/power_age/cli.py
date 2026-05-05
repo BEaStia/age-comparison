@@ -360,6 +360,82 @@ def plot_factions_periods() -> None:
 
 
 @app.command()
+def plot_events() -> None:
+    """Save event-focused plots as PNG files."""
+    from power_age.visualize import (
+        plot_event_severity_timeline,
+        plot_events_by_domain,
+        plot_events_by_period,
+        plot_events_by_year,
+    )
+
+    data = load_all_data(DATA_DIR)
+    events = data["events"]
+    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+
+    plot_events_by_year(events, FIGURES_DIR / "events_by_year.png")
+    plot_events_by_period(
+        events_by_period(filter_elite_initiated_events(events)),
+        FIGURES_DIR / "events_by_period.png",
+    )
+    plot_events_by_domain(
+        events_by_decision_domain(filter_elite_initiated_events(events)),
+        FIGURES_DIR / "events_by_domain.png",
+    )
+    plot_event_severity_timeline(
+        events,
+        FIGURES_DIR / "event_severity_timeline.png",
+    )
+    typer.echo(f"Saved event figures to {FIGURES_DIR}")
+
+
+@app.command()
+def event_summary() -> None:
+    """Print event-layer summary."""
+    data = load_all_data(DATA_DIR)
+    events = data["events"]
+    elite_events = filter_elite_initiated_events(events)
+
+    typer.echo(f"Всего событий: {len(events)}")
+    typer.echo(f"Всего elite_initiated событий: {len(elite_events)}")
+
+    typer.echo("События по периодам:")
+    period_summary = events_by_period(elite_events)
+    for _, row in period_summary.iterrows():
+        typer.echo(
+            f"  {row['period_label']}: events={int(row['events_count'])}, mean_severity={row['mean_severity']:.2f}, max_severity={int(row['max_severity'])}"
+        )
+
+    typer.echo("События по decision_domain:")
+    for _, row in events_by_decision_domain(elite_events).sort_values("events_count", ascending=False).iterrows():
+        typer.echo(
+            f"  {row['decision_domain']}: events={int(row['events_count'])}, mean_severity={row['mean_severity']:.2f}, max_severity={int(row['max_severity'])}"
+        )
+
+    typer.echo("События по initiator_group:")
+    for _, row in events_by_initiator_group(elite_events).sort_values("events_count", ascending=False).iterrows():
+        typer.echo(
+            f"  {row['initiator_group']}: events={int(row['events_count'])}, mean_severity={row['mean_severity']:.2f}, max_severity={int(row['max_severity'])}"
+        )
+
+    typer.echo("Топ-20 событий severity=5:")
+    top_severe = elite_events[elite_events["severity"] == 5].sort_values("date").head(20)
+    for _, row in top_severe.iterrows():
+        typer.echo(f"  {row['date'].date()}: {row['event_id']} - {row['event_name']}")
+
+    typer.echo("Топ-20 событий confidence < 0.6:")
+    if "confidence" in elite_events.columns:
+        confidence = pd.to_numeric(elite_events["confidence"], errors="coerce")
+        low_conf = elite_events[confidence < 0.6]
+    else:
+        low_conf = elite_events.iloc[0:0]
+    for _, row in low_conf.sort_values("confidence").head(20).iterrows():
+        typer.echo(
+            f"  {row['date'].date()}: {row['event_id']} confidence={row.get('confidence')} - {row['event_name']}"
+        )
+
+
+@app.command()
 def faction_summary() -> None:
     """Print faction-layer summary."""
     faction_year = _load_faction_year_or_build()
