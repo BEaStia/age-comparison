@@ -753,6 +753,7 @@
     const meta = state.data.meta;
     document.getElementById("page-title").textContent = I18N[state.lang].title;
     document.getElementById("page-lead").textContent = I18N[state.lang].lead;
+    document.getElementById("controls").innerHTML = renderControls();
     const closeButton = document.querySelector("[data-lightbox-close]");
     if (closeButton) {
       closeButton.textContent = I18N[state.lang].close;
@@ -777,6 +778,44 @@
     document.querySelectorAll("[data-tab]").forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.tab === state.tab));
     });
+
+    document.querySelectorAll("[data-dataset]").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.dataset === state.datasetId));
+    });
+  }
+
+  function renderControls() {
+    const dataset = state.dataset || FALLBACK_DATASET;
+    const datasetLabel = dataset.label?.[state.lang] || dataset.label?.ru || dataset.id;
+    const options = state.datasets.length
+      ? state.datasets
+      : [FALLBACK_DATASET];
+    const datasetButtons = options
+      .map(
+        (item) => `
+          <button class="toggle" type="button" data-dataset="${escapeHtml(item.id)}" aria-pressed="${String(
+            item.id === state.datasetId
+          )}">${escapeHtml(item.label?.[state.lang] || item.label?.ru || item.id)}</button>
+        `
+      )
+      .join("");
+
+    return `
+      <div class="controls-block">
+        <div class="controls-group">
+          <span class="pill">${escapeHtml(datasetLabel)}</span>
+          ${datasetButtons}
+        </div>
+        <div class="controls-group">
+          <button class="toggle" type="button" data-lang="ru" aria-pressed="${String(
+            state.lang === "ru"
+          )}">RU</button>
+          <button class="toggle" type="button" data-lang="en" aria-pressed="${String(
+            state.lang === "en"
+          )}">EN</button>
+        </div>
+      </div>
+    `;
   }
 
   function badge(text) {
@@ -1335,6 +1374,14 @@
       return;
     }
 
+    const datasetButton = event.target.closest("[data-dataset]");
+    if (datasetButton) {
+      state.datasetId = datasetButton.dataset.dataset;
+      localStorage.setItem("power_age_dataset", state.datasetId);
+      init();
+      return;
+    }
+
     const tabButton = event.target.closest("[data-tab]");
     if (tabButton) {
       state.tab = tabButton.dataset.tab;
@@ -1364,15 +1411,27 @@
   });
 
   function init() {
-    fetch(DATA_URL)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Failed to load ${DATA_URL}`);
-        }
-        return response.json();
+    fetch(DATASETS_URL)
+      .then((response) => (response.ok ? response.json() : [FALLBACK_DATASET]))
+      .catch(() => [FALLBACK_DATASET])
+      .then((datasets) => {
+        state.datasets = Array.isArray(datasets) ? datasets : [FALLBACK_DATASET];
+        const selected =
+          state.datasets.find((item) => item.id === state.datasetId) || state.datasets[0] || FALLBACK_DATASET;
+        state.datasetId = selected.id;
+        localStorage.setItem("power_age_dataset", state.datasetId);
+        return fetch(selected.data_url)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`Failed to load ${selected.data_url}`);
+            }
+            return response.json();
+          })
+          .catch(() => fetch(FALLBACK_DATASET.data_url).then((response) => response.json()));
       })
       .then((json) => {
         state.data = json;
+        state.dataset = state.datasets.find((item) => item.id === state.datasetId) || FALLBACK_DATASET;
         render();
       })
       .catch((error) => {

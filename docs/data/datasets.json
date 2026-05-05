@@ -1,0 +1,14 @@
+[
+  {
+    "id": "russia",
+    "label": {
+      "ru": "Россия / СССР",
+      "en": "Russia / USSR"
+    },
+    "description": {
+      "ru": "Текущий набор данных по возрасту элиты, фракциям и событиям для России и СССР.",
+      "en": "Current dataset covering elite age, factions, and events for Russia and the USSR."
+    },
+    "data_url": "data/site-data.json"
+  }
+]
