@@ -1027,7 +1027,10 @@
       ? (selection.rationale_ru || selection.rationale || "")
       : (selection.rationale_en || selection.rationale || "");
 
-    const modelLabel = family.label || selection.recommended_model || "model";
+    const modelLabel = labelForModelFamily(
+      family.model_id || selection.recommended_model,
+      family.label || selection.recommended_model || "model"
+    );
     const confidence = selection.confidence == null ? "n/a" : formatNumber(Number(selection.confidence), 2);
     const localizedForecastType = state.lang === "ru"
       ? forecast.forecast_type_ru || forecast.forecast_type || "сценарный"
@@ -1332,6 +1335,22 @@
     return VARIABLE_LABELS[state.lang][key] || key;
   }
 
+  function labelForModelFamily(modelId, fallback) {
+    if (state.lang !== "ru") {
+      return fallback || modelId;
+    }
+    const labels = {
+      institutional_domain_crisis_model: "институциональная / доменная / кризисная модель",
+      gerontocracy_succession_model: "геронтократическая / преемственная модель",
+      dynastic_succession_model: "династическая модель преемственности",
+      party_congress_turnover_model: "модель съездов и обновления",
+      revolutionary_generation_model: "модель революционного поколения",
+      security_state_faction_model: "модель силового государства и фракций",
+      developmental_bureaucratic_model: "модель бюрократического развития",
+    };
+    return labels[modelId] || fallback || modelId;
+  }
+
   function labelForDimension(tab, key) {
     const dimension = tab === "faction_type_x_decision_domain" ? "faction_type" : "initiator_group";
     const labels = DIMENSION_LABELS[state.lang][dimension] || {};
@@ -1383,7 +1402,7 @@
           ru:
             `Для этого периода рекомендуемая модель: ${selection.recommended_model}. ` +
             `${forecast.baseline_assessment || ""}` +
-            (family.label ? ` Это соответствует семейству: ${family.label}.` : ""),
+            (family.label ? ` Это соответствует семейству: ${labelForModelFamily(family.model_id || selection.recommended_model, family.label)}.` : ""),
           en:
             `Recommended model for this period: ${selection.recommended_model}. ` +
             `${forecast.baseline_assessment || ""}` +
