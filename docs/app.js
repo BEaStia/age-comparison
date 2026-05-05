@@ -1011,9 +1011,46 @@
     const missingWarnings = Array.isArray(selection.missing_data_warnings) ? selection.missing_data_warnings : [];
     const nextFeatures = Array.isArray(selection.recommended_next_features) ? selection.recommended_next_features : [];
     const forecastWarnings = Array.isArray(forecast.warnings) ? forecast.warnings : [];
+    const localizedSupportingSignals = state.lang === "ru"
+      ? (Array.isArray(selection.supporting_signals_ru) ? selection.supporting_signals_ru : supportingSignals)
+      : (Array.isArray(selection.supporting_signals_en) ? selection.supporting_signals_en : supportingSignals);
+    const localizedMissingWarnings = state.lang === "ru"
+      ? (Array.isArray(selection.missing_data_warnings_ru) ? selection.missing_data_warnings_ru : missingWarnings)
+      : (Array.isArray(selection.missing_data_warnings_en) ? selection.missing_data_warnings_en : missingWarnings);
+    const localizedNextFeatures = state.lang === "ru"
+      ? (Array.isArray(selection.recommended_next_features_ru) ? selection.recommended_next_features_ru : nextFeatures)
+      : (Array.isArray(selection.recommended_next_features_en) ? selection.recommended_next_features_en : nextFeatures);
+    const localizedForecastWarnings = state.lang === "ru"
+      ? (Array.isArray(forecast.warnings_ru) ? forecast.warnings_ru : forecastWarnings)
+      : (Array.isArray(forecast.warnings_en) ? forecast.warnings_en : forecastWarnings);
+    const localizedRationale = state.lang === "ru"
+      ? (selection.rationale_ru || selection.rationale || "")
+      : (selection.rationale_en || selection.rationale || "");
 
     const modelLabel = family.label || selection.recommended_model || "model";
     const confidence = selection.confidence == null ? "n/a" : formatNumber(Number(selection.confidence), 2);
+    const localizedForecastType = state.lang === "ru"
+      ? forecast.forecast_type_ru || forecast.forecast_type || "сценарный"
+      : forecast.forecast_type_en || forecast.forecast_type || "scenario";
+    const localizedTarget = state.lang === "ru"
+      ? forecast.target_ru || forecast.target || "n/a"
+      : forecast.target_en || forecast.target || "n/a";
+    const localizedBaseline = state.lang === "ru"
+      ? forecast.baseline_assessment_ru || forecast.baseline_assessment || ""
+      : forecast.baseline_assessment_en || forecast.baseline_assessment || ""
+    ;
+    const localizedUpside = state.lang === "ru"
+      ? forecast.upside_scenario_ru || forecast.upside_scenario || ""
+      : forecast.upside_scenario_en || forecast.upside_scenario || "";
+    const localizedDownside = state.lang === "ru"
+      ? forecast.downside_scenario_ru || forecast.downside_scenario || ""
+      : forecast.downside_scenario_en || forecast.downside_scenario || "";
+    const upsideLabel = state.lang === "ru" ? "Позитивный сценарий" : "Upside";
+    const downsideLabel = state.lang === "ru" ? "Негативный сценарий" : "Downside";
+    const whyNotAgeOnlyLabel = state.lang === "ru" ? "Почему age-only модель слабее" : "Why not age-only";
+    const dataLimitsLabel = state.lang === "ru" ? "Ограничения данных" : "Data limitations";
+    const whatToAddLabel = state.lang === "ru" ? "Что добавить в следующий проход" : "What to add next";
+    const watchLabel = state.lang === "ru" ? "Наблюдать" : "Watch";
 
     return `
       <section id="guidance" class="section-anchor">
@@ -1051,17 +1088,15 @@
                     )}
                   </div>
                   <div class="small-note">
-                    ${escapeHtml(selection.rationale || (state.lang === "ru" ? "Рационализация основана на priors и наблюдаемых сигналах." : "Rationale is based on priors and observed signals."))}
+                    ${escapeHtml(localizedRationale || (state.lang === "ru" ? "Рационализация основана на priors и наблюдаемых сигналах." : "Rationale is based on priors and observed signals."))}
                   </div>
                 </div>
               </div>
             </div>
             <div class="signal-card">
-              <strong>${escapeHtml(
-                state.lang === "ru" ? "Почему это лучше age-only модели" : "Why not age-only"
-              )}</strong>
+              <strong>${escapeHtml(whyNotAgeOnlyLabel)}</strong>
               <div class="correlation-list">
-                ${(supportingSignals.length ? supportingSignals : [state.lang === "ru" ? "Сигналы пока недостаточно специфичны." : "Signals are still too sparse."])
+                ${(localizedSupportingSignals.length ? localizedSupportingSignals : [state.lang === "ru" ? "Сигналы пока недостаточно специфичны." : "Signals are still too sparse."])
                   .map(
                     (signal) => `
                       <div class="correlation-item">${escapeHtml(signal)}</div>
@@ -1069,9 +1104,9 @@
                   )
                   .join("")}
               </div>
-              ${missingWarnings.length ? `<div class="small-note" style="margin-top:10px;">${escapeHtml(state.lang === "ru" ? "Ограничения данных" : "Data limitations")}</div>` : ""}
+              ${localizedMissingWarnings.length ? `<div class="small-note" style="margin-top:10px;">${escapeHtml(dataLimitsLabel)}</div>` : ""}
               <div class="correlation-list">
-                ${missingWarnings
+                ${localizedMissingWarnings
                   .map((warning) => `<div class="correlation-item">${escapeHtml(warning)}</div>`)
                   .join("")}
               </div>
@@ -1082,7 +1117,7 @@
               )}</strong>
               <div class="correlation-list">
                 <div class="correlation-item">
-                  <div><strong>${escapeHtml(forecast.forecast_type || "scenario")}</strong></div>
+                  <div><strong>${escapeHtml(localizedForecastType)}</strong></div>
                   <div class="small-note">
                     ${escapeHtml(
                       state.lang === "ru"
@@ -1093,34 +1128,32 @@
                   <div class="small-note">
                     ${escapeHtml(
                       state.lang === "ru"
-                        ? `Цель: ${forecast.target || "n/a"}`
-                        : `Target: ${forecast.target || "n/a"}`
+                        ? `Цель: ${localizedTarget}`
+                        : `Target: ${localizedTarget}`
                     )}
                   </div>
-                  <div class="small-note">${escapeHtml(forecast.baseline_assessment || "")}</div>
+                  <div class="small-note">${escapeHtml(localizedBaseline)}</div>
                   <div class="small-note" style="margin-top:8px;">
-                    <strong>${escapeHtml(state.lang === "ru" ? "Upside" : "Upside")}</strong>
-                    ${escapeHtml(forecast.upside_scenario || "")}
+                    <strong>${escapeHtml(upsideLabel)}</strong>
+                    ${escapeHtml(localizedUpside)}
                   </div>
                   <div class="small-note" style="margin-top:8px;">
-                    <strong>${escapeHtml(state.lang === "ru" ? "Downside" : "Downside")}</strong>
-                    ${escapeHtml(forecast.downside_scenario || "")}
+                    <strong>${escapeHtml(downsideLabel)}</strong>
+                    ${escapeHtml(localizedDownside)}
                   </div>
                 </div>
                 <div class="correlation-item">
-                  <strong>${escapeHtml(state.lang === "ru" ? "Наблюдать" : "Watch")}</strong>
+                  <strong>${escapeHtml(watchLabel)}</strong>
                   <div class="small-note">
-                    ${escapeHtml((forecast.key_indicators_to_watch || []).join(", ") || (state.lang === "ru" ? "Сигналы еще не заданы." : "Indicators are not yet set."))}
+                    ${escapeHtml((state.lang === "ru" ? (forecast.key_indicators_to_watch_ru || []) : (forecast.key_indicators_to_watch_en || [])).join(", ") || (state.lang === "ru" ? "Сигналы еще не заданы." : "Indicators are not yet set."))}
                   </div>
                 </div>
               </div>
             </div>
             <div class="signal-card">
-              <strong>${escapeHtml(
-                state.lang === "ru" ? "Что добавить в следующий проход" : "What to add next"
-              )}</strong>
+              <strong>${escapeHtml(whatToAddLabel)}</strong>
               <div class="correlation-list">
-                ${(nextFeatures.length ? nextFeatures : [state.lang === "ru" ? "Дополнительные признаки не определены." : "No additional features are defined."])
+                ${(localizedNextFeatures.length ? localizedNextFeatures : [state.lang === "ru" ? "Дополнительные признаки не определены." : "No additional features are defined."])
                   .map(
                     (feature) => `
                       <div class="correlation-item">${escapeHtml(feature)}</div>
@@ -1142,7 +1175,7 @@
                     : "Any signal not confirmed by multiple independent layers should be treated as a weak hypothesis, not a conclusion."
                 )}
               </div>
-              ${forecastWarnings.length ? `<div class="correlation-list" style="margin-top:10px;">${forecastWarnings.map((warning) => `<div class="correlation-item">${escapeHtml(warning)}</div>`).join("")}</div>` : ""}
+              ${localizedForecastWarnings.length ? `<div class="correlation-list" style="margin-top:10px;">${localizedForecastWarnings.map((warning) => `<div class="correlation-item">${escapeHtml(warning)}</div>`).join("")}</div>` : ""}
             </div>
           </div>
         </div>
@@ -2315,6 +2348,18 @@
   }
 
   document.addEventListener("click", (event) => {
+    const scrollTarget = event.target.closest("[data-scroll-target]");
+    if (scrollTarget) {
+      event.preventDefault();
+      const targetId = scrollTarget.dataset.scrollTarget;
+      const target = targetId ? document.getElementById(targetId) : null;
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.replaceState(null, "", `#${targetId}`);
+      }
+      return;
+    }
+
     const langButton = event.target.closest("[data-lang]");
     if (langButton) {
       state.lang = langButton.dataset.lang;

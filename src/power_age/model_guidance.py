@@ -28,6 +28,16 @@ MODEL_IDS = [
     "developmental_bureaucratic_model",
 ]
 
+MODEL_LABELS_RU = {
+    "institutional_domain_crisis_model": "институциональная/доменная/кризисная модель",
+    "gerontocracy_succession_model": "геронтократическая модель преемственности",
+    "dynastic_succession_model": "династическая модель преемственности",
+    "party_congress_turnover_model": "модель съездов и обновления",
+    "revolutionary_generation_model": "модель революционного поколения",
+    "security_state_faction_model": "модель силового государства и фракций",
+    "developmental_bureaucratic_model": "модель бюрократического развития",
+}
+
 
 @dataclass(frozen=True)
 class ModelFamily:
@@ -65,10 +75,20 @@ class ModelSelectionResult:
     secondary_models: list[str]
     confidence: float
     rationale: str
+    rationale_ru: str
+    rationale_en: str
     supporting_signals: list[str]
+    supporting_signals_ru: list[str]
+    supporting_signals_en: list[str]
     missing_data_warnings: list[str]
+    missing_data_warnings_ru: list[str]
+    missing_data_warnings_en: list[str]
     recommended_next_features: list[str]
+    recommended_next_features_ru: list[str]
+    recommended_next_features_en: list[str]
     forecast_guidance: str
+    forecast_guidance_ru: str
+    forecast_guidance_en: str
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -77,14 +97,28 @@ class ModelSelectionResult:
 @dataclass(frozen=True)
 class ForecastGuidance:
     forecast_type: str
+    forecast_type_ru: str
+    forecast_type_en: str
     forecast_horizon_years: int
     target: str
+    target_ru: str
+    target_en: str
     baseline_assessment: str
+    baseline_assessment_ru: str
+    baseline_assessment_en: str
     upside_scenario: str
+    upside_scenario_ru: str
+    upside_scenario_en: str
     downside_scenario: str
+    downside_scenario_ru: str
+    downside_scenario_en: str
     key_indicators_to_watch: list[str]
+    key_indicators_to_watch_ru: list[str]
+    key_indicators_to_watch_en: list[str]
     features_used: list[str]
     warnings: list[str]
+    warnings_ru: list[str]
+    warnings_en: list[str]
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -747,6 +781,140 @@ def _recommended_next_features(model_id: str, metrics: dict[str, Any], available
     return output
 
 
+def _translate_prior_signal(signal: str, lang: str) -> str:
+    if lang != "ru":
+        return signal
+    if signal.startswith("Prior match: ") and " prefers " in signal:
+        body = signal[len("Prior match: ") :].rstrip(".")
+        country_part, model_part = body.split(" prefers ", 1)
+        model_label = MODEL_LABELS_RU.get(model_part, model_part)
+        return f"Совпадение с priors: {country_part} предпочитает {model_label}."
+    if signal.startswith("Prior match: ") and " marks " in signal:
+        body = signal[len("Prior match: ") :].rstrip(".")
+        country_part, model_part = body.split(" marks ", 1)
+        if model_part.endswith(" as secondary"):
+            model_part = model_part[: -len(" as secondary")]
+        model_label = MODEL_LABELS_RU.get(model_part, model_part)
+        return f"Совпадение с priors: {country_part} отмечает {model_label} как вторичную модель."
+    return signal
+
+
+def _translate_selection_signal(signal: str, lang: str) -> str:
+    if lang != "ru":
+        return signal
+
+    translations = {
+        "Core elite age is weakly correlated with elite-initiated events.": "Возраст ядра элиты слабо связан с событиями, инициированными элитой.",
+        "Event data contains rich decision-domain structure.": "Событийные данные содержат богатую структуру по доменам решений.",
+        "Institutional layer is broad enough for an institutional model.": "Институциональный слой достаточно широк для институциональной модели.",
+        "High-severity events are frequent enough to justify crisis framing.": "События высокой severity достаточно часты, чтобы оправдать кризисную рамку.",
+        "Finance layer is available.": "Финансовый слой доступен.",
+        "Judicial layer is available.": "Судебный слой доступен.",
+        "Security layer is available.": "Силовой слой доступен.",
+        "Leader age is in a gerontocratic range.": "Возраст лидера попадает в геронтократический диапазон.",
+        "Ruling-circle age is high.": "Возраст правящего круга высок.",
+        "The share of elders in core elite is high.": "Доля старших возрастов в core elite высока.",
+        "Elite renewal is low.": "Обновление элиты низкое.",
+        "Succession-related signals are present.": "Присутствуют сигналы преемственности.",
+        "Royal or dynastic positions are present.": "Присутствуют королевские или династические позиции.",
+        "Factional concentration is consistent with dynastic consolidation.": "Концентрация фракций согласуется с династической консолидацией.",
+        "Party-congress or cycle signals are present.": "Присутствуют сигналы съездов или циклов.",
+        "Renewal is visible around cycle boundaries.": "Обновление заметно около границ циклов.",
+        "Technocratic elite is present.": "Присутствует технократическая элита.",
+        "Faction balance is visible.": "Виден баланс фракций.",
+        "Revolutionary/founding-generation signals are present.": "Присутствуют сигналы революционного или основательского поколения.",
+        "Security-apparatus influence is non-trivial.": "Влияние силового аппарата заметно.",
+        "Protest pressure is present.": "Присутствует протестное давление.",
+        "Security elite share is high.": "Доля силовой элиты высока.",
+        "War or military pressure signals are present.": "Присутствуют сигналы войны или военного давления.",
+        "Purge or repression signals are present.": "Присутствуют сигналы чисток или подавления.",
+        "Protest signals are present.": "Присутствуют протестные сигналы.",
+        "Faction concentration is substantial.": "Концентрация фракций значительна.",
+        "Weak core elite age / elite-initiated event correlation supports a non-age-centered model.": "Слабая корреляция между возрастом core elite и elite-initiated событиями поддерживает не-возрастную модель.",
+        "Technocratic/bureaucratic positions are present.": "Присутствуют технократические или бюрократические позиции.",
+        "Finance and economic ministries are visible.": "Видны финансовые и экономические министерства.",
+        "Reform-package signals are present.": "Присутствуют сигналы пакетов реформ.",
+        "Some elite turnover is present.": "Наблюдается некоторое обновление элиты.",
+    }
+    return translations.get(signal, signal)
+
+
+def _translate_warning(warning: str, lang: str) -> str:
+    if lang != "ru":
+        return warning
+    translations = {
+        "Decision-domain data is sparse, so scenario quality is limited.": "Данных по доменам решений мало, поэтому качество сценария ограничено.",
+        "Turnover is estimated indirectly or is missing.": "Обновление элиты оценивается косвенно или отсутствует.",
+        "yearly_context.csv is absent, so party-control and crisis flags are inferred indirectly.": "Файл yearly_context.csv отсутствует, поэтому сигналы партийного контроля и кризиса выводятся косвенно.",
+        "Faction-layer features are absent, so selection relies more heavily on age, institutions, and event structure.": "Слой фракций отсутствует, поэтому выбор сильнее опирается на возраст, институты и структуру событий.",
+        "periods.csv is absent, so periodization is weaker and priors matter more.": "Файл periods.csv отсутствует, поэтому периодизация слабее и priors важнее.",
+        "core elite age versus elite-initiated event correlation is unavailable or too sparse.": "Корреляция возраста core elite с elite-initiated событиями недоступна или слишком разрежена.",
+        "Missing required file for ideal model fit: events.csv.": "Для идеального соответствия модели не хватает файла events.csv.",
+        "Missing required file for ideal model fit: positions.csv.": "Для идеального соответствия модели не хватает файла positions.csv.",
+        "Missing required file for ideal model fit: persons.csv.": "Для идеального соответствия модели не хватает файла persons.csv.",
+    }
+    return translations.get(warning, warning)
+
+
+def _translate_feature_hint(feature: str, lang: str) -> str:
+    if lang != "ru":
+        return feature
+    translations = {
+        "yearly_context.csv with party-control, divided-government, and crisis flags": "yearly_context.csv с признаками партийного контроля, разделенного управления и кризиса",
+        "institution-level decision-domain classification": "классификация доменов решений на уровне институтов",
+        "war, emergency, and institutional-control indicators": "индикаторы войны, чрезвычайного положения и институционального контроля",
+        "succession-event annotations": "разметка событий преемственности",
+        "leader and ruling-circle age series by year": "годовые ряды возраста лидера и правящего круга",
+        "lagged turnover indicators": "лаговые индикаторы обновления",
+        "crown-prince and heir-role annotations": "разметка ролей наследника и наследного принца",
+        "royal-branch faction labels": "метки фракций королевской ветви",
+        "generational-transition markers": "маркеры поколенческого перехода",
+        "congress-cycle periodization": "периодизация по циклам съездов",
+        "politburo and central-committee membership by year": "состав политбюро и центрального комитета по годам",
+        "retirement-norm and norm-breaking flags": "флаги нормы ухода на пенсию и ее нарушения",
+        "founding-generation membership flags": "флаги принадлежности к основательскому поколению",
+        "old-guard replacement markers": "маркеры замещения старой гвардии",
+        "security-apparatus influence by year": "влияние силового аппарата по годам",
+        "security-faction labels": "метки силовых фракций",
+        "purge and repression event tags": "теги чисток и подавления",
+        "military/intelligence network mapping": "картирование военных и разведывательных сетей",
+        "bureaucratic and technocratic faction labels": "метки бюрократических и технократических фракций",
+        "economic-ministry and central-bank share series": "ряды долей экономических министерств и центрального банка",
+        "policy-package and reform indicators": "индикаторы пакетов политики и реформ",
+        "faction-layer files if they are available for this country-period": "файлы слоя фракций, если они доступны для этого страны-периода",
+        "yearly_context.csv for better crisis and control signals": "yearly_context.csv для лучших сигналов кризиса и контроля",
+    }
+    return translations.get(feature, feature)
+
+
+def _indicator_label(key: str, lang: str) -> str:
+    if lang != "ru":
+        return key.replace("_", " ")
+    translations = {
+        "security_elite_share": "доля силовой элиты",
+        "faction_concentration": "концентрация фракций",
+        "recent_purge_or_repression_events": "недавние чистки или подавление",
+        "war_or_external_pressure": "война или внешнее давление",
+        "turnover_decline": "снижение обновления элиты",
+        "major_crisis": "крупный кризис",
+        "divided_government": "разделенное управление",
+        "high_severity_event_rate": "частота событий высокой severity",
+        "natsec_elite_share": "доля национально-безопасностной элиты",
+        "finance_elite_share": "доля финансовой элиты",
+        "judicial_elite_share": "доля судебной элиты",
+    }
+    return translations.get(key, key.replace("_", " "))
+
+
+def _bucket_label_ru(bucket: str) -> str:
+    return {
+        "low": "Низкое",
+        "moderate": "Умеренное",
+        "elevated": "Повышенное",
+        "high": "Высокое",
+    }.get(bucket, bucket)
+
+
 def generate_forecast_guidance(
     country: str,
     period: dict[str, int],
@@ -756,6 +924,32 @@ def generate_forecast_guidance(
 ) -> ForecastGuidance:
     recent_trends = recent_trends or {}
     forecast_target = selected_model.forecast_targets[0] if selected_model.forecast_targets else "elite_initiated_event_count_next_period"
+    target_labels = {
+        "elite_initiated_event_count_next_period": ("число elite-initiated событий в следующем периоде", "elite-initiated event count next period"),
+        "high_severity_event_risk": ("риск событий высокой severity", "high-severity event risk"),
+        "institutional_crisis_risk": ("риск институционального кризиса", "institutional crisis risk"),
+        "reform_event_likelihood": ("вероятность реформаторских событий", "reform event likelihood"),
+        "succession_event_risk": ("риск событий преемственности", "succession event risk"),
+        "post_succession_reform_or_purge_risk": ("риск реформ или чисток после преемственности", "post-succession reform or purge risk"),
+        "elite_turnover_spike_likelihood": ("вероятность всплеска обновления элиты", "elite turnover spike likelihood"),
+        "dynastic_succession_pressure": ("давление династической преемственности", "dynastic succession pressure"),
+        "heir_consolidation_risk": ("риск консолидации наследника", "heir consolidation risk"),
+        "royal_faction_displacement_risk": ("риск вытеснения королевской фракции", "royal faction displacement risk"),
+        "congress_turnover_intensity": ("интенсивность обновления на съезде", "congress turnover intensity"),
+        "norm_breaking_risk": ("риск нарушения норм", "norm-breaking risk"),
+        "post_congress_policy_shift_likelihood": ("вероятность смены курса после съезда", "post-congress policy shift likelihood"),
+        "old_guard_replacement_pressure": ("давление замещения старой гвардии", "old-guard replacement pressure"),
+        "security_apparatus_takeover_risk": ("риск захвата со стороны силового аппарата", "security apparatus takeover risk"),
+        "protest_repression_cycle_risk": ("риск цикла протестов и подавления", "protest-repression cycle risk"),
+        "purge_risk": ("риск чисток", "purge risk"),
+        "war_or_external_intervention_risk": ("риск войны или внешнего вмешательства", "war or external intervention risk"),
+        "protest_repression_risk": ("риск подавления протестов", "protest repression risk"),
+        "security_faction_consolidation_risk": ("риск консолидации силовой фракции", "security faction consolidation risk"),
+        "reform_package_likelihood": ("вероятность пакета реформ", "reform package likelihood"),
+        "technocratic_turnover_likelihood": ("вероятность технократического обновления", "technocratic turnover likelihood"),
+        "industrial_policy_shift_likelihood": ("вероятность сдвига промышленной политики", "industrial policy shift likelihood"),
+    }
+    target_ru, target_en = target_labels.get(forecast_target, (forecast_target, forecast_target))
     warnings = list(selected_model.warnings)
     if metrics.get("event_domain_richness", 0) == 0:
         warnings.append("Decision-domain data is sparse, so scenario quality is limited.")
@@ -763,9 +957,13 @@ def generate_forecast_guidance(
         warnings.append("Turnover is estimated indirectly or is missing.")
 
     baseline = "Moderate scenario pressure"
+    baseline_ru = "Умеренное сценарное давление"
     upside = "The favorable scenario is orderly adjustment with limited disruption."
+    upside_ru = "Благоприятный сценарий - упорядоченная адаптация с ограниченными потрясениями."
     downside = "The adverse scenario is sharper than baseline adjustment, with a higher-risk cluster of events."
-    indicators = list(selected_model.forecast_features)
+    downside_ru = "Неблагоприятный сценарий - более резкий сдвиг, чем базовая адаптация, с более рискованным кластером событий."
+    indicators = [_indicator_label(item, "en") for item in selected_model.forecast_features]
+    indicators_ru = [_indicator_label(item, "ru") for item in selected_model.forecast_features]
     features_used = list(dict.fromkeys(selected_model.recommended_metrics + selected_model.forecast_features))
 
     if selected_model.model_id == "institutional_domain_crisis_model":
@@ -777,10 +975,14 @@ def generate_forecast_guidance(
             bucket = "elevated"
         if float(metrics.get("event_domain_richness") or 0.0) >= 4:
             baseline = f"{bucket.capitalize()} scenario pressure: crisis and domain structure matter more than age."
+            baseline_ru = f"{_bucket_label_ru(bucket)} сценарное давление: кризис и структура доменов важнее возраста."
         else:
             baseline = f"{bucket.capitalize()} scenario pressure: institutions dominate interpretation, but data are sparse."
+            baseline_ru = f"{_bucket_label_ru(bucket)} сценарное давление: интерпретацию определяют институты, но данных мало."
         upside = "Upside: institutional control and crisis containment keep event severity bounded."
+        upside_ru = "Upside: институциональный контроль и удержание кризиса ограничивают тяжесть событий."
         downside = "Downside: crisis concentration, divided control, or security/finance/judicial conflict raises event risk."
+        downside_ru = "Downside: концентрация кризиса, разделенный контроль или конфликт между силовыми, финансовыми и судебными слоями повышают риск событий."
 
     elif selected_model.model_id == "gerontocracy_succession_model":
         score = (
@@ -798,8 +1000,11 @@ def generate_forecast_guidance(
         else:
             bucket = "low"
         baseline = f"{bucket.capitalize()} succession pressure: aging, low renewal, and lagged succession effects deserve attention."
+        baseline_ru = f"{_bucket_label_ru(bucket)} давление преемственности: старение, низкое обновление и отложенные эффекты преемственности заслуживают внимания."
         upside = "Upside: orderly succession produces managed transition and a short-lived reform window."
+        upside_ru = "Upside: упорядоченная преемственность дает управляемый переход и короткое окно реформ."
         downside = "Downside: unresolved succession increases the odds of crisis, delay, or post-transition purge."
+        downside_ru = "Downside: нерешенная преемственность повышает вероятность кризиса, задержки или чистки после перехода."
 
     elif selected_model.model_id == "dynastic_succession_model":
         royal_share = float(metrics.get("royal_elite_share") or 0.0)
@@ -809,8 +1014,11 @@ def generate_forecast_guidance(
         elif royal_share > 0.05:
             bucket = "elevated"
         baseline = f"{bucket.capitalize()} dynastic succession pressure: heir consolidation and branch balance are the key variables."
+        baseline_ru = f"{_bucket_label_ru(bucket)} давление династической преемственности: консолидация наследника и баланс ветвей являются ключевыми переменными."
         upside = "Upside: heir consolidation reduces factional uncertainty and allows managed reform."
+        upside_ru = "Upside: консолидация наследника снижает неопределенность между фракциями и позволяет проводить управляемые реформы."
         downside = "Downside: succession ambiguity or branch displacement raises purge and displacement risk."
+        downside_ru = "Downside: неопределенность преемственности или вытеснение ветви повышает риск чисток и смещений."
 
     elif selected_model.model_id == "party_congress_turnover_model":
         congress = float(metrics.get("party_congress_signal") or 0.0)
@@ -819,8 +1027,11 @@ def generate_forecast_guidance(
         if congress > 0 and turnover >= 0.2:
             bucket = "elevated"
         baseline = f"{bucket.capitalize()} congress-cycle pressure: turnover and norm changes matter more than annual age averages."
+        baseline_ru = f"{_bucket_label_ru(bucket)} давление цикла съездов: обновление и изменение норм важнее годовых средних по возрасту."
         upside = "Upside: the next cycle is orderly and promotes predictable retirement and promotion."
+        upside_ru = "Upside: следующий цикл проходит упорядоченно и дает предсказуемые ухода и повышения."
         downside = "Downside: norm-breaking centralization or central-committee conflict shifts policy unexpectedly."
+        downside_ru = "Downside: ломающее нормы централизация или конфликт в центральном комитете неожиданно меняют курс."
 
     elif selected_model.model_id == "revolutionary_generation_model":
         rev = float(metrics.get("revolutionary_generation_signal") or 0.0)
@@ -828,8 +1039,11 @@ def generate_forecast_guidance(
         if rev > 0:
             bucket = "elevated"
         baseline = f"{bucket.capitalize()} generational pressure: the aging and replacement of the founding cohort shapes the next period."
+        baseline_ru = f"{_bucket_label_ru(bucket)} поколенческое давление: старение и замещение основательского поколения формируют следующий период."
         upside = "Upside: generational replacement is controlled and keeps the security apparatus aligned."
+        upside_ru = "Upside: поколенческая смена контролируется и удерживает силовой аппарат в согласии."
         downside = "Downside: old-guard blockage or replacement shock raises repression and succession risk."
+        downside_ru = "Downside: блокировка старой гвардии или шок замещения повышают риск подавления и преемственности."
 
     elif selected_model.model_id == "security_state_faction_model":
         security = float(metrics.get("security_elite_share") or 0.0)
@@ -838,8 +1052,11 @@ def generate_forecast_guidance(
         if security >= 0.2 or purge > 0:
             bucket = "elevated"
         baseline = f"{bucket.capitalize()} security-faction pressure: coercive institutions and faction closure dominate the scenario."
+        baseline_ru = f"{_bucket_label_ru(bucket)} давление силовой фракции: силовые институты и закрытость фракции доминируют в сценарии."
         upside = "Upside: security consolidation remains stable and keeps spillovers contained."
+        upside_ru = "Upside: консолидация силового блока остается стабильной и удерживает побочные эффекты."
         downside = "Downside: faction conflict, repression, or war pressure creates a higher-risk event cluster."
+        downside_ru = "Downside: конфликт фракций, подавление или военное давление создают более рискованный кластер событий."
 
     elif selected_model.model_id == "developmental_bureaucratic_model":
         technocrat = float(metrics.get("technocrat_share") or 0.0)
@@ -848,8 +1065,11 @@ def generate_forecast_guidance(
         if technocrat > 0.12 or reform > 0:
             bucket = "elevated"
         baseline = f"{bucket.capitalize()} bureaucratic-reform pressure: technocratic turnover and policy packages matter more than age alone."
+        baseline_ru = f"{_bucket_label_ru(bucket)} бюрократико-реформаторское давление: технократическое обновление и пакеты политики важнее одного возраста."
         upside = "Upside: technocratic renewal keeps reform execution smooth and contained."
+        upside_ru = "Upside: технократическое обновление делает проведение реформ более плавным и управляемым."
         downside = "Downside: reform paralysis or economic stress shifts the system toward stagnation."
+        downside_ru = "Downside: паралич реформ или экономический стресс толкают систему к стагнации."
 
     if recent_trends:
         trend_parts = []
@@ -858,17 +1078,32 @@ def generate_forecast_guidance(
                 trend_parts.append(f"{key}={recent_trends[key]}")
         if trend_parts:
             baseline += " Recent trend context: " + ", ".join(trend_parts) + "."
+            baseline_ru += " Контекст последних трендов: " + ", ".join(trend_parts) + "."
 
     return ForecastGuidance(
         forecast_type="scenario",
+        forecast_type_ru="сценарный",
+        forecast_type_en="scenario",
         forecast_horizon_years=5,
         target=forecast_target,
+        target_ru=target_ru,
+        target_en=target_en,
         baseline_assessment=baseline,
+        baseline_assessment_ru=baseline_ru,
+        baseline_assessment_en=baseline,
         upside_scenario=upside,
+        upside_scenario_ru=upside_ru,
+        upside_scenario_en=upside,
         downside_scenario=downside,
+        downside_scenario_ru=downside_ru,
+        downside_scenario_en=downside,
         key_indicators_to_watch=indicators,
+        key_indicators_to_watch_ru=indicators_ru,
+        key_indicators_to_watch_en=indicators,
         features_used=features_used,
         warnings=warnings,
+        warnings_ru=[_translate_warning(item, "ru") for item in warnings],
+        warnings_en=warnings,
     )
 
 
@@ -930,6 +1165,7 @@ def select_model_family(
         secondary: list[str] = []
         confidence = 0.25
         rationale = "No registry data were available; defaulting to the institutional model."
+        rationale_ru = "Данные registry недоступны; по умолчанию выбрана институциональная модель."
         selected_family = families[recommended]
     else:
         recommended = ranked[0][0]
@@ -941,13 +1177,15 @@ def select_model_family(
         selected_family = families[recommended]
         rationale_bits = signals_by_model.get(recommended, [])[:4]
         rationale = "; ".join(rationale_bits) if rationale_bits else selected_family.description
+        rationale_ru = "; ".join(
+            _translate_selection_signal(_translate_prior_signal(item, "ru"), "ru") for item in rationale_bits
+        ) if rationale_bits else _translate_feature_hint(selected_family.description, "ru")
 
     if recommended not in families:
         selected_family = ModelFamily(model_id=recommended, label=recommended, description="")
+        rationale_ru = rationale
 
     period = {"start_year": int(start_year), "end_year": int(end_year)}
-    missing_warnings = _missing_feature_warnings(selected_family, files, metrics)
-    next_features = _recommended_next_features(recommended, metrics, files)
     recent_trends = {
         "core_mean_age": metrics.get("core_mean_age_mean"),
         "elite_turnover_rate": metrics.get("elite_turnover_rate"),
@@ -955,6 +1193,9 @@ def select_model_family(
         "security_elite_share": metrics.get("security_elite_share"),
     }
     forecast = generate_forecast_guidance(country, period, selected_family, metrics, recent_trends)
+    supporting_signals = signals_by_model.get(recommended, [])[:8]
+    missing_warnings = _missing_feature_warnings(selected_family, files, metrics)
+    next_features = _recommended_next_features(recommended, metrics, files)
 
     return ModelSelectionResult(
         country=country,
@@ -963,10 +1204,20 @@ def select_model_family(
         secondary_models=secondary,
         confidence=confidence,
         rationale=rationale,
-        supporting_signals=signals_by_model.get(recommended, [])[:8],
+        rationale_ru=rationale_ru,
+        rationale_en=rationale,
+        supporting_signals=supporting_signals,
+        supporting_signals_ru=[_translate_selection_signal(_translate_prior_signal(item, "ru"), "ru") for item in supporting_signals],
+        supporting_signals_en=supporting_signals,
         missing_data_warnings=missing_warnings,
+        missing_data_warnings_ru=[_translate_warning(item, "ru") for item in missing_warnings],
+        missing_data_warnings_en=missing_warnings,
         recommended_next_features=next_features,
+        recommended_next_features_ru=[_translate_feature_hint(item, "ru") for item in next_features],
+        recommended_next_features_en=next_features,
         forecast_guidance=forecast.baseline_assessment,
+        forecast_guidance_ru=forecast.baseline_assessment_ru,
+        forecast_guidance_en=forecast.baseline_assessment_en,
     )
 
 

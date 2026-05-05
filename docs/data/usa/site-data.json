@@ -49,7 +49,29 @@
       ],
       "confidence": 0.95,
       "rationale": "Prior match: USA 1789-2026 prefers institutional_domain_crisis_model.; Core elite age is weakly correlated with elite-initiated events.; Event data contains rich decision-domain structure.; Institutional layer is broad enough for an institutional model.",
+      "rationale_ru": "Совпадение с priors: USA 1789-2026 предпочитает институциональная/доменная/кризисная модель.; Возраст ядра элиты слабо связан с событиями, инициированными элитой.; Событийные данные содержат богатую структуру по доменам решений.; Институциональный слой достаточно широк для институциональной модели.",
+      "rationale_en": "Prior match: USA 1789-2026 prefers institutional_domain_crisis_model.; Core elite age is weakly correlated with elite-initiated events.; Event data contains rich decision-domain structure.; Institutional layer is broad enough for an institutional model.",
       "supporting_signals": [
+        "Prior match: USA 1789-2026 prefers institutional_domain_crisis_model.",
+        "Core elite age is weakly correlated with elite-initiated events.",
+        "Event data contains rich decision-domain structure.",
+        "Institutional layer is broad enough for an institutional model.",
+        "High-severity events are frequent enough to justify crisis framing.",
+        "Judicial layer is available.",
+        "Security layer is available.",
+        "Weak core elite age / elite-initiated event correlation supports a non-age-centered model."
+      ],
+      "supporting_signals_ru": [
+        "Совпадение с priors: USA 1789-2026 предпочитает институциональная/доменная/кризисная модель.",
+        "Возраст ядра элиты слабо связан с событиями, инициированными элитой.",
+        "Событийные данные содержат богатую структуру по доменам решений.",
+        "Институциональный слой достаточно широк для институциональной модели.",
+        "События высокой severity достаточно часты, чтобы оправдать кризисную рамку.",
+        "Судебный слой доступен.",
+        "Силовой слой доступен.",
+        "Слабая корреляция между возрастом core elite и elite-initiated событиями поддерживает не-возрастную модель."
+      ],
+      "supporting_signals_en": [
         "Prior match: USA 1789-2026 prefers institutional_domain_crisis_model.",
         "Core elite age is weakly correlated with elite-initiated events.",
         "Event data contains rich decision-domain structure.",
@@ -62,13 +84,33 @@
       "missing_data_warnings": [
         "yearly_context.csv is absent, so party-control and crisis flags are inferred indirectly."
       ],
+      "missing_data_warnings_ru": [
+        "Файл yearly_context.csv отсутствует, поэтому сигналы партийного контроля и кризиса выводятся косвенно."
+      ],
+      "missing_data_warnings_en": [
+        "yearly_context.csv is absent, so party-control and crisis flags are inferred indirectly."
+      ],
       "recommended_next_features": [
         "yearly_context.csv with party-control, divided-government, and crisis flags",
         "institution-level decision-domain classification",
         "war, emergency, and institutional-control indicators",
         "yearly_context.csv for better crisis and control signals"
       ],
-      "forecast_guidance": "Elevated scenario pressure: crisis and domain structure matter more than age. Recent trend context: core_mean_age=62.865, elite_turnover_rate=0.41959756097560974, high_severity_event_rate=0.9382716049382716, security_elite_share=0.17223480558701398."
+      "recommended_next_features_ru": [
+        "yearly_context.csv с признаками партийного контроля, разделенного управления и кризиса",
+        "классификация доменов решений на уровне институтов",
+        "индикаторы войны, чрезвычайного положения и институционального контроля",
+        "yearly_context.csv для лучших сигналов кризиса и контроля"
+      ],
+      "recommended_next_features_en": [
+        "yearly_context.csv with party-control, divided-government, and crisis flags",
+        "institution-level decision-domain classification",
+        "war, emergency, and institutional-control indicators",
+        "yearly_context.csv for better crisis and control signals"
+      ],
+      "forecast_guidance": "Elevated scenario pressure: crisis and domain structure matter more than age. Recent trend context: core_mean_age=62.865, elite_turnover_rate=0.41959756097560974, high_severity_event_rate=0.9382716049382716, security_elite_share=0.17223480558701398.",
+      "forecast_guidance_ru": "Повышенное сценарное давление: кризис и структура доменов важнее возраста. Контекст последних трендов: core_mean_age=62.865, elite_turnover_rate=0.41959756097560974, high_severity_event_rate=0.9382716049382716, security_elite_share=0.17223480558701398.",
+      "forecast_guidance_en": "Elevated scenario pressure: crisis and domain structure matter more than age. Recent trend context: core_mean_age=62.865, elite_turnover_rate=0.41959756097560974, high_severity_event_rate=0.9382716049382716, security_elite_share=0.17223480558701398."
     },
     "selected_family": {
       "model_id": "institutional_domain_crisis_model",
@@ -132,18 +174,44 @@
     },
     "forecast": {
       "forecast_type": "scenario",
+      "forecast_type_ru": "сценарный",
+      "forecast_type_en": "scenario",
       "forecast_horizon_years": 5,
       "target": "elite_initiated_event_count_next_period",
+      "target_ru": "число elite-initiated событий в следующем периоде",
+      "target_en": "elite-initiated event count next period",
       "baseline_assessment": "Elevated scenario pressure: crisis and domain structure matter more than age. Recent trend context: core_mean_age=62.865, elite_turnover_rate=0.41959756097560974, high_severity_event_rate=0.9382716049382716, security_elite_share=0.17223480558701398.",
+      "baseline_assessment_ru": "Повышенное сценарное давление: кризис и структура доменов важнее возраста. Контекст последних трендов: core_mean_age=62.865, elite_turnover_rate=0.41959756097560974, high_severity_event_rate=0.9382716049382716, security_elite_share=0.17223480558701398.",
+      "baseline_assessment_en": "Elevated scenario pressure: crisis and domain structure matter more than age. Recent trend context: core_mean_age=62.865, elite_turnover_rate=0.41959756097560974, high_severity_event_rate=0.9382716049382716, security_elite_share=0.17223480558701398.",
       "upside_scenario": "Upside: institutional control and crisis containment keep event severity bounded.",
+      "upside_scenario_ru": "Upside: институциональный контроль и удержание кризиса ограничивают тяжесть событий.",
+      "upside_scenario_en": "Upside: institutional control and crisis containment keep event severity bounded.",
       "downside_scenario": "Downside: crisis concentration, divided control, or security/finance/judicial conflict raises event risk.",
+      "downside_scenario_ru": "Downside: концентрация кризиса, разделенный контроль или конфликт между силовыми, финансовыми и судебными слоями повышают риск событий.",
+      "downside_scenario_en": "Downside: crisis concentration, divided control, or security/finance/judicial conflict raises event risk.",
       "key_indicators_to_watch": [
-        "major_crisis",
-        "divided_government",
-        "high_severity_event_rate",
-        "natsec_elite_share",
-        "finance_elite_share",
-        "judicial_elite_share"
+        "major crisis",
+        "divided government",
+        "high severity event rate",
+        "natsec elite share",
+        "finance elite share",
+        "judicial elite share"
+      ],
+      "key_indicators_to_watch_ru": [
+        "крупный кризис",
+        "разделенное управление",
+        "частота событий высокой severity",
+        "доля национально-безопасностной элиты",
+        "доля финансовой элиты",
+        "доля судебной элиты"
+      ],
+      "key_indicators_to_watch_en": [
+        "major crisis",
+        "divided government",
+        "high severity event rate",
+        "natsec elite share",
+        "finance elite share",
+        "judicial elite share"
       ],
       "features_used": [
         "event_count_by_institution",
@@ -161,6 +229,14 @@
         "judicial_elite_share"
       ],
       "warnings": [
+        "Do not overinterpret low age/event correlations.",
+        "Forecasts should be scenario-based rather than deterministic."
+      ],
+      "warnings_ru": [
+        "Do not overinterpret low age/event correlations.",
+        "Forecasts should be scenario-based rather than deterministic."
+      ],
+      "warnings_en": [
         "Do not overinterpret low age/event correlations.",
         "Forecasts should be scenario-based rather than deterministic."
       ]

@@ -49,7 +49,27 @@
       ],
       "confidence": 0.95,
       "rationale": "Prior match: Russia 1991-1999 prefers security_state_faction_model.; Prior match: Russia 2000-2026 prefers security_state_faction_model.; Security elite share is high.; War or military pressure signals are present.",
+      "rationale_ru": "Совпадение с priors: Russia 1991-1999 предпочитает модель силового государства и фракций.; Совпадение с priors: Russia 2000-2026 предпочитает модель силового государства и фракций.; Доля силовой элиты высока.; Присутствуют сигналы войны или военного давления.",
+      "rationale_en": "Prior match: Russia 1991-1999 prefers security_state_faction_model.; Prior match: Russia 2000-2026 prefers security_state_faction_model.; Security elite share is high.; War or military pressure signals are present.",
       "supporting_signals": [
+        "Prior match: Russia 1991-1999 prefers security_state_faction_model.",
+        "Prior match: Russia 2000-2026 prefers security_state_faction_model.",
+        "Security elite share is high.",
+        "War or military pressure signals are present.",
+        "Purge or repression signals are present.",
+        "Protest signals are present.",
+        "Faction concentration is substantial."
+      ],
+      "supporting_signals_ru": [
+        "Совпадение с priors: Russia 1991-1999 предпочитает модель силового государства и фракций.",
+        "Совпадение с priors: Russia 2000-2026 предпочитает модель силового государства и фракций.",
+        "Доля силовой элиты высока.",
+        "Присутствуют сигналы войны или военного давления.",
+        "Присутствуют сигналы чисток или подавления.",
+        "Присутствуют протестные сигналы.",
+        "Концентрация фракций значительна."
+      ],
+      "supporting_signals_en": [
         "Prior match: Russia 1991-1999 prefers security_state_faction_model.",
         "Prior match: Russia 2000-2026 prefers security_state_faction_model.",
         "Security elite share is high.",
@@ -62,13 +82,35 @@
         "yearly_context.csv is absent, so party-control and crisis flags are inferred indirectly.",
         "periods.csv is absent, so periodization is weaker and priors matter more."
       ],
+      "missing_data_warnings_ru": [
+        "Файл yearly_context.csv отсутствует, поэтому сигналы партийного контроля и кризиса выводятся косвенно.",
+        "Файл periods.csv отсутствует, поэтому периодизация слабее и priors важнее."
+      ],
+      "missing_data_warnings_en": [
+        "yearly_context.csv is absent, so party-control and crisis flags are inferred indirectly.",
+        "periods.csv is absent, so periodization is weaker and priors matter more."
+      ],
       "recommended_next_features": [
         "security-faction labels",
         "purge and repression event tags",
         "military/intelligence network mapping",
         "yearly_context.csv for better crisis and control signals"
       ],
-      "forecast_guidance": "Elevated security-faction pressure: coercive institutions and faction closure dominate the scenario. Recent trend context: core_mean_age=53.07345132743363, elite_turnover_rate=0.3582256637168142, high_severity_event_rate=0.9236111111111112, security_elite_share=0.15778688524590165."
+      "recommended_next_features_ru": [
+        "метки силовых фракций",
+        "теги чисток и подавления",
+        "картирование военных и разведывательных сетей",
+        "yearly_context.csv для лучших сигналов кризиса и контроля"
+      ],
+      "recommended_next_features_en": [
+        "security-faction labels",
+        "purge and repression event tags",
+        "military/intelligence network mapping",
+        "yearly_context.csv for better crisis and control signals"
+      ],
+      "forecast_guidance": "Elevated security-faction pressure: coercive institutions and faction closure dominate the scenario. Recent trend context: core_mean_age=53.07345132743363, elite_turnover_rate=0.3582256637168142, high_severity_event_rate=0.9236111111111112, security_elite_share=0.15778688524590165.",
+      "forecast_guidance_ru": "Повышенное давление силовой фракции: силовые институты и закрытость фракции доминируют в сценарии. Контекст последних трендов: core_mean_age=53.07345132743363, elite_turnover_rate=0.3582256637168142, high_severity_event_rate=0.9236111111111112, security_elite_share=0.15778688524590165.",
+      "forecast_guidance_en": "Elevated security-faction pressure: coercive institutions and faction closure dominate the scenario. Recent trend context: core_mean_age=53.07345132743363, elite_turnover_rate=0.3582256637168142, high_severity_event_rate=0.9236111111111112, security_elite_share=0.15778688524590165."
     },
     "selected_family": {
       "model_id": "security_state_faction_model",
@@ -129,17 +171,41 @@
     },
     "forecast": {
       "forecast_type": "scenario",
+      "forecast_type_ru": "сценарный",
+      "forecast_type_en": "scenario",
       "forecast_horizon_years": 5,
       "target": "purge_risk",
+      "target_ru": "риск чисток",
+      "target_en": "purge risk",
       "baseline_assessment": "Elevated security-faction pressure: coercive institutions and faction closure dominate the scenario. Recent trend context: core_mean_age=53.07345132743363, elite_turnover_rate=0.3582256637168142, high_severity_event_rate=0.9236111111111112, security_elite_share=0.15778688524590165.",
+      "baseline_assessment_ru": "Повышенное давление силовой фракции: силовые институты и закрытость фракции доминируют в сценарии. Контекст последних трендов: core_mean_age=53.07345132743363, elite_turnover_rate=0.3582256637168142, high_severity_event_rate=0.9236111111111112, security_elite_share=0.15778688524590165.",
+      "baseline_assessment_en": "Elevated security-faction pressure: coercive institutions and faction closure dominate the scenario. Recent trend context: core_mean_age=53.07345132743363, elite_turnover_rate=0.3582256637168142, high_severity_event_rate=0.9236111111111112, security_elite_share=0.15778688524590165.",
       "upside_scenario": "Upside: security consolidation remains stable and keeps spillovers contained.",
+      "upside_scenario_ru": "Upside: консолидация силового блока остается стабильной и удерживает побочные эффекты.",
+      "upside_scenario_en": "Upside: security consolidation remains stable and keeps spillovers contained.",
       "downside_scenario": "Downside: faction conflict, repression, or war pressure creates a higher-risk event cluster.",
+      "downside_scenario_ru": "Downside: конфликт фракций, подавление или военное давление создают более рискованный кластер событий.",
+      "downside_scenario_en": "Downside: faction conflict, repression, or war pressure creates a higher-risk event cluster.",
       "key_indicators_to_watch": [
-        "security_elite_share",
-        "faction_concentration",
-        "recent_purge_or_repression_events",
-        "war_or_external_pressure",
-        "turnover_decline"
+        "security elite share",
+        "faction concentration",
+        "recent purge or repression events",
+        "war or external pressure",
+        "turnover decline"
+      ],
+      "key_indicators_to_watch_ru": [
+        "доля силовой элиты",
+        "концентрация фракций",
+        "недавние чистки или подавление",
+        "война или внешнее давление",
+        "снижение обновления элиты"
+      ],
+      "key_indicators_to_watch_en": [
+        "security elite share",
+        "faction concentration",
+        "recent purge or repression events",
+        "war or external pressure",
+        "turnover decline"
       ],
       "features_used": [
         "security_elite_share",
@@ -156,6 +222,12 @@
         "turnover_decline"
       ],
       "warnings": [
+        "Age may matter mainly through faction closure and security bloc dominance."
+      ],
+      "warnings_ru": [
+        "Age may matter mainly through faction closure and security bloc dominance."
+      ],
+      "warnings_en": [
         "Age may matter mainly through faction closure and security bloc dominance."
       ]
     },
