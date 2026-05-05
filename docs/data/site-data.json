@@ -20,8 +20,8 @@
     },
     {
       "key": "age_vs_renewal",
-      "ru": "Чем старше core elite, тем слабее renewal_5y: r=-0.449.",
-      "en": "Older core elite coincides with weaker renewal_5y: r=-0.449."
+      "ru": "Чем старше core elite, тем слабее обновление за 5 лет: r=-0.449.",
+      "en": "Older core elite coincides with weaker 5-year renewal: r=-0.449."
     },
     {
       "key": "ruler_vs_core",
@@ -30,8 +30,8 @@
     },
     {
       "key": "fragmentation_signal",
-      "ru": "Событийная фрагментация и число elite-initiated событий движутся слабо совместно; сама fragmentation_index остаётся полезным индикатором концентрации власти.",
-      "en": "Event fragmentation and the number of elite-initiated events move only weakly together; fragmentation_index remains a useful concentration signal."
+      "ru": "Событийная фрагментация и число elite-initiated событий движутся слабо совместно; сам индекс фрагментации остаётся полезным индикатором концентрации власти.",
+      "en": "Event fragmentation and the number of elite-initiated events move only weakly together; the fragmentation index remains a useful concentration signal."
     }
   ],
   "correlations": {

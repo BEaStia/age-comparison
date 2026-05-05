@@ -138,8 +138,8 @@
             en: "Core elite aging dashboard",
           },
           caption: {
-            ru: "Средний возраст, 60+/70+, renewal_5y и размер ядра власти.",
-            en: "Mean age, 60+/70+, renewal_5y, and core size.",
+            ru: "Средний возраст, 60+/70+, обновление за 5 лет и размер ядра власти.",
+            en: "Mean age, 60+/70+, 5-year renewal, and core size.",
           },
         },
         {
@@ -230,8 +230,8 @@
             en: "Faction power",
           },
           caption: {
-            ru: "Stacked area chart по normalized_power_share.",
-            en: "Stacked area chart of normalized_power_share.",
+            ru: "Stacked area chart по нормированной доле власти.",
+            en: "Stacked area chart of normalized power share.",
           },
         },
         {
@@ -255,8 +255,8 @@
             en: "Fragmentation index",
           },
           caption: {
-            ru: "1 - sum(normalized_power_share^2).",
-            en: "1 - sum(normalized_power_share^2).",
+            ru: "1 минус сумма квадратов нормированной доли власти.",
+            en: "1 minus the sum of squared normalized power shares.",
           },
         },
         {
@@ -267,8 +267,8 @@
             en: "Faction power heatmap",
           },
           caption: {
-            ru: "Год x фракция по normalized_power_share.",
-            en: "Year by faction heatmap of normalized_power_share.",
+            ru: "Год x фракция по нормированной доле власти.",
+            en: "Year by faction heatmap of normalized power share.",
           },
         },
         {
@@ -420,8 +420,8 @@
           id: "events_by_domain",
           src: "figures/events_by_domain.png",
           title: {
-            ru: "События по decision_domain",
-            en: "Events by decision_domain",
+            ru: "События по доменам решений",
+            en: "Events by decision domains",
           },
           caption: {
             ru: "Расклад по доменам решений.",
@@ -458,7 +458,7 @@
         {
           x: "core_mean_age",
           y: "renewal_5y",
-          ru: "Чем старше core elite, тем слабее renewal_5y.",
+          ru: "Чем старше core elite, тем слабее обновление за 5 лет.",
           en: "Older core elite aligns with weaker 5-year renewal.",
         },
         {
@@ -475,8 +475,8 @@
         {
           x: "normalized_power_share",
           y: "mean_political_age",
-          ru: "Более возрастные фракции обычно имеют меньшую normalized_power_share.",
-          en: "Older factions usually carry a lower normalized_power_share.",
+          ru: "Более возрастные фракции обычно имеют меньшую нормированную долю власти.",
+          en: "Older factions usually carry a lower normalized power share.",
         },
         {
           x: "raw_power_share",
@@ -504,8 +504,8 @@
         {
           x: "core_mean_age",
           y: "renewal_5y",
-          ru: "Старение core elite идёт вместе со снижением renewal_5y.",
-          en: "Aging core elite goes together with lower renewal_5y.",
+          ru: "Старение core elite идёт вместе со снижением обновления за 5 лет.",
+          en: "Aging core elite goes together with lower 5-year renewal.",
         },
       ],
     },
@@ -1267,15 +1267,15 @@
               <div class="correlation-item">
                 ${escapeHtml(
                   state.lang === "ru"
-                    ? "Поле political_entry_date местами приближено; его лучше уточнять итеративно по источникам."
-                    : "The political_entry_date field is approximate in places; it should be tightened iteratively against sources."
+                    ? "Поле даты политического входа местами приближено; его лучше уточнять итеративно по источникам."
+                    : "The political-entry date is approximate in places; it should be tightened iteratively against sources."
                 )}
               </div>
               <div class="correlation-item">
                 ${escapeHtml(
                   state.lang === "ru"
-                    ? "Фракционный слой лучше сравнивать через faction_type, а не напрямую между историческими faction_id."
-                    : "The faction layer is better compared through faction_type than directly across historical faction_id values."
+                    ? "Фракционный слой лучше сравнивать через тип фракции, а не напрямую между историческими идентификаторами фракций."
+                    : "The faction layer is better compared through faction type than directly across historical faction identifiers."
                 )}
               </div>
               <div class="correlation-item">
@@ -1288,8 +1288,8 @@
               <div class="correlation-item">
                 ${escapeHtml(
                   state.lang === "ru"
-                    ? `Читабельные лейблы используются для event_type, institution и period_id; например, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
-                    : `Readable labels are used for event_type, institution, and period_id; for example, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
+                    ? `Читабельные лейблы используются для типа события, института и периода; например, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
+                    : `Readable labels are used for event type, institution, and period; for example, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
                 )}
               </div>
             </div>
