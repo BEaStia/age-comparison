@@ -1,0 +1,19 @@
+event_id,date,event_name,event_type,severity,decision_direction,notes,year,dominant_faction_id,fragmentation_index,top_3_factions
+war_1812,1812-06-24,Отечественная война 1812 года,war,5,defensive_war,,1812,imp_dynastic_court,0.0,imp_dynastic_court
+decembrist_revolt,1825-12-26,Восстание декабристов,revolt,4,elite_crisis,,1825,imp_dynastic_court,0.814,"imp_dynastic_court, imp_conservative_bureaucracy, imp_military_aristocracy"
+crimean_war,1853-10-16,Крымская война,war,5,foreign_policy,,1853,imp_dynastic_court,0.4366,"imp_dynastic_court, imp_foreign_policy_chancery"
+serfdom_abolition,1861-03-03,Отмена крепостного права,reform,5,liberalization,,1861,imp_dynastic_court,0.4508,"imp_dynastic_court, imp_foreign_policy_chancery"
+revolution_1905,1905-01-22,Революция 1905 года,revolution,5,regime_crisis,,1905,imp_dynastic_court,0.6184,"imp_dynastic_court, imp_church_synod, imp_conservative_bureaucracy"
+ww1,1914-08-01,Первая мировая война,war,5,foreign_policy,,1914,imp_dynastic_court,0.2378,"imp_dynastic_court, imp_court_favorites"
+february_revolution,1917-03-08,Февральская революция,revolution,5,regime_collapse,,1917,imp_zemstvo_liberal,0.0,imp_zemstvo_liberal
+october_revolution,1917-11-07,Октябрьская революция,revolution,5,regime_change,,1917,imp_zemstvo_liberal,0.0,imp_zemstvo_liberal
+great_terror,1937-07-30,Большой террор,repression,5,repression,,1937,stalin_inner_circle,0.727,"stalin_inner_circle, stalin_party_apparatus, rev_old_bolsheviks"
+ww2_ussr,1941-06-22,Великая Отечественная война,war,5,defensive_war,,1941,stalin_inner_circle,0.6562,"stalin_inner_circle, stalin_party_apparatus, stalin_security_apparatus"
+twentieth_congress,1956-02-25,XX съезд КПСС,reform,4,de_stalinization,,1956,poststalin_collective_leadership,0.6094,"poststalin_collective_leadership, khrushchev_group, poststalin_ideological_apparatus"
+afghan_war,1979-12-24,Ввод войск в Афганистан,war,5,foreign_policy,,1979,lateussr_party_apparatus,0.7467,"lateussr_party_apparatus, brezhnev_inner_circle, dnipropetrovsk_network"
+gorbachev_power,1985-03-11,Горбачёв становится генсеком,leadership_change,4,renewal,,1985,lateussr_party_apparatus,0.7717,"lateussr_party_apparatus, perestroika_gorbachev_reformers, perestroika_union_center"
+ussr_collapse,1991-12-26,Распад СССР,state_collapse,5,regime_collapse,,1991,perestroika_gorbachev_reformers,0.6391,"perestroika_gorbachev_reformers, perestroika_union_center, perestroika_security_apparatus"
+default_1998,1998-08-17,Дефолт 1998 года,economic_crisis,4,economic,,1998,technocrats,0.0,technocrats
+georgia_war_2008,2008-08-08,Война в Грузии,war,4,foreign_policy,,2008,siloviki,0.8775,"siloviki, st_petersburg_network, fsb_security"
+crimea_2014,2014-03-18,Аннексия Крыма,territorial_change,5,foreign_policy,,2014,siloviki,0.8319,"siloviki, central_leader, st_petersburg_network"
+ukraine_2022,2022-02-24,Полномасштабное вторжение в Украину,war,5,foreign_policy,,2022,siloviki,0.8514,"siloviki, technocrats, central_leader"

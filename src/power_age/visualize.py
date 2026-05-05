@@ -16,6 +16,7 @@ from matplotlib.ticker import MultipleLocator  # noqa: E402
 import pandas as pd  # noqa: E402
 
 from power_age.compute import active_positions_for_year, age_on_date  # noqa: E402
+from power_age.events import filter_elite_initiated_events  # noqa: E402
 
 
 def _prepare_output(output_path: str | Path) -> Path:
@@ -33,12 +34,18 @@ def plot_ruler_age_timeline(
     elite_year: pd.DataFrame,
     events: pd.DataFrame,
     output_path: str | Path,
+    elite_only: bool = True,
+    min_confidence: float = 0.5,
 ) -> None:
     path = _prepare_output(output_path)
     fig, ax = plt.subplots(figsize=(14, 7))
     ax.plot(elite_year["year"], elite_year["ruler_age"], color="#1f5a7a", linewidth=2)
 
-    event_points = events.copy()
+    event_points = (
+        filter_elite_initiated_events(events, min_confidence=min_confidence)
+        if elite_only
+        else events.copy()
+    )
     event_points["year"] = event_points["date"].dt.year
     event_points = event_points.merge(
         elite_year[["year", "ruler_age"]], on="year", how="left"
@@ -69,6 +76,102 @@ def plot_ruler_age_timeline(
     ax.set_title("Возраст правителя и ключевые события, 1801-2026")
     ax.set_xlabel("Год")
     ax.set_ylabel("Возраст правителя")
+    _set_year_axis(ax)
+    ax.grid(True, alpha=0.25)
+    fig.tight_layout()
+    fig.savefig(path, dpi=160)
+    plt.close(fig)
+
+
+def plot_events_by_year(events: pd.DataFrame, output_path: str | Path) -> None:
+    path = _prepare_output(output_path)
+    elite_events = filter_elite_initiated_events(events)
+    fig, ax = plt.subplots(figsize=(14, 7))
+    if elite_events.empty:
+        ax.text(0.5, 0.5, "Нет данных", ha="center", va="center", transform=ax.transAxes)
+    else:
+        counts = elite_events.groupby(elite_events["date"].dt.year).size()
+        ax.bar(counts.index, counts.values, color="#1f5a7a")
+    ax.set_title("Elite-initiated события по годам")
+    ax.set_xlabel("Год")
+    ax.set_ylabel("Событий")
+    _set_year_axis(ax)
+    ax.grid(True, axis="y", alpha=0.25)
+    fig.tight_layout()
+    fig.savefig(path, dpi=160)
+    plt.close(fig)
+
+
+def plot_events_by_period(period_summary: pd.DataFrame, output_path: str | Path) -> None:
+    path = _prepare_output(output_path)
+    fig, ax = plt.subplots(figsize=(12, 7))
+    if period_summary.empty:
+        ax.text(0.5, 0.5, "Нет данных", ha="center", va="center", transform=ax.transAxes)
+    else:
+        ax.bar(period_summary["period_label"], period_summary["events_count"], color="#6f4e9b")
+        ax.tick_params(axis="x", rotation=25)
+    ax.set_title("Elite-initiated события по периодам")
+    ax.set_ylabel("Событий")
+    ax.grid(True, axis="y", alpha=0.25)
+    fig.tight_layout()
+    fig.savefig(path, dpi=160)
+    plt.close(fig)
+
+
+def plot_events_by_domain(domain_summary: pd.DataFrame, output_path: str | Path) -> None:
+    path = _prepare_output(output_path)
+    fig, ax = plt.subplots(figsize=(12, 7))
+    if domain_summary.empty:
+        ax.text(0.5, 0.5, "Нет данных", ha="center", va="center", transform=ax.transAxes)
+    else:
+        data = domain_summary.sort_values("events_count", ascending=False).head(20)
+        ax.bar(data["decision_domain"], data["events_count"], color="#2f7d4f")
+        ax.tick_params(axis="x", rotation=35, labelsize=8)
+    ax.set_title("Elite-initiated события по decision_domain")
+    ax.set_ylabel("Событий")
+    ax.grid(True, axis="y", alpha=0.25)
+    fig.tight_layout()
+    fig.savefig(path, dpi=160)
+    plt.close(fig)
+
+
+def plot_event_severity_timeline(events: pd.DataFrame, output_path: str | Path) -> None:
+    path = _prepare_output(output_path)
+    elite_events = filter_elite_initiated_events(events)
+    fig, ax = plt.subplots(figsize=(14, 7))
+    if elite_events.empty:
+        ax.text(0.5, 0.5, "Нет данных", ha="center", va="center", transform=ax.transAxes)
+    else:
+        data = elite_events.copy()
+        data["year"] = data["date"].dt.year
+        confidence = (
+            pd.to_numeric(data["confidence"], errors="coerce").fillna(1.0)
+            if "confidence" in data.columns
+            else pd.Series(1.0, index=data.index)
+        )
+        ax.scatter(
+            data["year"],
+            data["severity"],
+            s=40 + confidence * 120,
+            alpha=0.35 + confidence * 0.55,
+            color="#b33a3a",
+            edgecolor="white",
+            linewidth=0.7,
+        )
+        for _, row in data[data["severity"] >= 5].iterrows():
+            ax.annotate(
+                row["event_name"],
+                (row["year"], row["severity"]),
+                xytext=(5, 6),
+                textcoords="offset points",
+                fontsize=7,
+                rotation=25,
+                ha="left",
+            )
+    ax.set_title("Severity timeline elite-initiated событий")
+    ax.set_xlabel("Год")
+    ax.set_ylabel("Severity")
+    ax.set_ylim(0.5, 5.5)
     _set_year_axis(ax)
     ax.grid(True, alpha=0.25)
     fig.tight_layout()

@@ -1,0 +1,10 @@
+source_id,source_name,url,source_type,notes
+kremlin_security_council_members,President of Russia: Security Council members,https://en.kremlin.ru/structure/security-council/members,official,Useful for current formal security council roles.
+russian_government_persons,Government of the Russian Federation: persons,https://government.ru/en/persons/,official,Useful for current government roles.
+kremlin_admin,President of Russia: Presidential Executive Office,https://en.kremlin.ru/structure/administration,official,Useful for current administration roles.
+carnegie_kremlin_towers,Carnegie: Russian Elite Opinion after Crimea,https://carnegieendowment.org/research/2015/11/russian-elite-opinion-after-crimea,analysis,"Discusses alternative models of Russian elite, including Kremlin towers model."
+russia_political_elite_public_discourse,Public analytical discourse on Russian elite groups,,analytical_category,Faction labels are research categories; verify before publication.
+historical_method_note,Method note,,methodological,Historical factions are analytical categories; verify with specialized historiography before publication.
+russian_empire_biographical_reference,Biographical reference layer for imperial officials,,reference_needed,Use official/academic biographical dictionaries for dates and offices.
+soviet_politburo_reference,Reference layer for Soviet Politburo and leadership,,reference_needed,Use Politburo membership lists and academic Soviet elite studies.
+perestroika_elite_reference,Reference layer for perestroika elite groups,,reference_needed,"Use memoirs, archival studies, and academic accounts of perestroika factions."

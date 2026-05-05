@@ -95,6 +95,22 @@ PNG-файлы сохраняются в `outputs/figures`.
 
 ![Возраст core elite по периодам](outputs/figures/period_age_boxplots.png)
 
+### Фракционная власть
+
+![Фракционная власть](outputs/figures/faction_power_share_stacked.png)
+
+### Возраст фракций
+
+![Средний возраст фракций](outputs/figures/faction_mean_age.png)
+
+![Взвешенный средний возраст фракций](outputs/figures/faction_weighted_mean_age.png)
+
+### Фрагментация и heatmap
+
+![Индекс фрагментации](outputs/figures/faction_fragmentation.png)
+
+![Heatmap фракционной власти](outputs/figures/faction_power_heatmap.png)
+
 Вывести краткую сводку:
 
 ```bash
@@ -124,6 +140,82 @@ pytest
 ```bash
 cp outputs/figures/*.png docs/figures/
 ```
+
+## Фракционный слой
+
+Проект поддерживает слой фракций, сетей влияния и условных "башен". Это гипотетическая multilabel-модель, а не утверждение о формальном или доказанном устройстве власти.
+
+Современный фракционный слой для РФ 1991-2026 и исторический фракционный слой 1801-1991 устроены по-разному. Нельзя механически переносить категории вроде `siloviki` или "башни Кремля" на Российскую империю, ранний СССР или сталинский период. Для сравнения эпох используется `faction_type`, а `faction_id` описывает конкретную историческую группу конкретного периода.
+
+Примеры:
+
+- `imp_bureaucratic_reformers` не равны `perestroika_gorbachev_reformers`, но обе группы можно анализировать как реформаторскую/идеологическую логику через `faction_type`.
+- `lateussr_kgb_security` и `siloviki` не одно и то же, но обе категории относятся к security/institutional logic.
+
+Файлы лежат в `data/raw`:
+
+- `factions.csv` - справочник фракций и сетей;
+- `person_factions.csv` - привязка людей к фракциям;
+- `faction_relations.csv` - гипотетические отношения между фракциями;
+- `elite_edges.csv` - гипотетические связи человек-человек;
+- `sources_factions.csv` - источники и навигационные ссылки;
+- `faction_model_config.json` - описание рекомендуемых формул.
+- `historical_faction_model_config.json` - методологические предупреждения для исторического слоя.
+
+Один человек может входить в несколько фракций. Поле `confidence` показывает уверенность в привязке от 0 до 1. По умолчанию расчеты используют `min_confidence=0.5`.
+
+Фракционная власть считается как:
+
+```text
+faction_person_power = influence_weight * confidence
+```
+
+В таблице `data/processed/faction_year.csv` есть две доли:
+
+- `raw_power_share` - доля относительно общего веса core elite за год. Из-за multilabel-принадлежности сумма по фракциям может быть больше 1.
+- `normalized_power_share` - доля относительно суммы фракционных power за год. Сумма по фракциям равна 1.
+
+Индекс фрагментации:
+
+```text
+fragmentation_index = 1 - sum(normalized_power_share^2)
+```
+
+Чем выше индекс, тем менее концентрирована фракционная власть в одной доминирующей группе.
+
+Команды:
+
+```bash
+python -m power_age.cli diagnostics
+python -m power_age.cli build-factions
+python -m power_age.cli plot-factions
+python -m power_age.cli faction-summary
+```
+
+Фракционные processed-файлы:
+
+- `data/processed/faction_year.csv`
+- `data/processed/faction_type_year.csv`
+- `data/processed/faction_fragmentation.csv`
+- `data/processed/events_with_faction_context.csv`
+
+Фракционные графики:
+
+- `faction_power_share_stacked.png`
+- `faction_type_power_share_stacked.png`
+- `faction_mean_age.png`
+- `faction_weighted_mean_age.png`
+- `faction_fragmentation.png`
+- `faction_power_heatmap.png`
+- `factions_empire_1801_1917.png`
+- `factions_revolution_1917_1924.png`
+- `factions_stalin_1924_1953.png`
+- `factions_poststalin_1953_1964.png`
+- `factions_lateussr_1964_1985.png`
+- `factions_perestroika_1985_1991.png`
+- `factions_rf_1991_2026.png`
+
+Фракционные принадлежности требуют ручной проверки источников и sensitivity analysis. Они являются исследовательскими аннотациями, а не фактом.
 
 ## Elite Addendum
 

@@ -1,0 +1,8 @@
+{
+  "notes": "Faction data are hypotheses and should be treated as multilabel probabilistic annotations, not facts.",
+  "recommended_weight_formula": "person_faction_power = influence_weight * confidence",
+  "faction_power_share_formula": "sum(person_faction_power for active core elite in faction) / sum(influence_weight for active core elite)",
+  "fragmentation_formula": "1 - sum(faction_power_share^2)",
+  "recommended_min_confidence_default": 0.5,
+  "overlap_policy": "Multilabel. One person can belong to several factions; shares may sum to more than 1 unless normalized."
+}

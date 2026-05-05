@@ -1,0 +1,51 @@
+source_person_id,target_person_id,start_year,end_year,edge_type,weight,confidence,notes
+putin,medvedev,2000,,patronage_close_associate,0.85,0.85,Long-running political partnership; Medvedev presidency and Security Council role
+putin,patrushev,1999,,security_network,0.85,0.85,Security Council / FSB-linked top elite
+putin,bortnikov,1999,,security_network,0.8,0.85,FSB-linked top elite
+putin,sechin,1999,,patronage_energy_network,0.85,0.8,Long-running association and energy/state-corporate influence
+putin,miller,2001,,state_corporation_network,0.75,0.75,Gazprom/state-corporate energy network
+putin,shoigu,2012,,delegated_security_military,0.7,0.75,Defense/Security Council role
+putin,kiriyenko,2016,,delegated_political_management,0.7,0.8,Domestic political management
+putin,vaino,2016,,administration,0.7,0.75,Chief of staff / Presidential Executive Office
+putin,mishustin,2020,,delegated_technocratic_management,0.7,0.75,Prime minister / technocratic management
+putin,nabiullina,2013,,delegated_macro_management,0.65,0.75,Central Bank / macroeconomic governance
+yeltsin,chubais,1994,2000,patronage_reform,0.8,0.8,Reform and administration link
+yeltsin,voloshin,1997,2000,administration,0.75,0.8,Presidential administration link
+yeltsin,berezovsky,1996,2000,political_business_network,0.7,0.65,Late-1990s business/media politics; contested
+voloshin,surkov,1999,2003,administration_successor_network,0.65,0.7,Presidential administration / political management
+surkov,kiriyenko,2016,2020,functional_succession,0.55,0.65,Domestic politics management succession hypothesis
+patrushev,bortnikov,1999,,institutional_security_network,0.75,0.75,FSB/Security Council institutional continuity
+shoigu,gerasimov,2012,2024,military_command,0.8,0.85,Defense ministry / General Staff relationship
+siluanov,nabiullina,2013,,macro_policy_coordination,0.65,0.75,Finance-Central Bank macroeconomic coordination
+kudrin,chubais,1996,2012,liberal_reform_network,0.65,0.7,Reformist/economic network
+kudrin,gref,2000,2012,liberal_technocratic_network,0.65,0.7,Economic policy and technocratic network
+alexander_i,speransky,1801,1812,ruler_reform_advisor,0.8,0.85,Reform adviser relationship
+alexander_i,arakcheev,1801,1825,ruler_personal_access,0.85,0.8,Personal/court influence
+nicholas_i,benckendorff,1826,1844,ruler_security_delegate,0.85,0.85,Third Section / security
+alexander_ii,milyutin_dmitry,1861,1881,ruler_reform_delegate,0.75,0.8,Military reform
+alexander_ii,reutern,1862,1878,ruler_finance_delegate,0.7,0.75,Finance modernization
+alexander_iii,pobedonostsev,1881,1894,ruler_ideological_advisor,0.8,0.8,Conservative ideological influence
+nicholas_ii,witte,1894,1906,ruler_finance_government,0.7,0.75,Finance/modernization and 1905 crisis
+nicholas_ii,stolypin,1906,1911,ruler_reform_security_delegate,0.75,0.75,Prime minister / reform-order combo
+nicholas_ii,rasputin,1907,1916,court_access,0.6,0.55,Contested informal court influence
+lenin,trotsky,1917,1924,revolutionary_coalition,0.8,0.8,Bolshevik leadership / civil war
+lenin,stalin,1919,1923,party_org_delegate,0.65,0.7,Party organizational role
+lenin,dzerzhinsky,1917,1924,security_delegate,0.75,0.8,Cheka
+trotsky,stalin,1922,1927,succession_rivalry,0.9,0.85,Post-Lenin rivalry
+stalin,molotov,1924,1953,inner_circle,0.9,0.9,Close Stalin-era associate
+stalin,kaganovich,1924,1953,inner_circle,0.85,0.85,Close Stalin-era associate
+stalin,beria,1938,1953,security_inner_circle,0.9,0.85,Security apparatus
+stalin,malenkov,1939,1953,party_inner_circle,0.8,0.8,Party/government cadre
+stalin,zhdanov,1934,1948,ideology_inner_circle,0.75,0.75,Ideology/party leadership
+stalin,voroshilov,1925,1940,military_inner_circle,0.75,0.75,Military-political associate
+khrushchev,zhukov,1953,1957,temporary_alliance,0.75,0.75,Anti-Beria/anti-party group context
+khrushchev,suslov,1955,1964,party_ideology,0.6,0.65,Party/ideological apparatus
+brezhnev,chernenko,1965,1982,inner_circle_administration,0.85,0.8,Brezhnev administrative ally
+brezhnev,ustinov,1965,1982,military_industrial_coalition,0.75,0.75,Defense industry / Politburo
+brezhnev,gromyko,1964,1982,foreign_policy_delegate,0.7,0.75,Foreign policy establishment
+andropov,kryuchkov,1974,1988,security_network,0.75,0.75,KGB/security succession network
+gorbachev,yakovlev_alexander,1985,1991,reform_alliance,0.9,0.85,Perestroika reform alliance
+gorbachev,shevardnadze,1985,1990,foreign_policy_reform_alliance,0.85,0.85,New Thinking foreign policy
+gorbachev,ligachev,1985,1990,intra_party_rivalry,0.75,0.75,Reform vs conservative tension
+gorbachev,yeltsin,1985,1991,rivalry_after_initial_alliance,0.85,0.8,From reformist promotion to conflict
+gorbachev,kryuchkov,1988,1991,security_tension,0.7,0.7,Security apparatus tension / 1991 context

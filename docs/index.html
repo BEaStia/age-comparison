@@ -236,6 +236,80 @@
           intervals нужны для первых графиков и последующей ручной проверки.
         </p>
       </section>
+
+      <section class="section">
+        <h2>Фракционный слой</h2>
+        <p class="note">
+          Фракции здесь являются вероятностными multilabel-аннотациями, а не
+          формальными институтами. Исторические faction_id периодно-специфичны;
+          сравнение между эпохами корректнее делать через faction_type.
+        </p>
+        <div class="grid">
+          <figure class="wide">
+            <img src="figures/faction_power_share_stacked.png" alt="Фракционная власть">
+            <figcaption>
+              <strong>Фракционная власть</strong>
+              <span>Stacked area chart по normalized_power_share.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/faction_type_power_share_stacked.png" alt="Фракционная власть по типам">
+            <figcaption>
+              <strong>Фракционная власть по faction_type</strong>
+              <span>Сравнимый между эпохами слой типов фракционной логики.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/faction_fragmentation.png" alt="Индекс фрагментации">
+            <figcaption>
+              <strong>Индекс фрагментации</strong>
+              <span>1 - sum(normalized_power_share^2).</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/faction_power_heatmap.png" alt="Heatmap фракционной власти">
+            <figcaption>
+              <strong>Heatmap фракционной власти</strong>
+              <span>Год x фракция по normalized_power_share.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/factions_empire_1801_1917.png" alt="Фракции Российской империи">
+            <figcaption>
+              <strong>Российская империя</strong>
+              <span>1801-1917.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/factions_stalin_1924_1953.png" alt="Фракции сталинского периода">
+            <figcaption>
+              <strong>Сталинский период</strong>
+              <span>1924-1953.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/factions_lateussr_1964_1985.png" alt="Фракции позднего СССР">
+            <figcaption>
+              <strong>Поздний СССР</strong>
+              <span>1964-1985.</span>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="figures/factions_rf_1991_2026.png" alt="Фракции РФ">
+            <figcaption>
+              <strong>Российская Федерация</strong>
+              <span>1991-2026.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
 
     <footer>

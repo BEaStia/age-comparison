@@ -205,6 +205,11 @@ def add_event_summary(elite_year: pd.DataFrame, events: pd.DataFrame) -> pd.Data
     result["max_event_severity"] = 0
     result["event_types"] = ""
     result["event_names"] = ""
+    result["elite_initiated_events_count"] = 0
+    result["elite_initiated_max_severity"] = 0
+    result["decision_domains"] = ""
+    result["initiator_groups"] = ""
+    result["high_confidence_events_count"] = 0
 
     for year, group in events.groupby(events["date"].dt.year):
         mask = result["year"] == int(year)
@@ -212,5 +217,23 @@ def add_event_summary(elite_year: pd.DataFrame, events: pd.DataFrame) -> pd.Data
         result.loc[mask, "max_event_severity"] = int(group["severity"].max())
         result.loc[mask, "event_types"] = ", ".join(sorted(group["event_type"].dropna().unique()))
         result.loc[mask, "event_names"] = "; ".join(group["event_name"].dropna().astype(str))
+        if "elite_initiated" in group.columns:
+            elite_group = group[group["elite_initiated"]].copy()
+        else:
+            elite_group = group.copy()
+        result.loc[mask, "elite_initiated_events_count"] = len(elite_group)
+        if not elite_group.empty:
+            result.loc[mask, "elite_initiated_max_severity"] = int(elite_group["severity"].max())
+        if "decision_domain" in group.columns:
+            result.loc[mask, "decision_domains"] = ", ".join(
+                sorted(group["decision_domain"].dropna().astype(str).unique())
+            )
+        if "initiator_group" in group.columns:
+            result.loc[mask, "initiator_groups"] = ", ".join(
+                sorted(group["initiator_group"].dropna().astype(str).unique())
+            )
+        if "confidence" in group.columns:
+            confidence = pd.to_numeric(group["confidence"], errors="coerce")
+            result.loc[mask, "high_confidence_events_count"] = int((confidence >= 0.8).sum())
 
     return result

@@ -1,0 +1,12 @@
+{
+  "coverage": "1801-1991 historical faction seed; modern 1991-2026 handled by power_age_factions_addendum.zip",
+  "methodology": [
+    "Faction labels are period-specific research hypotheses.",
+    "Do not compare faction_id labels mechanically across regimes; compare faction_type instead.",
+    "Use confidence thresholds and sensitivity checks.",
+    "One person may belong to several factions simultaneously."
+  ],
+  "recommended_join_strategy": "Append historical CSV rows into existing factions/person_factions/faction_relations/elite_edges, skipping duplicate IDs where appropriate.",
+  "recommended_default_min_confidence": 0.5,
+  "caution": "This is a seed dataset for visualization and model development, not an academic-grade final dataset."
+}

@@ -1,0 +1,203 @@
+person_id,faction_id,start_year,end_year,confidence,relation_type,notes
+putin,central_leader,1999,,1.0,leader,President/PM; central arbiter
+putin,st_petersburg_network,1991,,0.85,career_network,St Petersburg administration and early career network
+putin,siloviki,1975,,0.75,institutional_background,KGB/FSB background
+medvedev,central_leader,2000,,0.8,close_associate,President 2008-2012; Security Council deputy chair
+medvedev,st_petersburg_network,1990,,0.8,career_network,St Petersburg legal/administrative network
+medvedev,technocrats,2000,,0.55,functional_role,Administrative/legal executive role
+patrushev,siloviki,1975,,0.95,institutional_network,Security service and Security Council
+patrushev,fsb_security,1975,,0.95,institutional_network,FSB background
+bortnikov,siloviki,1975,,0.95,institutional_network,FSB director
+bortnikov,fsb_security,1975,,0.95,institutional_network,FSB director
+naryshkin,siloviki,2016,,0.75,institutional_role,SVR director
+naryshkin,st_petersburg_network,1990,,0.6,career_network,Often linked to St Petersburg networks
+shoigu,siloviki,2012,,0.8,institutional_role,Defense/Security Council
+shoigu,military_defense,2012,,0.85,institutional_role,Defense ministry and Security Council
+zolotov,siloviki,2000,,0.9,institutional_network,Rosgvardiya / security
+zolotov,fsb_security,2000,,0.55,security_network,Security background; not FSB-specific as main identity
+kolokoltsev,siloviki,2012,,0.85,institutional_role,Interior Ministry
+gerasimov,military_defense,2012,,0.95,institutional_role,General Staff
+gerasimov,siloviki,2012,,0.75,institutional_role,Military-security elite
+belousov,technocrats,2000,,0.85,functional_role,Economic/state planning background
+belousov,military_defense,2024,,0.65,institutional_role,Defense Minister since 2024
+mishustin,technocrats,2010,,0.95,functional_role,Tax administration / prime minister
+mishustin,central_leader,2020,,0.65,delegated_management,Prime minister
+nabiullina,technocrats,2000,,0.95,functional_role,Central Bank / macroeconomic governance
+nabiullina,liberal_economists,2000,,0.75,economic_policy_network,Macroeconomic policy bloc
+siluanov,technocrats,2011,,0.9,functional_role,Finance Ministry
+siluanov,liberal_economists,2011,,0.7,economic_policy_network,Fiscal policy bloc
+kudrin,liberal_economists,1996,2020,0.95,economic_policy_network,Fiscal conservative / reform network
+kudrin,st_petersburg_network,1990,,0.65,career_network,St Petersburg administration network
+chubais,liberal_economists,1991,2022,0.95,economic_policy_network,Privatization and reform network
+gref,liberal_economists,2000,,0.8,economic_policy_network,Economic reform/state-bank management
+gref,technocrats,2000,,0.85,functional_role,Minister / Sberbank
+manturov,technocrats,2012,,0.75,industrial_policy,Industry/trade management
+manturov,energy_state_corporations,2012,,0.55,sectoral_role,Industrial/state corporations overlap
+kiriyenko,political_managers,2016,,0.9,functional_role,Domestic politics in Presidential Administration
+kiriyenko,technocrats,1998,,0.75,functional_role,Government/state corporation management
+surkov,political_managers,1999,2020,0.95,functional_role,Domestic politics / party and ideology management
+voloshin,yeltsin_family,1997,2003,0.85,administration_network,Yeltsin-era presidential administration
+voloshin,political_managers,1997,2003,0.85,functional_role,Presidential administration
+vaino,central_leader,2016,,0.75,administration,"Chief of Staff, Presidential Executive Office"
+vaino,political_managers,2016,,0.7,functional_role,Presidential administration
+sobyanin,regional_mayoral_elites,2001,,0.9,regional_network,Tyumen/Moscow mayoral-administrative trajectory
+sobyanin,technocrats,2005,,0.75,functional_role,Administrative management
+volodin,political_managers,2010,,0.85,functional_role,Domestic politics / Duma
+volodin,parliamentary_elite,2016,,0.9,institutional_role,State Duma speaker
+matvienko,parliamentary_elite,2011,,0.9,institutional_role,Federation Council speaker
+matvienko,st_petersburg_network,2003,,0.65,regional_network,St Petersburg governor
+lavrov,foreign_policy,2004,,0.95,functional_role,Foreign Minister
+lavrov,central_leader,2004,,0.55,delegated_management,Core foreign policy executor
+sechin,energy_state_corporations,2004,,0.95,sectoral_control,Rosneft / energy
+sechin,siloviki,1999,,0.75,patronage_network,Often associated with siloviki in public analysis
+sechin,st_petersburg_network,1990,,0.75,career_network,St Petersburg / early Putin network
+miller,energy_state_corporations,2001,,0.95,sectoral_control,Gazprom
+miller,st_petersburg_network,1990,,0.65,career_network,St Petersburg network
+rotenberg_arkady,energy_state_corporations,2000,,0.65,business_network,"State contracts / infrastructure, public business influence"
+rotenberg_arkady,st_petersburg_network,2000,,0.65,personal_network,Longstanding personal/business associations
+berezovsky,oligarchic_business_1990s,1994,2000,0.9,business_media_influence,1990s business/media influence
+berezovsky,yeltsin_family,1996,2000,0.75,political_business_network,Late Yeltsin-era influence
+gusinsky,oligarchic_business_1990s,1993,2001,0.85,business_media_influence,Media/business influence
+abramovich,oligarchic_business_1990s,1996,2008,0.75,business_network,1990s/early 2000s business-political influence
+abramovich,yeltsin_family,1996,2000,0.65,political_business_network,Often linked to late-Yeltsin transition network
+alexander_i,imp_dynastic_court,1801,1825,1.0,ruler_dynastic,Emperor / dynastic ruler
+nicholas_i,imp_dynastic_court,1825,1855,1.0,ruler_dynastic,Emperor / dynastic ruler
+alexander_ii,imp_dynastic_court,1855,1881,1.0,ruler_dynastic,Emperor / dynastic ruler
+alexander_iii,imp_dynastic_court,1881,1894,1.0,ruler_dynastic,Emperor / dynastic ruler
+nicholas_ii,imp_dynastic_court,1894,1917,1.0,ruler_dynastic,Emperor / dynastic ruler
+speransky,imp_bureaucratic_reformers,1801,1812,0.95,reform_advisor,Early Alexander I reform project
+speransky,imp_conservative_bureaucracy,1821,1839,0.45,late_bureaucratic_service,Later service more conservative/administrative
+arakcheev,imp_military_aristocracy,1801,1825,0.9,military_court,Military/court power under Alexander I
+arakcheev,imp_court_favorites,1801,1825,0.85,personal_access,Personal access to Alexander I
+arakcheev,imp_conservative_bureaucracy,1815,1825,0.8,conservative_control,Military settlements / conservative administration
+kochubey,imp_bureaucratic_reformers,1801,1825,0.65,reform_circle,Unofficial Committee / administrative reform
+novosiltsev,imp_bureaucratic_reformers,1801,1820,0.7,reform_circle,Unofficial Committee
+nesselrode,imp_foreign_policy_chancery,1816,1856,0.95,foreign_policy,Foreign minister/chancellor
+kankrin,imp_finance_modernizers,1823,1844,0.9,finance,Finance minister
+kankrin,imp_conservative_bureaucracy,1823,1844,0.7,conservative_finance,Fiscal conservatism
+benckendorff,imp_security_police,1826,1844,0.95,security,Third Section
+benckendorff,imp_court_favorites,1826,1844,0.65,personal_access,Close access to Nicholas I
+gorchakov,imp_foreign_policy_chancery,1856,1882,0.95,foreign_policy,Foreign policy after Crimea
+milyutin_dmitry,imp_military_aristocracy,1861,1881,0.75,military_ministry,War minister
+milyutin_dmitry,imp_bureaucratic_reformers,1861,1881,0.85,military_reform,Military reform
+reutern,imp_finance_modernizers,1862,1878,0.9,finance,Finance minister
+lansky,imp_bureaucratic_reformers,1855,1861,0.65,emancipation_context,Interior minister during emancipation preparation
+shuvalov_pyotr,imp_security_police,1866,1874,0.85,security_court,Chief of gendarmes / Third Section
+pobedonostsev,imp_church_synod,1880,1905,0.95,church_state,Ober-Procurator of Holy Synod
+pobedonostsev,imp_conservative_bureaucracy,1881,1905,0.95,ideological_conservative,Conservative influence
+witte,imp_finance_modernizers,1892,1906,0.95,finance_modernizer,Finance minister / modernization
+witte,imp_bureaucratic_reformers,1905,1906,0.75,constitutional_crisis,October Manifesto / Council of Ministers
+stolypin,imp_bureaucratic_reformers,1906,1911,0.85,agrarian_reform,Agrarian reform
+stolypin,imp_security_police,1906,1911,0.75,interior_security,Interior minister / repression
+stolypin,imp_conservative_bureaucracy,1906,1911,0.65,order_reform_combo,Order plus reform
+goremykin,imp_conservative_bureaucracy,1895,1916,0.85,conservative_government,Conservative prime minister
+protopopov,imp_security_police,1916,1917,0.75,interior_ministry,Interior minister in final imperial crisis
+protopopov,imp_court_favorites,1916,1917,0.55,court_access,Court influence hypothesis
+rasputin,imp_court_favorites,1907,1916,0.8,personal_access,Highly contested court influence; not official
+lvov,imp_zemstvo_liberal,1905,1917,0.85,zemstvo_liberal,Zemstvo/liberal background
+kerensky,imp_zemstvo_liberal,1917,1917,0.55,provisional_politics,Provisional Government/liberal-socialist transitional layer
+lenin,rev_old_bolsheviks,1917,1924,0.85,generation,Old Bolshevik generation; not a unified faction
+trotsky,rev_old_bolsheviks,1917,1924,0.85,generation,Old Bolshevik generation; not a unified faction
+zinoviev,rev_old_bolsheviks,1917,1938,0.85,generation,Old Bolshevik generation; not a unified faction
+kamenev,rev_old_bolsheviks,1917,1938,0.85,generation,Old Bolshevik generation; not a unified faction
+stalin,rev_old_bolsheviks,1917,1953,0.85,generation,Old Bolshevik generation; not a unified faction
+sverdlov,rev_old_bolsheviks,1917,1924,0.85,generation,Old Bolshevik generation; not a unified faction
+dzerzhinsky,rev_old_bolsheviks,1917,1924,0.85,generation,Old Bolshevik generation; not a unified faction
+bukharin,rev_old_bolsheviks,1917,1938,0.85,generation,Old Bolshevik generation; not a unified faction
+rykov,rev_old_bolsheviks,1917,1938,0.85,generation,Old Bolshevik generation; not a unified faction
+lenin,rev_bolshevik_center,1917,1924,1.0,leader,Lenin's Bolshevik center
+trotsky,rev_trotsky_military,1918,1925,0.95,military_revolutionary,Red Army / Trotsky group
+trotsky,rev_bolshevik_center,1917,1924,0.75,top_leadership,Top Bolshevik leadership
+zinoviev,rev_bolshevik_center,1917,1924,0.7,top_leadership,Top Bolshevik leadership
+kamenev,rev_bolshevik_center,1917,1924,0.7,top_leadership,Top Bolshevik leadership
+sverdlov,rev_party_org_apparatus,1917,1919,0.9,party_org,Party organization
+stalin,rev_party_org_apparatus,1919,1924,0.9,party_org,Secretariat / organizational apparatus
+dzerzhinsky,rev_cheka_security,1917,1926,0.95,security,Cheka/OGPU
+bukharin,rev_left_communists,1918,1921,0.8,ideological,Left Communist tendency period
+bukharin,rev_bolshevik_center,1917,1924,0.6,top_leadership,Bolshevik leadership
+rykov,rev_sovnarkom_government,1917,1924,0.8,government,Sovnarkom/government
+lenin,rev_sovnarkom_government,1917,1924,0.95,government_leader,Chairman of Sovnarkom
+stalin,stalin_inner_circle,1924,1953,1.0,inner_circle,Stalin-era close leadership; period needs refinement
+molotov,stalin_inner_circle,1924,1953,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+kaganovich,stalin_inner_circle,1924,1953,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+voroshilov,stalin_inner_circle,1924,1953,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+mikoyan,stalin_inner_circle,1924,1953,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+ordzhonikidze,stalin_inner_circle,1924,1937,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+kirov,stalin_inner_circle,1924,1934,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+zhdanov,stalin_inner_circle,1924,1948,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+beria,stalin_inner_circle,1924,1953,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+malenkov,stalin_inner_circle,1924,1953,0.8,inner_circle,Stalin-era close leadership; period needs refinement
+stalin,stalin_party_apparatus,1924,1953,0.85,party_apparatus,Stalin-era party apparatus
+molotov,stalin_party_apparatus,1924,1953,0.85,party_apparatus,Stalin-era party apparatus
+kaganovich,stalin_party_apparatus,1924,1953,0.85,party_apparatus,Stalin-era party apparatus
+malenkov,stalin_party_apparatus,1924,1953,0.85,party_apparatus,Stalin-era party apparatus
+zhdanov,stalin_party_apparatus,1924,1948,0.85,party_apparatus,Stalin-era party apparatus
+kirov,stalin_party_apparatus,1924,1934,0.85,party_apparatus,Stalin-era party apparatus
+mikoyan,stalin_party_apparatus,1924,1953,0.85,party_apparatus,Stalin-era party apparatus
+beria,stalin_security_apparatus,1938,1953,0.95,security,NKVD/MGB
+voroshilov,stalin_military_command,1925,1940,0.9,military,Defense commissar / military leadership
+zhukov,stalin_military_command,1941,1946,0.9,military,Wartime military leadership
+molotov,stalin_foreign_policy,1939,1949,0.9,foreign_policy,Foreign commissar/minister
+mikoyan,stalin_economic_planners,1930,1953,0.7,economic_admin,Trade/economic administration
+kaganovich,stalin_industrial_modernizers,1930,1940,0.85,industrialization,Heavy industry/transport
+ordzhonikidze,stalin_industrial_modernizers,1926,1937,0.9,industrialization,Heavy industry
+malenkov,stalin_party_apparatus,1939,1953,0.85,cadres,Cadres/party-government
+bulganin,stalin_economic_planners,1947,1953,0.55,government,Government/economic administration
+khrushchev,poststalin_collective_leadership,1953,1964,0.85,collective_leadership,Post-Stalin leadership struggle
+malenkov,poststalin_collective_leadership,1953,1957,0.85,collective_leadership,Post-Stalin leadership struggle
+molotov,poststalin_collective_leadership,1953,1957,0.85,collective_leadership,Post-Stalin leadership struggle
+bulganin,poststalin_collective_leadership,1953,1964,0.85,collective_leadership,Post-Stalin leadership struggle
+mikoyan,poststalin_collective_leadership,1953,1964,0.85,collective_leadership,Post-Stalin leadership struggle
+voroshilov,poststalin_collective_leadership,1953,1964,0.85,collective_leadership,Post-Stalin leadership struggle
+beria,poststalin_collective_leadership,1953,1957,0.85,collective_leadership,Post-Stalin leadership struggle
+khrushchev,khrushchev_group,1953,1964,1.0,leader,Khrushchev power center
+zhukov,poststalin_military_command,1953,1957,0.9,military,Defense minister and political role
+suslov,poststalin_ideological_apparatus,1955,1964,0.85,ideology,Ideological apparatus
+suslov,poststalin_party_apparatus,1955,1964,0.85,party,Party apparatus
+kosygin,poststalin_economic_admins,1959,1964,0.75,economic_admin,Government/economic administration
+podgorny,poststalin_party_apparatus,1957,1964,0.75,party,Party leadership
+shelepin,poststalin_security_apparatus,1958,1961,0.85,security,KGB chair
+shelepin,poststalin_party_apparatus,1961,1964,0.7,party,Party apparatus
+semichastny,poststalin_security_apparatus,1961,1964,0.85,security,KGB chair
+mikoyan,poststalin_collective_leadership,1953,1964,0.75,senior_leader,Senior Presidium/Politburo figure
+brezhnev,brezhnev_inner_circle,1964,1982,1.0,leader,Brezhnev leadership
+brezhnev,dnipropetrovsk_network,1964,1982,0.85,regional_personal_network,Dnipropetrovsk career network
+brezhnev,lateussr_party_apparatus,1964,1982,0.95,party,CPSU General Secretary
+suslov,lateussr_party_apparatus,1964,1982,0.8,party_apparatus,Late Soviet party/state leadership
+kosygin,lateussr_party_apparatus,1964,1980,0.8,party_apparatus,Late Soviet party/state leadership
+podgorny,lateussr_party_apparatus,1964,1977,0.8,party_apparatus,Late Soviet party/state leadership
+ustinov,lateussr_party_apparatus,1964,1985,0.8,party_apparatus,Late Soviet party/state leadership
+gromyko,lateussr_party_apparatus,1964,1985,0.8,party_apparatus,Late Soviet party/state leadership
+tikhonov,lateussr_party_apparatus,1964,1985,0.8,party_apparatus,Late Soviet party/state leadership
+chernenko,lateussr_party_apparatus,1964,1985,0.8,party_apparatus,Late Soviet party/state leadership
+andropov,lateussr_party_apparatus,1964,1985,0.8,party_apparatus,Late Soviet party/state leadership
+romanov_grigory,lateussr_party_apparatus,1964,1985,0.8,party_apparatus,Late Soviet party/state leadership
+grishin,lateussr_party_apparatus,1964,1985,0.8,party_apparatus,Late Soviet party/state leadership
+chernenko,brezhnev_inner_circle,1965,1985,0.9,personal_power_center,Brezhnev-era administrative ally
+chernenko,dnipropetrovsk_network,1965,1985,0.55,network_hypothesis,Often linked to Brezhnev circle; not purely regional
+andropov,lateussr_kgb_security,1967,1982,0.95,security,KGB chair
+andropov,lateussr_party_apparatus,1982,1984,0.95,leader_party,General Secretary
+ustinov,lateussr_military_industrial,1965,1984,0.95,military_industrial,Defense industry and Defense Ministry
+gromyko,lateussr_foreign_policy,1957,1988,0.95,foreign_policy,Foreign Minister / foreign policy establishment
+kosygin,lateussr_economic_admins,1964,1980,0.95,government_economy,Chairman of Council of Ministers
+tikhonov,lateussr_economic_admins,1980,1985,0.85,government_economy,Chairman of Council of Ministers
+suslov,lateussr_ideological_apparatus,1964,1982,0.95,ideology,Chief ideologist
+romanov_grigory,lateussr_party_apparatus,1973,1985,0.75,party_regional,Politburo/regional party boss
+grishin,lateussr_party_apparatus,1971,1986,0.75,party_regional,Moscow party boss
+shelest,lateussr_party_apparatus,1964,1973,0.75,party_republic,Ukrainian party leadership / Politburo
+podgorny,lateussr_economic_admins,1964,1977,0.45,state_role,Formal state role; limited functional weight
+gorbachev,perestroika_gorbachev_reformers,1985,1991,1.0,leader,Gorbachev reform center
+gorbachev,perestroika_union_center,1985,1991,0.9,institutional_center,Union leadership
+yakovlev_alexander,perestroika_gorbachev_reformers,1985,1991,0.95,reform_ideology,Key reform intellectual/political actor
+yakovlev_alexander,perestroika_new_thinking_foreign_policy,1985,1991,0.75,new_thinking,Ideological foreign-policy reform
+shevardnadze,perestroika_new_thinking_foreign_policy,1985,1990,0.95,foreign_policy_reform,Foreign Minister
+shevardnadze,perestroika_gorbachev_reformers,1985,1990,0.8,reformer,Reform coalition
+ryzhkov_nikolai,perestroika_economic_reformers,1985,1990,0.65,economic_reform,Economic reform/government
+ryzhkov_nikolai,perestroika_union_center,1985,1990,0.85,government,Chairman of Council of Ministers
+ligachev,perestroika_party_conservatives,1985,1990,0.9,party_conservative,Conservative party wing
+ligachev,lateussr_party_apparatus,1985,1990,0.85,party_apparatus,CPSU apparatus
+kryuchkov,perestroika_security_apparatus,1988,1991,0.95,security,KGB chair
+bakatin,perestroika_security_apparatus,1991,1991,0.75,security_reform,Last KGB leadership / reform context
+yeltsin,perestroika_republican_elites,1989,1991,0.95,republican_opposition,RSFSR/republican elite and anti-center politics
+yeltsin,perestroika_gorbachev_reformers,1985,1987,0.55,early_reform_association,Early reform association before conflict
+yeltsin,perestroika_union_center,1985,1987,0.45,party_center,Moscow party role before split
