@@ -15,23 +15,28 @@
   "insights": [
     {
       "key": "ruler_vs_political",
-      "ru": "Возраст правителя почти совпадает с политическим возрастом: r=0.331.",
-      "en": "Ruler age is tightly aligned with political age: r=0.331."
+      "ru": "Возраст правителя умеренно связан с политическим возрастом: r=0.331. Для США это слабее, чем в персоналистских траекториях.",
+      "en": "Ruler age is moderately aligned with political age: r=0.331. For the USA this is weaker than in more personalist trajectories."
     },
     {
       "key": "age_vs_renewal",
-      "ru": "Чем старше core elite, тем слабее renewal_5y: r=-0.347.",
+      "ru": "Чем старше core elite, тем слабее обновление за 5 лет: r=-0.347.",
       "en": "Older core elite coincides with weaker 5-year renewal: r=-0.347."
     },
     {
       "key": "ruler_vs_core",
-      "ru": "Возраст правителя ближе к взвешенному возрасту core elite, чем к простому среднему: r=0.505.",
-      "en": "Ruler age tracks weighted core age more closely than plain mean age: r=0.505."
+      "ru": "Возраст правителя заметно связан со взвешенным возрастом core elite: r=0.505. Сигнал есть, но он не полностью определяет возрастную структуру системы.",
+      "en": "Ruler age has a visible link with weighted core age: r=0.505. The signal exists, but it does not fully define the system's age structure."
     },
     {
       "key": "events_signal",
-      "ru": "Годы с более старой core elite обычно связаны с числом elite-initiated событий: r=0.075.",
-      "en": "Years with older core elite are associated with elite-initiated event volume: r=0.075."
+      "ru": "Возраст core elite почти не объясняет число elite-initiated событий: r=0.075. Для США событийный прогноз лучше строить через институты и домены решений.",
+      "en": "Core elite age barely explains elite-initiated event volume: r=0.075. For the USA, event forecasting should lean more on institutions and decision domains."
+    },
+    {
+      "key": "event_volume_signal",
+      "ru": "Общее число событий тесно связано с числом elite-initiated событий: r=0.828. Это главный текущий сигнал событийного слоя.",
+      "en": "Total event volume is strongly tied to elite-initiated event volume: r=0.828. This is the main current signal in the event layer."
     }
   ],
   "correlations": {

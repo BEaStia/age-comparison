@@ -32,6 +32,11 @@
       "key": "fragmentation_signal",
       "ru": "Событийная фрагментация и число elite-initiated событий движутся слабо совместно; сам индекс фрагментации остаётся полезным индикатором концентрации власти.",
       "en": "Event fragmentation and the number of elite-initiated events move only weakly together; the fragmentation index remains a useful concentration signal."
+    },
+    {
+      "key": "event_severity_signal",
+      "ru": "Число elite-initiated событий связано с максимальной severity: r=0.758. Для России/СССР всплески событийного слоя стоит читать как потенциальные окна высокой турбулентности.",
+      "en": "Elite-initiated event volume is linked with max severity: r=0.758. For Russia/USSR, spikes in the event layer should be read as potential high-turbulence windows."
     }
   ],
   "correlations": {

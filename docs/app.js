@@ -31,6 +31,7 @@
       nav: {
         overview: "Обзор",
         correlations: "Корреляции",
+        forecasts: "Прогнозы",
         interactive: "Интерактив",
         core: "Элита",
         factions: "Фракции",
@@ -41,6 +42,7 @@
       sections: {
         overview: "Обзор",
         correlations: "Выводы по корреляциям",
+        forecasts: "Прогнозные сигналы",
         interactive: "Интерактивные графики",
         core: "Возраст элиты и правителя",
         factions: "Фракционный слой",
@@ -84,6 +86,7 @@
       nav: {
         overview: "Overview",
         correlations: "Correlations",
+        forecasts: "Forecasts",
         interactive: "Interactive",
         core: "Elite",
         factions: "Factions",
@@ -94,6 +97,7 @@
       sections: {
         overview: "Overview",
         correlations: "Correlation takeaways",
+        forecasts: "Forecast signals",
         interactive: "Interactive charts",
         core: "Elite age and ruler age",
         factions: "Faction layer",
@@ -837,6 +841,7 @@
     return [
       link("#overview", nav.overview),
       link("#correlations", nav.correlations),
+      link("#forecasts", nav.forecasts),
       link("#interactive", nav.interactive),
       link("#core", nav.core),
       link("#factions", nav.factions),
@@ -854,6 +859,7 @@
     return [
       sectionOverview(),
       sectionCorrelations(),
+      sectionForecasts(),
       sectionInteractiveCharts(),
       sectionFigures("core", "core"),
       sectionFactions(),
@@ -982,6 +988,58 @@
     `;
   }
 
+  function sectionForecasts() {
+    const forecasts = buildForecastSignals();
+    return `
+      <section id="forecasts" class="section-anchor">
+        <div class="section-head">
+          <h2>${escapeHtml(getText("sections.forecasts"))}</h2>
+          <p class="section-note">
+            ${escapeHtml(
+              state.lang === "ru"
+                ? "Это сценарные прогнозы, а не точные предсказания. Они показывают, какие траектории логично проверять дальше."
+                : "These are scenario forecasts, not exact predictions. They show which trajectories are most worth testing next."
+            )}
+          </p>
+        </div>
+        <div class="content">
+          <div class="signal-grid">
+            <div class="signal-card">
+              <strong>${escapeHtml(
+                state.lang === "ru" ? "Что смотреть дальше" : "What to watch next"
+              )}</strong>
+              <div class="small-note" style="margin-top:8px;">
+                ${escapeHtml(
+                  state.lang === "ru"
+                    ? "Это не точные предсказания. Это сценарии, которые логично проверять следующими, если текущие связи сохраняются."
+                    : "These are not exact predictions. They are scenarios worth testing next if the current links hold."
+                )}
+              </div>
+              <div class="correlation-list">
+                ${forecasts
+                  .map(
+                    (item) => `
+                      <div class="correlation-item">
+                        <strong>${escapeHtml(item.title[state.lang])}</strong>
+                        <div class="small-note">${escapeHtml(
+                          state.lang === "ru"
+                            ? `Уверенность: ${item.confidence.ru}`
+                            : `Confidence: ${item.confidence.en}`
+                        )}</div>
+                        <div class="small-note">${escapeHtml(item.evidence[state.lang])}</div>
+                        <div class="small-note">${escapeHtml(item.body[state.lang])}</div>
+                      </div>
+                    `
+                  )
+                  .join("")}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
   function sectionInteractiveCharts() {
     return `
       <section id="interactive" class="section-anchor">
@@ -1075,6 +1133,273 @@
     const periods = Array.isArray(state.data?.periods) ? state.data.periods : [];
     const first = periods[0] || {};
     return first.period_id || first.slug || "period";
+  }
+
+  function buildForecastSignals() {
+    const elite = state.data?.correlations?.elite || {};
+    const faction = state.data?.correlations?.faction || {};
+    const event = state.data?.correlations?.event || {};
+
+    const rulerPolitical = elite?.ruler_age?.ruler_political_age ?? null;
+    const coreRenewal = elite?.core_mean_age?.renewal_5y ?? null;
+    const rulerWeightedCore = elite?.ruler_age?.core_weighted_mean_age ?? null;
+    const coreEvents =
+      elite?.core_mean_age?.elite_initiated_events_count ??
+      event?.core_mean_age?.elite_initiated_events_count ??
+      null;
+    const eventVolume =
+      elite?.events_count?.elite_initiated_events_count ??
+      event?.events_count?.elite_initiated_events_count ??
+      null;
+    const factionPower = faction?.normalized_power_share?.raw_power_share ?? null;
+    const factionConcentration = faction?.normalized_power_share?.members_count ?? null;
+    const eventRenewal =
+      event?.renewal_5y?.elite_initiated_events_count ??
+      elite?.renewal_5y?.elite_initiated_events_count ??
+      null;
+    const eventSeverity = event?.elite_initiated_events_count?.elite_initiated_max_severity ?? null;
+    const turbulenceSignal = eventSeverity ?? eventVolume ?? eventRenewal;
+
+    return [
+      {
+        title: {
+          ru: "Обновление элиты",
+          en: "Elite renewal",
+        },
+        body: {
+          ru:
+            coreRenewal === null
+              ? "Связь между возрастом core elite и обновлением кадров пока слишком шумная для уверенного сценария."
+              : Math.abs(coreRenewal) >= 0.4
+                ? `Если текущая связь сохранится, старение ядра власти будет и дальше означать более медленное обновление кадров. Сейчас r=${formatNumber(
+                    coreRenewal,
+                    3
+                  )}.`
+                : `Старение ядра власти связано с обновлением кадров, но сигнал умеренный. Его стоит читать вместе с институциональным составом. Сейчас r=${formatNumber(
+                    coreRenewal,
+                    3
+                  )}.`,
+          en:
+            coreRenewal === null
+              ? "The link between core age and turnover is still too noisy for a confident scenario."
+              : Math.abs(coreRenewal) >= 0.4
+                ? `If the current relation holds, an older core elite will keep implying slower turnover. Current r=${formatNumber(
+                    coreRenewal,
+                    3
+                  )}.`
+                : `Core aging is linked with turnover, but the signal is moderate. It should be read together with institutional composition. Current r=${formatNumber(
+                    coreRenewal,
+                    3
+                  )}.`,
+        },
+        evidence: {
+          ru:
+            coreRenewal === null
+              ? "Опорная связь пока нестабильна."
+              : `Опорная связь: ${labelFor("core_mean_age")} ↔ ${labelFor("renewal_5y")} (r=${formatNumber(coreRenewal, 3)}).`,
+          en:
+            coreRenewal === null
+              ? "The anchor link is still unstable."
+              : `Anchor link: ${labelFor("core_mean_age")} ↔ ${labelFor("renewal_5y")} (r=${formatNumber(coreRenewal, 3)}).`,
+        },
+        confidence: forecastConfidence(coreRenewal),
+      },
+      {
+        title: {
+          ru: "Смена лидера",
+          en: "Leadership transition",
+        },
+        body: {
+          ru:
+            rulerWeightedCore === null || rulerPolitical === null
+              ? "Связь между правителем и ядром элиты требует дальнейшей проверки."
+              : Math.abs(rulerWeightedCore) >= 0.7
+                ? `Смена первого лица, скорее всего, будет воспроизводить возрастной профиль системы: правитель сильно связан со взвешенным возрастом core elite (r=${formatNumber(
+                    rulerWeightedCore,
+                    3
+                  )}).`
+                : `Смена первого лица может частично отражать возрастной профиль системы, но связь умеренная: возраст правителя ↔ взвешенный возраст core elite r=${formatNumber(
+                    rulerWeightedCore,
+                    3
+                  )}, возраст правителя ↔ политический возраст r=${formatNumber(rulerPolitical, 3)}.`,
+          en:
+            rulerWeightedCore === null || rulerPolitical === null
+              ? "The ruler-to-elite link still needs more checking."
+              : Math.abs(rulerWeightedCore) >= 0.7
+                ? `Leadership change will likely preserve the system's age profile: ruler age is strongly tied to weighted core age (r=${formatNumber(
+                    rulerWeightedCore,
+                    3
+                  )}).`
+                : `Leadership change may partly reflect the system's age profile, but the link is moderate: ruler age ↔ weighted core age r=${formatNumber(
+                    rulerWeightedCore,
+                    3
+                  )}, ruler age ↔ political age r=${formatNumber(rulerPolitical, 3)}.`,
+        },
+        evidence: {
+          ru:
+            rulerWeightedCore === null
+              ? "Опорная связь пока слабая."
+              : `Опорная связь: ${labelFor("ruler_age")} ↔ ${labelFor("core_weighted_mean_age")} (r=${formatNumber(
+                  rulerWeightedCore,
+                  3
+                )}).`,
+          en:
+            rulerWeightedCore === null
+              ? "The anchor link is still weak."
+              : `Anchor link: ${labelFor("ruler_age")} ↔ ${labelFor("core_weighted_mean_age")} (r=${formatNumber(
+                  rulerWeightedCore,
+                  3
+                )}).`,
+        },
+        confidence: forecastConfidence(rulerWeightedCore),
+      },
+      {
+        title: {
+          ru: "Событийное давление",
+          en: "Event pressure",
+        },
+        body: {
+          ru:
+            coreEvents === null
+              ? "Возраст сам по себе пока не даёт достаточно сигнала о будущих всплесках событий."
+              : Math.abs(coreEvents) < 0.2
+                ? `Возраст ядра власти сам по себе слабо предсказывает всплески событий. Для следующего цикла важнее следить за составом институтов и доменами решений. Связь с elite-initiated событиями сейчас r=${formatNumber(
+                    coreEvents,
+                    3
+                  )}${eventVolume === null ? "." : `, а связь общего числа событий с elite-initiated событиями r=${formatNumber(eventVolume, 3)}.`}`
+                : `Возраст ядра власти даёт заметный событийный сигнал: связь с elite-initiated событиями сейчас r=${formatNumber(
+                    coreEvents,
+                    3
+                  )}.`,
+          en:
+            coreEvents === null
+              ? "Age alone still does not give enough signal about future event spikes."
+              : Math.abs(coreEvents) < 0.2
+                ? `Core age by itself is a weak predictor of event spikes. The next cycle should be read through institutional composition and decision domains. The current link with elite-initiated events is r=${formatNumber(
+                    coreEvents,
+                    3
+                  )}${eventVolume === null ? "." : `, while total events and elite-initiated events correlate at r=${formatNumber(eventVolume, 3)}.`}`
+                : `Core age gives a visible event signal: the current link with elite-initiated events is r=${formatNumber(
+                    coreEvents,
+                    3
+                  )}.`,
+        },
+        evidence: {
+          ru:
+            coreEvents === null
+              ? "Опорная связь пока отсутствует."
+              : `Опорная связь: ${labelFor("core_mean_age")} ↔ ${labelFor("elite_initiated_events_count")} (r=${formatNumber(
+                  coreEvents,
+                  3
+                )}).`,
+          en:
+            coreEvents === null
+              ? "The anchor link is still missing."
+              : `Anchor link: ${labelFor("core_mean_age")} ↔ ${labelFor("elite_initiated_events_count")} (r=${formatNumber(
+                  coreEvents,
+                  3
+                )}).`,
+        },
+        confidence: forecastConfidence(coreEvents),
+      },
+      {
+        title: {
+          ru: "Баланс фракций",
+          en: "Faction balance",
+        },
+        body: {
+          ru:
+            factionPower === null || factionConcentration === null
+              ? "Фракционный баланс пока лучше читать как исследовательский сценарий."
+              : `Когда доля власти концентрируется у нескольких групп, будущие сдвиги будут чаще выглядеть как перекройка коалиций, а не как широкое распыление власти. В текущих корреляциях нормированная доля власти особенно тесно связана с сырой долей власти (r=${formatNumber(
+                  factionPower,
+                  3
+                )}) и размером группы (r=${formatNumber(factionConcentration, 3)}).`,
+          en:
+            factionPower === null || factionConcentration === null
+              ? "Faction balance is still best read as a research scenario."
+              : `When power share concentrates in a few groups, future shifts are more likely to look like coalition reshuffling than broad dispersion. In the current correlations, normalized power share is tightly linked to raw power share (r=${formatNumber(
+                  factionPower,
+                  3
+                )}) and group size (r=${formatNumber(factionConcentration, 3)}).`,
+        },
+        evidence: {
+          ru:
+            factionPower === null
+              ? "Опорная связь пока нестабильна."
+              : `Опорная связь: ${labelFor("normalized_power_share")} ↔ ${labelFor("raw_power_share")} (r=${formatNumber(
+                  factionPower,
+                  3
+                )}).`,
+          en:
+            factionPower === null
+              ? "The anchor link is still unstable."
+              : `Anchor link: ${labelFor("normalized_power_share")} ↔ ${labelFor("raw_power_share")} (r=${formatNumber(
+                  factionPower,
+                  3
+                )}).`,
+        },
+        confidence: forecastConfidence(factionPower),
+      },
+      {
+        title: {
+          ru: "Окно высокой турбулентности",
+          en: "High-turbulence window",
+        },
+        body: {
+          ru:
+            turbulenceSignal === null
+              ? "Турбулентность пока лучше читать по периодам, а не как линейный тренд."
+              : eventSeverity !== null
+                ? `Следующий стресс-сценарий стоит искать в периодах, где elite-initiated события усиливаются вместе с максимальной severity. Сейчас число elite-initiated событий ↔ максимальная severity равно r=${formatNumber(
+                    eventSeverity,
+                    3
+                  )}.`
+                : `Для этого датасета главный событийный сигнал не в возрасте, а в плотности событийного слоя: общее число событий ↔ число elite-initiated событий равно r=${formatNumber(
+                    turbulenceSignal,
+                    3
+                  )}.`,
+          en:
+            turbulenceSignal === null
+              ? "Turbulence is still better read by periods than as a linear trend."
+              : eventSeverity !== null
+                ? `The next stress scenario should be searched for in periods where elite-initiated events rise together with max severity. Right now elite-initiated event count ↔ max severity is r=${formatNumber(
+                    eventSeverity,
+                    3
+                  )}.`
+                : `For this dataset, the main event signal is not age but event-layer density: total events ↔ elite-initiated event count is r=${formatNumber(
+                    turbulenceSignal,
+                    3
+                  )}.`,
+        },
+        evidence: {
+          ru:
+            turbulenceSignal === null
+              ? "Сигнал пока неустойчив."
+              : eventSeverity !== null
+                ? `Опорная связь: ${labelFor("elite_initiated_events_count")} ↔ ${labelFor("elite_initiated_max_severity")} (r=${formatNumber(eventSeverity, 3)}).`
+                : `Опорная связь: число событий ↔ ${labelFor("elite_initiated_events_count")} (r=${formatNumber(turbulenceSignal, 3)}).`,
+          en:
+            turbulenceSignal === null
+              ? "The signal is still unstable."
+              : eventSeverity !== null
+                ? `Anchor link: ${labelFor("elite_initiated_events_count")} ↔ ${labelFor("elite_initiated_max_severity")} (r=${formatNumber(eventSeverity, 3)}).`
+                : `Anchor link: total event count ↔ ${labelFor("elite_initiated_events_count")} (r=${formatNumber(turbulenceSignal, 3)}).`,
+        },
+        confidence: forecastConfidence(turbulenceSignal),
+      },
+    ];
+  }
+
+  function forecastConfidence(value) {
+    const magnitude = Math.abs(Number(value) || 0);
+    if (magnitude >= 0.4) {
+      return { ru: "высокая", en: "high" };
+    }
+    if (magnitude >= 0.2) {
+      return { ru: "средняя", en: "medium" };
+    }
+    return { ru: "низкая", en: "low" };
   }
 
   function isVisibleForDataset(entry) {
