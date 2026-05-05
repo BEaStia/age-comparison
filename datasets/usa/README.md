@@ -66,3 +66,8 @@ Row counts after expansion:
 - factions.csv: 13
 - person_factions.csv: 234
 - elite_edges.csv: 36
+
+
+## Event layer expansion
+
+This version expands `events.csv` to 160 events covering founding-era, constitutional, electoral, foreign-policy, security-state, financial, judicial, civil-rights, and 21st-century political events. The `Deep State` and `globalist` faction references remain analytical proxies, not claims of a single hidden command structure. Use `confidence`, `initiator_faction_id`, `decision_domain`, and `notes` for filtering.

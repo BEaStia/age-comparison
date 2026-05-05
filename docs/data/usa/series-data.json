@@ -8,8 +8,8 @@
       "core_share_60_plus": 0.667,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.333,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 3,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 1946,
@@ -30,8 +30,8 @@
       "core_share_60_plus": 0.5,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.5,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 3,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 1948,
@@ -41,8 +41,8 @@
       "core_share_60_plus": 0.5,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.5,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 1949,
@@ -63,8 +63,8 @@
       "core_share_60_plus": 0.571,
       "core_share_70_plus": 0.143,
       "renewal_5y": 0.571,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1951,
@@ -96,8 +96,8 @@
       "core_share_60_plus": 0.625,
       "core_share_70_plus": 0.125,
       "renewal_5y": 0.5,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1954,
@@ -107,8 +107,8 @@
       "core_share_60_plus": 0.625,
       "core_share_70_plus": 0.125,
       "renewal_5y": 0.625,
-      "events_count": 1,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1955,
@@ -129,8 +129,8 @@
       "core_share_60_plus": 0.75,
       "core_share_70_plus": 0.125,
       "renewal_5y": 0.25,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1957,
@@ -140,8 +140,8 @@
       "core_share_60_plus": 0.75,
       "core_share_70_plus": 0.125,
       "renewal_5y": 0.25,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1958,
@@ -173,8 +173,8 @@
       "core_share_60_plus": 0.714,
       "core_share_70_plus": 0.143,
       "renewal_5y": 0.0,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1961,
@@ -184,8 +184,8 @@
       "core_share_60_plus": 0.4,
       "core_share_70_plus": 0.2,
       "renewal_5y": 0.3,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1962,
@@ -195,8 +195,8 @@
       "core_share_60_plus": 0.4,
       "core_share_70_plus": 0.2,
       "renewal_5y": 0.5,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1963,
@@ -206,7 +206,7 @@
       "core_share_60_plus": 0.5,
       "core_share_70_plus": 0.2,
       "renewal_5y": 0.5,
-      "events_count": 0,
+      "events_count": 1,
       "elite_initiated_events_count": 0
     },
     {
@@ -217,8 +217,8 @@
       "core_share_60_plus": 0.556,
       "core_share_70_plus": 0.222,
       "renewal_5y": 0.556,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 1965,
@@ -228,8 +228,8 @@
       "core_share_60_plus": 0.444,
       "core_share_70_plus": 0.333,
       "renewal_5y": 0.556,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 3,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 1966,
@@ -261,7 +261,7 @@
       "core_share_60_plus": 0.625,
       "core_share_70_plus": 0.375,
       "renewal_5y": 0.25,
-      "events_count": 0,
+      "events_count": 2,
       "elite_initiated_events_count": 0
     },
     {
@@ -272,8 +272,8 @@
       "core_share_60_plus": 0.5,
       "core_share_70_plus": 0.2,
       "renewal_5y": 0.5,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1970,
@@ -294,8 +294,8 @@
       "core_share_60_plus": 0.455,
       "core_share_70_plus": 0.091,
       "renewal_5y": 0.636,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1972,
@@ -305,8 +305,8 @@
       "core_share_60_plus": 0.364,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.727,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 1973,
@@ -316,8 +316,8 @@
       "core_share_60_plus": 0.667,
       "core_share_70_plus": 0.111,
       "renewal_5y": 0.778,
-      "events_count": 2,
-      "elite_initiated_events_count": 2
+      "events_count": 3,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 1974,
@@ -327,8 +327,8 @@
       "core_share_60_plus": 0.7,
       "core_share_70_plus": 0.2,
       "renewal_5y": 0.5,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1975,
@@ -338,8 +338,8 @@
       "core_share_60_plus": 0.8,
       "core_share_70_plus": 0.2,
       "renewal_5y": 0.4,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1976,
@@ -371,8 +371,8 @@
       "core_share_60_plus": 0.444,
       "core_share_70_plus": 0.111,
       "renewal_5y": 0.556,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1979,
@@ -382,8 +382,8 @@
       "core_share_60_plus": 0.4,
       "core_share_70_plus": 0.1,
       "renewal_5y": 0.6,
-      "events_count": 1,
-      "elite_initiated_events_count": 0
+      "events_count": 3,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1980,
@@ -393,8 +393,8 @@
       "core_share_60_plus": 0.3,
       "core_share_70_plus": 0.1,
       "renewal_5y": 0.6,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1981,
@@ -404,8 +404,8 @@
       "core_share_60_plus": 0.455,
       "core_share_70_plus": 0.182,
       "renewal_5y": 0.636,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1982,
@@ -426,8 +426,8 @@
       "core_share_60_plus": 0.545,
       "core_share_70_plus": 0.364,
       "renewal_5y": 0.455,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1984,
@@ -459,8 +459,8 @@
       "core_share_60_plus": 0.727,
       "core_share_70_plus": 0.364,
       "renewal_5y": 0.182,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1987,
@@ -470,7 +470,7 @@
       "core_share_60_plus": 0.5,
       "core_share_70_plus": 0.1,
       "renewal_5y": 0.5,
-      "events_count": 0,
+      "events_count": 1,
       "elite_initiated_events_count": 0
     },
     {
@@ -492,8 +492,8 @@
       "core_share_60_plus": 0.333,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.667,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1990,
@@ -514,8 +514,8 @@
       "core_share_60_plus": 0.538,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.692,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 3,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 1992,
@@ -525,8 +525,8 @@
       "core_share_60_plus": 0.467,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.533,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1993,
@@ -536,7 +536,7 @@
       "core_share_60_plus": 0.462,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.385,
-      "events_count": 0,
+      "events_count": 1,
       "elite_initiated_events_count": 0
     },
     {
@@ -547,8 +547,8 @@
       "core_share_60_plus": 0.462,
       "core_share_70_plus": 0.0,
       "renewal_5y": 0.385,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 1995,
@@ -558,8 +558,8 @@
       "core_share_60_plus": 0.385,
       "core_share_70_plus": 0.077,
       "renewal_5y": 0.462,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1996,
@@ -591,8 +591,8 @@
       "core_share_60_plus": 0.533,
       "core_share_70_plus": 0.133,
       "renewal_5y": 0.4,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 1999,
@@ -602,8 +602,8 @@
       "core_share_60_plus": 0.533,
       "core_share_70_plus": 0.133,
       "renewal_5y": 0.267,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2000,
@@ -613,8 +613,8 @@
       "core_share_60_plus": 0.533,
       "core_share_70_plus": 0.133,
       "renewal_5y": 0.267,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 2001,
@@ -624,8 +624,8 @@
       "core_share_60_plus": 0.667,
       "core_share_70_plus": 0.2,
       "renewal_5y": 0.2,
-      "events_count": 2,
-      "elite_initiated_events_count": 1
+      "events_count": 6,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 2002,
@@ -635,8 +635,8 @@
       "core_share_60_plus": 0.647,
       "core_share_70_plus": 0.176,
       "renewal_5y": 0.294,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2003,
@@ -668,7 +668,7 @@
       "core_share_60_plus": 0.688,
       "core_share_70_plus": 0.312,
       "renewal_5y": 0.25,
-      "events_count": 0,
+      "events_count": 1,
       "elite_initiated_events_count": 0
     },
     {
@@ -679,8 +679,8 @@
       "core_share_60_plus": 0.625,
       "core_share_70_plus": 0.312,
       "renewal_5y": 0.375,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 2007,
@@ -701,8 +701,8 @@
       "core_share_60_plus": 0.812,
       "core_share_70_plus": 0.312,
       "renewal_5y": 0.312,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 4,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 2009,
@@ -712,8 +712,8 @@
       "core_share_60_plus": 0.765,
       "core_share_70_plus": 0.353,
       "renewal_5y": 0.353,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 2010,
@@ -723,8 +723,8 @@
       "core_share_60_plus": 0.778,
       "core_share_70_plus": 0.5,
       "renewal_5y": 0.333,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 3,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 2011,
@@ -734,8 +734,8 @@
       "core_share_60_plus": 0.765,
       "core_share_70_plus": 0.412,
       "renewal_5y": 0.235,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2012,
@@ -756,8 +756,8 @@
       "core_share_60_plus": 0.706,
       "core_share_70_plus": 0.471,
       "renewal_5y": 0.294,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 2014,
@@ -778,8 +778,8 @@
       "core_share_60_plus": 0.765,
       "core_share_70_plus": 0.529,
       "renewal_5y": 0.412,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2016,
@@ -800,8 +800,8 @@
       "core_share_60_plus": 0.8,
       "core_share_70_plus": 0.533,
       "renewal_5y": 0.467,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 3,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2018,
@@ -811,8 +811,8 @@
       "core_share_60_plus": 0.722,
       "core_share_70_plus": 0.444,
       "renewal_5y": 0.556,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2019,
@@ -822,8 +822,8 @@
       "core_share_60_plus": 0.824,
       "core_share_70_plus": 0.529,
       "renewal_5y": 0.529,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 1,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 2020,
@@ -833,8 +833,8 @@
       "core_share_60_plus": 0.8,
       "core_share_70_plus": 0.533,
       "renewal_5y": 0.467,
-      "events_count": 1,
-      "elite_initiated_events_count": 1
+      "events_count": 4,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2021,
@@ -844,7 +844,7 @@
       "core_share_60_plus": 0.714,
       "core_share_70_plus": 0.5,
       "renewal_5y": 0.429,
-      "events_count": 2,
+      "events_count": 4,
       "elite_initiated_events_count": 1
     },
     {
@@ -855,8 +855,8 @@
       "core_share_60_plus": 0.786,
       "core_share_70_plus": 0.5,
       "renewal_5y": 0.429,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 3,
+      "elite_initiated_events_count": 3
     },
     {
       "year": 2023,
@@ -866,8 +866,8 @@
       "core_share_60_plus": 0.714,
       "core_share_70_plus": 0.5,
       "renewal_5y": 0.286,
-      "events_count": 0,
-      "elite_initiated_events_count": 0
+      "events_count": 2,
+      "elite_initiated_events_count": 1
     },
     {
       "year": 2024,
@@ -877,7 +877,7 @@
       "core_share_60_plus": 0.714,
       "core_share_70_plus": 0.5,
       "renewal_5y": 0.357,
-      "events_count": 0,
+      "events_count": 2,
       "elite_initiated_events_count": 0
     },
     {
@@ -888,8 +888,8 @@
       "core_share_60_plus": 0.727,
       "core_share_70_plus": 0.636,
       "renewal_5y": 0.364,
-      "events_count": 1,
-      "elite_initiated_events_count": 0
+      "events_count": 3,
+      "elite_initiated_events_count": 2
     },
     {
       "year": 2026,
@@ -905,6 +905,589 @@
   ],
   "events": [
     {
+      "event_id": "evt_1776_independence",
+      "date": "1776-07-04",
+      "event_type": "founding_declaration",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "founding",
+      "event_name": "Declaration of Independence adopted",
+      "year": 1776
+    },
+    {
+      "event_id": "evt_1777_articles_confederation",
+      "date": "1777-11-15",
+      "event_type": "constitutional_design",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "founding",
+      "event_name": "Articles of Confederation adopted by Congress",
+      "year": 1777
+    },
+    {
+      "event_id": "evt_1783_treaty_paris",
+      "date": "1783-09-03",
+      "event_type": "peace_treaty",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Treaty of Paris ends Revolutionary War",
+      "year": 1783
+    },
+    {
+      "event_id": "evt_1787_constitution_signed",
+      "date": "1787-09-17",
+      "event_type": "constitutional_design",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "constitutional_order",
+      "event_name": "U.S. Constitution signed",
+      "year": 1787
+    },
+    {
+      "event_id": "evt_1789_washington_inauguration",
+      "date": "1789-04-30",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "executive_transition",
+      "event_name": "George Washington inaugurated",
+      "year": 1789
+    },
+    {
+      "event_id": "evt_1791_bill_of_rights",
+      "date": "1791-12-15",
+      "event_type": "constitutional_amendment",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_liberties",
+      "event_name": "Bill of Rights ratified",
+      "year": 1791
+    },
+    {
+      "event_id": "evt_1794_whiskey_rebellion_suppressed",
+      "date": "1794-08-07",
+      "event_type": "domestic_security",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "domestic_security",
+      "event_name": "Federal response to Whiskey Rebellion",
+      "year": 1794
+    },
+    {
+      "event_id": "evt_1798_alien_sedition_acts",
+      "date": "1798-07-14",
+      "event_type": "civil_liberties_restriction",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.92,
+      "decision_domain": "domestic_security",
+      "event_name": "Alien and Sedition Acts enacted",
+      "year": 1798
+    },
+    {
+      "event_id": "evt_1803_louisiana_purchase",
+      "date": "1803-04-30",
+      "event_type": "territorial_expansion",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Louisiana Purchase Treaty signed",
+      "year": 1803
+    },
+    {
+      "event_id": "evt_1812_war_declared",
+      "date": "1812-06-18",
+      "event_type": "war_declaration",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "United States declares war on Britain",
+      "year": 1812
+    },
+    {
+      "event_id": "evt_1820_missouri_compromise",
+      "date": "1820-03-06",
+      "event_type": "sectional_compromise",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "domestic_institutional",
+      "event_name": "Missouri Compromise enacted",
+      "year": 1820
+    },
+    {
+      "event_id": "evt_1823_monroe_doctrine",
+      "date": "1823-12-02",
+      "event_type": "foreign_policy_doctrine",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Monroe Doctrine announced",
+      "year": 1823
+    },
+    {
+      "event_id": "evt_1830_indian_removal_act",
+      "date": "1830-05-28",
+      "event_type": "forced_removal_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "territorial_policy",
+      "event_name": "Indian Removal Act signed",
+      "year": 1830
+    },
+    {
+      "event_id": "evt_1832_nullification_crisis",
+      "date": "1832-11-24",
+      "event_type": "constitutional_crisis",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.9,
+      "decision_domain": "federalism",
+      "event_name": "South Carolina Nullification Ordinance",
+      "year": 1832
+    },
+    {
+      "event_id": "evt_1845_texas_annexation",
+      "date": "1845-12-29",
+      "event_type": "territorial_expansion",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "territorial_policy",
+      "event_name": "Texas annexed by United States",
+      "year": 1845
+    },
+    {
+      "event_id": "evt_1846_mexican_war_begins",
+      "date": "1846-05-13",
+      "event_type": "war_declaration",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Mexican-American War begins",
+      "year": 1846
+    },
+    {
+      "event_id": "evt_1848_treaty_guadalupe_hidalgo",
+      "date": "1848-02-02",
+      "event_type": "peace_treaty",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Treaty of Guadalupe Hidalgo signed",
+      "year": 1848
+    },
+    {
+      "event_id": "evt_1850_compromise",
+      "date": "1850-09-18",
+      "event_type": "sectional_compromise",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "domestic_institutional",
+      "event_name": "Compromise of 1850 enacted",
+      "year": 1850
+    },
+    {
+      "event_id": "evt_1854_kansas_nebraska_act",
+      "date": "1854-05-30",
+      "event_type": "sectional_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_institutional",
+      "event_name": "Kansas-Nebraska Act signed",
+      "year": 1854
+    },
+    {
+      "event_id": "evt_1857_dred_scott",
+      "date": "1857-03-06",
+      "event_type": "judicial_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "judicial",
+      "event_name": "Dred Scott decision",
+      "year": 1857
+    },
+    {
+      "event_id": "evt_1860_lincoln_elected",
+      "date": "1860-11-06",
+      "event_type": "ruler_transition",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Abraham Lincoln elected president",
+      "year": 1860
+    },
+    {
+      "event_id": "evt_1861_fort_sumter",
+      "date": "1861-04-12",
+      "event_type": "civil_war_start",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Attack on Fort Sumter",
+      "year": 1861
+    },
+    {
+      "event_id": "evt_1862_homestead_act",
+      "date": "1862-05-20",
+      "event_type": "settlement_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "territorial_policy",
+      "event_name": "Homestead Act signed",
+      "year": 1862
+    },
+    {
+      "event_id": "evt_1863_emancipation_proclamation",
+      "date": "1863-01-01",
+      "event_type": "war_executive_order",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Emancipation Proclamation takes effect",
+      "year": 1863
+    },
+    {
+      "event_id": "evt_1865_13th_amendment",
+      "date": "1865-12-06",
+      "event_type": "constitutional_amendment",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Thirteenth Amendment ratified",
+      "year": 1865
+    },
+    {
+      "event_id": "evt_1868_14th_amendment",
+      "date": "1868-07-09",
+      "event_type": "constitutional_amendment",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Fourteenth Amendment ratified",
+      "year": 1868
+    },
+    {
+      "event_id": "evt_1870_15th_amendment",
+      "date": "1870-02-03",
+      "event_type": "constitutional_amendment",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Fifteenth Amendment ratified",
+      "year": 1870
+    },
+    {
+      "event_id": "evt_1877_compromise_reconstruction_ends",
+      "date": "1877-03-02",
+      "event_type": "elite_compromise",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "domestic_institutional",
+      "event_name": "Compromise of 1877 / Reconstruction ends",
+      "year": 1877
+    },
+    {
+      "event_id": "evt_1882_chinese_exclusion_act",
+      "date": "1882-05-06",
+      "event_type": "immigration_restriction",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "immigration",
+      "event_name": "Chinese Exclusion Act signed",
+      "year": 1882
+    },
+    {
+      "event_id": "evt_1887_interstate_commerce_act",
+      "date": "1887-02-04",
+      "event_type": "regulatory_institution",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "economic_regulation",
+      "event_name": "Interstate Commerce Act signed",
+      "year": 1887
+    },
+    {
+      "event_id": "evt_1890_sherman_antitrust",
+      "date": "1890-07-02",
+      "event_type": "economic_regulation",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "economic_regulation",
+      "event_name": "Sherman Antitrust Act signed",
+      "year": 1890
+    },
+    {
+      "event_id": "evt_1898_spanish_american_war",
+      "date": "1898-04-25",
+      "event_type": "war_declaration",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Spanish-American War declared",
+      "year": 1898
+    },
+    {
+      "event_id": "evt_1898_hawaii_annexation",
+      "date": "1898-07-07",
+      "event_type": "territorial_expansion",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "territorial_policy",
+      "event_name": "Hawaii annexed by joint resolution",
+      "year": 1898
+    },
+    {
+      "event_id": "evt_1901_roosevelt_succeeds",
+      "date": "1901-09-14",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "executive_transition",
+      "event_name": "Theodore Roosevelt becomes president after McKinley assassination",
+      "year": 1901
+    },
+    {
+      "event_id": "evt_1903_panama_canal_treaty",
+      "date": "1903-11-18",
+      "event_type": "strategic_infrastructure",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy",
+      "event_name": "Hay-Bunau-Varilla Treaty signed",
+      "year": 1903
+    },
+    {
+      "event_id": "evt_1913_federal_reserve_act",
+      "date": "1913-12-23",
+      "event_type": "monetary_institution",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "monetary_policy",
+      "event_name": "Federal Reserve Act signed",
+      "year": 1913
+    },
+    {
+      "event_id": "evt_1917_us_enters_wwi",
+      "date": "1917-04-06",
+      "event_type": "war_declaration",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "United States enters World War I",
+      "year": 1917
+    },
+    {
+      "event_id": "evt_1918_wilson_fourteen_points",
+      "date": "1918-01-08",
+      "event_type": "foreign_policy_doctrine",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy",
+      "event_name": "Wilson announces Fourteen Points",
+      "year": 1918
+    },
+    {
+      "event_id": "evt_1919_senate_rejects_league",
+      "date": "1919-11-19",
+      "event_type": "treaty_rejection",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Senate rejects Treaty of Versailles / League of Nations",
+      "year": 1919
+    },
+    {
+      "event_id": "evt_1920_19th_amendment",
+      "date": "1920-08-18",
+      "event_type": "constitutional_amendment",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Nineteenth Amendment ratified",
+      "year": 1920
+    },
+    {
+      "event_id": "evt_1924_immigration_act",
+      "date": "1924-05-26",
+      "event_type": "immigration_restriction",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "immigration",
+      "event_name": "Immigration Act of 1924 signed",
+      "year": 1924
+    },
+    {
+      "event_id": "evt_1929_stock_market_crash",
+      "date": "1929-10-29",
+      "event_type": "financial_crisis",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "economic_crisis",
+      "event_name": "Wall Street crash",
+      "year": 1929
+    },
+    {
+      "event_id": "evt_1933_fdr_inauguration_new_deal",
+      "date": "1933-03-04",
+      "event_type": "ruler_transition_policy_shift",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "economic_policy",
+      "event_name": "FDR inaugurated; New Deal emergency begins",
+      "year": 1933
+    },
+    {
+      "event_id": "evt_1933_glass_steagall",
+      "date": "1933-06-16",
+      "event_type": "financial_regulation",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "financial_regulation",
+      "event_name": "Glass-Steagall Banking Act signed",
+      "year": 1933
+    },
+    {
+      "event_id": "evt_1935_social_security_act",
+      "date": "1935-08-14",
+      "event_type": "welfare_state",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_policy",
+      "event_name": "Social Security Act signed",
+      "year": 1935
+    },
+    {
+      "event_id": "evt_1941_lend_lease",
+      "date": "1941-03-11",
+      "event_type": "war_aid_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Lend-Lease Act signed",
+      "year": 1941
+    },
+    {
+      "event_id": "evt_1941_pearl_harbor",
+      "date": "1941-12-07",
+      "event_type": "external_attack",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Attack on Pearl Harbor",
+      "year": 1941
+    },
+    {
+      "event_id": "evt_1941_us_enters_wwii",
+      "date": "1941-12-08",
+      "event_type": "war_declaration",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "United States declares war on Japan",
+      "year": 1941
+    },
+    {
+      "event_id": "evt_1942_japanese_internment_eo9066",
+      "date": "1942-02-19",
+      "event_type": "civil_liberties_restriction",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_security",
+      "event_name": "Executive Order 9066 signed",
+      "year": 1942
+    },
+    {
+      "event_id": "evt_1944_bretton_woods",
+      "date": "1944-07-22",
+      "event_type": "global_economic_order",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "international_economy",
+      "event_name": "Bretton Woods agreements concluded",
+      "year": 1944
+    },
+    {
+      "event_id": "evt_1945_un_charter_signed",
+      "date": "1945-06-26",
+      "event_type": "international_institution",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "United Nations Charter signed in San Francisco",
+      "year": 1945
+    },
+    {
+      "event_id": "evt_1945_atomic_bomb_hiroshima",
+      "date": "1945-08-06",
+      "event_type": "war_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Atomic bombing of Hiroshima",
+      "year": 1945
+    },
+    {
+      "event_id": "evt_1945_atomic_bomb_nagasaki",
+      "date": "1945-08-09",
+      "event_type": "war_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Atomic bombing of Nagasaki",
+      "year": 1945
+    },
+    {
       "event_id": "evt_1947_truman_doctrine",
       "date": "1947-03-12",
       "event_type": "foreign_policy_doctrine",
@@ -913,6 +1496,28 @@
       "confidence": 0.95,
       "decision_domain": "foreign_policy",
       "event_name": "Truman Doctrine announced",
+      "year": 1947
+    },
+    {
+      "event_id": "evt_1947_taft_hartley",
+      "date": "1947-06-23",
+      "event_type": "labor_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "domestic_policy",
+      "event_name": "Taft-Hartley Act enacted over veto",
+      "year": 1947
+    },
+    {
+      "event_id": "evt_1947_national_security_act",
+      "date": "1947-07-26",
+      "event_type": "security_state_institution",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "national_security",
+      "event_name": "National Security Act signed",
       "year": 1947
     },
     {
@@ -927,6 +1532,17 @@
       "year": 1948
     },
     {
+      "event_id": "evt_1948_berlin_airlift_begins",
+      "date": "1948-06-26",
+      "event_type": "crisis_response",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy",
+      "event_name": "Berlin Airlift begins",
+      "year": 1948
+    },
+    {
       "event_id": "evt_1949_nato",
       "date": "1949-04-04",
       "event_type": "alliance_creation",
@@ -938,6 +1554,28 @@
       "year": 1949
     },
     {
+      "event_id": "evt_1950_korean_war_entry",
+      "date": "1950-06-27",
+      "event_type": "war_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "U.S. military intervention in Korean War",
+      "year": 1950
+    },
+    {
+      "event_id": "evt_1953_iran_coup",
+      "date": "1953-08-19",
+      "event_type": "covert_action",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "covert_action",
+      "event_name": "Iran coup / Operation Ajax",
+      "year": 1953
+    },
+    {
       "event_id": "evt_1954_brown",
       "date": "1954-05-17",
       "event_type": "judicial_decision",
@@ -947,6 +1585,94 @@
       "decision_domain": "domestic_rights",
       "event_name": "Brown v. Board of Education decision",
       "year": 1954
+    },
+    {
+      "event_id": "evt_1954_guatemala_coup",
+      "date": "1954-06-27",
+      "event_type": "covert_action",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "covert_action",
+      "event_name": "Guatemala coup / Operation PBSUCCESS",
+      "year": 1954
+    },
+    {
+      "event_id": "evt_1956_interstate_highway_act",
+      "date": "1956-06-29",
+      "event_type": "infrastructure_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_policy",
+      "event_name": "Federal-Aid Highway Act signed",
+      "year": 1956
+    },
+    {
+      "event_id": "evt_1957_civil_rights_act",
+      "date": "1957-09-09",
+      "event_type": "civil_rights_legislation",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "civil_rights",
+      "event_name": "Civil Rights Act of 1957 signed",
+      "year": 1957
+    },
+    {
+      "event_id": "evt_1960_u2_incident",
+      "date": "1960-05-01",
+      "event_type": "intelligence_crisis",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "intelligence",
+      "event_name": "U-2 incident",
+      "year": 1960
+    },
+    {
+      "event_id": "evt_1961_bay_of_pigs",
+      "date": "1961-04-17",
+      "event_type": "covert_action_failure",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "covert_action",
+      "event_name": "Bay of Pigs invasion",
+      "year": 1961
+    },
+    {
+      "event_id": "evt_1962_cuban_missile_crisis",
+      "date": "1962-10-16",
+      "event_type": "nuclear_crisis",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "national_security",
+      "event_name": "Cuban Missile Crisis begins",
+      "year": 1962
+    },
+    {
+      "event_id": "evt_1963_jfk_assassination",
+      "date": "1963-11-22",
+      "event_type": "assassination",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "executive_transition",
+      "event_name": "Assassination of John F. Kennedy",
+      "year": 1963
+    },
+    {
+      "event_id": "evt_1964_civil_rights_act",
+      "date": "1964-07-02",
+      "event_type": "civil_rights_legislation",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Civil Rights Act of 1964 signed",
+      "year": 1964
     },
     {
       "event_id": "evt_1964_tonkin",
@@ -971,6 +1697,94 @@
       "year": 1965
     },
     {
+      "event_id": "evt_1965_medicare_medicaid",
+      "date": "1965-07-30",
+      "event_type": "welfare_state",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_policy",
+      "event_name": "Medicare and Medicaid enacted",
+      "year": 1965
+    },
+    {
+      "event_id": "evt_1965_voting_rights_act",
+      "date": "1965-08-06",
+      "event_type": "civil_rights_legislation",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Voting Rights Act signed",
+      "year": 1965
+    },
+    {
+      "event_id": "evt_1968_mlk_assassination",
+      "date": "1968-04-04",
+      "event_type": "political_violence",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "domestic_crisis",
+      "event_name": "Assassination of Martin Luther King Jr.",
+      "year": 1968
+    },
+    {
+      "event_id": "evt_1968_rfK_assassination",
+      "date": "1968-06-05",
+      "event_type": "political_violence",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "domestic_crisis",
+      "event_name": "Assassination of Robert F. Kennedy",
+      "year": 1968
+    },
+    {
+      "event_id": "evt_1969_nixon_doctrine",
+      "date": "1969-07-25",
+      "event_type": "foreign_policy_doctrine",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy",
+      "event_name": "Nixon Doctrine announced",
+      "year": 1969
+    },
+    {
+      "event_id": "evt_1971_nixon_gold_window",
+      "date": "1971-08-15",
+      "event_type": "monetary_policy_shift",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "monetary_policy",
+      "event_name": "Nixon ends dollar-gold convertibility",
+      "year": 1971
+    },
+    {
+      "event_id": "evt_1972_nixon_china_visit",
+      "date": "1972-02-21",
+      "event_type": "diplomatic_opening",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Nixon visits China",
+      "year": 1972
+    },
+    {
+      "event_id": "evt_1972_watergate_breakin",
+      "date": "1972-06-17",
+      "event_type": "political_scandal",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "domestic_politics",
+      "event_name": "Watergate break-in",
+      "year": 1972
+    },
+    {
       "event_id": "evt_1973_trilateral_founded",
       "date": "1973-07-01",
       "event_type": "network_creation",
@@ -993,6 +1807,72 @@
       "year": 1973
     },
     {
+      "event_id": "evt_1973_war_powers_resolution",
+      "date": "1973-11-07",
+      "event_type": "congressional_constraint",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "war_powers",
+      "event_name": "War Powers Resolution enacted over veto",
+      "year": 1973
+    },
+    {
+      "event_id": "evt_1974_nixon_resignation",
+      "date": "1974-08-09",
+      "event_type": "ruler_transition_crisis",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "executive_transition",
+      "event_name": "Richard Nixon resigns",
+      "year": 1974
+    },
+    {
+      "event_id": "evt_1975_church_committee",
+      "date": "1975-01-27",
+      "event_type": "intelligence_oversight",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "intelligence",
+      "event_name": "Senate Church Committee created",
+      "year": 1975
+    },
+    {
+      "event_id": "evt_1975_fall_saigon",
+      "date": "1975-04-30",
+      "event_type": "war_end",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Fall of Saigon",
+      "year": 1975
+    },
+    {
+      "event_id": "evt_1978_fisa",
+      "date": "1978-10-25",
+      "event_type": "intelligence_oversight",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "intelligence",
+      "event_name": "Foreign Intelligence Surveillance Act signed",
+      "year": 1978
+    },
+    {
+      "event_id": "evt_1979_china_relations_normalized",
+      "date": "1979-01-01",
+      "event_type": "diplomatic_normalization",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "U.S.-China diplomatic relations normalized",
+      "year": 1979
+    },
+    {
       "event_id": "evt_1979_iran_hostage",
       "date": "1979-11-04",
       "event_type": "foreign_crisis",
@@ -1002,6 +1882,105 @@
       "decision_domain": "foreign_policy_crisis",
       "event_name": "Iran hostage crisis begins",
       "year": 1979
+    },
+    {
+      "event_id": "evt_1979_iran_hostage_crisis",
+      "date": "1979-11-04",
+      "event_type": "foreign_policy_crisis",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Iran hostage crisis begins",
+      "year": 1979
+    },
+    {
+      "event_id": "evt_1980_volcker_shock_peak",
+      "date": "1980-03-01",
+      "event_type": "monetary_policy_shift",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "monetary_policy",
+      "event_name": "Volcker anti-inflation monetary tightening peaks",
+      "year": 1980
+    },
+    {
+      "event_id": "evt_1981_reagan_inauguration",
+      "date": "1981-01-20",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Ronald Reagan inaugurated",
+      "year": 1981
+    },
+    {
+      "event_id": "evt_1981_air_traffic_controllers_fired",
+      "date": "1981-08-05",
+      "event_type": "labor_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "domestic_policy",
+      "event_name": "Reagan fires striking air traffic controllers",
+      "year": 1981
+    },
+    {
+      "event_id": "evt_1983_grenada_invasion",
+      "date": "1983-10-25",
+      "event_type": "military_intervention",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "U.S. invasion of Grenada",
+      "year": 1983
+    },
+    {
+      "event_id": "evt_1986_iran_contra_revealed",
+      "date": "1986-11-25",
+      "event_type": "political_scandal",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "covert_action",
+      "event_name": "Iran-Contra affair publicly revealed",
+      "year": 1986
+    },
+    {
+      "event_id": "evt_1987_black_monday",
+      "date": "1987-10-19",
+      "event_type": "financial_crisis",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "economic_crisis",
+      "event_name": "Black Monday stock-market crash",
+      "year": 1987
+    },
+    {
+      "event_id": "evt_1989_panama_invasion",
+      "date": "1989-12-20",
+      "event_type": "military_intervention",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "U.S. invasion of Panama",
+      "year": 1989
+    },
+    {
+      "event_id": "evt_1990_gulf_war_authorization",
+      "date": "1991-01-12",
+      "event_type": "war_authorization",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Congress authorizes Gulf War force",
+      "year": 1991
     },
     {
       "event_id": "evt_1991_gulf_war",
@@ -1015,6 +1994,127 @@
       "year": 1991
     },
     {
+      "event_id": "evt_1991_soviet_union_dissolves",
+      "date": "1991-12-26",
+      "event_type": "geopolitical_shift",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "Soviet Union dissolves",
+      "year": 1991
+    },
+    {
+      "event_id": "evt_1992_nafta_signed",
+      "date": "1992-12-17",
+      "event_type": "trade_agreement",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "trade",
+      "event_name": "NAFTA signed",
+      "year": 1992
+    },
+    {
+      "event_id": "evt_1993_clinton_inauguration",
+      "date": "1993-01-20",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Bill Clinton inaugurated",
+      "year": 1993
+    },
+    {
+      "event_id": "evt_1994_nafta_effective",
+      "date": "1994-01-01",
+      "event_type": "trade_agreement_implementation",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "trade",
+      "event_name": "NAFTA enters into force",
+      "year": 1994
+    },
+    {
+      "event_id": "evt_1994_crime_bill",
+      "date": "1994-09-13",
+      "event_type": "criminal_justice_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_security",
+      "event_name": "Violent Crime Control and Law Enforcement Act signed",
+      "year": 1994
+    },
+    {
+      "event_id": "evt_1995_wto_created",
+      "date": "1995-01-01",
+      "event_type": "global_economic_order",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "trade",
+      "event_name": "World Trade Organization begins",
+      "year": 1995
+    },
+    {
+      "event_id": "evt_1998_clinton_impeached",
+      "date": "1998-12-19",
+      "event_type": "impeachment",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_politics",
+      "event_name": "Bill Clinton impeached by House",
+      "year": 1998
+    },
+    {
+      "event_id": "evt_1999_nato_kosovo",
+      "date": "1999-03-24",
+      "event_type": "military_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "war",
+      "event_name": "NATO bombing of Yugoslavia begins",
+      "year": 1999
+    },
+    {
+      "event_id": "evt_1999_glass_steagall_repeal",
+      "date": "1999-11-12",
+      "event_type": "financial_deregulation",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "financial_regulation",
+      "event_name": "Gramm-Leach-Bliley Act signed",
+      "year": 1999
+    },
+    {
+      "event_id": "evt_2000_bush_v_gore",
+      "date": "2000-12-12",
+      "event_type": "judicial_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Bush v. Gore decision",
+      "year": 2000
+    },
+    {
+      "event_id": "evt_2001_george_w_bush_inauguration",
+      "date": "2001-01-20",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "George W. Bush inaugurated",
+      "year": 2001
+    },
+    {
       "event_id": "evt_2001_911",
       "date": "2001-09-11",
       "event_type": "terror_attack",
@@ -1023,6 +2123,39 @@
       "confidence": 0.98,
       "decision_domain": "security_crisis",
       "event_name": "September 11 attacks",
+      "year": 2001
+    },
+    {
+      "event_id": "evt_2001_911_attacks",
+      "date": "2001-09-11",
+      "event_type": "terror_attack",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "national_security",
+      "event_name": "September 11 terrorist attacks",
+      "year": 2001
+    },
+    {
+      "event_id": "evt_2001_aumf",
+      "date": "2001-09-18",
+      "event_type": "war_authorization",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Authorization for Use of Military Force enacted",
+      "year": 2001
+    },
+    {
+      "event_id": "evt_2001_afghanistan_invasion",
+      "date": "2001-10-07",
+      "event_type": "military_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "U.S. invasion of Afghanistan begins",
       "year": 2001
     },
     {
@@ -1037,6 +2170,28 @@
       "year": 2001
     },
     {
+      "event_id": "evt_2002_iraq_aumf",
+      "date": "2002-10-16",
+      "event_type": "war_authorization",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "war",
+      "event_name": "Iraq War authorization enacted",
+      "year": 2002
+    },
+    {
+      "event_id": "evt_2002_dhs_created",
+      "date": "2002-11-25",
+      "event_type": "security_state_institution",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "national_security",
+      "event_name": "Homeland Security Act signed",
+      "year": 2002
+    },
+    {
       "event_id": "evt_2003_iraq_invasion",
       "date": "2003-03-20",
       "event_type": "war",
@@ -1046,6 +2201,50 @@
       "decision_domain": "war",
       "event_name": "U.S.-led invasion of Iraq begins",
       "year": 2003
+    },
+    {
+      "event_id": "evt_2005_katrina",
+      "date": "2005-08-29",
+      "event_type": "disaster_response_crisis",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "domestic_crisis",
+      "event_name": "Hurricane Katrina landfall and federal response crisis",
+      "year": 2005
+    },
+    {
+      "event_id": "evt_2006_surveillance_disclosure",
+      "date": "2006-01-01",
+      "event_type": "surveillance_disclosure",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "intelligence",
+      "event_name": "NSA warrantless surveillance controversy intensifies",
+      "year": 2006
+    },
+    {
+      "event_id": "evt_2008_bear_stearns_rescue",
+      "date": "2008-03-16",
+      "event_type": "financial_crisis_response",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "financial_policy",
+      "event_name": "Bear Stearns rescue arranged",
+      "year": 2008
+    },
+    {
+      "event_id": "evt_2008_lehman_collapse",
+      "date": "2008-09-15",
+      "event_type": "financial_crisis",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "economic_crisis",
+      "event_name": "Lehman Brothers collapses",
+      "year": 2008
     },
     {
       "event_id": "evt_2008_tarp",
@@ -1059,6 +2258,39 @@
       "year": 2008
     },
     {
+      "event_id": "evt_2008_fed_qe1",
+      "date": "2008-11-25",
+      "event_type": "monetary_policy_shift",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "monetary_policy",
+      "event_name": "Federal Reserve announces first large-scale asset purchases",
+      "year": 2008
+    },
+    {
+      "event_id": "evt_2009_obama_inauguration",
+      "date": "2009-01-20",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Barack Obama inaugurated",
+      "year": 2009
+    },
+    {
+      "event_id": "evt_2009_arra_stimulus",
+      "date": "2009-02-17",
+      "event_type": "fiscal_stimulus",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "economic_policy",
+      "event_name": "American Recovery and Reinvestment Act signed",
+      "year": 2009
+    },
+    {
       "event_id": "evt_2010_aca",
       "date": "2010-03-23",
       "event_type": "domestic_legislation",
@@ -1068,6 +2300,94 @@
       "decision_domain": "health_policy",
       "event_name": "Affordable Care Act signed",
       "year": 2010
+    },
+    {
+      "event_id": "evt_2010_aca_signed",
+      "date": "2010-03-23",
+      "event_type": "health_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_policy",
+      "event_name": "Affordable Care Act signed",
+      "year": 2010
+    },
+    {
+      "event_id": "evt_2010_dodd_frank",
+      "date": "2010-07-21",
+      "event_type": "financial_regulation",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "financial_regulation",
+      "event_name": "Dodd-Frank Act signed",
+      "year": 2010
+    },
+    {
+      "event_id": "evt_2011_libya_intervention",
+      "date": "2011-03-19",
+      "event_type": "military_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "war",
+      "event_name": "U.S./NATO intervention in Libya begins",
+      "year": 2011
+    },
+    {
+      "event_id": "evt_2011_bin_laden_raid",
+      "date": "2011-05-02",
+      "event_type": "counterterrorism_operation",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "national_security",
+      "event_name": "Osama bin Laden killed in U.S. raid",
+      "year": 2011
+    },
+    {
+      "event_id": "evt_2013_snowden_disclosures",
+      "date": "2013-06-05",
+      "event_type": "surveillance_disclosure",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.95,
+      "decision_domain": "intelligence",
+      "event_name": "Snowden NSA disclosures begin",
+      "year": 2013
+    },
+    {
+      "event_id": "evt_2013_shelby_county",
+      "date": "2013-06-25",
+      "event_type": "judicial_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Shelby County v. Holder decision",
+      "year": 2013
+    },
+    {
+      "event_id": "evt_2015_iran_deal_jcpoa",
+      "date": "2015-07-14",
+      "event_type": "diplomatic_agreement",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy",
+      "event_name": "Iran nuclear deal / JCPOA reached",
+      "year": 2015
+    },
+    {
+      "event_id": "evt_2015_paris_agreement",
+      "date": "2015-12-12",
+      "event_type": "international_agreement",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "climate_policy",
+      "event_name": "Paris Climate Agreement adopted",
+      "year": 2015
     },
     {
       "event_id": "evt_2016_trump_elected",
@@ -1081,6 +2401,72 @@
       "year": 2016
     },
     {
+      "event_id": "evt_2017_trump_inauguration",
+      "date": "2017-01-20",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Donald Trump inaugurated as 45th president",
+      "year": 2017
+    },
+    {
+      "event_id": "evt_2017_travel_ban_eo",
+      "date": "2017-01-27",
+      "event_type": "immigration_security_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "immigration",
+      "event_name": "Trump travel-ban executive order signed",
+      "year": 2017
+    },
+    {
+      "event_id": "evt_2017_tax_cuts_jobs_act",
+      "date": "2017-12-22",
+      "event_type": "tax_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "economic_policy",
+      "event_name": "Tax Cuts and Jobs Act signed",
+      "year": 2017
+    },
+    {
+      "event_id": "evt_2018_us_exits_jcpoa",
+      "date": "2018-05-08",
+      "event_type": "treaty_withdrawal",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy",
+      "event_name": "United States withdraws from Iran nuclear deal",
+      "year": 2018
+    },
+    {
+      "event_id": "evt_2018_china_tariffs",
+      "date": "2018-07-06",
+      "event_type": "trade_war",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "trade",
+      "event_name": "U.S. imposes major tariffs on Chinese goods",
+      "year": 2018
+    },
+    {
+      "event_id": "evt_2019_trump_first_impeachment",
+      "date": "2019-12-18",
+      "event_type": "impeachment",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "domestic_politics",
+      "event_name": "Donald Trump impeached first time",
+      "year": 2019
+    },
+    {
       "event_id": "evt_2020_covid_emergency",
       "date": "2020-03-13",
       "event_type": "public_health_emergency",
@@ -1089,6 +2475,39 @@
       "confidence": 0.95,
       "decision_domain": "public_health",
       "event_name": "COVID-19 national emergency declared",
+      "year": 2020
+    },
+    {
+      "event_id": "evt_2020_cares_act",
+      "date": "2020-03-27",
+      "event_type": "fiscal_stimulus",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "economic_policy",
+      "event_name": "CARES Act signed",
+      "year": 2020
+    },
+    {
+      "event_id": "evt_2020_george_floyd_protests",
+      "date": "2020-05-26",
+      "event_type": "mass_protest",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.95,
+      "decision_domain": "domestic_crisis",
+      "event_name": "George Floyd protests begin nationwide",
+      "year": 2020
+    },
+    {
+      "event_id": "evt_2020_election",
+      "date": "2020-11-03",
+      "event_type": "election",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "2020 presidential election",
       "year": 2020
     },
     {
@@ -1103,6 +2522,28 @@
       "year": 2021
     },
     {
+      "event_id": "evt_2021_january_6",
+      "date": "2021-01-06",
+      "event_type": "political_violence",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "domestic_crisis",
+      "event_name": "Attack on U.S. Capitol",
+      "year": 2021
+    },
+    {
+      "event_id": "evt_2021_biden_inauguration",
+      "date": "2021-01-20",
+      "event_type": "ruler_transition",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Joe Biden inaugurated",
+      "year": 2021
+    },
+    {
       "event_id": "evt_2021_afghanistan_withdrawal",
       "date": "2021-08-30",
       "event_type": "military_withdrawal",
@@ -1114,6 +2555,83 @@
       "year": 2021
     },
     {
+      "event_id": "evt_2022_ukraine_aid_framework",
+      "date": "2022-02-24",
+      "event_type": "foreign_policy_crisis_response",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy",
+      "event_name": "U.S. Ukraine aid and sanctions response after Russian invasion",
+      "year": 2022
+    },
+    {
+      "event_id": "evt_2022_dobbs",
+      "date": "2022-06-24",
+      "event_type": "judicial_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "civil_rights",
+      "event_name": "Dobbs v. Jackson Women’s Health Organization decision",
+      "year": 2022
+    },
+    {
+      "event_id": "evt_2022_chips_act",
+      "date": "2022-08-09",
+      "event_type": "industrial_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "economic_security",
+      "event_name": "CHIPS and Science Act signed",
+      "year": 2022
+    },
+    {
+      "event_id": "evt_2023_svb_failure",
+      "date": "2023-03-10",
+      "event_type": "financial_crisis",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "economic_crisis",
+      "event_name": "Silicon Valley Bank fails",
+      "year": 2023
+    },
+    {
+      "event_id": "evt_2023_debt_ceiling_fiscal_responsibility",
+      "date": "2023-06-03",
+      "event_type": "fiscal_governance",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "fiscal_policy",
+      "event_name": "Fiscal Responsibility Act resolves debt-ceiling standoff",
+      "year": 2023
+    },
+    {
+      "event_id": "evt_2024_trump_conviction_ny",
+      "date": "2024-05-30",
+      "event_type": "legal_political_event",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": 0.95,
+      "decision_domain": "domestic_politics",
+      "event_name": "Donald Trump convicted in New York criminal case",
+      "year": 2024
+    },
+    {
+      "event_id": "evt_2024_trump_elected_47",
+      "date": "2024-11-05",
+      "event_type": "ruler_transition",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": 0.98,
+      "decision_domain": "elections",
+      "event_name": "Donald Trump elected 47th president",
+      "year": 2024
+    },
+    {
       "event_id": "evt_2025_trump_second_inauguration",
       "date": "2025-01-20",
       "event_type": "inauguration",
@@ -1122,6 +2640,28 @@
       "confidence": 0.95,
       "decision_domain": "election_transition",
       "event_name": "Donald Trump inaugurated as 47th president",
+      "year": 2025
+    },
+    {
+      "event_id": "evt_2025_rubio_state_confirmation",
+      "date": "2025-01-21",
+      "event_type": "cabinet_transition",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy",
+      "event_name": "Marco Rubio sworn in as Secretary of State",
+      "year": 2025
+    },
+    {
+      "event_id": "evt_2025_vance_vp_tie_breaking_defense",
+      "date": "2025-01-24",
+      "event_type": "senate_confirmation",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "national_security",
+      "event_name": "JD Vance casts tie-breaking vote for Defense Secretary confirmation",
       "year": 2025
     }
   ]

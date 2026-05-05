@@ -101,5 +101,6 @@
     ]
   },
   "source_policy": "Each researched table includes a source_url column where practical. URLs are plain text for spreadsheet import compatibility.",
-  "warning": "Deep State/globalists are analytical proxy labels, not proof of a conspiracy."
+  "warning": "Deep State/globalists are analytical proxy labels, not proof of a conspiracy.",
+  "events_expansion_note": "Expanded event layer includes long-run U.S. political, constitutional, foreign-policy, security, economic, judicial, and crisis events. Faction coding is interpretive and should be filtered by confidence."
 }

@@ -1,11 +1,9 @@
-persons: 121
-positions: 136
-political_entries: 121
-factions: 13
-person_factions: 234
-elite_edges: 36
-person_id unique: True
-positions person_id all known: True
-political_entries person_id all known: True
-person_factions person_id all known: True
-person_factions faction_id all known: True
+Validation report
+persons.csv rows: 121
+positions.csv rows: 136
+political_entries.csv rows: 121
+events.csv rows: 160
+factions.csv rows: 13
+person_factions.csv rows: 234
+elite_edges.csv rows: 36
+Errors: none
