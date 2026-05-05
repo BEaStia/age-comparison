@@ -6,9 +6,11 @@
     datasets: [],
     dataset: null,
     data: null,
+    series: null,
   };
 
   const DATASETS_URL = "data/datasets.json";
+  const SERIES_URL = "data/series-data.json";
   const FALLBACK_DATASET = {
     id: "russia",
     label: { ru: "Россия / СССР", en: "Russia / USSR" },
@@ -27,6 +29,7 @@
       nav: {
         overview: "Обзор",
         correlations: "Корреляции",
+        interactive: "Интерактив",
         core: "Элита",
         factions: "Фракции",
         events: "События",
@@ -36,6 +39,7 @@
       sections: {
         overview: "Обзор",
         correlations: "Выводы по корреляциям",
+        interactive: "Интерактивные графики",
         core: "Возраст элиты и правителя",
         factions: "Фракционный слой",
         events: "Событийный слой",
@@ -78,6 +82,7 @@
       nav: {
         overview: "Overview",
         correlations: "Correlations",
+        interactive: "Interactive",
         core: "Elite",
         factions: "Factions",
         events: "Events",
@@ -87,6 +92,7 @@
       sections: {
         overview: "Overview",
         correlations: "Correlation takeaways",
+        interactive: "Interactive charts",
         core: "Elite age and ruler age",
         factions: "Faction layer",
         events: "Event layer",
@@ -770,6 +776,7 @@
     document.getElementById("nav").innerHTML = navMarkup();
     document.getElementById("app").innerHTML = appMarkup();
     document.getElementById("footer").innerHTML = I18N[state.lang].footer;
+    renderD3Charts();
 
     document.querySelectorAll("[data-lang]").forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.lang === state.lang));
@@ -827,6 +834,7 @@
     return [
       link("#overview", nav.overview),
       link("#correlations", nav.correlations),
+      link("#interactive", nav.interactive),
       link("#core", nav.core),
       link("#factions", nav.factions),
       link("#events", nav.events),
@@ -843,6 +851,7 @@
     return [
       sectionOverview(),
       sectionCorrelations(),
+      sectionInteractiveCharts(),
       sectionFigures("core", "core"),
       sectionFactions(),
       sectionEvents(),
@@ -963,6 +972,53 @@
               <div class="correlation-list">
                 ${correlationCards}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  function sectionInteractiveCharts() {
+    return `
+      <section id="interactive" class="section-anchor">
+        <div class="section-head">
+          <h2>${escapeHtml(getText("sections.interactive"))}</h2>
+          <p class="section-note">
+            ${escapeHtml(
+              state.lang === "ru"
+                ? "Интерактивные версии строятся через D3. Тут меньше шума, больше осей, подсказок и читаемости."
+                : "Interactive versions are rendered with D3. They reduce clutter and make axes and tooltips easier to read."
+            )}
+          </p>
+        </div>
+        <div class="content">
+          <div class="chart-grid">
+            <div class="chart-shell chart-shell--wide" id="d3-ruler-chart-shell">
+              <div class="chart-head">
+                <strong>${escapeHtml(
+                  state.lang === "ru" ? "Возраст правителя и события" : "Ruler age and events"
+                )}</strong>
+                <p>${escapeHtml(
+                  state.lang === "ru"
+                    ? "События показаны точками с подсказками; по оси X шаг 5 лет."
+                    : "Events are shown as points with tooltips; the X axis uses 5-year steps."
+                )}</p>
+              </div>
+              <div class="chart-body" id="d3-ruler-chart"></div>
+            </div>
+            <div class="chart-shell chart-shell--wide" id="d3-severity-chart-shell">
+              <div class="chart-head">
+                <strong>${escapeHtml(
+                  state.lang === "ru" ? "Severity timeline событий" : "Event severity timeline"
+                )}</strong>
+                <p>${escapeHtml(
+                  state.lang === "ru"
+                    ? "Размер точки отражает confidence, подписи убраны из поля графика."
+                    : "Point size reflects confidence, and labels are kept out of the plotting area."
+                )}</p>
+              </div>
+              <div class="chart-body" id="d3-severity-chart"></div>
             </div>
           </div>
         </div>
@@ -1338,6 +1394,318 @@
     `;
   }
 
+  function renderD3Charts() {
+    const shellRuler = document.getElementById("d3-ruler-chart");
+    const shellSeverity = document.getElementById("d3-severity-chart");
+    if (!shellRuler || !shellSeverity) {
+      return;
+    }
+
+    if (!window.d3 || !state.series) {
+      const fallbackHtml = `
+        <div class="chart-fallback">
+          ${escapeHtml(
+            state.lang === "ru"
+              ? "Интерактивный слой D3 недоступен, поэтому используйте PNG-версию графика ниже."
+              : "The D3 layer is unavailable, so use the PNG version below."
+          )}
+        </div>
+      `;
+      shellRuler.innerHTML = fallbackHtml;
+      shellSeverity.innerHTML = fallbackHtml;
+      return;
+    }
+
+    renderRulerAgeChart(shellRuler, state.series.elite_year || [], state.series.events || []);
+    renderEventSeverityChart(shellSeverity, state.series.events || []);
+  }
+
+  function createChartTooltip(shell) {
+    const tooltip = document.createElement("div");
+    tooltip.className = "chart-tooltip";
+    shell.appendChild(tooltip);
+    return tooltip;
+  }
+
+  function showTooltip(tooltip, shell, event, html) {
+    const rect = shell.getBoundingClientRect();
+    const offsetX = event.clientX - rect.left + 14;
+    const offsetY = event.clientY - rect.top + 14;
+    tooltip.innerHTML = html;
+    tooltip.style.left = `${Math.min(offsetX, rect.width - 300)}px`;
+    tooltip.style.top = `${Math.min(offsetY, rect.height - 120)}px`;
+    tooltip.style.opacity = "1";
+  }
+
+  function hideTooltip(tooltip) {
+    tooltip.style.opacity = "0";
+  }
+
+  function renderRulerAgeChart(shell, eliteYear, events) {
+    const d3 = window.d3;
+    shell.innerHTML = "";
+    const width = Math.max(960, shell.getBoundingClientRect().width - 20);
+    const height = 420;
+    const margin = { top: 20, right: 18, bottom: 72, left: 58 };
+    const svg = d3
+      .select(shell)
+      .append("svg")
+      .attr("class", "chart-svg")
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("preserveAspectRatio", "xMidYMid meet");
+
+    const tooltip = createChartTooltip(shell);
+
+    const years = eliteYear.map((d) => +d.year).filter((d) => Number.isFinite(d));
+    if (!years.length) {
+      shell.innerHTML = `<div class="chart-fallback">${escapeHtml(
+        state.lang === "ru" ? "Нет данных для интерактивного графика." : "No data for the interactive chart."
+      )}</div>`;
+      return;
+    }
+
+    const x = d3
+      .scaleLinear()
+      .domain(d3.extent(years))
+      .range([margin.left, width - margin.right]);
+
+    const rulerValues = eliteYear.map((d) => +d.ruler_age).filter((d) => Number.isFinite(d));
+    const y = d3
+      .scaleLinear()
+      .domain([d3.min(rulerValues) - 2, d3.max(rulerValues) + 2])
+      .nice()
+      .range([height - margin.bottom, margin.top]);
+
+    const line = d3
+      .line()
+      .defined((d) => Number.isFinite(d.ruler_age))
+      .x((d) => x(+d.year))
+      .y((d) => y(+d.ruler_age));
+
+    svg
+      .append("g")
+      .attr("transform", `translate(0,${height - margin.bottom})`)
+      .call(
+        d3
+          .axisBottom(x)
+          .tickValues(d3.range(d3.min(years), d3.max(years) + 1, 5))
+          .tickFormat(d3.format("d"))
+      )
+      .call((g) => g.selectAll("text").attr("transform", "rotate(45)").attr("text-anchor", "start"))
+      .call((g) => g.select(".domain").attr("stroke", "#9fb0be"));
+
+    svg
+      .append("g")
+      .attr("transform", `translate(${margin.left},0)`)
+      .call(d3.axisLeft(y).ticks(6))
+      .call((g) => g.select(".domain").attr("stroke", "#9fb0be"));
+
+    svg
+      .append("path")
+      .datum(eliteYear)
+      .attr("fill", "none")
+      .attr("stroke", "#0f766e")
+      .attr("stroke-width", 2.4)
+      .attr("d", line);
+
+    const eventData = events
+      .filter((d) => d.elite_initiated && Number.isFinite(d.year))
+      .map((d) => ({ ...d, ruler_age: eliteYear.find((row) => +row.year === +d.year)?.ruler_age }))
+      .filter((d) => Number.isFinite(+d.ruler_age));
+
+    svg
+      .append("g")
+      .selectAll("circle")
+      .data(eventData)
+      .join("circle")
+      .attr("cx", (d) => x(+d.year))
+      .attr("cy", (d) => y(+d.ruler_age))
+      .attr("r", (d) => 3 + Math.max(0, +d.severity || 0) * 0.9)
+      .attr("fill", (d) => (d.severity >= 5 ? "#b33a3a" : "#d76666"))
+      .attr("fill-opacity", (d) => Math.min(0.9, 0.45 + (d.confidence || 0) * 0.45))
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 1)
+      .on("mouseenter", function (event, d) {
+        d3.select(this).attr("stroke", "#0f766e").attr("stroke-width", 2);
+        showTooltip(
+          tooltip,
+          shell,
+          event,
+          `
+            <strong>${escapeHtml(d.event_name || "")}</strong>
+            <div>${escapeHtml(String(d.date || d.year || ""))}</div>
+            <div>${escapeHtml(
+              state.lang === "ru"
+                ? `Severity: ${d.severity ?? "—"}`
+                : `Severity: ${d.severity ?? "—"}`
+            )}</div>
+            <div>${escapeHtml(
+              state.lang === "ru"
+                ? `Возраст правителя: ${formatNumber(d.ruler_age, 1)}`
+                : `Ruler age: ${formatNumber(d.ruler_age, 1)}`
+            )}</div>
+            <div>${escapeHtml(
+              state.lang === "ru"
+                ? `Домен: ${labelForDimension(state.tab, d.decision_domain || "")}`
+                : `Domain: ${labelForDimension(state.tab, d.decision_domain || "")}`
+            )}</div>
+          `
+        );
+      })
+      .on("mousemove", (event) => {
+        const current = tooltip.innerHTML;
+        if (current) {
+          showTooltip(tooltip, shell, event, current);
+        }
+      })
+      .on("mouseleave", function () {
+        d3.select(this).attr("stroke", "#fff").attr("stroke-width", 1);
+        hideTooltip(tooltip);
+      });
+
+    svg
+      .append("text")
+      .attr("x", margin.left)
+      .attr("y", height - 18)
+      .attr("fill", "#5b6775")
+      .attr("font-size", 12)
+      .text(state.lang === "ru" ? "Год" : "Year");
+
+    svg
+      .append("text")
+      .attr("x", 14)
+      .attr("y", margin.top + 8)
+      .attr("fill", "#5b6775")
+      .attr("font-size", 12)
+      .text(state.lang === "ru" ? "Возраст правителя" : "Ruler age");
+  }
+
+  function renderEventSeverityChart(shell, events) {
+    const d3 = window.d3;
+    shell.innerHTML = "";
+    const width = Math.max(960, shell.getBoundingClientRect().width - 20);
+    const height = 420;
+    const margin = { top: 20, right: 18, bottom: 72, left: 58 };
+    const svg = d3
+      .select(shell)
+      .append("svg")
+      .attr("class", "chart-svg")
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("preserveAspectRatio", "xMidYMid meet");
+
+    const tooltip = createChartTooltip(shell);
+    const data = events.filter((d) => d.elite_initiated && Number.isFinite(d.year) && Number.isFinite(+d.severity));
+    if (!data.length) {
+      shell.innerHTML = `<div class="chart-fallback">${escapeHtml(
+        state.lang === "ru" ? "Нет данных для интерактивного графика." : "No data for the interactive chart."
+      )}</div>`;
+      return;
+    }
+
+    const years = data.map((d) => +d.year);
+    const x = d3
+      .scaleLinear()
+      .domain(d3.extent(years))
+      .range([margin.left, width - margin.right]);
+    const y = d3.scaleLinear().domain([0.5, 5.5]).range([height - margin.bottom, margin.top]);
+    const r = d3.scaleSqrt().domain([0, 1]).range([3, 10]);
+
+    svg
+      .append("g")
+      .attr("transform", `translate(0,${height - margin.bottom})`)
+      .call(
+        d3
+          .axisBottom(x)
+          .tickValues(d3.range(d3.min(years), d3.max(years) + 1, 5))
+          .tickFormat(d3.format("d"))
+      )
+      .call((g) => g.selectAll("text").attr("transform", "rotate(45)").attr("text-anchor", "start"))
+      .call((g) => g.select(".domain").attr("stroke", "#9fb0be"));
+
+    svg
+      .append("g")
+      .attr("transform", `translate(${margin.left},0)`)
+      .call(d3.axisLeft(y).ticks(5))
+      .call((g) => g.select(".domain").attr("stroke", "#9fb0be"));
+
+    svg.append("g")
+      .selectAll("line.grid")
+      .data(d3.range(1, 6))
+      .join("line")
+      .attr("x1", margin.left)
+      .attr("x2", width - margin.right)
+      .attr("y1", (d) => y(d))
+      .attr("y2", (d) => y(d))
+      .attr("stroke", "#e4e9ef")
+      .attr("stroke-dasharray", "2,2");
+
+    svg
+      .append("g")
+      .selectAll("circle")
+      .data(data)
+      .join("circle")
+      .attr("cx", (d) => x(+d.year))
+      .attr("cy", (d) => y(+d.severity))
+      .attr("r", (d) => r(Math.min(1, Math.max(0, +d.confidence || 0))))
+      .attr("fill", (d) => (d.severity >= 5 ? "#b33a3a" : "#6f4e9b"))
+      .attr("fill-opacity", (d) => Math.min(0.95, 0.35 + (d.confidence || 0) * 0.55))
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 1)
+      .on("mouseenter", function (event, d) {
+        d3.select(this).attr("stroke", "#0f766e").attr("stroke-width", 2);
+        showTooltip(
+          tooltip,
+          shell,
+          event,
+          `
+            <strong>${escapeHtml(d.event_name || "")}</strong>
+            <div>${escapeHtml(String(d.date || d.year || ""))}</div>
+            <div>${escapeHtml(
+              state.lang === "ru"
+                ? `Severity: ${d.severity ?? "—"}`
+                : `Severity: ${d.severity ?? "—"}`
+            )}</div>
+            <div>${escapeHtml(
+              state.lang === "ru"
+                ? `Confidence: ${formatNumber(d.confidence, 2)}`
+                : `Confidence: ${formatNumber(d.confidence, 2)}`
+            )}</div>
+            <div>${escapeHtml(
+              state.lang === "ru"
+                ? `Тип: ${labelForEventType(d.event_type || "")}`
+                : `Type: ${labelForEventType(d.event_type || "")}`
+            )}</div>
+          `
+        );
+      })
+      .on("mousemove", (event) => {
+        const current = tooltip.innerHTML;
+        if (current) {
+          showTooltip(tooltip, shell, event, current);
+        }
+      })
+      .on("mouseleave", function () {
+        d3.select(this).attr("stroke", "#fff").attr("stroke-width", 1);
+        hideTooltip(tooltip);
+      });
+
+    svg
+      .append("text")
+      .attr("x", margin.left)
+      .attr("y", height - 18)
+      .attr("fill", "#5b6775")
+      .attr("font-size", 12)
+      .text(state.lang === "ru" ? "Год" : "Year");
+
+    svg
+      .append("text")
+      .attr("x", 14)
+      .attr("y", margin.top + 8)
+      .attr("fill", "#5b6775")
+      .attr("font-size", 12)
+      .text(state.lang === "ru" ? "Severity" : "Severity");
+  }
+
   function escapeHtml(value) {
     return String(value)
       .replaceAll("&", "&amp;")
@@ -1420,17 +1788,28 @@
           state.datasets.find((item) => item.id === state.datasetId) || state.datasets[0] || FALLBACK_DATASET;
         state.datasetId = selected.id;
         localStorage.setItem("power_age_dataset", state.datasetId);
-        return fetch(selected.data_url)
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(`Failed to load ${selected.data_url}`);
-            }
-            return response.json();
-          })
-          .catch(() => fetch(FALLBACK_DATASET.data_url).then((response) => response.json()));
+        return Promise.all([
+          fetch(selected.data_url)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`Failed to load ${selected.data_url}`);
+              }
+              return response.json();
+            })
+            .catch(() => fetch(FALLBACK_DATASET.data_url).then((response) => response.json())),
+          fetch(SERIES_URL)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`Failed to load ${SERIES_URL}`);
+              }
+              return response.json();
+            })
+            .catch(() => null),
+        ]);
       })
-      .then((json) => {
-        state.data = json;
+      .then(([data, series]) => {
+        state.data = data;
+        state.series = series;
         state.dataset = state.datasets.find((item) => item.id === state.datasetId) || FALLBACK_DATASET;
         render();
       })

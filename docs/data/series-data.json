@@ -1,0 +1,3833 @@
+{
+  "elite_year": [
+    {
+      "year": 1801,
+      "ruler_age": 23.52,
+      "core_mean_age": 31.85,
+      "core_weighted_mean_age": 27.84,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1802,
+      "ruler_age": 24.52,
+      "core_mean_age": 32.85,
+      "core_weighted_mean_age": 28.84,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1803,
+      "ruler_age": 25.52,
+      "core_mean_age": 30.06,
+      "core_weighted_mean_age": 28.34,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1804,
+      "ruler_age": 26.52,
+      "core_mean_age": 32.19,
+      "core_weighted_mean_age": 30.45,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1805,
+      "ruler_age": 27.52,
+      "core_mean_age": 33.19,
+      "core_weighted_mean_age": 31.45,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1806,
+      "ruler_age": 28.52,
+      "core_mean_age": 33.06,
+      "core_weighted_mean_age": 31.34,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1807,
+      "ruler_age": 29.52,
+      "core_mean_age": 34.06,
+      "core_weighted_mean_age": 32.34,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1808,
+      "ruler_age": 30.52,
+      "core_mean_age": 33.49,
+      "core_weighted_mean_age": 32.63,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1809,
+      "ruler_age": 31.52,
+      "core_mean_age": 34.49,
+      "core_weighted_mean_age": 33.63,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1810,
+      "ruler_age": 32.52,
+      "core_mean_age": 39.83,
+      "core_weighted_mean_age": 38.01,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1811,
+      "ruler_age": 33.52,
+      "core_mean_age": 40.83,
+      "core_weighted_mean_age": 39.01,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1812,
+      "ruler_age": 34.52,
+      "core_mean_age": 42.52,
+      "core_weighted_mean_age": 39.85,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1813,
+      "ruler_age": 35.52,
+      "core_mean_age": 35.52,
+      "core_weighted_mean_age": 35.52,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1814,
+      "ruler_age": 36.52,
+      "core_mean_age": 36.52,
+      "core_weighted_mean_age": 36.52,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1815,
+      "ruler_age": 37.52,
+      "core_mean_age": 41.63,
+      "core_weighted_mean_age": 40.44,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1816,
+      "ruler_age": 38.52,
+      "core_mean_age": 42.63,
+      "core_weighted_mean_age": 41.44,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1817,
+      "ruler_age": 39.52,
+      "core_mean_age": 41.27,
+      "core_weighted_mean_age": 41.0,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1818,
+      "ruler_age": 40.52,
+      "core_mean_age": 42.27,
+      "core_weighted_mean_age": 42.0,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1819,
+      "ruler_age": 41.52,
+      "core_mean_age": 43.27,
+      "core_weighted_mean_age": 43.0,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1820,
+      "ruler_age": 42.52,
+      "core_mean_age": 46.1,
+      "core_weighted_mean_age": 45.37,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1821,
+      "ruler_age": 43.52,
+      "core_mean_age": 47.1,
+      "core_weighted_mean_age": 46.37,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1822,
+      "ruler_age": 44.52,
+      "core_mean_age": 48.1,
+      "core_weighted_mean_age": 47.37,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1823,
+      "ruler_age": 45.52,
+      "core_mean_age": 47.6,
+      "core_weighted_mean_age": 47.31,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1824,
+      "ruler_age": 46.52,
+      "core_mean_age": 48.6,
+      "core_weighted_mean_age": 48.31,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1825,
+      "ruler_age": 47.52,
+      "core_mean_age": 49.6,
+      "core_weighted_mean_age": 49.31,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1826,
+      "ruler_age": 29.98,
+      "core_mean_age": 42.37,
+      "core_weighted_mean_age": 39.27,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1827,
+      "ruler_age": 30.98,
+      "core_mean_age": 44.02,
+      "core_weighted_mean_age": 41.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.75
+    },
+    {
+      "year": 1828,
+      "ruler_age": 31.98,
+      "core_mean_age": 45.02,
+      "core_weighted_mean_age": 42.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1829,
+      "ruler_age": 32.98,
+      "core_mean_age": 46.02,
+      "core_weighted_mean_age": 43.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1830,
+      "ruler_age": 33.98,
+      "core_mean_age": 47.02,
+      "core_weighted_mean_age": 44.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1831,
+      "ruler_age": 34.98,
+      "core_mean_age": 48.02,
+      "core_weighted_mean_age": 45.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1832,
+      "ruler_age": 35.98,
+      "core_mean_age": 49.02,
+      "core_weighted_mean_age": 46.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1833,
+      "ruler_age": 36.98,
+      "core_mean_age": 49.38,
+      "core_weighted_mean_age": 47.34,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1834,
+      "ruler_age": 37.98,
+      "core_mean_age": 50.38,
+      "core_weighted_mean_age": 48.34,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1835,
+      "ruler_age": 38.98,
+      "core_mean_age": 51.38,
+      "core_weighted_mean_age": 49.34,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1836,
+      "ruler_age": 39.98,
+      "core_mean_age": 52.38,
+      "core_weighted_mean_age": 50.34,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1837,
+      "ruler_age": 40.98,
+      "core_mean_age": 53.38,
+      "core_weighted_mean_age": 51.34,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1838,
+      "ruler_age": 41.98,
+      "core_mean_age": 54.38,
+      "core_weighted_mean_age": 52.34,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1839,
+      "ruler_age": 42.98,
+      "core_mean_age": 55.38,
+      "core_weighted_mean_age": 53.34,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1840,
+      "ruler_age": 43.98,
+      "core_mean_age": 56.38,
+      "core_weighted_mean_age": 54.34,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1841,
+      "ruler_age": 44.98,
+      "core_mean_age": 57.38,
+      "core_weighted_mean_age": 55.34,
+      "core_share_60_plus": 0.4,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1842,
+      "ruler_age": 45.98,
+      "core_mean_age": 58.38,
+      "core_weighted_mean_age": 56.34,
+      "core_share_60_plus": 0.6,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1843,
+      "ruler_age": 46.98,
+      "core_mean_age": 59.38,
+      "core_weighted_mean_age": 57.34,
+      "core_share_60_plus": 0.6,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1844,
+      "ruler_age": 47.98,
+      "core_mean_age": 58.08,
+      "core_weighted_mean_age": 55.95,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1845,
+      "ruler_age": 48.98,
+      "core_mean_age": 57.45,
+      "core_weighted_mean_age": 55.05,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1846,
+      "ruler_age": 49.98,
+      "core_mean_age": 58.45,
+      "core_weighted_mean_age": 56.05,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1847,
+      "ruler_age": 50.98,
+      "core_mean_age": 59.45,
+      "core_weighted_mean_age": 57.05,
+      "core_share_60_plus": 0.667,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1848,
+      "ruler_age": 51.98,
+      "core_mean_age": 60.45,
+      "core_weighted_mean_age": 58.05,
+      "core_share_60_plus": 0.667,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1849,
+      "ruler_age": 52.98,
+      "core_mean_age": 61.45,
+      "core_weighted_mean_age": 59.05,
+      "core_share_60_plus": 0.667,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1850,
+      "ruler_age": 53.98,
+      "core_mean_age": 61.76,
+      "core_weighted_mean_age": 59.17,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1851,
+      "ruler_age": 54.98,
+      "core_mean_age": 62.76,
+      "core_weighted_mean_age": 60.17,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.5,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1852,
+      "ruler_age": 55.98,
+      "core_mean_age": 63.76,
+      "core_weighted_mean_age": 61.17,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.5,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1853,
+      "ruler_age": 56.98,
+      "core_mean_age": 64.76,
+      "core_weighted_mean_age": 62.17,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.5,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1854,
+      "ruler_age": 57.98,
+      "core_mean_age": 65.76,
+      "core_weighted_mean_age": 63.17,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.5,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1855,
+      "ruler_age": 37.17,
+      "core_mean_age": 55.86,
+      "core_weighted_mean_age": 49.63,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.5,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1856,
+      "ruler_age": 38.17,
+      "core_mean_age": 48.06,
+      "core_weighted_mean_age": 45.19,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1857,
+      "ruler_age": 39.17,
+      "core_mean_age": 49.06,
+      "core_weighted_mean_age": 46.19,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1858,
+      "ruler_age": 40.17,
+      "core_mean_age": 50.06,
+      "core_weighted_mean_age": 47.19,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1859,
+      "ruler_age": 41.17,
+      "core_mean_age": 51.06,
+      "core_weighted_mean_age": 48.19,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1860,
+      "ruler_age": 42.17,
+      "core_mean_age": 52.06,
+      "core_weighted_mean_age": 49.19,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1861,
+      "ruler_age": 43.17,
+      "core_mean_age": 50.62,
+      "core_weighted_mean_age": 49.19,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1862,
+      "ruler_age": 44.17,
+      "core_mean_age": 48.52,
+      "core_weighted_mean_age": 48.05,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.6
+    },
+    {
+      "year": 1863,
+      "ruler_age": 45.17,
+      "core_mean_age": 49.52,
+      "core_weighted_mean_age": 49.05,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.6
+    },
+    {
+      "year": 1864,
+      "ruler_age": 46.17,
+      "core_mean_age": 50.52,
+      "core_weighted_mean_age": 50.05,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.6
+    },
+    {
+      "year": 1865,
+      "ruler_age": 47.17,
+      "core_mean_age": 51.52,
+      "core_weighted_mean_age": 51.05,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.6
+    },
+    {
+      "year": 1866,
+      "ruler_age": 48.17,
+      "core_mean_age": 52.52,
+      "core_weighted_mean_age": 52.05,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.4
+    },
+    {
+      "year": 1867,
+      "ruler_age": 49.17,
+      "core_mean_age": 53.52,
+      "core_weighted_mean_age": 53.05,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1868,
+      "ruler_age": 50.17,
+      "core_mean_age": 54.97,
+      "core_weighted_mean_age": 54.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1869,
+      "ruler_age": 51.17,
+      "core_mean_age": 55.97,
+      "core_weighted_mean_age": 55.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1870,
+      "ruler_age": 52.17,
+      "core_mean_age": 56.97,
+      "core_weighted_mean_age": 56.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1871,
+      "ruler_age": 53.17,
+      "core_mean_age": 57.97,
+      "core_weighted_mean_age": 57.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1872,
+      "ruler_age": 54.17,
+      "core_mean_age": 58.97,
+      "core_weighted_mean_age": 58.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1873,
+      "ruler_age": 55.17,
+      "core_mean_age": 59.97,
+      "core_weighted_mean_age": 59.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1874,
+      "ruler_age": 56.17,
+      "core_mean_age": 60.97,
+      "core_weighted_mean_age": 60.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1875,
+      "ruler_age": 57.17,
+      "core_mean_age": 61.97,
+      "core_weighted_mean_age": 61.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1876,
+      "ruler_age": 58.18,
+      "core_mean_age": 62.97,
+      "core_weighted_mean_age": 62.28,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1877,
+      "ruler_age": 59.17,
+      "core_mean_age": 63.97,
+      "core_weighted_mean_age": 63.28,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1878,
+      "ruler_age": 60.17,
+      "core_mean_age": 64.97,
+      "core_weighted_mean_age": 64.28,
+      "core_share_60_plus": 0.75,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1879,
+      "ruler_age": 61.17,
+      "core_mean_age": 68.37,
+      "core_weighted_mean_age": 66.82,
+      "core_share_60_plus": 1.0,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1880,
+      "ruler_age": 62.18,
+      "core_mean_age": 65.31,
+      "core_weighted_mean_age": 65.0,
+      "core_share_60_plus": 0.75,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1881,
+      "ruler_age": 36.31,
+      "core_mean_age": 57.79,
+      "core_weighted_mean_age": 53.17,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1882,
+      "ruler_age": 37.31,
+      "core_mean_age": 46.21,
+      "core_weighted_mean_age": 43.24,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1883,
+      "ruler_age": 38.31,
+      "core_mean_age": 47.21,
+      "core_weighted_mean_age": 44.24,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1884,
+      "ruler_age": 39.31,
+      "core_mean_age": 48.22,
+      "core_weighted_mean_age": 45.25,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1885,
+      "ruler_age": 40.31,
+      "core_mean_age": 49.21,
+      "core_weighted_mean_age": 46.24,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1886,
+      "ruler_age": 41.31,
+      "core_mean_age": 50.21,
+      "core_weighted_mean_age": 47.24,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1887,
+      "ruler_age": 42.31,
+      "core_mean_age": 51.21,
+      "core_weighted_mean_age": 48.24,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1888,
+      "ruler_age": 43.31,
+      "core_mean_age": 52.22,
+      "core_weighted_mean_age": 49.25,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1889,
+      "ruler_age": 44.31,
+      "core_mean_age": 53.21,
+      "core_weighted_mean_age": 50.24,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1890,
+      "ruler_age": 45.31,
+      "core_mean_age": 54.21,
+      "core_weighted_mean_age": 51.24,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1891,
+      "ruler_age": 46.31,
+      "core_mean_age": 55.21,
+      "core_weighted_mean_age": 52.24,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1892,
+      "ruler_age": 47.31,
+      "core_mean_age": 56.22,
+      "core_weighted_mean_age": 53.25,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1893,
+      "ruler_age": 48.31,
+      "core_mean_age": 52.81,
+      "core_weighted_mean_age": 51.5,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1894,
+      "ruler_age": 49.31,
+      "core_mean_age": 53.81,
+      "core_weighted_mean_age": 52.5,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1895,
+      "ruler_age": 27.12,
+      "core_mean_age": 47.08,
+      "core_weighted_mean_age": 42.19,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1896,
+      "ruler_age": 28.12,
+      "core_mean_age": 48.08,
+      "core_weighted_mean_age": 43.19,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1897,
+      "ruler_age": 29.12,
+      "core_mean_age": 49.08,
+      "core_weighted_mean_age": 44.19,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1898,
+      "ruler_age": 30.12,
+      "core_mean_age": 50.08,
+      "core_weighted_mean_age": 45.19,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1899,
+      "ruler_age": 31.12,
+      "core_mean_age": 51.08,
+      "core_weighted_mean_age": 46.19,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1900,
+      "ruler_age": 32.12,
+      "core_mean_age": 52.08,
+      "core_weighted_mean_age": 47.18,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1901,
+      "ruler_age": 33.12,
+      "core_mean_age": 53.08,
+      "core_weighted_mean_age": 48.18,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1902,
+      "ruler_age": 34.12,
+      "core_mean_age": 54.61,
+      "core_weighted_mean_age": 50.56,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1903,
+      "ruler_age": 35.12,
+      "core_mean_age": 55.61,
+      "core_weighted_mean_age": 51.56,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1904,
+      "ruler_age": 36.12,
+      "core_mean_age": 55.66,
+      "core_weighted_mean_age": 51.74,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1905,
+      "ruler_age": 37.12,
+      "core_mean_age": 55.81,
+      "core_weighted_mean_age": 51.16,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1906,
+      "ruler_age": 38.12,
+      "core_mean_age": 45.66,
+      "core_weighted_mean_age": 43.47,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1907,
+      "ruler_age": 39.12,
+      "core_mean_age": 46.18,
+      "core_weighted_mean_age": 44.7,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1908,
+      "ruler_age": 40.12,
+      "core_mean_age": 47.18,
+      "core_weighted_mean_age": 45.7,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1909,
+      "ruler_age": 41.12,
+      "core_mean_age": 48.18,
+      "core_weighted_mean_age": 46.7,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1910,
+      "ruler_age": 42.12,
+      "core_mean_age": 49.18,
+      "core_weighted_mean_age": 47.7,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1911,
+      "ruler_age": 43.12,
+      "core_mean_age": 50.72,
+      "core_weighted_mean_age": 49.19,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1912,
+      "ruler_age": 44.12,
+      "core_mean_age": 50.03,
+      "core_weighted_mean_age": 49.54,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1913,
+      "ruler_age": 45.12,
+      "core_mean_age": 51.03,
+      "core_weighted_mean_age": 50.54,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1914,
+      "ruler_age": 46.12,
+      "core_mean_age": 48.97,
+      "core_weighted_mean_age": 48.12,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1915,
+      "ruler_age": 47.12,
+      "core_mean_age": 50.65,
+      "core_weighted_mean_age": 50.68,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.8
+    },
+    {
+      "year": 1916,
+      "ruler_age": 48.12,
+      "core_mean_age": 52.98,
+      "core_weighted_mean_age": 53.64,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.6
+    },
+    {
+      "year": 1917,
+      "ruler_age": 55.66,
+      "core_mean_age": 50.06,
+      "core_weighted_mean_age": 47.56,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1918,
+      "ruler_age": 48.19,
+      "core_mean_age": 38.41,
+      "core_weighted_mean_age": 39.48,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1919,
+      "ruler_age": 49.19,
+      "core_mean_age": 38.85,
+      "core_weighted_mean_age": 40.11,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1920,
+      "ruler_age": 50.19,
+      "core_mean_age": 39.85,
+      "core_weighted_mean_age": 41.11,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1921,
+      "ruler_age": 51.19,
+      "core_mean_age": 39.59,
+      "core_weighted_mean_age": 40.5,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1922,
+      "ruler_age": 52.19,
+      "core_mean_age": 40.92,
+      "core_weighted_mean_age": 41.81,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 1923,
+      "ruler_age": 53.19,
+      "core_mean_age": 41.92,
+      "core_weighted_mean_age": 42.81,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1924,
+      "ruler_age": 45.53,
+      "core_mean_age": 41.51,
+      "core_weighted_mean_age": 41.89,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1925,
+      "ruler_age": 46.53,
+      "core_mean_age": 42.72,
+      "core_weighted_mean_age": 43.04,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1926,
+      "ruler_age": 47.53,
+      "core_mean_age": 43.72,
+      "core_weighted_mean_age": 44.04,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.111
+    },
+    {
+      "year": 1927,
+      "ruler_age": 48.53,
+      "core_mean_age": 43.66,
+      "core_weighted_mean_age": 44.17,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.286
+    },
+    {
+      "year": 1928,
+      "ruler_age": 49.53,
+      "core_mean_age": 44.0,
+      "core_weighted_mean_age": 44.53,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1929,
+      "ruler_age": 50.53,
+      "core_mean_age": 45.0,
+      "core_weighted_mean_age": 45.53,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1930,
+      "ruler_age": 51.53,
+      "core_mean_age": 46.85,
+      "core_weighted_mean_age": 47.28,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1931,
+      "ruler_age": 52.53,
+      "core_mean_age": 45.3,
+      "core_weighted_mean_age": 45.94,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1932,
+      "ruler_age": 53.53,
+      "core_mean_age": 46.3,
+      "core_weighted_mean_age": 46.94,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1933,
+      "ruler_age": 54.53,
+      "core_mean_age": 47.3,
+      "core_weighted_mean_age": 47.94,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1934,
+      "ruler_age": 55.53,
+      "core_mean_age": 48.3,
+      "core_weighted_mean_age": 48.94,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1935,
+      "ruler_age": 56.53,
+      "core_mean_age": 47.69,
+      "core_weighted_mean_age": 48.6,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1936,
+      "ruler_age": 57.53,
+      "core_mean_age": 48.69,
+      "core_weighted_mean_age": 49.6,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.167
+    },
+    {
+      "year": 1937,
+      "ruler_age": 58.53,
+      "core_mean_age": 49.49,
+      "core_weighted_mean_age": 50.59,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1938,
+      "ruler_age": 59.53,
+      "core_mean_age": 50.49,
+      "core_weighted_mean_age": 51.59,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1939,
+      "ruler_age": 60.53,
+      "core_mean_age": 48.72,
+      "core_weighted_mean_age": 49.67,
+      "core_share_60_plus": 0.143,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.429
+    },
+    {
+      "year": 1940,
+      "ruler_age": 61.53,
+      "core_mean_age": 49.72,
+      "core_weighted_mean_age": 50.67,
+      "core_share_60_plus": 0.143,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.286
+    },
+    {
+      "year": 1941,
+      "ruler_age": 62.53,
+      "core_mean_age": 48.46,
+      "core_weighted_mean_age": 50.35,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1942,
+      "ruler_age": 63.53,
+      "core_mean_age": 49.46,
+      "core_weighted_mean_age": 51.35,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1943,
+      "ruler_age": 64.53,
+      "core_mean_age": 50.46,
+      "core_weighted_mean_age": 52.35,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1944,
+      "ruler_age": 65.53,
+      "core_mean_age": 51.46,
+      "core_weighted_mean_age": 53.35,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1945,
+      "ruler_age": 66.53,
+      "core_mean_age": 52.46,
+      "core_weighted_mean_age": 54.35,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.0
+    },
+    {
+      "year": 1946,
+      "ruler_age": 67.53,
+      "core_mean_age": 52.47,
+      "core_weighted_mean_age": 54.11,
+      "core_share_60_plus": 0.222,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.111
+    },
+    {
+      "year": 1947,
+      "ruler_age": 68.53,
+      "core_mean_age": 53.47,
+      "core_weighted_mean_age": 55.11,
+      "core_share_60_plus": 0.222,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.111
+    },
+    {
+      "year": 1948,
+      "ruler_age": 69.53,
+      "core_mean_age": 54.33,
+      "core_weighted_mean_age": 55.87,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1949,
+      "ruler_age": 70.53,
+      "core_mean_age": 55.54,
+      "core_weighted_mean_age": 57.21,
+      "core_share_60_plus": 0.222,
+      "core_share_70_plus": 0.111,
+      "renewal_5y": 0.222
+    },
+    {
+      "year": 1950,
+      "ruler_age": 71.53,
+      "core_mean_age": 56.54,
+      "core_weighted_mean_age": 58.21,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.111,
+      "renewal_5y": 0.222
+    },
+    {
+      "year": 1951,
+      "ruler_age": 72.53,
+      "core_mean_age": 57.54,
+      "core_weighted_mean_age": 59.21,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.222,
+      "renewal_5y": 0.111
+    },
+    {
+      "year": 1952,
+      "ruler_age": 73.53,
+      "core_mean_age": 58.55,
+      "core_weighted_mean_age": 60.21,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.222,
+      "renewal_5y": 0.111
+    },
+    {
+      "year": 1953,
+      "ruler_age": 59.21,
+      "core_mean_age": 57.22,
+      "core_weighted_mean_age": 57.79,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.125
+    },
+    {
+      "year": 1954,
+      "ruler_age": 60.21,
+      "core_mean_age": 58.44,
+      "core_weighted_mean_age": 59.05,
+      "core_share_60_plus": 0.444,
+      "core_share_70_plus": 0.111,
+      "renewal_5y": 0.111
+    },
+    {
+      "year": 1955,
+      "ruler_age": 61.21,
+      "core_mean_age": 59.35,
+      "core_weighted_mean_age": 59.92,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.1,
+      "renewal_5y": 0.1
+    },
+    {
+      "year": 1956,
+      "ruler_age": 62.21,
+      "core_mean_age": 59.01,
+      "core_weighted_mean_age": 60.1,
+      "core_share_60_plus": 0.545,
+      "core_share_70_plus": 0.091,
+      "renewal_5y": 0.182
+    },
+    {
+      "year": 1957,
+      "ruler_age": 63.21,
+      "core_mean_age": 57.96,
+      "core_weighted_mean_age": 59.49,
+      "core_share_60_plus": 0.556,
+      "core_share_70_plus": 0.111,
+      "renewal_5y": 0.222
+    },
+    {
+      "year": 1958,
+      "ruler_age": 64.21,
+      "core_mean_age": 58.63,
+      "core_weighted_mean_age": 60.35,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.125
+    },
+    {
+      "year": 1959,
+      "ruler_age": 65.21,
+      "core_mean_age": 56.73,
+      "core_weighted_mean_age": 58.78,
+      "core_share_60_plus": 0.375,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1960,
+      "ruler_age": 66.21,
+      "core_mean_age": 57.56,
+      "core_weighted_mean_age": 59.26,
+      "core_share_60_plus": 0.3,
+      "core_share_70_plus": 0.1,
+      "renewal_5y": 0.3
+    },
+    {
+      "year": 1961,
+      "ruler_age": 67.21,
+      "core_mean_age": 56.13,
+      "core_weighted_mean_age": 57.79,
+      "core_share_60_plus": 0.222,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.222
+    },
+    {
+      "year": 1962,
+      "ruler_age": 68.21,
+      "core_mean_age": 55.69,
+      "core_weighted_mean_age": 57.3,
+      "core_share_60_plus": 0.2,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.4
+    },
+    {
+      "year": 1963,
+      "ruler_age": 69.21,
+      "core_mean_age": 56.69,
+      "core_weighted_mean_age": 58.3,
+      "core_share_60_plus": 0.4,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.4
+    },
+    {
+      "year": 1964,
+      "ruler_age": 70.21,
+      "core_mean_age": 57.69,
+      "core_weighted_mean_age": 59.3,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.1,
+      "renewal_5y": 0.3
+    },
+    {
+      "year": 1965,
+      "ruler_age": 58.53,
+      "core_mean_age": 59.15,
+      "core_weighted_mean_age": 59.47,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1966,
+      "ruler_age": 59.53,
+      "core_mean_age": 61.19,
+      "core_weighted_mean_age": 61.19,
+      "core_share_60_plus": 0.571,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.571
+    },
+    {
+      "year": 1967,
+      "ruler_age": 60.53,
+      "core_mean_age": 61.04,
+      "core_weighted_mean_age": 61.0,
+      "core_share_60_plus": 0.75,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1968,
+      "ruler_age": 61.53,
+      "core_mean_age": 62.05,
+      "core_weighted_mean_age": 62.0,
+      "core_share_60_plus": 0.75,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1969,
+      "ruler_age": 62.53,
+      "core_mean_age": 63.04,
+      "core_weighted_mean_age": 63.0,
+      "core_share_60_plus": 0.75,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 1970,
+      "ruler_age": 63.53,
+      "core_mean_age": 64.04,
+      "core_weighted_mean_age": 64.0,
+      "core_share_60_plus": 0.75,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1971,
+      "ruler_age": 64.53,
+      "core_mean_age": 64.12,
+      "core_weighted_mean_age": 64.32,
+      "core_share_60_plus": 0.667,
+      "core_share_70_plus": 0.111,
+      "renewal_5y": 0.222
+    },
+    {
+      "year": 1972,
+      "ruler_age": 65.53,
+      "core_mean_age": 65.13,
+      "core_weighted_mean_age": 65.32,
+      "core_share_60_plus": 0.667,
+      "core_share_70_plus": 0.111,
+      "renewal_5y": 0.111
+    },
+    {
+      "year": 1973,
+      "ruler_age": 66.53,
+      "core_mean_age": 65.91,
+      "core_weighted_mean_age": 66.1,
+      "core_share_60_plus": 0.7,
+      "core_share_70_plus": 0.3,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1974,
+      "ruler_age": 67.53,
+      "core_mean_age": 66.91,
+      "core_weighted_mean_age": 67.1,
+      "core_share_60_plus": 0.9,
+      "core_share_70_plus": 0.4,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1975,
+      "ruler_age": 68.53,
+      "core_mean_age": 67.91,
+      "core_weighted_mean_age": 68.1,
+      "core_share_60_plus": 1.0,
+      "core_share_70_plus": 0.4,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 1976,
+      "ruler_age": 69.53,
+      "core_mean_age": 67.52,
+      "core_weighted_mean_age": 67.98,
+      "core_share_60_plus": 0.917,
+      "core_share_70_plus": 0.333,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1977,
+      "ruler_age": 70.53,
+      "core_mean_age": 67.98,
+      "core_weighted_mean_age": 68.52,
+      "core_share_60_plus": 0.909,
+      "core_share_70_plus": 0.455,
+      "renewal_5y": 0.273
+    },
+    {
+      "year": 1978,
+      "ruler_age": 71.53,
+      "core_mean_age": 68.98,
+      "core_weighted_mean_age": 69.52,
+      "core_share_60_plus": 0.909,
+      "core_share_70_plus": 0.455,
+      "renewal_5y": 0.182
+    },
+    {
+      "year": 1979,
+      "ruler_age": 72.53,
+      "core_mean_age": 70.21,
+      "core_weighted_mean_age": 70.65,
+      "core_share_60_plus": 0.909,
+      "core_share_70_plus": 0.545,
+      "renewal_5y": 0.182
+    },
+    {
+      "year": 1980,
+      "ruler_age": 73.53,
+      "core_mean_age": 69.83,
+      "core_weighted_mean_age": 70.28,
+      "core_share_60_plus": 0.846,
+      "core_share_70_plus": 0.615,
+      "renewal_5y": 0.308
+    },
+    {
+      "year": 1981,
+      "ruler_age": 74.53,
+      "core_mean_age": 70.29,
+      "core_weighted_mean_age": 70.71,
+      "core_share_60_plus": 0.833,
+      "core_share_70_plus": 0.583,
+      "renewal_5y": 0.167
+    },
+    {
+      "year": 1982,
+      "ruler_age": 75.53,
+      "core_mean_age": 70.53,
+      "core_weighted_mean_age": 70.84,
+      "core_share_60_plus": 0.818,
+      "core_share_70_plus": 0.636,
+      "renewal_5y": 0.182
+    },
+    {
+      "year": 1983,
+      "ruler_age": 69.04,
+      "core_mean_age": 67.69,
+      "core_weighted_mean_age": 68.04,
+      "core_share_60_plus": 0.889,
+      "core_share_70_plus": 0.444,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 1984,
+      "ruler_age": 72.77,
+      "core_mean_age": 68.52,
+      "core_weighted_mean_age": 69.2,
+      "core_share_60_plus": 0.875,
+      "core_share_70_plus": 0.5,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 1985,
+      "ruler_age": 54.33,
+      "core_mean_age": 67.19,
+      "core_weighted_mean_age": 65.74,
+      "core_share_60_plus": 0.857,
+      "core_share_70_plus": 0.429,
+      "renewal_5y": 0.286
+    },
+    {
+      "year": 1986,
+      "ruler_age": 55.33,
+      "core_mean_age": 62.7,
+      "core_weighted_mean_age": 61.77,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.167,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1987,
+      "ruler_age": 56.33,
+      "core_mean_age": 63.55,
+      "core_weighted_mean_age": 62.84,
+      "core_share_60_plus": 0.625,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.75
+    },
+    {
+      "year": 1988,
+      "ruler_age": 57.33,
+      "core_mean_age": 64.47,
+      "core_weighted_mean_age": 63.7,
+      "core_share_60_plus": 0.714,
+      "core_share_70_plus": 0.143,
+      "renewal_5y": 0.714
+    },
+    {
+      "year": 1989,
+      "ruler_age": 58.33,
+      "core_mean_age": 63.38,
+      "core_weighted_mean_age": 62.68,
+      "core_share_60_plus": 0.714,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.857
+    },
+    {
+      "year": 1990,
+      "ruler_age": 59.33,
+      "core_mean_age": 63.85,
+      "core_weighted_mean_age": 63.39,
+      "core_share_60_plus": 0.875,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.75
+    },
+    {
+      "year": 1991,
+      "ruler_age": 60.33,
+      "core_mean_age": 63.86,
+      "core_weighted_mean_age": 63.29,
+      "core_share_60_plus": 1.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.75
+    },
+    {
+      "year": 1992,
+      "ruler_age": 61.41,
+      "core_mean_age": 44.91,
+      "core_weighted_mean_age": 49.02,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1993,
+      "ruler_age": 62.41,
+      "core_mean_age": 51.89,
+      "core_weighted_mean_age": 54.97,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.667
+    },
+    {
+      "year": 1994,
+      "ruler_age": 63.41,
+      "core_mean_age": 50.25,
+      "core_weighted_mean_age": 53.56,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.75
+    },
+    {
+      "year": 1995,
+      "ruler_age": 64.41,
+      "core_mean_age": 51.25,
+      "core_weighted_mean_age": 54.56,
+      "core_share_60_plus": 0.25,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.75
+    },
+    {
+      "year": 1996,
+      "ruler_age": 65.41,
+      "core_mean_age": 55.14,
+      "core_weighted_mean_age": 57.53,
+      "core_share_60_plus": 0.4,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.8
+    },
+    {
+      "year": 1997,
+      "ruler_age": 66.41,
+      "core_mean_age": 56.14,
+      "core_weighted_mean_age": 58.53,
+      "core_share_60_plus": 0.4,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.6
+    },
+    {
+      "year": 1998,
+      "ruler_age": 67.41,
+      "core_mean_age": 54.59,
+      "core_weighted_mean_age": 57.17,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.75
+    },
+    {
+      "year": 1999,
+      "ruler_age": 68.41,
+      "core_mean_age": 53.02,
+      "core_weighted_mean_age": 56.13,
+      "core_share_60_plus": 0.333,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.333
+    },
+    {
+      "year": 2000,
+      "ruler_age": 47.73,
+      "core_mean_age": 42.7,
+      "core_weighted_mean_age": 43.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 2001,
+      "ruler_age": 48.73,
+      "core_mean_age": 43.7,
+      "core_weighted_mean_age": 44.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 2002,
+      "ruler_age": 49.73,
+      "core_mean_age": 44.7,
+      "core_weighted_mean_age": 45.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 2003,
+      "ruler_age": 50.73,
+      "core_mean_age": 45.7,
+      "core_weighted_mean_age": 46.42,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 1.0
+    },
+    {
+      "year": 2004,
+      "ruler_age": 51.73,
+      "core_mean_age": 47.72,
+      "core_weighted_mean_age": 48.38,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.833
+    },
+    {
+      "year": 2005,
+      "ruler_age": 52.73,
+      "core_mean_age": 48.72,
+      "core_weighted_mean_age": 49.38,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.167
+    },
+    {
+      "year": 2006,
+      "ruler_age": 53.73,
+      "core_mean_age": 49.47,
+      "core_weighted_mean_age": 50.08,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.286
+    },
+    {
+      "year": 2007,
+      "ruler_age": 54.73,
+      "core_mean_age": 50.47,
+      "core_weighted_mean_age": 51.08,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.286
+    },
+    {
+      "year": 2008,
+      "ruler_age": 42.8,
+      "core_mean_age": 50.5,
+      "core_weighted_mean_age": 50.02,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.375
+    },
+    {
+      "year": 2009,
+      "ruler_age": 43.8,
+      "core_mean_age": 51.5,
+      "core_weighted_mean_age": 51.02,
+      "core_share_60_plus": 0.0,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 2010,
+      "ruler_age": 44.79,
+      "core_mean_age": 52.5,
+      "core_weighted_mean_age": 52.02,
+      "core_share_60_plus": 0.125,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 2011,
+      "ruler_age": 45.79,
+      "core_mean_age": 53.57,
+      "core_weighted_mean_age": 53.02,
+      "core_share_60_plus": 0.143,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.143
+    },
+    {
+      "year": 2012,
+      "ruler_age": 59.73,
+      "core_mean_age": 56.75,
+      "core_weighted_mean_age": 57.04,
+      "core_share_60_plus": 0.5,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.5
+    },
+    {
+      "year": 2013,
+      "ruler_age": 60.73,
+      "core_mean_age": 57.05,
+      "core_weighted_mean_age": 57.43,
+      "core_share_60_plus": 0.455,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.545
+    },
+    {
+      "year": 2014,
+      "ruler_age": 61.73,
+      "core_mean_age": 58.05,
+      "core_weighted_mean_age": 58.43,
+      "core_share_60_plus": 0.455,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.545
+    },
+    {
+      "year": 2015,
+      "ruler_age": 62.73,
+      "core_mean_age": 59.05,
+      "core_weighted_mean_age": 59.43,
+      "core_share_60_plus": 0.545,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.545
+    },
+    {
+      "year": 2016,
+      "ruler_age": 63.73,
+      "core_mean_age": 60.25,
+      "core_weighted_mean_age": 60.58,
+      "core_share_60_plus": 0.667,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.583
+    },
+    {
+      "year": 2017,
+      "ruler_age": 64.73,
+      "core_mean_age": 60.4,
+      "core_weighted_mean_age": 60.69,
+      "core_share_60_plus": 0.6,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.4
+    },
+    {
+      "year": 2018,
+      "ruler_age": 65.73,
+      "core_mean_age": 61.4,
+      "core_weighted_mean_age": 61.69,
+      "core_share_60_plus": 0.6,
+      "core_share_70_plus": 0.0,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 2019,
+      "ruler_age": 66.73,
+      "core_mean_age": 62.4,
+      "core_weighted_mean_age": 62.69,
+      "core_share_60_plus": 0.6,
+      "core_share_70_plus": 0.067,
+      "renewal_5y": 0.2
+    },
+    {
+      "year": 2020,
+      "ruler_age": 67.73,
+      "core_mean_age": 62.84,
+      "core_weighted_mean_age": 63.16,
+      "core_share_60_plus": 0.562,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.25
+    },
+    {
+      "year": 2021,
+      "ruler_age": 68.73,
+      "core_mean_age": 63.84,
+      "core_weighted_mean_age": 64.16,
+      "core_share_60_plus": 0.625,
+      "core_share_70_plus": 0.125,
+      "renewal_5y": 0.188
+    },
+    {
+      "year": 2022,
+      "ruler_age": 69.73,
+      "core_mean_age": 64.84,
+      "core_weighted_mean_age": 65.15,
+      "core_share_60_plus": 0.625,
+      "core_share_70_plus": 0.25,
+      "renewal_5y": 0.062
+    },
+    {
+      "year": 2023,
+      "ruler_age": 70.73,
+      "core_mean_age": 65.83,
+      "core_weighted_mean_age": 66.15,
+      "core_share_60_plus": 0.75,
+      "core_share_70_plus": 0.312,
+      "renewal_5y": 0.062
+    },
+    {
+      "year": 2024,
+      "ruler_age": 71.73,
+      "core_mean_age": 66.36,
+      "core_weighted_mean_age": 66.61,
+      "core_share_60_plus": 0.875,
+      "core_share_70_plus": 0.312,
+      "renewal_5y": 0.125
+    },
+    {
+      "year": 2025,
+      "ruler_age": 72.73,
+      "core_mean_age": 67.36,
+      "core_weighted_mean_age": 67.61,
+      "core_share_60_plus": 0.875,
+      "core_share_70_plus": 0.438,
+      "renewal_5y": 0.062
+    },
+    {
+      "year": 2026,
+      "ruler_age": 73.73,
+      "core_mean_age": 68.36,
+      "core_weighted_mean_age": 68.61,
+      "core_share_60_plus": 1.0,
+      "core_share_70_plus": 0.5,
+      "renewal_5y": 0.062
+    }
+  ],
+  "events": [
+    {
+      "event_id": "war_1812",
+      "date": "1812-06-24",
+      "year": 1812,
+      "event_name": "Отечественная война 1812 года",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "decembrist_revolt",
+      "date": "1825-12-26",
+      "year": 1825,
+      "event_name": "Восстание декабристов",
+      "event_type": "revolt",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "crimean_war",
+      "date": "1853-10-16",
+      "year": 1853,
+      "event_name": "Крымская война",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "serfdom_abolition",
+      "date": "1861-03-03",
+      "year": 1861,
+      "event_name": "Отмена крепостного права",
+      "event_type": "reform",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "revolution_1905",
+      "date": "1905-01-22",
+      "year": 1905,
+      "event_name": "Революция 1905 года",
+      "event_type": "revolution",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "ww1",
+      "date": "1914-08-01",
+      "year": 1914,
+      "event_name": "Первая мировая война",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "february_revolution",
+      "date": "1917-03-08",
+      "year": 1917,
+      "event_name": "Февральская революция",
+      "event_type": "revolution",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "october_revolution",
+      "date": "1917-11-07",
+      "year": 1917,
+      "event_name": "Октябрьская революция",
+      "event_type": "revolution",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "great_terror",
+      "date": "1937-07-30",
+      "year": 1937,
+      "event_name": "Большой террор",
+      "event_type": "repression",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "ww2_ussr",
+      "date": "1941-06-22",
+      "year": 1941,
+      "event_name": "Великая Отечественная война",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "twentieth_congress",
+      "date": "1956-02-25",
+      "year": 1956,
+      "event_name": "XX съезд КПСС",
+      "event_type": "reform",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "afghan_war",
+      "date": "1979-12-24",
+      "year": 1979,
+      "event_name": "Ввод войск в Афганистан",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "gorbachev_power",
+      "date": "1985-03-11",
+      "year": 1985,
+      "event_name": "Горбачёв становится генсеком",
+      "event_type": "leadership_change",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "ussr_collapse",
+      "date": "1991-12-26",
+      "year": 1991,
+      "event_name": "Распад СССР",
+      "event_type": "state_collapse",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "default_1998",
+      "date": "1998-08-17",
+      "year": 1998,
+      "event_name": "Дефолт 1998 года",
+      "event_type": "economic_crisis",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "georgia_war_2008",
+      "date": "2008-08-08",
+      "year": 2008,
+      "event_name": "Война в Грузии",
+      "event_type": "war",
+      "severity": 4,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "crimea_2014",
+      "date": "2014-03-18",
+      "year": 2014,
+      "event_name": "Аннексия Крыма",
+      "event_type": "territorial_change",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "ukraine_2022",
+      "date": "2022-02-24",
+      "year": 2022,
+      "event_name": "Полномасштабное вторжение в Украину",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": false,
+      "confidence": null,
+      "decision_domain": ""
+    },
+    {
+      "event_id": "emp_1802_ministries_reform",
+      "date": "1802-09-20",
+      "year": 1802,
+      "event_name": "Учреждение министерств Александром I",
+      "event_type": "administrative_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "administration"
+    },
+    {
+      "event_id": "emp_1803_free_cultivators",
+      "date": "1803-02-20",
+      "year": 1803,
+      "event_name": "Указ о вольных хлебопашцах",
+      "event_type": "social_reform",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "social_policy"
+    },
+    {
+      "event_id": "emp_1810_state_council",
+      "date": "1810-01-13",
+      "year": 1810,
+      "event_name": "Учреждение Государственного совета",
+      "event_type": "institutional_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "administration"
+    },
+    {
+      "event_id": "emp_1816_military_settlements",
+      "date": "1816-01-01",
+      "year": 1816,
+      "event_name": "Развёртывание военных поселений",
+      "event_type": "military_social_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "military"
+    },
+    {
+      "event_id": "emp_1826_third_section",
+      "date": "1826-07-15",
+      "year": 1826,
+      "event_name": "Создание Третьего отделения",
+      "event_type": "security_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "emp_1830_polish_suppression",
+      "date": "1830-11-29",
+      "year": 1830,
+      "event_name": "Подавление Польского восстания 1830–1831",
+      "event_type": "repression_military",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "security_military"
+    },
+    {
+      "event_id": "emp_1839_kankrin_reform_start",
+      "date": "1839-07-01",
+      "year": 1839,
+      "event_name": "Начало денежной реформы Канкрина",
+      "event_type": "economic_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "finance"
+    },
+    {
+      "event_id": "emp_1848_hungarian_intervention",
+      "date": "1849-06-01",
+      "year": 1849,
+      "event_name": "Интервенция России в Венгрию",
+      "event_type": "military_intervention",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "emp_1853_crimean_war_initiation",
+      "date": "1853-10-16",
+      "year": 1853,
+      "event_name": "Начало Крымской войны",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.7,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "emp_1861_serfdom_abolition",
+      "date": "1861-03-03",
+      "year": 1861,
+      "event_name": "Отмена крепостного права",
+      "event_type": "social_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "social_policy"
+    },
+    {
+      "event_id": "emp_1863_polish_suppression",
+      "date": "1863-01-22",
+      "year": 1863,
+      "event_name": "Подавление Январского восстания",
+      "event_type": "repression_military",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "security_military"
+    },
+    {
+      "event_id": "emp_1864_zemstvo_reform",
+      "date": "1864-01-01",
+      "year": 1864,
+      "event_name": "Земская реформа",
+      "event_type": "institutional_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "administration"
+    },
+    {
+      "event_id": "emp_1864_judicial_reform",
+      "date": "1864-11-20",
+      "year": 1864,
+      "event_name": "Судебная реформа Александра II",
+      "event_type": "legal_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "law"
+    },
+    {
+      "event_id": "emp_1870_city_reform",
+      "date": "1870-06-16",
+      "year": 1870,
+      "event_name": "Городская реформа",
+      "event_type": "institutional_reform",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "administration"
+    },
+    {
+      "event_id": "emp_1874_military_reform_conscription",
+      "date": "1874-01-13",
+      "year": 1874,
+      "event_name": "Воинская реформа и всеобщая воинская повинность",
+      "event_type": "military_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "military"
+    },
+    {
+      "event_id": "emp_1877_russo_turkish_war",
+      "date": "1877-04-24",
+      "year": 1877,
+      "event_name": "Русско-турецкая война 1877–1878",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "emp_1881_counter_reforms_start",
+      "date": "1881-08-14",
+      "year": 1881,
+      "event_name": "Положение о мерах к охранению государственного порядка",
+      "event_type": "security_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "emp_1881_peasant_land_bank",
+      "date": "1882-05-18",
+      "year": 1882,
+      "event_name": "Создание Крестьянского поземельного банка",
+      "event_type": "economic_social_policy",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "finance_social"
+    },
+    {
+      "event_id": "emp_1884_university_statute",
+      "date": "1884-08-23",
+      "year": 1884,
+      "event_name": "Университетский устав 1884 года",
+      "event_type": "education_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "education_ideology"
+    },
+    {
+      "event_id": "emp_1891_trans_siberian_start",
+      "date": "1891-05-31",
+      "year": 1891,
+      "event_name": "Начало строительства Транссибирской магистрали",
+      "event_type": "infrastructure_modernization",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "infrastructure"
+    },
+    {
+      "event_id": "emp_1897_gold_standard",
+      "date": "1897-01-03",
+      "year": 1897,
+      "event_name": "Денежная реформа Витте: золотой стандарт",
+      "event_type": "economic_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "finance"
+    },
+    {
+      "event_id": "emp_1904_russo_japanese_war",
+      "date": "1904-02-08",
+      "year": 1904,
+      "event_name": "Русско-японская война",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "emp_1905_october_manifesto",
+      "date": "1905-10-30",
+      "year": 1905,
+      "event_name": "Манифест 17 октября",
+      "event_type": "constitutional_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "emp_1906_duma_creation",
+      "date": "1906-04-27",
+      "year": 1906,
+      "event_name": "Открытие Первой Государственной думы",
+      "event_type": "institutional_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "emp_1906_fundamental_laws",
+      "date": "1906-04-23",
+      "year": 1906,
+      "event_name": "Основные государственные законы 1906 года",
+      "event_type": "constitutional_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "emp_1906_stolypin_agrarian_reform",
+      "date": "1906-11-09",
+      "year": 1906,
+      "event_name": "Начало столыпинской аграрной реформы",
+      "event_type": "agrarian_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "agrarian_policy"
+    },
+    {
+      "event_id": "emp_1907_june_coup",
+      "date": "1907-06-16",
+      "year": 1907,
+      "event_name": "Третьеиюньский переворот",
+      "event_type": "constitutional_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "emp_1914_ww1_entry",
+      "date": "1914-08-01",
+      "year": 1914,
+      "event_name": "Вступление России в Первую мировую войну",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "emp_1915_nicholas_commander_in_chief",
+      "date": "1915-09-05",
+      "year": 1915,
+      "event_name": "Николай II принимает верховное командование",
+      "event_type": "military_command_decision",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "military"
+    },
+    {
+      "event_id": "prov_1917_march_amnesty",
+      "date": "1917-03-17",
+      "year": 1917,
+      "event_name": "Политическая амнистия Временного правительства",
+      "event_type": "political_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "law_politics"
+    },
+    {
+      "event_id": "prov_1917_april_war_note",
+      "date": "1917-04-18",
+      "year": 1917,
+      "event_name": "Нота Милюкова о продолжении войны",
+      "event_type": "foreign_policy_decision",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "prov_1917_june_offensive",
+      "date": "1917-07-01",
+      "year": 1917,
+      "event_name": "Июньское наступление 1917 года",
+      "event_type": "military_offensive",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "military"
+    },
+    {
+      "event_id": "prov_1917_death_penalty_front",
+      "date": "1917-07-12",
+      "year": 1917,
+      "event_name": "Восстановление смертной казни на фронте",
+      "event_type": "repression_military",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "military_security"
+    },
+    {
+      "event_id": "prov_1917_republic_proclaimed",
+      "date": "1917-09-14",
+      "year": 1917,
+      "event_name": "Провозглашение Российской республики",
+      "event_type": "constitutional_change",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "sov_1917_decree_peace",
+      "date": "1917-11-08",
+      "year": 1917,
+      "event_name": "Декрет о мире",
+      "event_type": "foreign_policy_decree",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "sov_1917_decree_land",
+      "date": "1917-11-08",
+      "year": 1917,
+      "event_name": "Декрет о земле",
+      "event_type": "social_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "agrarian_policy"
+    },
+    {
+      "event_id": "sov_1917_cheka_creation",
+      "date": "1917-12-20",
+      "year": 1917,
+      "event_name": "Создание ВЧК",
+      "event_type": "security_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "sov_1918_constituent_assembly_dissolved",
+      "date": "1918-01-19",
+      "year": 1918,
+      "event_name": "Разгон Учредительного собрания",
+      "event_type": "constitutional_break",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional_security"
+    },
+    {
+      "event_id": "sov_1918_brest_litovsk",
+      "date": "1918-03-03",
+      "year": 1918,
+      "event_name": "Брест-Литовский мир",
+      "event_type": "foreign_policy_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "sov_1918_red_army_creation",
+      "date": "1918-01-28",
+      "year": 1918,
+      "event_name": "Создание Рабоче-крестьянской Красной армии",
+      "event_type": "military_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "military"
+    },
+    {
+      "event_id": "sov_1918_war_communism_start",
+      "date": "1918-06-01",
+      "year": 1918,
+      "event_name": "Переход к военному коммунизму",
+      "event_type": "economic_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "sov_1918_red_terror",
+      "date": "1918-09-05",
+      "year": 1918,
+      "event_name": "Постановление о Красном терроре",
+      "event_type": "repression",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "sov_1921_nep",
+      "date": "1921-03-21",
+      "year": 1921,
+      "event_name": "Переход к НЭПу",
+      "event_type": "economic_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "sov_1921_ban_factions",
+      "date": "1921-03-16",
+      "year": 1921,
+      "event_name": "Запрет фракций в РКП(б)",
+      "event_type": "party_institutional_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "party_governance"
+    },
+    {
+      "event_id": "sov_1922_ussr_creation",
+      "date": "1922-12-30",
+      "year": 1922,
+      "event_name": "Образование СССР",
+      "event_type": "state_formation",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "sov_1922_general_secretary_stalin",
+      "date": "1922-04-03",
+      "year": 1922,
+      "event_name": "Сталин становится генеральным секретарём",
+      "event_type": "elite_appointment",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "stalin_1928_first_five_year_plan",
+      "date": "1928-10-01",
+      "year": 1928,
+      "event_name": "Первый пятилетний план",
+      "event_type": "economic_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "economic_planning"
+    },
+    {
+      "event_id": "stalin_1929_great_break",
+      "date": "1929-11-07",
+      "year": 1929,
+      "event_name": "Великий перелом",
+      "event_type": "political_economic_turn",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "stalin_1929_collectivization",
+      "date": "1929-12-27",
+      "year": 1929,
+      "event_name": "Курс на сплошную коллективизацию",
+      "event_type": "agrarian_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "agrarian_policy"
+    },
+    {
+      "event_id": "stalin_1930_dekulakization",
+      "date": "1930-01-30",
+      "year": 1930,
+      "event_name": "Постановление о ликвидации кулачества как класса",
+      "event_type": "repression_social_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "security_agrarian"
+    },
+    {
+      "event_id": "stalin_1932_internal_passports",
+      "date": "1932-12-27",
+      "year": 1932,
+      "event_name": "Введение паспортной системы",
+      "event_type": "security_administrative_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "security_administration"
+    },
+    {
+      "event_id": "stalin_1934_kirov_aftermath",
+      "date": "1934-12-01",
+      "year": 1934,
+      "event_name": "Кировское убийство и начало новой волны репрессий",
+      "event_type": "repression_trigger_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "stalin_1936_constitution",
+      "date": "1936-12-05",
+      "year": 1936,
+      "event_name": "Конституция СССР 1936 года",
+      "event_type": "constitutional_change",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "stalin_1937_great_terror_order",
+      "date": "1937-07-30",
+      "year": 1937,
+      "event_name": "Приказ НКВД №00447 и Большой террор",
+      "event_type": "repression",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "stalin_1939_nazi_soviet_pact",
+      "date": "1939-08-23",
+      "year": 1939,
+      "event_name": "Пакт Молотова — Риббентропа",
+      "event_type": "foreign_policy_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "stalin_1939_poland_invasion",
+      "date": "1939-09-17",
+      "year": 1939,
+      "event_name": "Ввод советских войск в Восточную Польшу",
+      "event_type": "military_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "military_foreign_policy"
+    },
+    {
+      "event_id": "stalin_1939_winter_war",
+      "date": "1939-11-30",
+      "year": 1939,
+      "event_name": "Советско-финляндская война",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "military_foreign_policy"
+    },
+    {
+      "event_id": "stalin_1940_baltic_annexation",
+      "date": "1940-08-03",
+      "year": 1940,
+      "event_name": "Включение прибалтийских республик в СССР",
+      "event_type": "territorial_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy_security"
+    },
+    {
+      "event_id": "stalin_1941_deportations",
+      "date": "1941-06-14",
+      "year": 1941,
+      "event_name": "Массовые депортации из присоединённых территорий",
+      "event_type": "repression",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "stalin_1944_deportations_peoples",
+      "date": "1944-02-23",
+      "year": 1944,
+      "event_name": "Депортации народов СССР",
+      "event_type": "repression",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "stalin_1945_eastern_europe_control",
+      "date": "1945-05-09",
+      "year": 1945,
+      "event_name": "Установление советского контроля в Восточной Европе",
+      "event_type": "foreign_policy_imperial_control",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "foreign_policy_security"
+    },
+    {
+      "event_id": "stalin_1946_fourth_five_year_plan",
+      "date": "1946-03-18",
+      "year": 1946,
+      "event_name": "Четвёртый пятилетний план восстановления",
+      "event_type": "economic_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "economic_planning"
+    },
+    {
+      "event_id": "stalin_1947_monetary_reform",
+      "date": "1947-12-14",
+      "year": 1947,
+      "event_name": "Денежная реформа 1947 года",
+      "event_type": "economic_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "finance"
+    },
+    {
+      "event_id": "stalin_1948_berlin_blockade",
+      "date": "1948-06-24",
+      "year": 1948,
+      "event_name": "Берлинская блокада",
+      "event_type": "foreign_policy_crisis",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "stalin_1949_atomic_bomb",
+      "date": "1949-08-29",
+      "year": 1949,
+      "event_name": "Первое испытание советской атомной бомбы",
+      "event_type": "military_technology",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "military_technology"
+    },
+    {
+      "event_id": "stalin_1952_party_renaming",
+      "date": "1952-10-05",
+      "year": 1952,
+      "event_name": "XIX съезд и переименование ВКП(б) в КПСС",
+      "event_type": "party_institutional_change",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "party_governance"
+    },
+    {
+      "event_id": "post_1953_beria_arrest",
+      "date": "1953-06-26",
+      "year": 1953,
+      "event_name": "Арест Берии",
+      "event_type": "elite_purge",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "elite_governance_security"
+    },
+    {
+      "event_id": "post_1954_crimea_transfer",
+      "date": "1954-02-19",
+      "year": 1954,
+      "event_name": "Передача Крымской области Украинской ССР",
+      "event_type": "territorial_administrative_change",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "administration"
+    },
+    {
+      "event_id": "post_1954_virgin_lands",
+      "date": "1954-03-02",
+      "year": 1954,
+      "event_name": "Начало освоения целины",
+      "event_type": "economic_social_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "agrarian_policy"
+    },
+    {
+      "event_id": "post_1955_warsaw_pact",
+      "date": "1955-05-14",
+      "year": 1955,
+      "event_name": "Создание Организации Варшавского договора",
+      "event_type": "foreign_policy_military",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "post_1956_secret_speech",
+      "date": "1956-02-25",
+      "year": 1956,
+      "event_name": "Секретный доклад Хрущёва",
+      "event_type": "ideological_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "ideology_party"
+    },
+    {
+      "event_id": "post_1956_hungary_intervention",
+      "date": "1956-11-04",
+      "year": 1956,
+      "event_name": "Ввод советских войск в Венгрию",
+      "event_type": "military_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "post_1957_anti_party_group_defeat",
+      "date": "1957-06-29",
+      "year": 1957,
+      "event_name": "Разгром «антипартийной группы»",
+      "event_type": "elite_purge",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "post_1957_sovnarkhoz_reform",
+      "date": "1957-05-10",
+      "year": 1957,
+      "event_name": "Совнархозная реформа",
+      "event_type": "economic_administrative_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "economic_administration"
+    },
+    {
+      "event_id": "post_1961_party_program",
+      "date": "1961-10-31",
+      "year": 1961,
+      "event_name": "XXII съезд КПСС и новая программа партии",
+      "event_type": "ideological_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "ideology_party"
+    },
+    {
+      "event_id": "post_1962_cuban_missile_crisis",
+      "date": "1962-10-14",
+      "year": 1962,
+      "event_name": "Карибский кризис",
+      "event_type": "foreign_policy_military_crisis",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "post_1962_novocherkassk",
+      "date": "1962-06-02",
+      "year": 1962,
+      "event_name": "Расстрел в Новочеркасске",
+      "event_type": "repression",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "post_1964_khrushchev_removal",
+      "date": "1964-10-14",
+      "year": 1964,
+      "event_name": "Смещение Хрущёва",
+      "event_type": "elite_coup",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "late_1965_kosygin_reform",
+      "date": "1965-09-27",
+      "year": 1965,
+      "event_name": "Косыгинская экономическая реформа",
+      "event_type": "economic_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "late_1968_prague_spring_intervention",
+      "date": "1968-08-21",
+      "year": 1968,
+      "event_name": "Ввод войск в Чехословакию",
+      "event_type": "military_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "late_1970_brezhnev_doctrine",
+      "date": "1968-11-13",
+      "year": 1968,
+      "event_name": "Доктрина Брежнева",
+      "event_type": "foreign_policy_doctrine",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "foreign_policy_ideology"
+    },
+    {
+      "event_id": "late_1972_salt_i",
+      "date": "1972-05-26",
+      "year": 1972,
+      "event_name": "Подписание ОСВ-1",
+      "event_type": "foreign_policy_agreement",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "late_1975_helsinki_final_act",
+      "date": "1975-08-01",
+      "year": 1975,
+      "event_name": "Хельсинкский заключительный акт",
+      "event_type": "foreign_policy_agreement",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "late_1977_constitution",
+      "date": "1977-10-07",
+      "year": 1977,
+      "event_name": "Конституция СССР 1977 года",
+      "event_type": "constitutional_change",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "late_1979_afghanistan",
+      "date": "1979-12-24",
+      "year": 1979,
+      "event_name": "Ввод советских войск в Афганистан",
+      "event_type": "war_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "late_1980_olympics_political_project",
+      "date": "1980-07-19",
+      "year": 1980,
+      "event_name": "Олимпиада-80 как государственный политический проект",
+      "event_type": "soft_power_project",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.7,
+      "decision_domain": "soft_power"
+    },
+    {
+      "event_id": "late_1982_food_program",
+      "date": "1982-05-24",
+      "year": 1982,
+      "event_name": "Продовольственная программа СССР",
+      "event_type": "economic_policy",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "late_1983_andropov_discipline",
+      "date": "1983-01-01",
+      "year": 1983,
+      "event_name": "Андроповская кампания трудовой дисциплины",
+      "event_type": "administrative_campaign",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "administration_security"
+    },
+    {
+      "event_id": "late_1984_chernenko_stability",
+      "date": "1984-02-13",
+      "year": 1984,
+      "event_name": "Курс Черненко на преемственность позднего брежневизма",
+      "event_type": "policy_continuity",
+      "severity": 2,
+      "elite_initiated": true,
+      "confidence": 0.6,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "per_1985_gorbachev_power",
+      "date": "1985-03-11",
+      "year": 1985,
+      "event_name": "Горбачёв становится генсеком",
+      "event_type": "leadership_change",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "per_1985_anti_alcohol",
+      "date": "1985-05-16",
+      "year": 1985,
+      "event_name": "Антиалкогольная кампания",
+      "event_type": "social_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "social_policy"
+    },
+    {
+      "event_id": "per_1986_glasnost_start",
+      "date": "1986-02-25",
+      "year": 1986,
+      "event_name": "Курс на гласность после XXVII съезда",
+      "event_type": "political_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "politics_ideology"
+    },
+    {
+      "event_id": "per_1986_chernobyl_response",
+      "date": "1986-04-26",
+      "year": 1986,
+      "event_name": "Государственная реакция на Чернобыль",
+      "event_type": "crisis_management",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.6,
+      "decision_domain": "crisis_management"
+    },
+    {
+      "event_id": "per_1987_state_enterprise_law",
+      "date": "1987-06-30",
+      "year": 1987,
+      "event_name": "Закон о государственном предприятии",
+      "event_type": "economic_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "per_1988_cooperatives_law",
+      "date": "1988-05-26",
+      "year": 1988,
+      "event_name": "Закон о кооперации",
+      "event_type": "economic_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "per_1988_party_conference_reform",
+      "date": "1988-06-28",
+      "year": 1988,
+      "event_name": "XIX партконференция и политическая реформа",
+      "event_type": "political_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "political_institutions"
+    },
+    {
+      "event_id": "per_1989_congress_peoples_deputies",
+      "date": "1989-03-26",
+      "year": 1989,
+      "event_name": "Выборы народных депутатов СССР",
+      "event_type": "political_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "political_institutions"
+    },
+    {
+      "event_id": "per_1989_afghanistan_withdrawal",
+      "date": "1989-02-15",
+      "year": 1989,
+      "event_name": "Вывод советских войск из Афганистана",
+      "event_type": "foreign_policy_military",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "per_1989_sinatra_doctrine",
+      "date": "1989-10-25",
+      "year": 1989,
+      "event_name": "Отказ от силового удержания Восточной Европы",
+      "event_type": "foreign_policy_doctrine",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "per_1990_article_6_repeal",
+      "date": "1990-03-14",
+      "year": 1990,
+      "event_name": "Отмена 6-й статьи Конституции СССР",
+      "event_type": "constitutional_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "per_1990_presidency_ussr",
+      "date": "1990-03-15",
+      "year": 1990,
+      "event_name": "Учреждение поста президента СССР",
+      "event_type": "institutional_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "per_1990_500_days_rejection",
+      "date": "1990-10-01",
+      "year": 1990,
+      "event_name": "Отклонение программы «500 дней»",
+      "event_type": "economic_policy_decision",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "per_1991_january_vilnius",
+      "date": "1991-01-13",
+      "year": 1991,
+      "event_name": "Силовые действия в Вильнюсе",
+      "event_type": "repression_military",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.7,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "per_1991_august_gkchp",
+      "date": "1991-08-19",
+      "year": 1991,
+      "event_name": "Попытка ГКЧП",
+      "event_type": "elite_coup",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "elite_governance_security"
+    },
+    {
+      "event_id": "per_1991_belovezha",
+      "date": "1991-12-08",
+      "year": 1991,
+      "event_name": "Беловежские соглашения",
+      "event_type": "state_dissolution_decision",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional_geopolitical"
+    },
+    {
+      "event_id": "per_1991_ussr_dissolution",
+      "date": "1991-12-26",
+      "year": 1991,
+      "event_name": "Распад СССР",
+      "event_type": "state_collapse",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "constitutional_geopolitical"
+    },
+    {
+      "event_id": "rf_1992_price_liberalization",
+      "date": "1992-01-02",
+      "year": 1992,
+      "event_name": "Либерализация цен",
+      "event_type": "economic_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "rf_1992_mass_privatization_start",
+      "date": "1992-08-14",
+      "year": 1992,
+      "event_name": "Ваучерная приватизация",
+      "event_type": "economic_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "rf_1993_april_referendum",
+      "date": "1993-04-25",
+      "year": 1993,
+      "event_name": "Референдум о доверии президенту и реформам",
+      "event_type": "political_institutional",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "politics"
+    },
+    {
+      "event_id": "rf_1993_october_crisis_shelling",
+      "date": "1993-10-04",
+      "year": 1993,
+      "event_name": "Разгон Верховного Совета силой",
+      "event_type": "constitutional_crisis_repression",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional_security"
+    },
+    {
+      "event_id": "rf_1993_constitution",
+      "date": "1993-12-12",
+      "year": 1993,
+      "event_name": "Конституция РФ 1993 года",
+      "event_type": "constitutional_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "rf_1994_chechen_war_start",
+      "date": "1994-12-11",
+      "year": 1994,
+      "event_name": "Начало Первой чеченской войны",
+      "event_type": "war_internal",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "military_security"
+    },
+    {
+      "event_id": "rf_1995_loans_for_shares",
+      "date": "1995-08-31",
+      "year": 1995,
+      "event_name": "Залоговые аукционы",
+      "event_type": "economic_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "rf_1996_presidential_campaign_elite_deal",
+      "date": "1996-06-16",
+      "year": 1996,
+      "event_name": "Президентская кампания 1996 и союз власти с крупным бизнесом",
+      "event_type": "elite_coalition",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "rf_1998_default",
+      "date": "1998-08-17",
+      "year": 1998,
+      "event_name": "Дефолт 1998 года",
+      "event_type": "economic_crisis_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.55,
+      "decision_domain": "finance"
+    },
+    {
+      "event_id": "rf_1999_second_chechen_war",
+      "date": "1999-09-30",
+      "year": 1999,
+      "event_name": "Начало Второй чеченской войны",
+      "event_type": "war_internal",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "military_security"
+    },
+    {
+      "event_id": "rf_2000_federal_districts",
+      "date": "2000-05-13",
+      "year": 2000,
+      "event_name": "Создание федеральных округов",
+      "event_type": "administrative_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "administration"
+    },
+    {
+      "event_id": "rf_2000_tax_reform_flat_tax",
+      "date": "2000-08-05",
+      "year": 2000,
+      "event_name": "Налоговая реформа и плоская шкала НДФЛ",
+      "event_type": "economic_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "finance"
+    },
+    {
+      "event_id": "rf_2001_land_code",
+      "date": "2001-10-25",
+      "year": 2001,
+      "event_name": "Земельный кодекс РФ",
+      "event_type": "legal_economic_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "law_economy"
+    },
+    {
+      "event_id": "rf_2003_yukos_case_start",
+      "date": "2003-10-25",
+      "year": 2003,
+      "event_name": "Дело ЮКОСа и арест Ходорковского",
+      "event_type": "elite_business_reconfiguration",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "security_economy"
+    },
+    {
+      "event_id": "rf_2004_governors_appointment",
+      "date": "2004-09-13",
+      "year": 2004,
+      "event_name": "Отмена прямых выборов губернаторов",
+      "event_type": "political_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "political_institutions"
+    },
+    {
+      "event_id": "rf_2005_national_projects",
+      "date": "2005-09-05",
+      "year": 2005,
+      "event_name": "Запуск приоритетных национальных проектов",
+      "event_type": "social_policy",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "social_policy"
+    },
+    {
+      "event_id": "rf_2007_munich_speech",
+      "date": "2007-02-10",
+      "year": 2007,
+      "event_name": "Мюнхенская речь Путина",
+      "event_type": "foreign_policy_doctrine",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "foreign_policy"
+    },
+    {
+      "event_id": "rf_2008_georgia_war",
+      "date": "2008-08-08",
+      "year": 2008,
+      "event_name": "Война в Грузии",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "rf_2008_presidential_tandem",
+      "date": "2008-05-07",
+      "year": 2008,
+      "event_name": "Президентский тандем Медведев—Путин",
+      "event_type": "elite_arrangement",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "rf_2009_modernization_medvedev",
+      "date": "2009-09-10",
+      "year": 2009,
+      "event_name": "Медведевская модернизационная повестка",
+      "event_type": "modernization_policy",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.75,
+      "decision_domain": "economic_policy_technology"
+    },
+    {
+      "event_id": "rf_2011_rokirovka",
+      "date": "2011-09-24",
+      "year": 2011,
+      "event_name": "Объявление рокировки Путина и Медведева",
+      "event_type": "elite_arrangement",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "rf_2012_foreign_agent_law",
+      "date": "2012-07-20",
+      "year": 2012,
+      "event_name": "Закон об иностранных агентах",
+      "event_type": "legal_repression",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "law_security"
+    },
+    {
+      "event_id": "rf_2012_governor_elections_return",
+      "date": "2012-06-01",
+      "year": 2012,
+      "event_name": "Возврат прямых выборов губернаторов с фильтрами",
+      "event_type": "political_reform",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "political_institutions"
+    },
+    {
+      "event_id": "rf_2014_crimea_annexation",
+      "date": "2014-03-18",
+      "year": 2014,
+      "event_name": "Аннексия Крыма",
+      "event_type": "territorial_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy_security"
+    },
+    {
+      "event_id": "rf_2014_donbas_intervention",
+      "date": "2014-04-12",
+      "year": 2014,
+      "event_name": "Начало российской вовлечённости в войну на Донбассе",
+      "event_type": "war_proxy_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.8,
+      "decision_domain": "foreign_policy_security"
+    },
+    {
+      "event_id": "rf_2014_import_substitution",
+      "date": "2014-08-06",
+      "year": 2014,
+      "event_name": "Контрсанкции и курс на импортозамещение",
+      "event_type": "economic_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "economic_policy"
+    },
+    {
+      "event_id": "rf_2015_syria_intervention",
+      "date": "2015-09-30",
+      "year": 2015,
+      "event_name": "Военная операция России в Сирии",
+      "event_type": "military_intervention",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "rf_2016_national_guard",
+      "date": "2016-04-05",
+      "year": 2016,
+      "event_name": "Создание Росгвардии",
+      "event_type": "security_reform",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "security"
+    },
+    {
+      "event_id": "rf_2018_pension_reform",
+      "date": "2018-06-14",
+      "year": 2018,
+      "event_name": "Пенсионная реформа",
+      "event_type": "social_economic_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "social_policy_finance"
+    },
+    {
+      "event_id": "rf_2020_constitutional_amendments",
+      "date": "2020-07-01",
+      "year": 2020,
+      "event_name": "Конституционные поправки 2020 года",
+      "event_type": "constitutional_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.95,
+      "decision_domain": "constitutional"
+    },
+    {
+      "event_id": "rf_2020_mishustin_government",
+      "date": "2020-01-16",
+      "year": 2020,
+      "event_name": "Правительство Мишустина",
+      "event_type": "elite_reconfiguration",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "elite_governance"
+    },
+    {
+      "event_id": "rf_2021_navalny_organizations_extremist",
+      "date": "2021-06-09",
+      "year": 2021,
+      "event_name": "Признание структур Навального экстремистскими",
+      "event_type": "legal_repression",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "law_security"
+    },
+    {
+      "event_id": "rf_2022_full_scale_invasion_ukraine",
+      "date": "2022-02-24",
+      "year": 2022,
+      "event_name": "Полномасштабное вторжение в Украину",
+      "event_type": "war",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy_military"
+    },
+    {
+      "event_id": "rf_2022_partial_mobilization",
+      "date": "2022-09-21",
+      "year": 2022,
+      "event_name": "Частичная мобилизация",
+      "event_type": "military_social_policy",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "military"
+    },
+    {
+      "event_id": "rf_2022_annexation_ukraine_regions",
+      "date": "2022-09-30",
+      "year": 2022,
+      "event_name": "Аннексия четырёх украинских регионов",
+      "event_type": "territorial_change",
+      "severity": 5,
+      "elite_initiated": true,
+      "confidence": 0.98,
+      "decision_domain": "foreign_policy_constitutional"
+    },
+    {
+      "event_id": "rf_2023_electronic_draft_registry",
+      "date": "2023-04-14",
+      "year": 2023,
+      "event_name": "Закон об электронных повестках и реестре военнообязанных",
+      "event_type": "military_administrative_policy",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "military_administration"
+    },
+    {
+      "event_id": "rf_2024_defense_ministry_belousov",
+      "date": "2024-05-14",
+      "year": 2024,
+      "event_name": "Назначение Белоусова министром обороны",
+      "event_type": "elite_reconfiguration",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.9,
+      "decision_domain": "elite_governance_military"
+    },
+    {
+      "event_id": "rf_2024_tax_reform_progressive",
+      "date": "2024-07-12",
+      "year": 2024,
+      "event_name": "Налоговая реформа 2024 года",
+      "event_type": "economic_reform",
+      "severity": 4,
+      "elite_initiated": true,
+      "confidence": 0.85,
+      "decision_domain": "finance"
+    },
+    {
+      "event_id": "rf_2025_placeholder_policy_cycle",
+      "date": "2025-01-01",
+      "year": 2025,
+      "event_name": "Политический цикл 2025: продолжение военной и бюджетной мобилизации",
+      "event_type": "policy_continuity",
+      "severity": 3,
+      "elite_initiated": true,
+      "confidence": 0.4,
+      "decision_domain": "state_policy"
+    }
+  ]
+}
