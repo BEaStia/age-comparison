@@ -2,10 +2,22 @@
   const state = {
     lang: localStorage.getItem("power_age_lang") || "ru",
     tab: "initiator_group_x_decision_domain",
+    datasetId: localStorage.getItem("power_age_dataset") || "",
+    datasets: [],
+    dataset: null,
     data: null,
   };
 
-  const DATA_URL = "data/site-data.json";
+  const DATASETS_URL = "data/datasets.json";
+  const FALLBACK_DATASET = {
+    id: "russia",
+    label: { ru: "Россия / СССР", en: "Russia / USSR" },
+    description: {
+      ru: "Текущий набор данных по возрасту элиты, фракциям и событиям для России и СССР.",
+      en: "Current dataset covering elite age, factions, and events for Russia and the USSR.",
+    },
+    data_url: "data/site-data.json",
+  };
 
   const I18N = {
     ru: {
@@ -530,6 +542,176 @@
     },
   };
 
+  const EVENT_TYPE_LABELS = {
+    ru: {
+      reform: "Реформа",
+      repression: "Репрессия",
+      war: "Война",
+      crisis: "Кризис",
+      coup: "Переворот",
+      election: "Выборы",
+      institutional_change: "Институциональное изменение",
+      external_policy: "Внешняя политика",
+      constitutional_change: "Конституционное изменение",
+      transition: "Переход",
+      appointment: "Назначение",
+      protest: "Протест",
+      economic_shock: "Экономический шок",
+      security_operation: "Операция безопасности",
+      other: "Другое",
+    },
+    en: {
+      reform: "Reform",
+      repression: "Repression",
+      war: "War",
+      crisis: "Crisis",
+      coup: "Coup",
+      election: "Election",
+      institutional_change: "Institutional change",
+      external_policy: "Foreign policy",
+      constitutional_change: "Constitutional change",
+      transition: "Transition",
+      appointment: "Appointment",
+      protest: "Protest",
+      economic_shock: "Economic shock",
+      security_operation: "Security operation",
+      other: "Other",
+    },
+  };
+
+  const INSTITUTION_LABELS = {
+    ru: {
+      party_state: "Партийно-государственный блок",
+      presidential: "Президентский блок",
+      government: "Правительство",
+      security: "Силовой блок",
+      foreign_policy: "Внешняя политика",
+      finance: "Финансовый блок",
+      military: "Военный блок",
+      judiciary: "Судебная система",
+      regional: "Региональный уровень",
+      administrative: "Административный аппарат",
+      central_bank: "Центральный банк",
+      legislature: "Законодательный орган",
+      other: "Другое",
+    },
+    en: {
+      party_state: "Party-state bloc",
+      presidential: "Presidential bloc",
+      government: "Government",
+      security: "Security bloc",
+      foreign_policy: "Foreign policy",
+      finance: "Finance bloc",
+      military: "Military bloc",
+      judiciary: "Judiciary",
+      regional: "Regional level",
+      administrative: "Administrative apparatus",
+      central_bank: "Central bank",
+      legislature: "Legislature",
+      other: "Other",
+    },
+  };
+
+  const DIMENSION_LABELS = {
+    ru: {
+      initiator_group: {
+        imp_bureaucratic_reformers: "Имперские бюрократические реформаторы",
+        technocrats: "Технократы",
+        siloviki: "Силовики",
+        rev_bolshevik_center: "Большевистский центр",
+        stalin_security_apparatus: "Сталинский аппарат безопасности",
+        perestroika_gorbachev_reformers: "Реформаторы Горбачёва",
+        central_leader: "Центральный лидер",
+        imp_military_aristocracy: "Имперская военная аристократия",
+        imp_foreign_policy_chancery: "Имперская внешнеполитическая канцелярия",
+        imp_finance_modernizers: "Имперские финансовые модернизаторы",
+      },
+      decision_domain: {
+        foreign_policy_military: "Внешняя политика и военные вопросы",
+        economic_policy: "Экономическая политика",
+        security: "Безопасность",
+        constitutional: "Конституционные вопросы",
+        elite_governance: "Управление элитой",
+        foreign_policy: "Внешняя политика",
+        finance: "Финансы",
+        administration: "Администрация",
+        military: "Военные вопросы",
+        political_institutions: "Политические институты",
+      },
+      faction_type: {
+        functional: "Функциональные",
+        bureaucratic_ideological: "Бюрократически-идеологические",
+        security: "Силовые",
+        personal_power_center: "Личные центры власти",
+        party_apparatus: "Партийный аппарат",
+        institutional: "Институциональные",
+        party_revolutionary: "Партийно-революционные",
+        military: "Военные",
+        reformist_power_center: "Реформистские центры власти",
+        personal_network: "Личные сети",
+      },
+    },
+    en: {
+      initiator_group: {
+        imp_bureaucratic_reformers: "Imperial bureaucratic reformers",
+        technocrats: "Technocrats",
+        siloviki: "Siloviki",
+        rev_bolshevik_center: "Bolshevik center",
+        stalin_security_apparatus: "Stalin security apparatus",
+        perestroika_gorbachev_reformers: "Gorbachev reformers",
+        central_leader: "Central leader",
+        imp_military_aristocracy: "Imperial military aristocracy",
+        imp_foreign_policy_chancery: "Imperial foreign policy chancery",
+        imp_finance_modernizers: "Imperial finance modernizers",
+      },
+      decision_domain: {
+        foreign_policy_military: "Foreign policy and military",
+        economic_policy: "Economic policy",
+        security: "Security",
+        constitutional: "Constitutional affairs",
+        elite_governance: "Elite governance",
+        foreign_policy: "Foreign policy",
+        finance: "Finance",
+        administration: "Administration",
+        military: "Military",
+        political_institutions: "Political institutions",
+      },
+      faction_type: {
+        functional: "Functional",
+        bureaucratic_ideological: "Bureaucratic-ideological",
+        security: "Security",
+        personal_power_center: "Personal power center",
+        party_apparatus: "Party apparatus",
+        institutional: "Institutional",
+        party_revolutionary: "Party-revolutionary",
+        military: "Military",
+        reformist_power_center: "Reformist power center",
+        personal_network: "Personal network",
+      },
+    },
+  };
+
+  const PERIOD_LABELS = {
+    ru: {
+      empire_1801_1917: "Российская империя",
+      revolution_1917_1924: "Революция и ранний СССР",
+      stalin_1924_1953: "Сталинский период",
+      poststalin_1953_1964: "Постсталинский период",
+      lateussr_1964_1985: "Поздний СССР",
+      perestroika_1985_1991: "Перестройка",
+      rf_1991_2026: "Российская Федерация",
+    },
+    en: {
+      empire_1801_1917: "Russian Empire",
+      revolution_1917_1924: "Revolution / early Soviet",
+      stalin_1924_1953: "Stalin era",
+      poststalin_1953_1964: "Post-Stalin / Khrushchev",
+      lateussr_1964_1985: "Late Soviet",
+      perestroika_1985_1991: "Perestroika",
+      rf_1991_2026: "Russian Federation",
+    },
+  };
+
   function getText(path) {
     return path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), I18N[state.lang]);
   }
@@ -765,6 +947,25 @@
     return VARIABLE_LABELS[state.lang][key] || key;
   }
 
+  function labelForDimension(tab, key) {
+    const dimension = tab === "faction_type_x_decision_domain" ? "faction_type" : "initiator_group";
+    const labels = DIMENSION_LABELS[state.lang][dimension] || {};
+    const fallback = DIMENSION_LABELS[state.lang].decision_domain || {};
+    return labels[key] || fallback[key] || key;
+  }
+
+  function labelForEventType(key) {
+    return EVENT_TYPE_LABELS[state.lang][key] || EVENT_TYPE_LABELS[state.lang].other || key;
+  }
+
+  function labelForInstitution(key) {
+    return INSTITUTION_LABELS[state.lang][key] || INSTITUTION_LABELS[state.lang].other || key;
+  }
+
+  function labelForPeriod(key) {
+    return PERIOD_LABELS[state.lang][key] || key;
+  }
+
   function sectionFigures(groupId, sectionId) {
     const group = FIGURE_GROUPS.find((item) => item.id === groupId);
     if (!group) {
@@ -882,7 +1083,7 @@
                 (period) => `
                   <div class="period-card">
                     <strong>${escapeHtml(period.label)}</strong>
-                    <div class="label">${escapeHtml(period.period_id)}</div>
+                    <div class="label">${escapeHtml(labelForPeriod(period.period_id))}</div>
                     <div class="value" style="font-size:22px; margin-top:8px;">${formatInteger(
                       period.events_count
                     )}</div>
@@ -989,7 +1190,7 @@
 
     const headerCells = [
       `<th></th>`,
-      ...cols.map((col) => `<th>${escapeHtml(col)}</th>`),
+      ...cols.map((col) => `<th>${escapeHtml(labelForDimension(tab, col))}</th>`),
       `<th class="total">${escapeHtml(
         state.lang === "ru" ? "Итого" : "Total"
       )}</th>`,
@@ -1007,7 +1208,7 @@
           .join("");
         return `
           <tr>
-            <th>${escapeHtml(row)}</th>
+            <th>${escapeHtml(labelForDimension(tab, row))}</th>
             ${cells}
             <td class="total">${rowTotals[rowIndex]}</td>
           </tr>
@@ -1074,6 +1275,13 @@
                   state.lang === "ru"
                     ? "Картинки на странице открываются по клику, чтобы можно было быстро читать подписи и шкалы."
                     : "Charts open on click so labels and axes are easier to read."
+                )}
+              </div>
+              <div class="correlation-item">
+                ${escapeHtml(
+                  state.lang === "ru"
+                    ? `Читабельные лейблы используются для event_type, institution и period_id; например, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
+                    : `Readable labels are used for event_type, institution, and period_id; for example, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
                 )}
               </div>
             </div>
