@@ -1,0 +1,6 @@
+source_faction_id,target_faction_id,relation_type,start_year,end_year,intensity,confidence,notes,source_url
+fac_natsec_establishment,fac_intelligence_community,overlap,1947,,0.8,0.9,IC leadership is a subset/overlapping layer of national security establishment.,https://www.cia.gov/legacy/museum/artifact/allen-w-dulles/
+fac_globalists,fac_cfr_trilateral,overlap,1973,,0.7,0.8,CFR/Trilateral used as one observable proxy for globalist/internationalist network.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+fac_populist_nationalists,fac_natsec_establishment,opposition,2016,,0.75,0.75,Trump-era political conflict frequently framed against administrative/natsec establishment.,https://www.whitehouse.gov/administration/donald-j-trump/
+fac_neoconservatives,fac_natsec_establishment,partial_overlap,2001,,0.55,0.65,Overlap in post-9/11 defense/foreign-policy personnel and agendas.,https://history.state.gov/milestones/2001-2009/iraq
+fac_business_finance,fac_cfr_trilateral,network_overlap,1970,,0.6,0.75,David Rockefeller provides visible bridge between banking and CFR/Trilateral networks.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series

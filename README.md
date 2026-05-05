@@ -54,17 +54,19 @@ pip install -e ".[dev]"
 
 ```bash
 python -m power_age.cli build
+python -m power_age.cli build --dataset usa
 ```
 
-Результат сохраняется в `data/processed/elite_year.csv`.
+По умолчанию используется `russia`; `--dataset usa` строит отдельный пакет в `datasets/usa/processed/`.
 
 Построить графики:
 
 ```bash
 python -m power_age.cli plot
+python -m power_age.cli plot --dataset usa
 ```
 
-PNG-файлы сохраняются в `outputs/figures`.
+PNG-файлы сохраняются в `outputs/figures` для `russia` и в `outputs/usa/figures` для `usa`.
 
 Сейчас строятся:
 
@@ -208,8 +210,11 @@ fragmentation_index = 1 - sum(normalized_power_share^2)
 ```bash
 python -m power_age.cli diagnostics
 python -m power_age.cli build-factions
+python -m power_age.cli build-factions --dataset usa
 python -m power_age.cli plot-factions
+python -m power_age.cli plot-factions --dataset usa
 python -m power_age.cli faction-summary
+python -m power_age.cli faction-summary --dataset usa
 ```
 
 Фракционные processed-файлы:

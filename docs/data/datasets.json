@@ -9,6 +9,22 @@
       "ru": "Текущий набор данных по возрасту элиты, фракциям и событиям для России и СССР.",
       "en": "Current dataset covering elite age, factions, and events for Russia and the USSR."
     },
-    "data_url": "data/site-data.json"
+    "data_url": "data/site-data.json",
+    "series_url": "data/series-data.json",
+    "figures_url": "figures"
+  },
+  {
+    "id": "usa",
+    "label": {
+      "ru": "США",
+      "en": "USA"
+    },
+    "description": {
+      "ru": "Набор данных по элите, фракциям и событиям для США, 1945-2026.",
+      "en": "Dataset covering elite age, factions, and events for the United States, 1945-2026."
+    },
+    "data_url": "data/usa/site-data.json",
+    "series_url": "data/usa/series-data.json",
+    "figures_url": "figures/usa"
   }
 ]

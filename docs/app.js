@@ -19,13 +19,15 @@
       en: "Current dataset covering elite age, factions, and events for Russia and the USSR.",
     },
     data_url: "data/site-data.json",
+    series_url: "data/series-data.json",
+    figures_url: "figures",
   };
 
   const I18N = {
     ru: {
       title: "Power Age",
       lead:
-        "Исследовательский прототип о возрасте элиты, фракциях и событиях в России и СССР. Страница собирает графики, корреляционные выводы, кросс-табы и событийный слой в одном месте.",
+        "Исследовательский прототип о возрасте элиты, фракциях и событиях. Страница собирает графики, корреляционные выводы, кросс-табы и событийный слой в одном месте.",
       nav: {
         overview: "Обзор",
         correlations: "Корреляции",
@@ -78,7 +80,7 @@
     en: {
       title: "Power Age",
       lead:
-        "A research prototype on elite age, factions, and events in Russia and the USSR. The page brings charts, correlation takeaways, cross-tabs, and the event layer into one place.",
+        "A research prototype on elite age, factions, and events. The page brings charts, correlation takeaways, cross-tabs, and the event layer into one place.",
       nav: {
         overview: "Overview",
         correlations: "Correlations",
@@ -303,10 +305,11 @@
         },
       ],
     },
-    {
-      id: "faction-periods",
-      sectionId: "factions",
-      figures: [
+        {
+          id: "faction-periods",
+          sectionId: "factions",
+          datasets: ["russia"],
+          figures: [
         {
           id: "factions_empire_1801_1917",
           src: "figures/factions_empire_1801_1917.png",
@@ -1060,7 +1063,28 @@
   }
 
   function labelForPeriod(key) {
+    const periods = Array.isArray(state.data?.periods) ? state.data.periods : [];
+    const match = periods.find((period) => period.period_id === key || period.slug === key);
+    if (match) {
+      return match[`label_${state.lang}`] || match.label || match.label_en || match.label_ru || key;
+    }
     return PERIOD_LABELS[state.lang][key] || key;
+  }
+
+  function examplePeriodKey() {
+    const periods = Array.isArray(state.data?.periods) ? state.data.periods : [];
+    const first = periods[0] || {};
+    return first.period_id || first.slug || "period";
+  }
+
+  function isVisibleForDataset(entry) {
+    return !entry.datasets || entry.datasets.includes(state.datasetId);
+  }
+
+  function figureAssetPath(src) {
+    const prefix = (state.dataset?.figures_url || FALLBACK_DATASET.figures_url || "figures").replace(/\/$/, "");
+    const normalized = String(src).replace(/^figures\//, "");
+    return `${prefix}/${normalized}`;
   }
 
   function prettifyKey(key) {
@@ -1071,7 +1095,7 @@
 
   function sectionFigures(groupId, sectionId) {
     const group = FIGURE_GROUPS.find((item) => item.id === groupId);
-    if (!group) {
+    if (!group || !isVisibleForDataset(group)) {
       return "";
     }
 
@@ -1099,7 +1123,10 @@
   }
 
   function sectionFactions() {
-    const groups = FIGURE_GROUPS.filter((item) => item.sectionId === "factions");
+    const groups = FIGURE_GROUPS.filter((item) => item.sectionId === "factions" && isVisibleForDataset(item));
+    if (!groups.length) {
+      return "";
+    }
     return `
       <section id="factions" class="section-anchor">
         <div class="section-head">
@@ -1128,17 +1155,18 @@
   function renderFigure(figure) {
     const title = figure.title[state.lang];
     const caption = figure.caption[state.lang];
+    const src = figureAssetPath(figure.src);
     const wideClass = figure.wide ? ' class="wide"' : "";
     return `
       <figure id="${escapeHtml(figure.id)}"${wideClass}>
         <button
           class="figure-trigger"
           type="button"
-          data-figure-src="${escapeHtml(figure.src)}"
+          data-figure-src="${escapeHtml(src)}"
           data-figure-title="${escapeHtml(title)}"
           data-figure-caption="${escapeHtml(caption)}"
         >
-          <img src="${escapeHtml(figure.src)}" alt="${escapeHtml(title)}">
+          <img src="${escapeHtml(src)}" alt="${escapeHtml(title)}">
         </button>
         <figcaption class="figure-caption">
           <strong>${escapeHtml(title)}</strong>
@@ -1185,7 +1213,7 @@
               .map(
                 (period) => `
                   <div class="period-card">
-                    <strong>${escapeHtml(period.label)}</strong>
+                    <strong>${escapeHtml(period.label || period.period_label || period.period_id)}</strong>
                     <div class="label">${escapeHtml(labelForPeriod(period.period_id))}</div>
                     <div class="value" style="font-size:22px; margin-top:8px;">${formatInteger(
                       period.events_count
@@ -1382,9 +1410,9 @@
               </div>
               <div class="correlation-item">
                 ${escapeHtml(
-                  state.lang === "ru"
-                    ? `Читабельные лейблы используются для типа события, института и периода; например, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
-                    : `Readable labels are used for event type, institution, and period; for example, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod("rf_1991_2026")}.`
+                state.lang === "ru"
+                    ? `Читабельные лейблы используются для типа события, института и периода; например, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod(examplePeriodKey())}.`
+                    : `Readable labels are used for event type, institution, and period; for example, ${labelForEventType("reform")} / ${labelForInstitution("presidential")} / ${labelForPeriod(examplePeriodKey())}.`
                 )}
               </div>
             </div>
@@ -1797,10 +1825,10 @@
               return response.json();
             })
             .catch(() => fetch(FALLBACK_DATASET.data_url).then((response) => response.json())),
-          fetch(SERIES_URL)
+          fetch(selected.series_url || SERIES_URL)
             .then((response) => {
               if (!response.ok) {
-                throw new Error(`Failed to load ${SERIES_URL}`);
+                throw new Error(`Failed to load ${selected.series_url || SERIES_URL}`);
               }
               return response.json();
             })

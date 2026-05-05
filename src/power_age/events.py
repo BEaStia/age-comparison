@@ -40,19 +40,43 @@ def events_by_initiator_group(events: pd.DataFrame) -> pd.DataFrame:
     ).reset_index()
 
 
-def events_by_period(events: pd.DataFrame) -> pd.DataFrame:
+def _period_label_for_year(year: int, periods: pd.DataFrame | None = None) -> dict[str, str]:
+    if periods is not None and not periods.empty and "start_year" in periods.columns and "end_year" in periods.columns:
+        year_row = periods[
+            (pd.to_numeric(periods["start_year"], errors="coerce") <= year)
+            & (pd.to_numeric(periods["end_year"], errors="coerce") >= year)
+        ].copy()
+        if not year_row.empty:
+            row = year_row.iloc[0]
+            label = row.get("label_en") or row.get("label_ru") or row.get("label") or row.get("period_id") or "Unknown"
+            return {
+                "period_id": str(row.get("period_id") or row.get("slug") or label),
+                "label": str(label),
+            }
+    period = historical_period_for_year(year)
+    return {"period_id": period["period_id"], "label": period["label"]}
+
+
+def events_by_period(events: pd.DataFrame, periods: pd.DataFrame | None = None) -> pd.DataFrame:
     columns = ["period_id", "period_label", "events_count", "mean_severity", "max_severity"]
     if events.empty:
         return pd.DataFrame(columns=columns)
     data = events.copy()
     data["year"] = data["date"].dt.year
-    data["period_id"] = data["year"].apply(lambda year: historical_period_for_year(int(year))["period_id"])
-    data["period_label"] = data["year"].apply(lambda year: historical_period_for_year(int(year))["label"])
+    data["period_info"] = data["year"].apply(lambda year: _period_label_for_year(int(year), periods))
+    data["period_id"] = data["period_info"].apply(lambda value: value["period_id"])
+    data["period_label"] = data["period_info"].apply(lambda value: value["label"])
     grouped = data.groupby(["period_id", "period_label"], as_index=False).agg(
         events_count=("event_id", "count"),
         mean_severity=("severity", "mean"),
         max_severity=("severity", "max"),
     )
-    order = {period["period_id"]: index for index, period in enumerate(HISTORICAL_PERIODS)}
+    if periods is not None and not periods.empty and "period_id" in periods.columns:
+        order = {
+            str(period["period_id"]): index
+            for index, period in periods.reset_index(drop=True).iterrows()
+        }
+    else:
+        order = {period["period_id"]: index for index, period in enumerate(HISTORICAL_PERIODS)}
     grouped["period_order"] = grouped["period_id"].map(order).fillna(999)
     return grouped.sort_values("period_order").drop(columns=["period_order"]).reset_index(drop=True)

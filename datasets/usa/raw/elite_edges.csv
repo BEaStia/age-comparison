@@ -1,0 +1,37 @@
+source_person_id,target_person_id,edge_type,start_year,end_year,weight,confidence,notes,source_url
+p_rockefeller_david,p_brzezinski_zbigniew,co_founder_network,1973,,0.8,0.85,Trilateral Commission founding network.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_obama_barack,p_gates_robert,cross_administration_continuity,2009,2011,0.7,0.9,Gates remained Secretary of Defense into Obama administration.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571289/robert-m-gates/
+p_nixon_richard,p_kissinger_henry,president_advisor,1969,1974,0.95,0.95,Kissinger served as National Security Advisor and later Secretary of State.,https://history.state.gov/historicaldocuments/frus1969-76v38p1/d16
+p_carter_jimmy,p_brzezinski_zbigniew,president_advisor,1977,1981,0.9,0.95,Brzezinski served as Carter National Security Advisor.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_bush_george_w,p_tenet_george,president_cia_director,2001,2004,0.75,0.9,CIA/DCI at start of post-9/11 period.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_bush_george_w,p_rumsfeld_donald,president_defense_secretary,2001,2006,0.85,0.95,Rumsfeld served as Secretary of Defense.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571288/donald-h-rumsfeld/
+p_bush_george_w,p_mueller_robert,president_fbi_director,2001,2009,0.72,0.9,FBI Director during Bush 43 administration.,https://www.fbi.gov/history/directors
+p_obama_barack,p_mueller_robert,president_fbi_director,2009,2013,0.72,0.9,FBI Director during Obama administration.,https://www.fbi.gov/history/directors
+p_trump_donald,p_comey_james,president_fbi_director,2017,2017,0.65,0.85,FBI Director until dismissal in 2017.,https://www.fbi.gov/history/directors
+p_trump_donald,p_wray_christopher,president_fbi_director,2017,2021,0.7,0.9,FBI Director in first Trump administration.,https://www.fbi.gov/history/directors
+p_biden_joe,p_wray_christopher,president_fbi_director,2021,2025,0.7,0.9,FBI Director in Biden administration.,https://www.fbi.gov/history/directors
+p_reagan_ronald,p_shultz_george,president_state_secretary,1982,1989,0.82,0.9,Secretary of State in Reagan administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_bush_george_hw,p_baker_james,president_state_secretary,1989,1992,0.84,0.9,Secretary of State in Bush 41 administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_clinton_bill,p_albright_madeleine,president_state_secretary,1997,2001,0.84,0.9,Secretary of State in Clinton administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_bush_george_w,p_rice_condoleezza,president_state_secretary,2005,2009,0.84,0.9,Secretary of State in Bush 43 administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_obama_barack,p_clinton_hillary,president_state_secretary,2009,2013,0.84,0.9,Secretary of State in Obama administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_obama_barack,p_kerry_john,president_state_secretary,2013,2017,0.82,0.9,Secretary of State in Obama administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_trump_donald,p_pompeo_mike,president_state_secretary,2018,2021,0.82,0.9,Secretary of State in first Trump administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_biden_joe,p_blinken_antony,president_state_secretary,2021,2025,0.82,0.9,Secretary of State in Biden administration.,https://history.state.gov/departmenthistory/people/secretaries
+p_trump_donald,p_rubio_marco,president_state_secretary,2025,,0.82,0.9,Secretary of State in second Trump administration as of 2026-05-05.,https://www.state.gov/biographies/marco-rubio
+p_truman_harry,p_barkley_alben,president_vice_president,1949,1953,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_eisenhower_dwight,p_nixon_richard,president_vice_president,1953,1961,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_kennedy_john,p_johnson_lyndon,president_vice_president,1961,1963,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_johnson_lyndon,p_humphrey_hubert,president_vice_president,1965,1969,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_nixon_richard,p_agnew_spiro,president_vice_president,1969,1973,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_nixon_richard,p_ford_gerald,president_vice_president,1973,1974,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_ford_gerald,p_rockefeller_nelson,president_vice_president,1974,1977,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_carter_jimmy,p_mondale_walter,president_vice_president,1977,1981,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_reagan_ronald,p_bush_george_hw,president_vice_president,1981,1989,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_bush_george_hw,p_quayle_dan,president_vice_president,1989,1993,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_clinton_bill,p_gore_al,president_vice_president,1993,2001,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_bush_george_w,p_cheney_dick,president_vice_president,2001,2009,0.9,0.95,Cheney served as Vice President.,https://georgewbush-whitehouse.archives.gov/vicepresident/
+p_obama_barack,p_biden_joe,president_vice_president,2009,2017,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_trump_donald,p_pence_mike,president_vice_president,2017,2021,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_biden_joe,p_harris_kamala,president_vice_president,2021,2025,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_trump_donald,p_vance_jd,president_vice_president,2025,,0.9,0.95,Formal president–vice-president tie.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm

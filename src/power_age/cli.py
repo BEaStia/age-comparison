@@ -6,6 +6,7 @@ import pandas as pd
 import typer
 
 from power_age.compute import add_event_summary, build_elite_year_table
+from power_age.datasets import DEFAULT_DATASET_ID, dataset_paths, dataset_year_span, load_period_groups as load_dataset_period_groups
 from power_age.events import (
     events_by_decision_domain,
     events_by_initiator_group,
@@ -25,56 +26,86 @@ from power_age.validate import validate_events, validate_faction_references
 app = typer.Typer(help="Power age research MVP.")
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DATA_DIR = PROJECT_ROOT / "data"
-RAW_DIR = DATA_DIR / "raw"
-PROCESSED_DIR = DATA_DIR / "processed"
-FIGURES_DIR = PROJECT_ROOT / "outputs" / "figures"
-ELITE_YEAR_PATH = PROCESSED_DIR / "elite_year.csv"
-FACTION_YEAR_PATH = PROCESSED_DIR / "faction_year.csv"
-FACTION_TYPE_YEAR_PATH = PROCESSED_DIR / "faction_type_year.csv"
-FACTION_FRAGMENTATION_PATH = PROCESSED_DIR / "faction_fragmentation.csv"
-EVENTS_WITH_FACTION_CONTEXT_PATH = PROCESSED_DIR / "events_with_faction_context.csv"
+
+def _dataset_root(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return dataset_paths(dataset_id).root
 
 
-def _build_table() -> pd.DataFrame:
-    data = load_all_data(DATA_DIR)
+def _raw_dir(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return dataset_paths(dataset_id).raw
+
+
+def _processed_dir(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return dataset_paths(dataset_id).processed
+
+
+def _figures_dir(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return dataset_paths(dataset_id).figures
+
+
+def _elite_year_path(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return _processed_dir(dataset_id) / "elite_year.csv"
+
+
+def _faction_year_path(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return _processed_dir(dataset_id) / "faction_year.csv"
+
+
+def _faction_type_year_path(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return _processed_dir(dataset_id) / "faction_type_year.csv"
+
+
+def _faction_fragmentation_path(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return _processed_dir(dataset_id) / "faction_fragmentation.csv"
+
+
+def _events_with_faction_context_path(dataset_id: str = DEFAULT_DATASET_ID) -> Path:
+    return _processed_dir(dataset_id) / "events_with_faction_context.csv"
+
+
+def _build_table(dataset_id: str = DEFAULT_DATASET_ID) -> pd.DataFrame:
+    data = load_all_data(_dataset_root(dataset_id))
+    start_year, end_year = dataset_year_span(data, dataset_id)
     elite_year = build_elite_year_table(
         data["persons"],
         data["positions"],
         data["political_entries"],
-        start_year=1801,
-        end_year=2026,
+        start_year=start_year,
+        end_year=end_year,
     )
     return add_event_summary(elite_year, data["events"])
 
 
-def _load_or_build_table() -> pd.DataFrame:
-    if ELITE_YEAR_PATH.exists():
-        return pd.read_csv(ELITE_YEAR_PATH)
-    table = _build_table()
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
-    table.to_csv(ELITE_YEAR_PATH, index=False)
+def _load_or_build_table(dataset_id: str = DEFAULT_DATASET_ID) -> pd.DataFrame:
+    elite_year_path = _elite_year_path(dataset_id)
+    if elite_year_path.exists():
+        return pd.read_csv(elite_year_path)
+    table = _build_table(dataset_id)
+    _processed_dir(dataset_id).mkdir(parents=True, exist_ok=True)
+    table.to_csv(elite_year_path, index=False)
     return table
 
 
-def _load_period_groups() -> pd.DataFrame:
-    paths = sorted(RAW_DIR.glob("core_elite_groups*.csv"))
-    frames = [pd.read_csv(path) for path in paths]
-    if not frames:
-        return pd.DataFrame()
-    groups = pd.concat(frames, ignore_index=True)
-    groups = groups.drop_duplicates(subset=["period_id"], keep="first")
-    return groups.sort_values(["start_year", "end_year", "period_id"]).reset_index(drop=True)
+def _load_period_groups(dataset_id: str = DEFAULT_DATASET_ID) -> pd.DataFrame:
+    data = load_all_data(_dataset_root(dataset_id))
+    return load_dataset_period_groups(data, dataset_id)
 
 
 def _load_faction_year_or_build(
-    start_year: int = 1801,
-    end_year: int = 2026,
+    dataset_id: str = DEFAULT_DATASET_ID,
+    start_year: int | None = None,
+    end_year: int | None = None,
     min_confidence: float = 0.5,
 ) -> pd.DataFrame:
-    if FACTION_YEAR_PATH.exists():
-        return pd.read_csv(FACTION_YEAR_PATH)
-    data = load_all_data(DATA_DIR)
+    faction_year_path = _faction_year_path(dataset_id)
+    faction_type_year_path = _faction_type_year_path(dataset_id)
+    faction_fragmentation_path = _faction_fragmentation_path(dataset_id)
+    events_with_context_path = _events_with_faction_context_path(dataset_id)
+    if faction_year_path.exists():
+        return pd.read_csv(faction_year_path)
+    data = load_all_data(_dataset_root(dataset_id))
+    if start_year is None or end_year is None:
+        start_year, end_year = dataset_year_span(data, dataset_id)
     faction_year = build_faction_year_table(
         data["persons"],
         data["positions"],
@@ -86,24 +117,27 @@ def _load_faction_year_or_build(
         min_confidence=min_confidence,
     )
     faction_type_year = build_faction_type_year_table(faction_year, data["factions"])
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
-    faction_year.to_csv(FACTION_YEAR_PATH, index=False)
-    faction_type_year.to_csv(FACTION_TYPE_YEAR_PATH, index=False)
-    compute_elite_fragmentation(faction_year).to_csv(FACTION_FRAGMENTATION_PATH, index=False)
+    _processed_dir(dataset_id).mkdir(parents=True, exist_ok=True)
+    faction_year.to_csv(faction_year_path, index=False)
+    faction_type_year.to_csv(faction_type_year_path, index=False)
+    compute_elite_fragmentation(faction_year).to_csv(faction_fragmentation_path, index=False)
+    add_faction_context_to_events(data["events"], faction_year).to_csv(events_with_context_path, index=False)
     return faction_year
 
 
 @app.command()
-def build() -> None:
-    """Build data/processed/elite_year.csv."""
-    table = _build_table()
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
-    table.to_csv(ELITE_YEAR_PATH, index=False)
-    typer.echo(f"Saved {len(table)} rows to {ELITE_YEAR_PATH}")
+def build(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
+    """Build the yearly elite table for a dataset."""
+    paths = dataset_paths(dataset)
+    table = _build_table(dataset)
+    paths.processed.mkdir(parents=True, exist_ok=True)
+    output_path = _elite_year_path(dataset)
+    table.to_csv(output_path, index=False)
+    typer.echo(f"Saved {len(table)} rows to {output_path}")
 
 
 @app.command()
-def plot() -> None:
+def plot(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Save all timeline plots as PNG files."""
     from power_age.visualize import (
         plot_biological_vs_political_age,
@@ -115,51 +149,55 @@ def plot() -> None:
         plot_ruler_age_timeline,
     )
 
-    elite_year = _load_or_build_table()
-    data = load_all_data(DATA_DIR)
+    elite_year = _load_or_build_table(dataset)
+    data = load_all_data(_dataset_root(dataset))
     events = data["events"]
-    period_groups = _load_period_groups()
-    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    period_groups = _load_period_groups(dataset)
+    figures_dir = _figures_dir(dataset)
+    figures_dir.mkdir(parents=True, exist_ok=True)
+    start_year, end_year = dataset_year_span(data, dataset)
 
     plot_ruler_age_timeline(
         elite_year,
         events,
-        FIGURES_DIR / "ruler_age_timeline.png",
+        figures_dir / "ruler_age_timeline.png",
     )
     plot_biological_vs_political_age(
         elite_year,
-        FIGURES_DIR / "biological_vs_political_age.png",
+        figures_dir / "biological_vs_political_age.png",
     )
     plot_core_elite_age(
         elite_year,
-        FIGURES_DIR / "core_elite_age.png",
+        figures_dir / "core_elite_age.png",
     )
     plot_core_elite_aging_dashboard(
         elite_year,
-        FIGURES_DIR / "core_elite_aging_dashboard.png",
+        figures_dir / "core_elite_aging_dashboard.png",
     )
     plot_ruler_vs_core_age(
         elite_year,
-        FIGURES_DIR / "ruler_vs_core_age.png",
+        figures_dir / "ruler_vs_core_age.png",
     )
     plot_institution_composition(
         data["persons"],
         data["positions"],
-        FIGURES_DIR / "institution_composition.png",
+        figures_dir / "institution_composition.png",
+        start_year=start_year,
+        end_year=end_year,
     )
     plot_period_age_boxplots(
         data["persons"],
         data["positions"],
         period_groups,
-        FIGURES_DIR / "period_age_boxplots.png",
+        figures_dir / "period_age_boxplots.png",
     )
-    typer.echo(f"Saved figures to {FIGURES_DIR}")
+    typer.echo(f"Saved figures to {figures_dir}")
 
 
 @app.command()
-def diagnostics() -> None:
+def diagnostics(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Print data diagnostics and faction-layer validation warnings."""
-    data = load_all_data(DATA_DIR)
+    data = load_all_data(_dataset_root(dataset))
     persons = data["persons"]
     positions = data["positions"]
     political_entries = data["political_entries"]
@@ -225,7 +263,7 @@ def diagnostics() -> None:
     else:
         typer.echo("  нет")
 
-    elite_year = _load_or_build_table()
+    elite_year = _load_or_build_table(dataset)
     faction_year = build_faction_year_table(
         persons,
         positions,
@@ -251,12 +289,16 @@ def diagnostics() -> None:
 
 @app.command()
 def build_factions(
-    start_year: int = 1801,
-    end_year: int = 2026,
+    dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id"),
+    start_year: int | None = None,
+    end_year: int | None = None,
     min_confidence: float = 0.5,
 ) -> None:
     """Build faction processed tables."""
-    data = load_all_data(DATA_DIR)
+    paths = dataset_paths(dataset)
+    data = load_all_data(_dataset_root(dataset))
+    if start_year is None or end_year is None:
+        start_year, end_year = dataset_year_span(data, dataset)
     faction_year = build_faction_year_table(
         data["persons"],
         data["positions"],
@@ -271,20 +313,24 @@ def build_factions(
     fragmentation = compute_elite_fragmentation(faction_year)
     events_with_context = add_faction_context_to_events(data["events"], faction_year)
 
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
-    faction_year.to_csv(FACTION_YEAR_PATH, index=False)
-    faction_type_year.to_csv(FACTION_TYPE_YEAR_PATH, index=False)
-    fragmentation.to_csv(FACTION_FRAGMENTATION_PATH, index=False)
-    events_with_context.to_csv(EVENTS_WITH_FACTION_CONTEXT_PATH, index=False)
+    paths.processed.mkdir(parents=True, exist_ok=True)
+    faction_year_path = _faction_year_path(dataset)
+    faction_type_year_path = _faction_type_year_path(dataset)
+    fragmentation_path = _faction_fragmentation_path(dataset)
+    events_context_path = _events_with_faction_context_path(dataset)
+    faction_year.to_csv(faction_year_path, index=False)
+    faction_type_year.to_csv(faction_type_year_path, index=False)
+    fragmentation.to_csv(fragmentation_path, index=False)
+    events_with_context.to_csv(events_context_path, index=False)
 
-    typer.echo(f"Saved {len(faction_year)} rows to {FACTION_YEAR_PATH}")
-    typer.echo(f"Saved {len(faction_type_year)} rows to {FACTION_TYPE_YEAR_PATH}")
-    typer.echo(f"Saved {len(fragmentation)} rows to {FACTION_FRAGMENTATION_PATH}")
-    typer.echo(f"Saved {len(events_with_context)} rows to {EVENTS_WITH_FACTION_CONTEXT_PATH}")
+    typer.echo(f"Saved {len(faction_year)} rows to {faction_year_path}")
+    typer.echo(f"Saved {len(faction_type_year)} rows to {faction_type_year_path}")
+    typer.echo(f"Saved {len(fragmentation)} rows to {fragmentation_path}")
+    typer.echo(f"Saved {len(events_with_context)} rows to {events_context_path}")
 
 
 @app.command()
-def plot_factions() -> None:
+def plot_factions(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Save faction plots as PNG files."""
     from power_age.faction_visualize import (
         plot_faction_fragmentation,
@@ -295,72 +341,80 @@ def plot_factions() -> None:
         plot_faction_weighted_mean_age,
     )
 
-    faction_year = _load_faction_year_or_build()
-    data = load_all_data(DATA_DIR)
+    faction_year = _load_faction_year_or_build(dataset)
+    data = load_all_data(_dataset_root(dataset))
+    figures_dir = _figures_dir(dataset)
     faction_type_year = (
-        pd.read_csv(FACTION_TYPE_YEAR_PATH)
-        if FACTION_TYPE_YEAR_PATH.exists()
+        pd.read_csv(_faction_type_year_path(dataset))
+        if _faction_type_year_path(dataset).exists()
         else build_faction_type_year_table(faction_year, data["factions"])
     )
-    if FACTION_FRAGMENTATION_PATH.exists():
-        fragmentation = pd.read_csv(FACTION_FRAGMENTATION_PATH)
+    if _faction_fragmentation_path(dataset).exists():
+        fragmentation = pd.read_csv(_faction_fragmentation_path(dataset))
     else:
         fragmentation = compute_elite_fragmentation(faction_year)
-    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    figures_dir.mkdir(parents=True, exist_ok=True)
 
     plot_faction_power_share_stacked(
         faction_year,
-        FIGURES_DIR / "faction_power_share_stacked.png",
+        figures_dir / "faction_power_share_stacked.png",
     )
     plot_faction_type_power_share_stacked(
         faction_type_year,
-        FIGURES_DIR / "faction_type_power_share_stacked.png",
+        figures_dir / "faction_type_power_share_stacked.png",
     )
     plot_faction_mean_age(
         faction_year,
-        FIGURES_DIR / "faction_mean_age.png",
+        figures_dir / "faction_mean_age.png",
     )
     plot_faction_weighted_mean_age(
         faction_year,
-        FIGURES_DIR / "faction_weighted_mean_age.png",
+        figures_dir / "faction_weighted_mean_age.png",
     )
     plot_faction_fragmentation(
         fragmentation,
-        FIGURES_DIR / "faction_fragmentation.png",
+        figures_dir / "faction_fragmentation.png",
     )
     plot_faction_power_heatmap(
         faction_year,
-        FIGURES_DIR / "faction_power_heatmap.png",
+        figures_dir / "faction_power_heatmap.png",
     )
-    typer.echo(f"Saved faction figures to {FIGURES_DIR}")
+    typer.echo(f"Saved faction figures to {figures_dir}")
 
 
 @app.command()
-def plot_factions_periods() -> None:
+def plot_factions_periods(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Save separate faction stacked area charts by historical period."""
     from power_age.faction_visualize import plot_faction_power_share_stacked
 
-    faction_year = _load_faction_year_or_build()
-    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
-    for period in HISTORICAL_PERIODS:
+    faction_year = _load_faction_year_or_build(dataset)
+    data = load_all_data(_dataset_root(dataset))
+    period_groups = _load_period_groups(dataset)
+    figures_dir = _figures_dir(dataset)
+    figures_dir.mkdir(parents=True, exist_ok=True)
+    if period_groups.empty:
+        period_groups = pd.DataFrame(HISTORICAL_PERIODS)
+    for _, period in period_groups.iterrows():
+        period_slug = str(period.get("slug") or period.get("period_id"))
         period_data = faction_year[
             (faction_year["year"] >= int(period["start_year"]))
             & (faction_year["year"] <= int(period["end_year"]))
         ].copy()
-        output_path = FIGURES_DIR / f"factions_{period['slug']}.png"
+        output_path = figures_dir / f"factions_{period_slug}.png"
         if period_data.empty:
-            typer.echo(f"Skipped {period['label']}: no faction data")
+            typer.echo(f"Skipped {period.get('label_en') or period.get('label') or period_slug}: no faction data")
             continue
+        title = period.get("label_en") or period.get("label_ru") or period.get("label") or period_slug
         plot_faction_power_share_stacked(
             period_data,
             output_path,
-            title=f"Фракционная власть: {period['label']}",
+            title=f"Фракционная власть: {title}",
         )
         typer.echo(f"Saved {output_path}")
 
 
 @app.command()
-def plot_events() -> None:
+def plot_events(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Save event-focused plots as PNG files."""
     from power_age.visualize import (
         plot_event_severity_timeline,
@@ -369,30 +423,31 @@ def plot_events() -> None:
         plot_events_by_year,
     )
 
-    data = load_all_data(DATA_DIR)
+    data = load_all_data(_dataset_root(dataset))
     events = data["events"]
-    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    figures_dir = _figures_dir(dataset)
+    figures_dir.mkdir(parents=True, exist_ok=True)
 
-    plot_events_by_year(events, FIGURES_DIR / "events_by_year.png")
+    plot_events_by_year(events, figures_dir / "events_by_year.png")
     plot_events_by_period(
-        events_by_period(filter_elite_initiated_events(events)),
-        FIGURES_DIR / "events_by_period.png",
+        events_by_period(filter_elite_initiated_events(events), data.get("periods")),
+        figures_dir / "events_by_period.png",
     )
     plot_events_by_domain(
         events_by_decision_domain(filter_elite_initiated_events(events)),
-        FIGURES_DIR / "events_by_domain.png",
+        figures_dir / "events_by_domain.png",
     )
     plot_event_severity_timeline(
         events,
-        FIGURES_DIR / "event_severity_timeline.png",
+        figures_dir / "event_severity_timeline.png",
     )
-    typer.echo(f"Saved event figures to {FIGURES_DIR}")
+    typer.echo(f"Saved event figures to {figures_dir}")
 
 
 @app.command()
-def event_summary() -> None:
+def event_summary(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Print event-layer summary."""
-    data = load_all_data(DATA_DIR)
+    data = load_all_data(_dataset_root(dataset))
     events = data["events"]
     elite_events = filter_elite_initiated_events(events)
 
@@ -400,7 +455,7 @@ def event_summary() -> None:
     typer.echo(f"Всего elite_initiated событий: {len(elite_events)}")
 
     typer.echo("События по периодам:")
-    period_summary = events_by_period(elite_events)
+    period_summary = events_by_period(elite_events, data.get("periods"))
     for _, row in period_summary.iterrows():
         typer.echo(
             f"  {row['period_label']}: events={int(row['events_count'])}, mean_severity={row['mean_severity']:.2f}, max_severity={int(row['max_severity'])}"
@@ -436,19 +491,20 @@ def event_summary() -> None:
 
 
 @app.command()
-def faction_summary() -> None:
+def faction_summary(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Print faction-layer summary."""
-    faction_year = _load_faction_year_or_build()
-    data = load_all_data(DATA_DIR)
+    faction_year = _load_faction_year_or_build(dataset)
+    data = load_all_data(_dataset_root(dataset))
     factions = data["factions"]
     faction_year_with_types = faction_year.merge(
         factions[["faction_id", "faction_type"]],
         on="faction_id",
         how="left",
     )
+    fragmentation_path = _faction_fragmentation_path(dataset)
     fragmentation = (
-        pd.read_csv(FACTION_FRAGMENTATION_PATH)
-        if FACTION_FRAGMENTATION_PATH.exists()
+        pd.read_csv(fragmentation_path)
+        if fragmentation_path.exists()
         else compute_elite_fragmentation(faction_year)
     )
     if faction_year.empty:
@@ -511,7 +567,10 @@ def faction_summary() -> None:
             typer.echo(f"  {int(decade)}s: {value}")
 
     typer.echo("Исторические периоды:")
-    for period in HISTORICAL_PERIODS:
+    periods = _load_period_groups(dataset)
+    if periods.empty:
+        periods = pd.DataFrame(HISTORICAL_PERIODS)
+    for _, period in periods.iterrows():
         period_factions = faction_year_with_types[
             (faction_year_with_types["year"] >= int(period["start_year"]))
             & (faction_year_with_types["year"] <= int(period["end_year"]))
@@ -520,7 +579,8 @@ def faction_summary() -> None:
             (fragmentation["year"] >= int(period["start_year"]))
             & (fragmentation["year"] <= int(period["end_year"]))
         ].copy()
-        typer.echo(f"  {period['label']} ({period['start_year']}-{period['end_year']}):")
+        period_label = period.get("label_en") or period.get("label_ru") or period.get("label") or period.get("period_id")
+        typer.echo(f"  {period_label} ({period['start_year']}-{period['end_year']}):")
         if period_factions.empty:
             typer.echo("    нет faction_year данных")
             continue
@@ -565,10 +625,10 @@ def faction_summary() -> None:
 
 
 @app.command()
-def summary() -> None:
+def summary(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
     """Print a short descriptive summary."""
-    elite_year = _load_or_build_table()
-    events = load_events(RAW_DIR / "events.csv")
+    elite_year = _load_or_build_table(dataset)
+    events = load_events(_raw_dir(dataset) / "events.csv")
 
     mean_ruler_age = elite_year["ruler_age"].mean()
     max_ruler_age = elite_year["ruler_age"].max()

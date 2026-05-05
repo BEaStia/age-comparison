@@ -1,0 +1,137 @@
+person_id,position,institution,start_date,end_date,is_ruler,is_core_elite,tier,influence_weight,notes,source_url
+p_hillenkoetter_roscoe,Director of Central Intelligence,CIA,1947-05-01,1950-10-07,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_smith_walter_bedell,Director of Central Intelligence,CIA,1950-10-07,1953-02-09,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_dulles_allen,Director of Central Intelligence,CIA,1953-02-26,1961-11-29,false,true,2,0.8,Intelligence leadership.,https://www.cia.gov/legacy/museum/artifact/allen-w-dulles/
+p_mccone_john,Director of Central Intelligence,CIA,1961-11-29,1965-04-28,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_helms_richard,Director of Central Intelligence,CIA,1966-06-30,1973-02-02,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_colby_william,Director of Central Intelligence,CIA,1973-09-04,1976-01-30,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_bush_george_hw,Director of Central Intelligence,CIA,1976-01-30,1977-01-20,false,true,2,0.75,Prior intelligence leadership.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_casey_william,Director of Central Intelligence,CIA,1981-01-28,1987-01-29,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_gates_robert,Director of Central Intelligence,CIA,1991-11-06,1993-01-20,false,true,2,0.75,Intelligence leadership.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571289/robert-m-gates/
+p_tenet_george,Director of Central Intelligence,CIA,1997-07-11,2004-07-11,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_hayden_michael,Director of the CIA,CIA,2006-05-30,2009-02-12,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_panetta_leon,Director of the CIA,CIA,2009-02-13,2011-06-30,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_petraeus_david,Director of the CIA,CIA,2011-09-06,2012-11-09,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_brennan_john,Director of the CIA,CIA,2013-03-08,2017-01-20,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_haspel_gina,Director of the CIA,CIA,2018-05-21,2021-01-20,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_burns_william_j,Director of the CIA,CIA,2021-03-19,2025-01-20,false,true,2,0.78,Intelligence community leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_rockefeller_david,Chairman,Council on Foreign Relations,1970-01-01,1985-12-31,false,true,3,0.55,Non-state elite/network node; not a formal office.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series
+p_powell_colin,Chairman of the Joint Chiefs of Staff,Department of Defense,1989-10-01,1993-09-30,false,true,2,0.78,Military elite leadership.,https://history.state.gov/departmenthistory/people/powell-colin-luther
+p_wolfowitz_paul,Deputy Secretary of Defense,Department of Defense,2001-03-02,2005-06-01,false,true,2,0.78,"Important policy, donor, or network node; non-ruler.",https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_mcnamara_robert,Secretary of Defense,Department of Defense,1961-01-21,1968-02-29,false,true,2,0.85,Vietnam escalation defense secretary.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571271/robert-s-mcnamara/
+p_rumsfeld_donald,Secretary of Defense,Department of Defense,1975-11-20,1977-01-20,false,true,2,0.75,Ford defense secretary.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571288/donald-h-rumsfeld/
+p_cheney_dick,Secretary of Defense,Department of Defense,1989-03-20,1993-01-20,false,true,2,0.82,Gulf War defense leadership.,https://georgewbush-whitehouse.archives.gov/vicepresident/
+p_rumsfeld_donald,Secretary of Defense,Department of Defense,2001-01-20,2006-12-18,false,true,2,0.88,Post-9/11 wars defense secretary.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571288/donald-h-rumsfeld/
+p_gates_robert,Secretary of Defense,Department of Defense,2006-12-18,2011-07-01,false,true,2,0.85,Defense continuity across Bush/Obama.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571289/robert-m-gates/
+p_feith_douglas,Under Secretary of Defense for Policy,Department of Defense,2001-07-16,2005-08-08,false,true,2,0.72,"Important policy, donor, or network node; non-ruler.",https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_marshall_george,Secretary of State,Department of State,1947-01-21,1949-01-20,false,true,2,0.85,Marshall Plan architect.,https://history.state.gov/milestones/1945-1952/marshall-plan
+p_acheson_dean,Secretary of State,Department of State,1949-01-21,1953-01-20,false,true,2,0.85,Containment/NATO-era foreign policy elite.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_dulles_john_foster,Secretary of State,Department of State,1953-01-26,1959-04-22,false,true,2,0.85,Eisenhower foreign policy elite.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_rogers_william_p,Secretary of State,Department of State,1969-01-22,1973-09-03,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_kissinger_henry,Secretary of State,Department of State,1973-09-22,1977-01-20,false,true,2,0.9,Dual role with NSC until 1975.,https://history.state.gov/historicaldocuments/frus1969-76v38p1/d16
+p_vance_cyrus,Secretary of State,Department of State,1977-01-20,1980-04-28,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_haig_alexander,Secretary of State,Department of State,1981-01-22,1982-07-05,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_shultz_george,Secretary of State,Department of State,1982-07-16,1989-01-20,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_baker_james,Secretary of State,Department of State,1989-01-25,1992-08-23,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_christopher_warren,Secretary of State,Department of State,1993-01-20,1997-01-17,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_albright_madeleine,Secretary of State,Department of State,1997-01-23,2001-01-20,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_powell_colin,Secretary of State,Department of State,2001-01-20,2005-01-26,false,true,2,0.82,Post-9/11 diplomacy.,https://history.state.gov/departmenthistory/people/powell-colin-luther
+p_rice_condoleezza,Secretary of State,Department of State,2005-01-26,2009-01-20,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_clinton_hillary,Secretary of State,Department of State,2009-01-21,2013-02-01,false,true,2,0.82,Obama foreign policy leadership.,https://history.state.gov/departmenthistory/people/clinton-hillary-rodham
+p_kerry_john,Secretary of State,Department of State,2013-02-01,2017-01-20,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_tillerson_rex,Secretary of State,Department of State,2017-02-01,2018-03-31,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_pompeo_mike,Secretary of State,Department of State,2018-04-26,2021-01-20,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_blinken_antony,Secretary of State,Department of State,2021-01-26,2025-01-20,false,true,2,0.82,Foreign-policy principal.,https://history.state.gov/departmenthistory/people/secretaries
+p_rubio_marco,Secretary of State,Department of State,2025-01-21,,false,true,2,0.82,Foreign-policy principal.,https://www.state.gov/biographies/marco-rubio
+p_geithner_timothy,Secretary of the Treasury,Department of the Treasury,2009-01-26,2013-01-25,false,true,2,0.75,"Important policy, donor, or network node; non-ruler.",https://home.treasury.gov/about/general-information/officials/timothy-f-geithner
+p_mnuchin_steven,Secretary of the Treasury,Department of the Treasury,2017-02-13,2021-01-20,false,true,2,0.75,"Important policy, donor, or network node; non-ruler.",https://home.treasury.gov/about/general-information/officials/steven-t-mnuchin
+p_truman_harry,President,Executive Office of the President,1945-04-12,1953-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_eisenhower_dwight,President,Executive Office of the President,1953-01-20,1961-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_kennedy_john,President,Executive Office of the President,1961-01-20,1963-11-22,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_johnson_lyndon,President,Executive Office of the President,1963-11-22,1969-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_nixon_richard,President,Executive Office of the President,1969-01-20,1974-08-09,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_ford_gerald,President,Executive Office of the President,1974-08-09,1977-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_carter_jimmy,President,Executive Office of the President,1977-01-20,1981-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_reagan_ronald,President,Executive Office of the President,1981-01-20,1989-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_bush_george_hw,President,Executive Office of the President,1989-01-20,1993-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_clinton_bill,President,Executive Office of the President,1993-01-20,2001-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_bush_george_w,President,Executive Office of the President,2001-01-20,2009-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_obama_barack,President,Executive Office of the President,2009-01-20,2017-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_trump_donald,President,Executive Office of the President,2017-01-20,2021-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_biden_joe,President,Executive Office of the President,2021-01-20,2025-01-20,true,true,1,1.0,Head of state/government; ruler in model.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_trump_donald,President,Executive Office of the President,2025-01-20,,true,true,1,1.0,Head of state/government; ruler in model.,https://www.whitehouse.gov/administration/donald-j-trump/
+p_barkley_alben,Vice President,Executive Office of the President,1949-01-20,1953-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_nixon_richard,Vice President,Executive Office of the President,1953-01-20,1961-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_johnson_lyndon,Vice President,Executive Office of the President,1961-01-20,1963-11-22,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_humphrey_hubert,Vice President,Executive Office of the President,1965-01-20,1969-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_agnew_spiro,Vice President,Executive Office of the President,1969-01-20,1973-10-10,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_ford_gerald,Vice President,Executive Office of the President,1973-12-06,1974-08-09,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_rockefeller_nelson,Vice President,Executive Office of the President,1974-12-19,1977-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_mondale_walter,Vice President,Executive Office of the President,1977-01-20,1981-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_bush_george_hw,Vice President,Executive Office of the President,1981-01-20,1989-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_quayle_dan,Vice President,Executive Office of the President,1989-01-20,1993-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_gore_al,Vice President,Executive Office of the President,1993-01-20,2001-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_cheney_dick,Vice President,Executive Office of the President,2001-01-20,2009-01-20,false,true,2,0.9,High influence in post-9/11 policy.,https://georgewbush-whitehouse.archives.gov/vicepresident/
+p_biden_joe,Vice President,Executive Office of the President,2009-01-20,2017-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_pence_mike,Vice President,Executive Office of the President,2017-01-20,2021-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_harris_kamala,Vice President,Executive Office of the President,2021-01-20,2025-01-20,false,true,2,0.78,Vice president; succession and Senate role.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_vance_jd,Vice President,Executive Office of the President,2025-01-20,,false,true,2,0.78,Vice president; succession and Senate role.,https://www.whitehouse.gov/administration/jd-vance/
+p_gray_patrick,Acting FBI Director,FBI,1972-05-03,1973-04-27,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_hoover_jedgar,Director,FBI,1924-05-10,1972-05-02,false,true,2,0.75,Long-tenure security bureaucracy leader.,https://www.fbi.gov/history/directors/j-edgar-hoover
+p_kelley_clarence,FBI Director,FBI,1973-07-09,1978-02-15,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_webster_william,FBI Director,FBI,1978-02-23,1987-05-25,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_sessions_william_s,FBI Director,FBI,1987-11-02,1993-07-19,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_freeh_louis,FBI Director,FBI,1993-09-01,2001-06-25,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_mueller_robert,FBI Director,FBI,2001-09-04,2013-09-04,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_comey_james,FBI Director,FBI,2013-09-04,2017-05-09,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_wray_christopher,FBI Director,FBI,2017-08-02,2025-01-19,false,true,2,0.72,Federal law-enforcement/security leadership.,https://www.fbi.gov/history/directors
+p_martin_william_mcchesney,Chair,Federal Reserve Board,1951-04-02,1970-01-31,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_burns_arthur,Chair,Federal Reserve Board,1970-02-01,1978-03-08,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_miller_g_william,Chair,Federal Reserve Board,1978-03-08,1979-08-06,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_volcker_paul,Chair,Federal Reserve Board,1979-08-06,1987-08-11,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_greenspan_alan,Chair,Federal Reserve Board,1987-08-11,2006-01-31,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_bernanke_ben,Chair,Federal Reserve Board,2006-02-01,2014-01-31,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_yellen_janet,Chair,Federal Reserve Board,2014-02-03,2018-02-03,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_powell_jerome,Chair,Federal Reserve Board,2018-02-05,2026-05-15,false,true,2,0.8,Monetary-policy leadership.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_lagarde_christine,Managing Director,International Monetary Fund,2011-07-05,2019-09-12,false,true,3,0.55,"Important policy, donor, or network node; non-ruler.",https://www.imf.org/en/About/senior-officials/Bios/christine-lagarde
+p_koch_charles,Major political donor / executive,Koch network,1980-01-01,,false,true,3,0.55,"Important policy, donor, or network node; non-ruler.",https://www.britannica.com/biography/Charles-Koch
+p_bundy_mcgeorge,National Security Advisor,National Security Council,1961-01-20,1966-02-28,false,true,2,0.75,NSC/Vietnam-era adviser.,https://history.state.gov/departmenthistory/people/bundy-mcgeorge
+p_kissinger_henry,National Security Advisor,National Security Council,1969-01-20,1975-11-03,false,true,2,0.9,Centralized foreign policy role.,https://history.state.gov/historicaldocuments/frus1969-76v38p1/d16
+p_brzezinski_zbigniew,National Security Advisor,National Security Council,1977-01-20,1981-01-20,false,true,2,0.85,Carter foreign policy strategist; Trilateral founder/member context.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_bolton_john,National Security Advisor,National Security Council,2018-04-09,2019-09-10,false,true,2,0.78,"Important policy, donor, or network node; non-ruler.",https://trumpwhitehouse.archives.gov/people/john-r-bolton/
+p_sullivan_jake,National Security Advisor,National Security Council,2021-01-20,2025-01-20,false,true,2,0.78,"Important policy, donor, or network node; non-ruler.",https://www.whitehouse.gov/briefing-room/
+p_soros_george,Founder / political donor,Open Society Foundations,1979-01-01,,false,true,3,0.5,"Important policy, donor, or network node; non-ruler.",https://www.opensocietyfoundations.org/george-soros
+p_adelson_sheldon,Major political donor,Private sector / donor network,2010-01-01,2021-01-11,false,true,3,0.5,"Important policy, donor, or network node; non-ruler.",https://www.britannica.com/biography/Sheldon-Adelson
+p_scalia_antonin,Associate Justice,Supreme Court,1986-09-26,2016-02-13,false,true,3,0.55,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_thomas_clarence,Associate Justice,Supreme Court,1991-10-23,,false,true,3,0.55,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_ginsburg_ruth,Associate Justice,Supreme Court,1993-08-10,2020-09-18,false,true,3,0.55,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_vinson_fred,Chief Justice,Supreme Court,1946-06-24,1953-09-08,false,true,2,0.75,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_warren_earl,Chief Justice,Supreme Court,1953-10-05,1969-06-23,false,true,2,0.75,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_burger_warren,Chief Justice,Supreme Court,1969-06-23,1986-09-26,false,true,2,0.75,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_rehnquist_william,Chief Justice,Supreme Court,1986-09-26,2005-09-03,false,true,2,0.75,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_roberts_john,Chief Justice,Supreme Court,2005-09-29,,false,true,2,0.75,Judicial elite; life-tenure constitutional power.,https://www.supremecourt.gov/about/members_text.aspx
+p_rayburn_sam,Speaker of the House,U.S. House of Representatives,1940-09-16,1961-11-16,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_mccormack_john,Speaker of the House,U.S. House of Representatives,1962-01-10,1971-01-03,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_albert_carl,Speaker of the House,U.S. House of Representatives,1971-01-21,1977-01-03,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_oneill_tip,Speaker of the House,U.S. House of Representatives,1977-01-04,1987-01-03,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_wright_jim,Speaker of the House,U.S. House of Representatives,1987-01-06,1989-06-06,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_foley_tom,Speaker of the House,U.S. House of Representatives,1989-06-06,1995-01-03,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_gingrich_newt,Speaker of the House,U.S. House of Representatives,1995-01-04,1999-01-03,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_hastert_dennis,Speaker of the House,U.S. House of Representatives,1999-01-06,2007-01-03,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_pelosi_nancy,Speaker of the House,U.S. House of Representatives,2007-01-04,2011-01-03,false,true,2,0.7,Congressional leadership.,https://history.house.gov/People/Detail/19784
+p_boehner_john,Speaker of the House,U.S. House of Representatives,2011-01-05,2015-10-29,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_ryan_paul,Speaker of the House,U.S. House of Representatives,2015-10-29,2019-01-03,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_pelosi_nancy,Speaker of the House,U.S. House of Representatives,2019-01-03,2023-01-03,false,true,2,0.7,Congressional leadership.,https://history.house.gov/People/Detail/19784
+p_mccarthy_kevin,Speaker of the House,U.S. House of Representatives,2023-01-07,2023-10-03,false,true,2,0.65,Congressional leadership.,https://history.house.gov/People/Detail/19095
+p_johnson_mike,Speaker of the House,U.S. House of Representatives,2023-10-25,,false,true,2,0.7,Congressional power center.,https://history.house.gov/People/Office/Speakers/
+p_mansfield_mike,Senate Majority Leader,U.S. Senate,1961-01-03,1977-01-03,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_dole_bob,Senate Majority Leader,U.S. Senate,1985-01-03,1987-01-03,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_lott_trent,Senate Majority Leader,U.S. Senate,1996-06-12,2001-06-06,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_frist_bill,Senate Majority Leader,U.S. Senate,2003-01-03,2007-01-03,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_reid_harry,Senate Majority Leader,U.S. Senate,2007-01-03,2015-01-03,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_mcconnell_mitch,Senate Majority Leader,U.S. Senate,2015-01-03,2021-01-20,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_schumer_chuck,Senate Majority Leader,U.S. Senate,2021-01-20,2025-01-03,false,true,2,0.7,Congressional leadership.,https://www.senate.gov/senators/117thCongress/schumer-charles.htm
+p_thune_john,Senate Majority Leader,U.S. Senate,2025-01-03,,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_mcconnell_mitch,Senate Minority Leader,U.S. Senate,2021-01-20,2025-01-03,false,true,2,0.7,Congressional power center.,https://www.senate.gov/senators/leadership.htm
+p_schumer_chuck,Senate Minority Leader,U.S. Senate,2025-01-03,,false,true,2,0.62,Congressional leadership; active as of 2026-05-05.,https://www.senate.gov/senators/117thCongress/schumer-charles.htm
+p_mccain_john,Senator,U.S. Senate,1987-01-03,2018-08-25,false,true,3,0.55,Foreign policy hawk; senatorial influence.,https://www.senate.gov/senators/FeaturedBios/Featured_Bio_McCainJohn.htm

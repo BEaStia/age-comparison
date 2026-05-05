@@ -1,0 +1,8 @@
+period_id,label,start_year,end_year,slug,label_ru,label_en,notes
+per_cold_war_early,Early Cold War,1945,1962,early-cold-war,Ранняя холодная война,Early Cold War,"Containment, NATO, Korea, early CIA/NSC architecture."
+per_vietnam_detente,"Vietnam, détente and institutional strain",1963,1980,vietnam-detente,"Вьетнам, разрядка и институциональный кризис","Vietnam, détente and institutional strain","Vietnam escalation, Watergate, Trilateral/CFR network salience."
+per_reagan_bush,Reagan-Bush conservative ascendancy,1981,1992,reagan-bush,Консервативный подъём Рейгана-Буша,Reagan-Bush conservative ascendancy,"Cold War end, Gulf War, defense/intelligence continuity."
+per_globalization_unipolar,Globalization and unipolar moment,1993,2000,globalization-unipolar,Глобализация и однополярный момент,Globalization and unipolar moment,Post-Cold War liberal internationalism.
+per_war_on_terror,War on Terror,2001,2008,war-on-terror,Война с терроризмом,War on Terror,"9/11, Patriot Act, Iraq/Afghanistan."
+per_financial_crisis_obama,Financial crisis aftermath and Obama era,2009,2016,obama-era,Посткризисный период и эпоха Обамы,Financial crisis aftermath and Obama era,"TARP aftermath, ACA, multilateral reset."
+per_populist_polarization,Populist polarization and institutional conflict,2017,2026,populist-polarization,Популистская поляризация и институциональный конфликт,Populist polarization and institutional conflict,"Trump, Biden, Jan 6, renewed Trump presidency; active through 2026-05-05 snapshot."

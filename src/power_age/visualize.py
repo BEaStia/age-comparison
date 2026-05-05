@@ -256,7 +256,7 @@ def _core_person_year_rows(
     end_year: int,
 ) -> pd.DataFrame:
     rows: list[dict[str, object]] = []
-    person_columns = ["person_id", "name_ru", "birth_date", "origin_group"]
+    person_columns = [column for column in ["person_id", "name_ru", "name_en", "birth_date", "origin_group"] if column in persons.columns]
     for year in range(start_year, end_year + 1):
         target = pd.Timestamp(year=year, month=7, day=1)
         active = active_positions_for_year(positions, year)
@@ -340,8 +340,16 @@ def plot_period_age_boxplots(
         )
 
     rows: list[dict[str, object]] = []
-    for _, period in period_groups.iterrows():
-        period_id = str(period["period_id"])
+    period_rows = []
+    for period_index, period in period_groups.iterrows():
+        period_id = str(period.get("period_id") or period.get("slug") or period_index)
+        period_label = (
+            period.get("label_en")
+            or period.get("label_ru")
+            or period.get("label")
+            or period_id
+        )
+        period_rows.append((period_id, period_label))
         person_year = _core_person_year_rows(
             persons,
             positions,
@@ -351,7 +359,7 @@ def plot_period_age_boxplots(
         if person_year.empty:
             continue
         for age in person_year["age"].dropna():
-            rows.append({"period_id": period_id, "age": age})
+            rows.append({"period_id": period_id, "period_label": period_label, "age": age})
 
     fig, ax = plt.subplots(figsize=(13, 7))
     boxplot_data = pd.DataFrame(rows)
@@ -359,10 +367,10 @@ def plot_period_age_boxplots(
         ax.set_title("Распределение возраста core elite по периодам")
         ax.text(0.5, 0.5, "Нет данных", ha="center", va="center", transform=ax.transAxes)
     else:
-        labels = period_groups["period_id"].astype(str).tolist()
+        labels = [label for _, label in period_rows]
         values = [
-            boxplot_data.loc[boxplot_data["period_id"] == label, "age"].dropna().tolist()
-            for label in labels
+            boxplot_data.loc[boxplot_data["period_id"] == period_id, "age"].dropna().tolist()
+            for period_id, _ in period_rows
         ]
         labels = [label for label, vals in zip(labels, values, strict=False) if vals]
         values = [vals for vals in values if vals]

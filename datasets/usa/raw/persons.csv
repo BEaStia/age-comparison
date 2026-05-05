@@ -1,0 +1,122 @@
+person_id,name,birth_date,death_date,country_label,notes,source_url
+p_gore_al,Al Gore,1948-03-31,,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_greenspan_alan,Alan Greenspan,1926-03-06,,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_barkley_alben,Alben W. Barkley,1877-11-24,1956-04-30,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_haig_alexander,Alexander Haig,1924-12-02,2010-02-20,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_dulles_allen,Allen Dulles,1893-04-07,1969-01-29,USA,CIA Director; intelligence-community elite.,https://www.cia.gov/legacy/museum/artifact/allen-w-dulles/
+p_scalia_antonin,Antonin Scalia,1936-03-11,2016-02-13,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_blinken_antony,Antony Blinken,1962-04-16,,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_burns_arthur,Arthur Burns,1904-04-27,1987-06-26,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_obama_barack,Barack Obama,1961-08-04,,USA,President; former U.S. senator.,https://www.senate.gov/senators/SenatorsWhoBecamePresident.htm
+p_bernanke_ben,Ben Bernanke,1953-12-13,,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_clinton_bill,Bill Clinton,1946-08-19,,USA,President.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_frist_bill,Bill Frist,1952-02-22,,USA,Congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_dole_bob,Bob Dole,1923-07-22,2021-12-05,USA,Congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_albert_carl,Carl Albert,1908-05-10,2000-02-04,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_koch_charles,Charles Koch,1935-11-01,,USA,Additional elite/network node.,https://www.britannica.com/biography/Charles-Koch
+p_lagarde_christine,Christine Lagarde,1956-01-01,,USA,Additional elite/network node.,https://www.imf.org/en/About/senior-officials/Bios/christine-lagarde
+p_wray_christopher,Christopher Wray,1966-12-17,,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_schumer_chuck,Chuck Schumer,1950-11-23,,USA,Senate Democratic leader.,https://www.senate.gov/senators/117thCongress/schumer-charles.htm
+p_kelley_clarence,Clarence M. Kelley,1911-10-24,1997-08-05,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_thomas_clarence,Clarence Thomas,1948-06-23,,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_powell_colin,Colin Powell,1937-04-05,2021-10-18,USA,Chairman Joint Chiefs; Secretary of State.,https://history.state.gov/departmenthistory/people/powell-colin-luther
+p_rice_condoleezza,Condoleezza Rice,1954-11-14,,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_vance_cyrus,Cyrus Vance,1917-03-27,2002-01-12,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_quayle_dan,Dan Quayle,1947-02-04,,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_petraeus_david,David Petraeus,1952-11-07,,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_rockefeller_david,David Rockefeller,1915-06-12,2017-03-20,USA,CFR chairman 1970-1985; Trilateral founder.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series
+p_acheson_dean,Dean Acheson,1893-04-11,1971-10-12,USA,Secretary of State; Cold War architecture.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_hastert_dennis,Dennis Hastert,1942-01-02,,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_cheney_dick,Dick Cheney,1941-01-30,,USA,Secretary of Defense and Vice President.,https://georgewbush-whitehouse.archives.gov/vicepresident/
+p_trump_donald,Donald J. Trump,1946-06-14,,USA,45th and 47th president; active as of 2026-05-05.,https://www.whitehouse.gov/administration/donald-j-trump/
+p_rumsfeld_donald,Donald Rumsfeld,1932-07-09,2021-06-29,USA,Secretary of Defense in Ford and George W. Bush administrations.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571288/donald-h-rumsfeld/
+p_feith_douglas,Douglas Feith,1953-07-16,,USA,Additional elite/network node.,https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_eisenhower_dwight,Dwight D. Eisenhower,1890-10-14,1969-03-28,USA,President and former Supreme Allied Commander.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_warren_earl,Earl Warren,1891-03-19,1974-07-09,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_vinson_fred,Fred M. Vinson,1890-01-22,1953-09-08,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_miller_g_william,G. William Miller,1925-03-09,2006-03-17,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_marshall_george,George C. Marshall,1880-12-31,1959-10-16,USA,Secretary of State; Marshall Plan proponent.,https://history.state.gov/milestones/1945-1952/marshall-plan
+p_bush_george_hw,George H. W. Bush,1924-06-12,2018-11-30,USA,President; former CIA director and vice president.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_shultz_george,George Shultz,1920-12-13,2021-02-06,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_soros_george,George Soros,1930-08-12,,USA,Additional elite/network node.,https://www.opensocietyfoundations.org/george-soros
+p_tenet_george,George Tenet,1953-01-05,,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_bush_george_w,George W. Bush,1946-07-06,,USA,President.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_ford_gerald,Gerald Ford,1913-07-14,2006-12-26,USA,President.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_haspel_gina,Gina Haspel,1956-10-01,,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_reid_harry,Harry Reid,1939-12-02,2021-12-28,USA,Congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_truman_harry,Harry S. Truman,1884-05-08,1972-12-26,USA,President; dataset starts in 1945.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_kissinger_henry,Henry Kissinger,1923-05-27,2023-11-29,USA,National Security Advisor and Secretary of State.,https://history.state.gov/historicaldocuments/frus1969-76v38p1/d16
+p_clinton_hillary,Hillary Rodham Clinton,1947-10-26,,USA,Senator and Secretary of State.,https://history.state.gov/departmenthistory/people/clinton-hillary-rodham
+p_humphrey_hubert,Hubert Humphrey,1911-05-27,1978-01-13,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_hoover_jedgar,J. Edgar Hoover,1895-01-01,1972-05-02,USA,FBI Director across multiple administrations.,https://www.fbi.gov/history/directors/j-edgar-hoover
+p_vance_jd,JD Vance,1984-08-02,,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_sullivan_jake,Jake Sullivan,1976-11-28,,USA,Additional elite/network node.,https://www.whitehouse.gov/briefing-room/
+p_baker_james,James Baker,1930-04-28,,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_comey_james,James Comey,1960-12-14,,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_yellen_janet,Janet Yellen,1946-08-13,,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_powell_jerome,Jerome Powell,1953-02-04,,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_wright_jim,Jim Wright,1922-12-22,2015-05-06,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_carter_jimmy,Jimmy Carter,1924-10-01,2024-12-29,USA,President; State Department notes pre-presidential Trilateral Commission membership.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_biden_joe,Joe Biden,1942-11-20,,USA,President; former U.S. senator and vice president.,https://www.senate.gov/senators/SenatorsWhoBecamePresident.htm
+p_boehner_john,John Boehner,1949-11-17,,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_bolton_john,John Bolton,1948-11-20,,USA,Additional elite/network node.,https://trumpwhitehouse.archives.gov/people/john-r-bolton/
+p_brennan_john,John Brennan,1955-09-22,,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_kennedy_john,John F. Kennedy,1917-05-29,1963-11-22,USA,President.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_dulles_john_foster,John Foster Dulles,1888-02-25,1959-05-24,USA,Secretary of State under Eisenhower.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_kerry_john,John Kerry,1943-12-11,,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_mccain_john,John McCain,1936-08-29,2018-08-25,USA,Senator; foreign policy hawk.,https://www.senate.gov/senators/FeaturedBios/Featured_Bio_McCainJohn.htm
+p_mccone_john,John McCone,1902-01-04,1991-02-14,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_roberts_john,John Roberts,1955-01-27,,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_thune_john,John Thune,1961-01-07,,USA,Congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_mccormack_john,John W. McCormack,1891-12-21,1980-11-22,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_harris_kamala,Kamala Harris,1964-10-20,,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_mccarthy_kevin,Kevin McCarthy,1965-01-26,,USA,Speaker of the House 2023.,https://history.house.gov/People/Detail/19095
+p_gray_patrick,L. Patrick Gray,1916-07-18,2005-07-06,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_panetta_leon,Leon Panetta,1938-06-28,,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_freeh_louis,Louis Freeh,1950-01-06,,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_johnson_lyndon,Lyndon B. Johnson,1908-08-27,1973-01-22,USA,President.,https://www.senate.gov/senators/SenatorsWhoBecamePresident.htm
+p_albright_madeleine,Madeleine Albright,1937-05-15,2022-03-23,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_rubio_marco,Marco Rubio,1971-05-28,,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_bundy_mcgeorge,McGeorge Bundy,1919-03-30,1996-09-16,USA,National Security Advisor during Kennedy/Johnson.,https://history.state.gov/departmenthistory/people/bundy-mcgeorge
+p_hayden_michael,Michael Hayden,1945-03-17,,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_johnson_mike,Mike Johnson,1972-01-30,,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_mansfield_mike,Mike Mansfield,1903-03-16,2001-10-05,USA,Congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_pence_mike,Mike Pence,1959-06-07,,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_pompeo_mike,Mike Pompeo,1963-12-30,,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_mcconnell_mitch,Mitch McConnell,1942-02-20,,USA,Congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_pelosi_nancy,Nancy Pelosi,1940-03-26,,USA,Speaker of the House; Democratic congressional elite.,https://history.house.gov/People/Detail/19784
+p_rockefeller_nelson,Nelson Rockefeller,1908-07-08,1979-01-26,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_gingrich_newt,Newt Gingrich,1943-06-17,,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_ryan_paul,Paul Ryan,1970-01-29,,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_volcker_paul,Paul Volcker,1927-09-05,2019-12-08,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_wolfowitz_paul,Paul Wolfowitz,1943-12-22,,USA,Additional elite/network node.,https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_tillerson_rex,Rex Tillerson,1952-03-23,,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_helms_richard,Richard Helms,1913-03-30,2002-10-23,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_nixon_richard,Richard Nixon,1913-01-09,1994-04-22,USA,President.,https://www.senate.gov/senators/SenatorsWhoBecamePresident.htm
+p_gates_robert,Robert Gates,1943-09-25,,USA,CIA Director and Secretary of Defense.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571289/robert-m-gates/
+p_mcnamara_robert,Robert McNamara,1916-06-09,2009-07-06,USA,Secretary of Defense during Vietnam escalation.,https://history.defense.gov/Multimedia/Biographies/Article-View/Article/571271/robert-s-mcnamara/
+p_mueller_robert,Robert Mueller,1944-08-07,,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_reagan_ronald,Ronald Reagan,1911-02-06,2004-06-05,USA,President.,https://trumpwhitehouse.archives.gov/about-the-white-house/presidents/
+p_hillenkoetter_roscoe,Roscoe H. Hillenkoetter,1897-05-08,1982-06-18,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_ginsburg_ruth,Ruth Bader Ginsburg,1933-03-15,2020-09-18,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_rayburn_sam,Sam Rayburn,1882-01-06,1961-11-16,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_adelson_sheldon,Sheldon Adelson,1933-08-04,2021-01-11,USA,Additional elite/network node.,https://www.britannica.com/biography/Sheldon-Adelson
+p_agnew_spiro,Spiro Agnew,1918-11-09,1996-09-17,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_mnuchin_steven,Steven Mnuchin,1962-12-21,,USA,Additional elite/network node.,https://home.treasury.gov/about/general-information/officials/steven-t-mnuchin
+p_geithner_timothy,Timothy Geithner,1961-08-18,,USA,Additional elite/network node.,https://home.treasury.gov/about/general-information/officials/timothy-f-geithner
+p_oneill_tip,Tip O'Neill,1912-12-09,1994-01-05,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_foley_tom,Tom Foley,1929-03-06,2013-10-18,USA,Congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_lott_trent,Trent Lott,1941-10-09,,USA,Congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_smith_walter_bedell,Walter Bedell Smith,1895-10-05,1961-08-09,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_mondale_walter,Walter Mondale,1928-01-05,2021-04-19,USA,Vice President / national political elite.,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_christopher_warren,Warren Christopher,1925-10-27,2011-03-18,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_burger_warren,Warren E. Burger,1907-09-17,1995-06-25,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_colby_william,William Colby,1920-01-04,1996-04-27,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_webster_william,William H. Webster,1924-03-06,,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_burns_william_j,William J. Burns,1956-04-11,,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_casey_william,William J. Casey,1913-03-13,1987-05-06,USA,CIA/DCI intelligence leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_martin_william_mcchesney,William McChesney Martin,1906-12-17,1998-07-27,USA,Federal Reserve Chair / monetary-policy elite.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_rogers_william_p,William P. Rogers,1913-06-23,2001-01-02,USA,Secretary of State / foreign-policy elite.,https://history.state.gov/departmenthistory/people/secretaries
+p_rehnquist_william,William Rehnquist,1924-10-01,2005-09-03,USA,Supreme Court leadership.,https://www.supremecourt.gov/about/members_text.aspx
+p_sessions_william_s,William S. Sessions,1930-05-27,2020-06-12,USA,FBI leadership.,https://www.fbi.gov/history/directors
+p_brzezinski_zbigniew,Zbigniew Brzezinski,1928-03-28,2017-05-26,USA,National Security Advisor; founding Trilateral figure.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm

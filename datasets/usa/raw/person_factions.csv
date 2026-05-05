@@ -1,0 +1,235 @@
+person_id,faction_id,confidence,start_year,end_year,relation_type,notes,source_url
+p_adelson_sheldon,fac_business_finance,0.65,2010,2021,interpretive_alignment,Faction/network proxy; verify and refine.,https://www.britannica.com/biography/Sheldon-Adelson
+p_bernanke_ben,fac_business_finance,0.6,2006,2014,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_burns_arthur,fac_business_finance,0.6,1970,1978,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_bush_george_hw,fac_business_finance,0.6,,,member_or_aligned,Business/finance/donor/network linkage; interpretive where not formal office.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series
+p_bush_george_w,fac_business_finance,0.6,,,member_or_aligned,Business/finance/donor/network linkage; interpretive where not formal office.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series
+p_clinton_bill,fac_business_finance,0.6,,,member_or_aligned,Business/finance/donor/network linkage; interpretive where not formal office.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series
+p_geithner_timothy,fac_business_finance,0.65,2009,2013,interpretive_alignment,Faction/network proxy; verify and refine.,https://home.treasury.gov/about/general-information/officials/timothy-f-geithner
+p_greenspan_alan,fac_business_finance,0.6,1987,2006,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_koch_charles,fac_business_finance,0.65,1980,,interpretive_alignment,Faction/network proxy; verify and refine.,https://www.britannica.com/biography/Charles-Koch
+p_martin_william_mcchesney,fac_business_finance,0.6,1951,1970,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_miller_g_william,fac_business_finance,0.6,1978,1979,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_mnuchin_steven,fac_business_finance,0.65,2017,2021,interpretive_alignment,Faction/network proxy; verify and refine.,https://home.treasury.gov/about/general-information/officials/steven-t-mnuchin
+p_powell_jerome,fac_business_finance,0.6,2018,2026,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_rockefeller_david,fac_business_finance,0.6,,,member_or_aligned,Business/finance/donor/network linkage; interpretive where not formal office.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series
+p_tillerson_rex,fac_business_finance,0.65,2017,2018,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_trump_donald,fac_business_finance,0.6,,,member_or_aligned,Business/finance/donor/network linkage; interpretive where not formal office.,https://www.cfr.org/support-cfr/the-david-rockefeller-lecture-series
+p_volcker_paul,fac_business_finance,0.6,1979,1987,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_yellen_janet,fac_business_finance,0.6,2014,2018,institutional_overlap,Monetary/financial establishment role.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_brzezinski_zbigniew,fac_cfr_trilateral,0.8,,,member_or_aligned,Documented or strongly sourced public affiliation with CFR/Trilateral network.,https://www.cfr.org/celebrating-a-century/timeline
+p_carter_jimmy,fac_cfr_trilateral,0.8,,,member_or_aligned,Documented or strongly sourced public affiliation with CFR/Trilateral network.,https://www.cfr.org/celebrating-a-century/timeline
+p_kissinger_henry,fac_cfr_trilateral,0.8,,,member_or_aligned,Documented or strongly sourced public affiliation with CFR/Trilateral network.,https://www.cfr.org/celebrating-a-century/timeline
+p_rockefeller_david,fac_cfr_trilateral,0.8,,,member_or_aligned,Documented or strongly sourced public affiliation with CFR/Trilateral network.,https://www.cfr.org/celebrating-a-century/timeline
+p_albert_carl,fac_congressional_leadership,0.95,1971,1977,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_boehner_john,fac_congressional_leadership,0.95,2011,2015,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_dole_bob,fac_congressional_leadership,0.95,1985,1987,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_foley_tom,fac_congressional_leadership,0.95,1989,1995,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_frist_bill,fac_congressional_leadership,0.95,2003,2007,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_gingrich_newt,fac_congressional_leadership,0.95,1995,1999,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_hastert_dennis,fac_congressional_leadership,0.95,1999,2007,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_johnson_mike,fac_congressional_leadership,0.95,2023,,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_lott_trent,fac_congressional_leadership,0.95,1996,2001,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_mansfield_mike,fac_congressional_leadership,0.95,1961,1977,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_mcconnell_mitch,fac_congressional_leadership,0.95,2015,2021,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_mcconnell_mitch,fac_congressional_leadership,0.95,2021,2025,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_mccormack_john,fac_congressional_leadership,0.95,1962,1971,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_oneill_tip,fac_congressional_leadership,0.95,1977,1987,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_rayburn_sam,fac_congressional_leadership,0.95,1940,1961,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_reid_harry,fac_congressional_leadership,0.95,2007,2015,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_ryan_paul,fac_congressional_leadership,0.95,2015,2019,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_thune_john,fac_congressional_leadership,0.95,2025,,office_based,Formal congressional leadership.,https://www.senate.gov/senators/leadership.htm
+p_wright_jim,fac_congressional_leadership,0.95,1987,1989,office_based,Formal congressional leadership.,https://history.house.gov/People/Office/Speakers/
+p_albert_carl,fac_democratic_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_barkley_alben,fac_democratic_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_biden_joe,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_carter_jimmy,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_clinton_bill,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_clinton_hillary,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_foley_tom,fac_democratic_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_gore_al,fac_democratic_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_harris_kamala,fac_democratic_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_humphrey_hubert,fac_democratic_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_johnson_lyndon,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_kennedy_john,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_mansfield_mike,fac_democratic_party,0.95,,,member_or_aligned,,https://www.senate.gov/senators/leadership.htm
+p_mccormack_john,fac_democratic_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_mondale_walter,fac_democratic_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_obama_barack,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_oneill_tip,fac_democratic_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_pelosi_nancy,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_rayburn_sam,fac_democratic_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_reid_harry,fac_democratic_party,0.95,,,member_or_aligned,,https://www.senate.gov/senators/leadership.htm
+p_schumer_chuck,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_truman_harry,fac_democratic_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_wright_jim,fac_democratic_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_bernanke_ben,fac_federal_reserve,0.98,2006,2014,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_burns_arthur,fac_federal_reserve,0.98,1970,1978,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_greenspan_alan,fac_federal_reserve,0.98,1987,2006,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_martin_william_mcchesney,fac_federal_reserve,0.98,1951,1970,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_miller_g_william,fac_federal_reserve,0.98,1978,1979,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_powell_jerome,fac_federal_reserve,0.98,2018,2026,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_volcker_paul,fac_federal_reserve,0.98,1979,1987,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_yellen_janet,fac_federal_reserve,0.98,2014,2018,office_based,Federal Reserve chair.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_acheson_dean,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_acheson_dean,fac_globalists,0.65,1949,1953,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_albright_madeleine,fac_globalists,0.65,1997,2001,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_biden_joe,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_blinken_antony,fac_globalists,0.65,2021,2025,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_brzezinski_zbigniew,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_carter_jimmy,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_christopher_warren,fac_globalists,0.65,1993,1997,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_clinton_bill,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_clinton_hillary,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_dulles_john_foster,fac_globalists,0.65,1953,1959,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_kerry_john,fac_globalists,0.65,2013,2017,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_kissinger_henry,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_lagarde_christine,fac_globalists,0.65,2011,2019,interpretive_alignment,Faction/network proxy; verify and refine.,https://www.imf.org/en/About/senior-officials/Bios/christine-lagarde
+p_marshall_george,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_marshall_george,fac_globalists,0.65,1947,1949,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_obama_barack,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_rockefeller_david,fac_globalists,0.65,,,member_or_aligned,Internationalist/multilateral orientation or documented transnational-policy network role; interpretive label.,https://2001-2009.state.gov/r/pa/ho/time/qfp/103525.htm
+p_shultz_george,fac_globalists,0.65,1982,1989,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_soros_george,fac_globalists,0.65,1979,,interpretive_alignment,Faction/network proxy; verify and refine.,https://www.opensocietyfoundations.org/george-soros
+p_sullivan_jake,fac_globalists,0.65,2021,2025,interpretive_alignment,Faction/network proxy; verify and refine.,https://www.whitehouse.gov/briefing-room/
+p_vance_cyrus,fac_globalists,0.65,1977,1980,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_brennan_john,fac_intelligence_community,0.95,2013,2017,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_burns_william_j,fac_intelligence_community,0.95,2021,2025,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_bush_george_hw,fac_intelligence_community,0.9,,,member_or_aligned,Formal intelligence/law-enforcement leadership.,https://www.cia.gov/legacy/museum/artifact/allen-w-dulles/
+p_casey_william,fac_intelligence_community,0.95,1981,1987,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_colby_william,fac_intelligence_community,0.95,1973,1976,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_comey_james,fac_intelligence_community,0.75,2013,2017,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_dulles_allen,fac_intelligence_community,0.9,,,member_or_aligned,Formal intelligence/law-enforcement leadership.,https://www.cia.gov/legacy/museum/artifact/allen-w-dulles/
+p_freeh_louis,fac_intelligence_community,0.75,1993,2001,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_gates_robert,fac_intelligence_community,0.9,,,member_or_aligned,Formal intelligence/law-enforcement leadership.,https://www.cia.gov/legacy/museum/artifact/allen-w-dulles/
+p_gray_patrick,fac_intelligence_community,0.75,1972,1973,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_haspel_gina,fac_intelligence_community,0.95,2018,2021,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_hayden_michael,fac_intelligence_community,0.95,2006,2009,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_helms_richard,fac_intelligence_community,0.95,1966,1973,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_hillenkoetter_roscoe,fac_intelligence_community,0.95,1947,1950,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_hoover_jedgar,fac_intelligence_community,0.9,,,member_or_aligned,Formal intelligence/law-enforcement leadership.,https://www.cia.gov/legacy/museum/artifact/allen-w-dulles/
+p_kelley_clarence,fac_intelligence_community,0.75,1973,1978,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_mccone_john,fac_intelligence_community,0.95,1961,1965,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_mueller_robert,fac_intelligence_community,0.75,2001,2013,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_panetta_leon,fac_intelligence_community,0.95,2009,2011,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_petraeus_david,fac_intelligence_community,0.95,2011,2012,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_sessions_william_s,fac_intelligence_community,0.75,1987,1993,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_smith_walter_bedell,fac_intelligence_community,0.95,1950,1953,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_tenet_george,fac_intelligence_community,0.95,1997,2004,office_based,CIA/DCI leadership.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_webster_william,fac_intelligence_community,0.75,1978,1987,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_wray_christopher,fac_intelligence_community,0.75,2017,2025,office_based,FBI leadership overlaps domestic security/intelligence.,https://www.fbi.gov/history/directors
+p_burger_warren,fac_judicial_establishment,0.95,1969,1986,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_ginsburg_ruth,fac_judicial_establishment,0.95,1993,2020,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_rehnquist_william,fac_judicial_establishment,0.95,1986,2005,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_roberts_john,fac_judicial_establishment,0.95,2005,,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_scalia_antonin,fac_judicial_establishment,0.95,1986,2016,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_thomas_clarence,fac_judicial_establishment,0.95,1991,,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_vinson_fred,fac_judicial_establishment,0.95,1946,1953,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_warren_earl,fac_judicial_establishment,0.95,1953,1969,office_based,Supreme Court office.,https://www.supremecourt.gov/about/members_text.aspx
+p_acheson_dean,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_acheson_dean,fac_natsec_establishment,0.75,1949,1953,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_albright_madeleine,fac_natsec_establishment,0.75,1997,2001,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_baker_james,fac_natsec_establishment,0.75,1989,1992,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_biden_joe,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_blinken_antony,fac_natsec_establishment,0.75,2021,2025,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_bolton_john,fac_natsec_establishment,0.75,2018,2019,office_based,National-security role.,https://trumpwhitehouse.archives.gov/people/john-r-bolton/
+p_brennan_john,fac_natsec_establishment,0.9,2013,2017,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_brzezinski_zbigniew,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_bundy_mcgeorge,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_burns_william_j,fac_natsec_establishment,0.9,2021,2025,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_bush_george_hw,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_casey_william,fac_natsec_establishment,0.9,1981,1987,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_cheney_dick,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_christopher_warren,fac_natsec_establishment,0.75,1993,1997,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_clinton_hillary,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_colby_william,fac_natsec_establishment,0.9,1973,1976,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_comey_james,fac_natsec_establishment,0.8,2013,2017,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_dulles_allen,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_dulles_john_foster,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_dulles_john_foster,fac_natsec_establishment,0.75,1953,1959,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_feith_douglas,fac_natsec_establishment,0.75,2001,2005,office_based,National-security role.,https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_freeh_louis,fac_natsec_establishment,0.8,1993,2001,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_gates_robert,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_gray_patrick,fac_natsec_establishment,0.8,1972,1973,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_haig_alexander,fac_natsec_establishment,0.75,1981,1982,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_haig_alexander,fac_natsec_establishment,0.65,1981,1982,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_haspel_gina,fac_natsec_establishment,0.9,2018,2021,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_hayden_michael,fac_natsec_establishment,0.9,2006,2009,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_helms_richard,fac_natsec_establishment,0.9,1966,1973,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_hillenkoetter_roscoe,fac_natsec_establishment,0.9,1947,1950,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_hoover_jedgar,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_kelley_clarence,fac_natsec_establishment,0.8,1973,1978,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_kerry_john,fac_natsec_establishment,0.75,2013,2017,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_kissinger_henry,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_marshall_george,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_marshall_george,fac_natsec_establishment,0.75,1947,1949,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_mccone_john,fac_natsec_establishment,0.9,1961,1965,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_mcnamara_robert,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_mueller_robert,fac_natsec_establishment,0.8,2001,2013,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_panetta_leon,fac_natsec_establishment,0.9,2009,2011,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_petraeus_david,fac_natsec_establishment,0.9,2011,2012,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_pompeo_mike,fac_natsec_establishment,0.75,2018,2021,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_pompeo_mike,fac_natsec_establishment,0.65,2018,2021,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_powell_colin,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_rice_condoleezza,fac_natsec_establishment,0.75,2005,2009,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_rice_condoleezza,fac_natsec_establishment,0.65,2005,2009,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_rogers_william_p,fac_natsec_establishment,0.75,1969,1973,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_rubio_marco,fac_natsec_establishment,0.75,2025,,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_rumsfeld_donald,fac_natsec_establishment,0.75,,,member_or_aligned,Senior national-security/foreign-policy role; proxy for institutional continuity.,https://history.state.gov/milestones/1945-1952/truman-doctrine
+p_sessions_william_s,fac_natsec_establishment,0.8,1987,1993,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_shultz_george,fac_natsec_establishment,0.75,1982,1989,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_smith_walter_bedell,fac_natsec_establishment,0.9,1950,1953,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_sullivan_jake,fac_natsec_establishment,0.75,2021,2025,office_based,National-security role.,https://www.whitehouse.gov/briefing-room/
+p_tenet_george,fac_natsec_establishment,0.9,1997,2004,office_based,Core national-security role.,https://www.britannica.com/topic/list-of-Central-Intelligence-Agency-directors-1787118
+p_tillerson_rex,fac_natsec_establishment,0.75,2017,2018,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_vance_cyrus,fac_natsec_establishment,0.75,1977,1980,office_based,State Department leadership overlaps national-security establishment.,https://history.state.gov/departmenthistory/people/secretaries
+p_webster_william,fac_natsec_establishment,0.8,1978,1987,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_wolfowitz_paul,fac_natsec_establishment,0.75,2001,2005,office_based,National-security role.,https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_wray_christopher,fac_natsec_establishment,0.8,2017,2025,office_based,Federal security bureaucracy.,https://www.fbi.gov/history/directors
+p_bolton_john,fac_neoconservatives,0.65,2018,2019,interpretive_alignment,Faction/network proxy; verify and refine.,https://trumpwhitehouse.archives.gov/people/john-r-bolton/
+p_bush_george_w,fac_neoconservatives,0.65,,,member_or_aligned,Policy alignment/hawkish interventionist role; refine with sources for final analysis.,https://history.state.gov/milestones/2001-2009/iraq
+p_cheney_dick,fac_neoconservatives,0.65,,,member_or_aligned,Policy alignment/hawkish interventionist role; refine with sources for final analysis.,https://history.state.gov/milestones/2001-2009/iraq
+p_feith_douglas,fac_neoconservatives,0.65,2001,2005,interpretive_alignment,Faction/network proxy; verify and refine.,https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_mccain_john,fac_neoconservatives,0.65,,,member_or_aligned,Policy alignment/hawkish interventionist role; refine with sources for final analysis.,https://history.state.gov/milestones/2001-2009/iraq
+p_rumsfeld_donald,fac_neoconservatives,0.65,,,member_or_aligned,Policy alignment/hawkish interventionist role; refine with sources for final analysis.,https://history.state.gov/milestones/2001-2009/iraq
+p_wolfowitz_paul,fac_neoconservatives,0.65,2001,2005,interpretive_alignment,Faction/network proxy; verify and refine.,https://history.defense.gov/Multimedia/Biographies/Secretaries-of-Defense/
+p_trump_donald,fac_populist_nationalists,0.9,,,member_or_aligned,Core political current of Trump-era movement.,https://www.whitehouse.gov/administration/donald-j-trump/
+p_agnew_spiro,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_baker_james,fac_republican_party,0.65,1989,1992,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_boehner_john,fac_republican_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_bush_george_hw,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_bush_george_w,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_cheney_dick,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_dole_bob,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/senators/leadership.htm
+p_dulles_john_foster,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_eisenhower_dwight,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_ford_gerald,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_frist_bill,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/senators/leadership.htm
+p_gingrich_newt,fac_republican_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_hastert_dennis,fac_republican_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_johnson_mike,fac_republican_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_lott_trent,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/senators/leadership.htm
+p_mccain_john,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_mccarthy_kevin,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_mcconnell_mitch,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/senators/leadership.htm
+p_nixon_richard,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_pence_mike,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_powell_colin,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_quayle_dan,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_reagan_ronald,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_rockefeller_nelson,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_rogers_william_p,fac_republican_party,0.65,1969,1973,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_rubio_marco,fac_republican_party,0.65,2025,,interpretive_alignment,Foreign-policy/party/network proxy; refine with explicit affiliations.,https://history.state.gov/departmenthistory/people/secretaries
+p_rumsfeld_donald,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_ryan_paul,fac_republican_party,0.95,,,member_or_aligned,,https://history.house.gov/People/Office/Speakers/
+p_thune_john,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/senators/leadership.htm
+p_trump_donald,fac_republican_party,0.95,,,member_or_aligned,Formal party label or elected coalition alignment.,https://www.whitehouse.gov/about-the-white-house/presidents/
+p_vance_jd,fac_republican_party,0.95,,,member_or_aligned,,https://www.senate.gov/about/officers-staff/vice-president/vice-presidents.htm
+p_bernanke_ben,fac_technocratic_centrist,0.65,2006,2014,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_burns_arthur,fac_technocratic_centrist,0.65,1970,1978,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_greenspan_alan,fac_technocratic_centrist,0.65,1987,2006,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_martin_william_mcchesney,fac_technocratic_centrist,0.65,1951,1970,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_miller_g_william,fac_technocratic_centrist,0.65,1978,1979,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_powell_jerome,fac_technocratic_centrist,0.65,2018,2026,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_volcker_paul,fac_technocratic_centrist,0.65,1979,1987,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair
+p_yellen_janet,fac_technocratic_centrist,0.65,2014,2018,interpretive_alignment,Expert/technocratic macroeconomic governance proxy.,https://www.federalreservehistory.org/people/federal-reserve-chair

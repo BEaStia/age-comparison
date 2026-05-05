@@ -110,6 +110,10 @@ def load_political_entries(path: str | Path) -> pd.DataFrame:
 
 def load_factions(path: str | Path) -> pd.DataFrame:
     df = _read_optional_csv(path, FACTIONS_COLUMNS)
+    if "faction_name_ru" not in df.columns and "faction_name" in df.columns:
+        df = df.rename(columns={"faction_name": "faction_name_ru"})
+    if "faction_name_en" not in df.columns and "faction_name_ru" in df.columns:
+        df["faction_name_en"] = df["faction_name_ru"]
     return _coerce_numeric_columns(df, ["start_year", "end_year"])
 
 
@@ -128,6 +132,20 @@ def load_elite_edges(path: str | Path) -> pd.DataFrame:
     return _coerce_numeric_columns(df, ["start_year", "end_year", "weight", "confidence"])
 
 
+def load_periods(path: str | Path) -> pd.DataFrame:
+    df = _read_optional_csv(path, [
+        "period_id",
+        "label",
+        "start_year",
+        "end_year",
+        "slug",
+        "label_ru",
+        "label_en",
+        "notes",
+    ])
+    return _coerce_numeric_columns(df, ["start_year", "end_year"])
+
+
 def load_all_data(data_dir: str | Path) -> dict[str, pd.DataFrame]:
     data_path = Path(data_dir)
     raw_path = data_path / "raw"
@@ -140,4 +158,5 @@ def load_all_data(data_dir: str | Path) -> dict[str, pd.DataFrame]:
         "person_factions": load_person_factions(raw_path / "person_factions.csv"),
         "faction_relations": load_faction_relations(raw_path / "faction_relations.csv"),
         "elite_edges": load_elite_edges(raw_path / "elite_edges.csv"),
+        "periods": load_periods(raw_path / "periods.csv"),
     }

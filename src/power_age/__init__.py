@@ -1,4 +1,4 @@
-"""Research MVP for age of power in Russia / USSR / RF, 1801-2026."""
+"""Research MVP for elite age, factions, and events across dataset packs."""
 
 __all__ = ["__version__"]
 

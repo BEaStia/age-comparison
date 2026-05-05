@@ -1,0 +1,611 @@
+year,faction_id,faction_name_ru,members_count,total_faction_power,raw_power_share,normalized_power_share,mean_age,weighted_mean_age,mean_political_age,weighted_mean_political_age,mean_elite_age,share_60_plus,share_70_plus
+1945,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.2714,1.0,63.48,63.48,5.5,5.5,4.79,1.0,0.0
+1946,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.2227,0.5172,56.44,56.44,0.5,0.5,0.02,0.0,0.0
+1946,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.2078,0.4828,64.48,64.48,6.5,6.5,5.79,1.0,0.0
+1947,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.3395,0.2773,0.334,58.32,57.93,22.95,21.87,1.35,0.5,0.0
+1947,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1534,0.1848,50.14,50.14,0.5,0.5,0.17,0.0,0.0
+1947,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1475,0.1777,57.44,57.44,1.49,1.49,1.02,0.0,0.0
+1947,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1377,0.1658,65.48,65.48,7.5,7.5,6.79,1.0,0.0
+1947,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.1144,0.1378,66.5,66.5,45.41,45.41,2.54,1.0,0.0
+1948,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.3395,0.2773,0.334,59.33,58.93,23.95,22.87,2.35,0.5,0.0
+1948,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1534,0.1848,51.15,51.15,1.5,1.5,1.17,0.0,0.0
+1948,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1475,0.1777,58.44,58.44,2.5,2.5,2.02,0.0,0.0
+1948,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1377,0.1658,66.48,66.48,8.5,8.5,7.79,1.0,0.0
+1948,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.1144,0.1378,67.5,67.5,46.41,46.41,3.54,1.0,0.0
+1949,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.3395,0.2388,0.334,54.19,54.09,9.5,9.16,3.02,0.0,0.0
+1949,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1321,0.1848,52.15,52.15,2.5,2.5,2.17,0.0,0.0
+1949,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.127,0.1777,59.44,59.44,3.5,3.5,3.02,0.0,0.0
+1949,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1185,0.1658,67.48,67.48,9.5,9.5,8.79,1.0,0.0
+1949,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0985,0.1378,56.22,56.22,16.5,16.5,3.87,0.0,0.0
+1950,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.3395,0.2388,0.334,55.19,55.09,10.5,10.16,4.02,0.0,0.0
+1950,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1321,0.1848,53.15,53.15,3.5,3.5,3.17,0.0,0.0
+1950,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.127,0.1777,60.44,60.44,4.5,4.5,4.02,1.0,0.0
+1950,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1185,0.1658,68.48,68.48,10.5,10.5,9.79,1.0,0.0
+1950,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0985,0.1378,57.22,57.22,17.5,17.5,4.87,0.0,0.0
+1951,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.3395,0.209,0.2312,56.98,56.92,9.99,9.58,3.3,0.0,0.0
+1951,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1223,0.1353,44.54,44.54,0.5,0.5,0.25,0.0,0.0
+1951,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1156,0.1279,55.74,55.74,1.49,1.49,0.73,0.0,0.0
+1951,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1112,0.123,61.44,61.44,5.49,5.49,5.02,1.0,0.0
+1951,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1037,0.1148,69.48,69.48,11.5,11.5,10.79,1.0,0.0
+1951,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0862,0.0953,58.22,58.22,18.49,18.49,5.87,0.0,0.0
+1951,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0811,0.0897,44.54,44.54,0.5,0.5,0.25,0.0,0.0
+1951,fac_business_finance,Business and finance establishment,1,0.48,0.0749,0.0828,44.54,44.54,0.5,0.5,0.25,0.0,0.0
+1952,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.3395,0.209,0.2312,57.98,57.92,11.0,10.59,4.3,0.0,0.0
+1952,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1223,0.1353,45.54,45.54,1.5,1.5,1.25,0.0,0.0
+1952,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1156,0.1279,56.74,56.74,2.5,2.5,1.73,0.0,0.0
+1952,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1112,0.123,62.44,62.44,6.5,6.5,6.02,1.0,0.0
+1952,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1037,0.1148,70.48,70.48,12.5,12.5,11.79,1.0,1.0
+1952,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0862,0.0953,59.22,59.22,19.5,19.5,6.87,0.0,0.0
+1952,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0811,0.0897,45.54,45.54,1.5,1.5,1.25,0.0,0.0
+1952,fac_business_finance,Business and finance establishment,1,0.48,0.0749,0.0828,45.54,45.54,1.5,1.5,1.25,0.0,0.0
+1953,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1219,0.1802,46.54,46.54,2.5,2.5,2.25,0.0,0.0
+1953,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1108,0.1637,63.44,63.44,7.5,7.5,7.02,1.0,0.0
+1953,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1034,0.1528,71.48,71.48,13.5,13.5,12.79,1.0,1.0
+1953,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.6375,0.0991,0.1465,65.35,65.35,46.5,46.5,3.5,1.0,0.0
+1953,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0859,0.127,65.35,65.35,46.5,46.5,3.5,1.0,0.0
+1953,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0809,0.1195,46.54,46.54,2.5,2.5,2.25,0.0,0.0
+1953,fac_business_finance,Business and finance establishment,1,0.48,0.0747,0.1103,46.54,46.54,2.5,2.5,2.25,0.0,0.0
+1954,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1219,0.1802,47.54,47.54,3.5,3.5,3.25,0.0,0.0
+1954,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1108,0.1637,63.28,63.28,1.49,1.49,0.74,1.0,0.0
+1954,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1034,0.1528,72.48,72.48,14.5,14.5,13.79,1.0,1.0
+1954,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.6375,0.0991,0.1465,66.34,66.34,47.5,47.5,4.5,1.0,0.0
+1954,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0859,0.127,66.34,66.34,47.5,47.5,4.5,1.0,0.0
+1954,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0809,0.1195,47.54,47.54,3.5,3.5,3.25,0.0,0.0
+1954,fac_business_finance,Business and finance establishment,1,0.48,0.0747,0.1103,47.54,47.54,3.5,3.5,3.25,0.0,0.0
+1955,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1219,0.1802,48.54,48.54,4.5,4.5,4.25,0.0,0.0
+1955,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1108,0.1637,64.28,64.28,2.49,2.49,1.74,1.0,0.0
+1955,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1034,0.1528,73.48,73.48,15.5,15.5,14.79,1.0,1.0
+1955,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.6375,0.0991,0.1465,67.34,67.34,48.5,48.5,5.49,1.0,0.0
+1955,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0859,0.127,67.34,67.34,48.5,48.5,5.49,1.0,0.0
+1955,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0809,0.1195,48.54,48.54,4.5,4.5,4.25,0.0,0.0
+1955,fac_business_finance,Business and finance establishment,1,0.48,0.0747,0.1103,48.54,48.54,4.5,4.5,4.25,0.0,0.0
+1956,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1219,0.1802,49.54,49.54,5.5,5.5,5.25,0.0,0.0
+1956,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1108,0.1637,65.29,65.29,3.5,3.5,2.74,1.0,0.0
+1956,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1034,0.1528,74.48,74.48,16.5,16.5,15.79,1.0,1.0
+1956,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.6375,0.0991,0.1465,68.35,68.35,49.5,49.5,6.5,1.0,0.0
+1956,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0859,0.127,68.35,68.35,49.5,49.5,6.5,1.0,0.0
+1956,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0809,0.1195,49.54,49.54,5.5,5.5,5.25,0.0,0.0
+1956,fac_business_finance,Business and finance establishment,1,0.48,0.0747,0.1103,49.54,49.54,5.5,5.5,5.25,0.0,0.0
+1957,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1219,0.1802,50.54,50.54,6.5,6.5,6.25,0.0,0.0
+1957,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1108,0.1637,66.28,66.28,4.5,4.5,3.74,1.0,0.0
+1957,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1034,0.1528,75.48,75.48,17.5,17.5,16.79,1.0,1.0
+1957,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.6375,0.0991,0.1465,69.35,69.35,50.5,50.5,7.5,1.0,0.0
+1957,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0859,0.127,69.35,69.35,50.5,50.5,7.5,1.0,0.0
+1957,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0809,0.1195,50.54,50.54,6.5,6.5,6.25,0.0,0.0
+1957,fac_business_finance,Business and finance establishment,1,0.48,0.0747,0.1103,50.54,50.54,6.5,6.5,6.25,0.0,0.0
+1958,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1219,0.1802,51.54,51.54,7.5,7.5,7.25,0.0,0.0
+1958,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1108,0.1637,67.28,67.28,5.49,5.49,4.74,1.0,0.0
+1958,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1034,0.1528,76.48,76.48,18.5,18.5,17.79,1.0,1.0
+1958,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.6375,0.0991,0.1465,70.35,70.35,51.5,51.5,8.5,1.0,1.0
+1958,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.5525,0.0859,0.127,70.35,70.35,51.5,51.5,8.5,1.0,1.0
+1958,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0809,0.1195,51.54,51.54,7.5,7.5,7.25,0.0,0.0
+1958,fac_business_finance,Business and finance establishment,1,0.48,0.0747,0.1103,51.54,51.54,7.5,7.5,7.25,0.0,0.0
+1959,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1405,0.248,52.54,52.54,8.5,8.5,8.25,0.0,0.0
+1959,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1277,0.2254,68.28,68.28,6.49,6.49,5.74,1.0,0.0
+1959,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1192,0.2103,77.48,77.48,19.5,19.5,18.79,1.0,1.0
+1959,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0932,0.1645,52.54,52.54,8.5,8.5,8.25,0.0,0.0
+1959,fac_business_finance,Business and finance establishment,1,0.48,0.086,0.1518,52.54,52.54,8.5,8.5,8.25,0.0,0.0
+1960,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1405,0.248,53.54,53.54,9.5,9.5,9.25,0.0,0.0
+1960,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1277,0.2254,69.29,69.29,7.5,7.5,6.74,1.0,0.0
+1960,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.1192,0.2103,78.48,78.48,20.5,20.5,19.79,1.0,1.0
+1960,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0932,0.1645,53.54,53.54,9.5,9.5,9.25,0.0,0.0
+1960,fac_business_finance,Business and finance establishment,1,0.48,0.086,0.1518,53.54,53.54,9.5,9.5,9.25,0.0,0.0
+1961,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1688,0.3476,68.89,68.89,11.0,11.0,10.64,0.5,0.5
+1961,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0995,0.2049,54.54,54.54,10.5,10.5,10.25,0.0,0.0
+1961,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0904,0.1862,70.28,70.28,8.5,8.5,7.74,1.0,1.0
+1961,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.066,0.1359,54.54,54.54,10.5,10.5,10.25,0.0,0.0
+1961,fac_business_finance,Business and finance establishment,1,0.48,0.0609,0.1254,54.54,54.54,10.5,10.5,10.25,0.0,0.0
+1962,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1692,0.2524,64.91,64.91,0.99,0.99,0.98,0.5,0.5
+1962,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0997,0.1488,55.54,55.54,11.5,11.5,11.25,0.0,0.0
+1962,fac_intelligence_community,Intelligence community leadership,1,0.741,0.0943,0.1406,60.49,60.49,1.49,1.49,0.59,1.0,0.0
+1962,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0906,0.1352,71.28,71.28,9.5,9.5,8.74,1.0,1.0
+1962,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.702,0.0893,0.1332,60.49,60.49,1.49,1.49,0.59,1.0,0.0
+1962,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0662,0.0987,55.54,55.54,11.5,11.5,11.25,0.0,0.0
+1962,fac_business_finance,Business and finance establishment,1,0.48,0.0611,0.0911,55.54,55.54,11.5,11.5,11.25,0.0,0.0
+1963,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1692,0.2524,65.91,65.91,1.99,1.99,1.98,1.0,0.5
+1963,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0997,0.1488,56.54,56.54,12.5,12.5,12.25,0.0,0.0
+1963,fac_intelligence_community,Intelligence community leadership,1,0.741,0.0943,0.1406,61.49,61.49,2.49,2.49,1.59,1.0,0.0
+1963,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0906,0.1352,72.28,72.28,10.49,10.49,9.74,1.0,1.0
+1963,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.702,0.0893,0.1332,61.49,61.49,2.49,2.49,1.59,1.0,0.0
+1963,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0662,0.0987,56.54,56.54,12.5,12.5,12.25,0.0,0.0
+1963,fac_business_finance,Business and finance establishment,1,0.48,0.0611,0.0911,56.54,56.54,12.5,12.5,12.25,0.0,0.0
+1964,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1879,0.2524,66.91,66.91,3.0,3.0,2.98,1.0,0.5
+1964,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1107,0.1488,57.54,57.54,13.5,13.5,13.25,0.0,0.0
+1964,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1047,0.1406,62.49,62.49,3.5,3.5,2.59,1.0,0.0
+1964,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1006,0.1352,73.29,73.29,11.5,11.5,10.74,1.0,1.0
+1964,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.702,0.0992,0.1332,62.49,62.49,3.5,3.5,2.59,1.0,0.0
+1964,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0734,0.0987,57.54,57.54,13.5,13.5,13.25,0.0,0.0
+1964,fac_business_finance,Business and finance establishment,1,0.48,0.0678,0.0911,57.54,57.54,13.5,13.5,13.25,0.0,0.0
+1965,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1879,0.3476,67.91,67.91,4.0,4.0,3.98,1.0,0.5
+1965,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1107,0.2049,58.54,58.54,14.5,14.5,14.25,0.0,0.0
+1965,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1006,0.1862,74.28,74.28,12.5,12.5,11.74,1.0,1.0
+1965,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0734,0.1359,58.54,58.54,14.5,14.5,14.25,0.0,0.0
+1965,fac_business_finance,Business and finance establishment,1,0.48,0.0678,0.1254,58.54,58.54,14.5,14.5,14.25,0.0,0.0
+1966,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1871,0.2524,68.91,68.91,5.0,5.0,4.98,1.0,0.5
+1966,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1103,0.1488,59.54,59.54,15.5,15.5,15.25,0.0,0.0
+1966,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1042,0.1406,53.26,53.26,0.5,0.5,0.0,0.0,0.0
+1966,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1002,0.1352,75.28,75.28,13.5,13.5,12.74,1.0,1.0
+1966,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.702,0.0987,0.1332,53.26,53.26,0.5,0.5,0.0,0.0,0.0
+1966,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0731,0.0987,59.54,59.54,15.5,15.5,15.25,0.0,0.0
+1966,fac_business_finance,Business and finance establishment,1,0.48,0.0675,0.0911,59.54,59.54,15.5,15.5,15.25,0.0,0.0
+1967,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1871,0.2524,69.91,69.91,5.99,5.99,5.98,1.0,0.5
+1967,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1103,0.1488,60.54,60.54,16.5,16.5,16.25,1.0,0.0
+1967,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1042,0.1406,54.25,54.25,1.49,1.49,1.0,0.0,0.0
+1967,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1002,0.1352,76.28,76.28,14.49,14.49,13.74,1.0,1.0
+1967,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.702,0.0987,0.1332,54.25,54.25,1.49,1.49,1.0,0.0,0.0
+1967,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0731,0.0987,60.54,60.54,16.5,16.5,16.25,1.0,0.0
+1967,fac_business_finance,Business and finance establishment,1,0.48,0.0675,0.0911,60.54,60.54,16.5,16.5,16.25,1.0,0.0
+1968,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.2125,0.2524,70.91,70.92,7.0,7.0,6.98,1.0,0.5
+1968,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1252,0.1488,61.54,61.54,17.5,17.5,17.25,1.0,0.0
+1968,fac_intelligence_community,Intelligence community leadership,1,0.741,0.1184,0.1406,55.26,55.26,2.5,2.5,2.0,0.0,0.0
+1968,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1138,0.1352,77.29,77.29,15.5,15.5,14.74,1.0,1.0
+1968,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.702,0.1121,0.1332,55.26,55.26,2.5,2.5,2.0,0.0,0.0
+1968,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0831,0.0987,61.54,61.54,17.5,17.5,17.25,1.0,0.0
+1968,fac_business_finance,Business and finance establishment,1,0.48,0.0767,0.0911,61.54,61.54,17.5,17.5,17.25,1.0,0.0
+1969,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1667,0.2072,71.91,71.92,8.0,8.0,7.98,1.0,0.5
+1969,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.317,0.165,0.2052,56.14,56.15,2.0,2.1,1.72,0.0,0.0
+1969,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0982,0.1222,62.54,62.54,18.5,18.5,18.25,1.0,0.0
+1969,fac_intelligence_community,Intelligence community leadership,1,0.741,0.0929,0.1155,56.26,56.26,3.5,3.5,3.0,0.0,0.0
+1969,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0893,0.111,61.79,61.79,0.5,0.5,0.02,1.0,0.0
+1969,fac_republican_party,Republican Party elected coalition,1,0.533,0.0668,0.0831,56.02,56.02,0.5,0.5,0.44,0.0,0.0
+1969,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0652,0.081,62.54,62.54,18.5,18.5,18.25,1.0,0.0
+1969,fac_business_finance,Business and finance establishment,1,0.48,0.0602,0.0748,62.54,62.54,18.5,18.5,18.25,1.0,0.0
+1970,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1559,0.2072,72.91,72.92,9.0,9.0,8.98,1.0,0.5
+1970,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.317,0.1544,0.2052,57.14,57.15,3.0,3.09,2.72,0.0,0.0
+1970,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0919,0.1222,66.18,66.18,0.5,0.5,0.41,1.0,0.0
+1970,fac_intelligence_community,Intelligence community leadership,1,0.741,0.0869,0.1155,57.26,57.26,4.5,4.5,4.0,0.0,0.0
+1970,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0835,0.111,62.79,62.79,1.49,1.49,1.02,1.0,0.0
+1970,fac_republican_party,Republican Party elected coalition,1,0.533,0.0625,0.0831,57.02,57.02,1.49,1.49,1.44,0.0,0.0
+1970,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.061,0.081,66.18,66.18,0.5,0.5,0.41,1.0,0.0
+1970,fac_business_finance,Business and finance establishment,1,0.48,0.0563,0.0748,66.18,66.18,0.5,0.5,0.41,1.0,0.0
+1971,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1559,0.2072,65.72,65.72,5.5,5.5,5.46,1.0,0.0
+1971,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.317,0.1544,0.2052,58.14,58.14,3.99,4.09,3.72,0.0,0.0
+1971,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0919,0.1222,67.18,67.18,1.49,1.49,1.41,1.0,0.0
+1971,fac_intelligence_community,Intelligence community leadership,1,0.741,0.0869,0.1155,58.25,58.25,5.49,5.49,5.0,0.0,0.0
+1971,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0835,0.111,63.79,63.79,2.49,2.49,2.02,1.0,0.0
+1971,fac_republican_party,Republican Party elected coalition,1,0.533,0.0625,0.0831,58.02,58.02,2.49,2.49,2.44,0.0,0.0
+1971,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.061,0.081,67.18,67.18,1.49,1.49,1.41,1.0,0.0
+1971,fac_business_finance,Business and finance establishment,1,0.48,0.0563,0.0748,67.18,67.18,1.49,1.49,1.41,1.0,0.0
+1972,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.2227,0.2513,58.08,58.17,3.5,3.7,3.2,0.0,0.0
+1972,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1565,0.1765,66.72,66.72,6.5,6.5,6.46,1.0,0.0
+1972,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1507,0.17,57.61,57.86,3.5,3.97,3.08,0.0,0.0
+1972,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0922,0.1041,68.18,68.18,2.5,2.5,2.41,1.0,0.0
+1972,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0838,0.0946,64.79,64.79,3.5,3.5,3.02,1.0,0.0
+1972,fac_republican_party,Republican Party elected coalition,1,0.533,0.0627,0.0708,59.02,59.02,3.5,3.5,3.44,0.0,0.0
+1972,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0612,0.069,68.18,68.18,2.5,2.5,2.41,1.0,0.0
+1972,fac_business_finance,Business and finance establishment,1,0.48,0.0565,0.0637,68.18,68.18,2.5,2.5,2.41,1.0,0.0
+1973,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.19,0.2674,67.72,67.72,7.5,7.5,7.46,1.0,0.5
+1973,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.112,0.1576,69.18,69.18,3.5,3.5,3.41,1.0,0.0
+1973,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1018,0.1432,65.79,65.79,4.5,4.5,4.02,1.0,0.0
+1973,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.615,0.0879,0.1236,60.02,60.02,4.5,4.5,4.44,1.0,0.0
+1973,fac_republican_party,Republican Party elected coalition,1,0.533,0.0761,0.1071,60.02,60.02,4.5,4.5,4.44,1.0,0.0
+1973,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0743,0.1045,69.18,69.18,3.5,3.5,3.41,1.0,0.0
+1973,fac_business_finance,Business and finance establishment,1,0.48,0.0686,0.0965,69.18,69.18,3.5,3.5,3.41,1.0,0.0
+1974,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1732,0.2083,68.72,68.72,8.5,8.5,8.46,1.0,0.5
+1974,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1668,0.2006,58.59,57.95,1.49,1.49,0.9,0.5,0.0
+1974,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.278,0.1664,0.2001,58.59,58.19,1.49,1.49,0.9,0.5,0.0
+1974,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1021,0.1228,70.18,70.18,4.5,4.5,4.41,1.0,1.0
+1974,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0928,0.1116,66.79,66.79,5.49,5.49,5.02,1.0,0.0
+1974,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0677,0.0814,70.18,70.18,4.5,4.5,4.41,1.0,1.0
+1974,fac_business_finance,Business and finance establishment,1,0.48,0.0625,0.0752,70.18,70.18,4.5,4.5,4.41,1.0,1.0
+1975,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1732,0.2083,69.72,69.72,9.5,9.5,9.46,1.0,0.5
+1975,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1668,0.2006,59.59,58.95,2.49,2.49,1.9,0.5,0.0
+1975,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.278,0.1664,0.2001,59.59,59.19,2.49,2.49,1.9,0.5,0.0
+1975,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1021,0.1228,71.18,71.18,5.49,5.49,5.41,1.0,1.0
+1975,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0928,0.1116,67.79,67.79,6.49,6.49,6.02,1.0,0.0
+1975,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0677,0.0814,71.18,71.18,5.49,5.49,5.41,1.0,1.0
+1975,fac_business_finance,Business and finance establishment,1,0.48,0.0625,0.0752,71.18,71.18,5.49,5.49,5.41,1.0,1.0
+1976,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1583,0.2691,70.72,70.72,10.5,10.5,10.46,1.0,0.5
+1976,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0933,0.1586,72.18,72.18,6.5,6.5,6.41,1.0,1.0
+1976,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0848,0.1442,68.79,68.79,7.5,7.5,7.02,1.0,0.0
+1976,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.576,0.0686,0.1165,64.69,64.69,3.5,3.5,2.98,1.0,0.0
+1976,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0643,0.1093,64.69,64.69,3.5,3.5,2.98,1.0,0.0
+1976,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0619,0.1052,72.18,72.18,6.5,6.5,6.41,1.0,1.0
+1976,fac_business_finance,Business and finance establishment,1,0.48,0.0571,0.0971,72.18,72.18,6.5,6.5,6.41,1.0,1.0
+1977,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1709,0.2195,62.97,62.89,2.5,2.43,2.21,1.0,0.0
+1977,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1125,0.1445,73.18,73.18,7.5,7.5,7.41,1.0,1.0
+1977,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1022,0.1313,69.79,69.79,8.5,8.5,8.02,1.0,0.0
+1977,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0954,0.1226,64.56,64.56,0.5,0.5,0.49,1.0,0.0
+1977,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0775,0.0995,65.69,65.69,4.5,4.5,3.98,1.0,0.0
+1977,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.533,0.0765,0.0982,60.26,60.26,0.5,0.5,0.44,1.0,0.0
+1977,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0746,0.0958,73.18,73.18,7.5,7.5,7.41,1.0,1.0
+1977,fac_business_finance,Business and finance establishment,1,0.48,0.0689,0.0885,73.18,73.18,7.5,7.5,7.41,1.0,1.0
+1978,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1709,0.2195,57.79,57.9,0.99,1.01,0.9,0.5,0.0
+1978,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1125,0.1445,53.31,53.31,0.5,0.5,0.31,0.0,0.0
+1978,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.1022,0.1313,70.79,70.79,9.5,9.5,9.02,1.0,1.0
+1978,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0954,0.1226,65.56,65.56,1.49,1.49,1.49,1.0,0.0
+1978,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0775,0.0995,54.32,54.32,0.5,0.5,0.35,0.0,0.0
+1978,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.533,0.0765,0.0982,61.26,61.26,1.49,1.49,1.44,1.0,0.0
+1978,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0746,0.0958,53.31,53.31,0.5,0.5,0.31,0.0,0.0
+1978,fac_business_finance,Business and finance establishment,1,0.48,0.0689,0.0885,53.31,53.31,0.5,0.5,0.31,0.0,0.0
+1979,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1594,0.2071,58.79,58.9,1.99,2.01,1.9,0.5,0.0
+1979,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.1149,0.1492,55.58,57.2,1.5,1.74,1.47,0.5,0.0
+1979,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.105,0.1363,54.31,54.31,1.49,1.49,1.31,0.0,0.0
+1979,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0954,0.1239,71.79,71.79,10.49,10.49,10.02,1.0,1.0
+1979,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.089,0.1156,66.56,66.56,2.49,2.49,2.49,1.0,0.0
+1979,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0723,0.0939,55.32,55.32,1.49,1.49,1.35,0.0,0.0
+1979,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0696,0.0904,54.31,54.31,1.49,1.49,1.31,0.0,0.0
+1979,fac_business_finance,Business and finance establishment,1,0.48,0.0643,0.0835,54.31,54.31,1.49,1.49,1.31,0.0,0.0
+1980,fac_business_finance,Business and finance establishment,2,0.8375,0.1163,0.1689,48.75,49.34,1.0,1.07,0.7,0.0,0.0
+1980,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1089,0.1581,52.82,52.82,1.5,1.5,0.9,0.0,0.0
+1980,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.099,0.1436,72.79,72.79,11.5,11.5,11.02,1.0,1.0
+1980,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0924,0.1341,67.56,67.56,3.5,3.5,3.49,1.0,0.0
+1980,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.576,0.08,0.1161,56.32,56.32,2.5,2.5,2.35,0.0,0.0
+1980,fac_intelligence_community,Intelligence community leadership,1,0.54,0.075,0.1089,56.32,56.32,2.5,2.5,2.35,0.0,0.0
+1980,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0722,0.1048,52.82,52.82,1.5,1.5,0.9,0.0,0.0
+1980,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0451,0.0655,49.89,49.89,1.5,1.5,1.5,0.0,0.0
+1981,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,2.426,0.3052,0.3213,59.69,60.15,1.25,1.21,1.16,0.25,0.0
+1981,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1611,0.1696,62.81,63.67,2.0,1.76,1.89,0.5,0.0
+1981,fac_business_finance,Business and finance establishment,2,0.8375,0.1053,0.1109,49.75,50.34,2.0,2.07,1.7,0.0,0.0
+1981,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0986,0.1038,53.82,53.82,2.5,2.5,1.9,0.0,0.0
+1981,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0896,0.0944,73.79,73.79,12.5,12.5,12.02,1.0,1.0
+1981,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0836,0.0881,68.56,68.56,4.5,4.5,4.49,1.0,0.0
+1981,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0654,0.0689,53.82,53.82,2.5,2.5,1.9,0.0,0.0
+1981,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0409,0.043,50.89,50.89,2.5,2.5,2.5,0.0,0.0
+1982,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,2.426,0.3052,0.3213,60.69,61.15,2.24,2.2,2.16,0.25,0.0
+1982,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1611,0.1696,63.81,64.67,3.0,2.76,2.88,0.5,0.0
+1982,fac_business_finance,Business and finance establishment,2,0.8375,0.1053,0.1109,50.74,51.34,3.0,3.07,2.7,0.0,0.0
+1982,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0986,0.1038,54.82,54.82,3.5,3.5,2.9,0.0,0.0
+1982,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0896,0.0944,74.79,74.79,13.5,13.5,13.02,1.0,1.0
+1982,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0836,0.0881,69.56,69.56,5.49,5.49,5.49,1.0,0.0
+1982,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0654,0.0689,54.82,54.82,3.5,3.5,2.9,0.0,0.0
+1982,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0409,0.043,51.89,51.89,3.5,3.5,3.5,0.0,0.0
+1983,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.2381,0.2507,64.06,64.44,3.16,3.08,2.91,0.6667,0.3333
+1983,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1611,0.1696,64.81,65.67,3.99,3.75,3.88,0.5,0.5
+1983,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.1079,0.1136,57.72,58.89,3.0,2.63,2.73,0.5,0.0
+1983,fac_business_finance,Business and finance establishment,2,0.8375,0.1053,0.1109,51.74,52.34,4.0,4.07,3.7,0.0,0.0
+1983,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0986,0.1038,55.82,55.82,4.5,4.5,3.9,0.0,0.0
+1983,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0896,0.0944,75.79,75.79,14.49,14.49,14.02,1.0,1.0
+1983,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0836,0.0881,70.56,70.56,6.49,6.49,6.49,1.0,1.0
+1983,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0654,0.0689,55.82,55.82,4.5,4.5,3.9,0.0,0.0
+1984,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.2381,0.2507,65.06,65.44,4.17,4.09,3.91,1.0,0.3333
+1984,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1611,0.1696,65.81,66.67,5.0,4.76,4.88,1.0,0.5
+1984,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.1079,0.1136,58.72,59.89,4.0,3.64,3.73,0.5,0.0
+1984,fac_business_finance,Business and finance establishment,2,0.8375,0.1053,0.1109,52.75,53.34,5.0,5.07,4.7,0.0,0.0
+1984,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0986,0.1038,56.82,56.82,5.5,5.5,4.9,0.0,0.0
+1984,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0896,0.0944,76.79,76.79,15.5,15.5,15.02,1.0,1.0
+1984,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0836,0.0881,71.56,71.56,7.5,7.5,7.49,1.0,1.0
+1984,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0654,0.0689,56.82,56.82,5.5,5.5,4.9,0.0,0.0
+1985,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.2188,0.2304,66.06,66.44,5.17,5.09,4.91,1.0,0.3333
+1985,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1538,0.1619,67.25,67.25,4.5,4.5,4.49,1.0,0.5
+1985,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1481,0.1559,66.81,67.67,6.0,5.76,5.88,1.0,0.5
+1985,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0992,0.1044,59.72,60.89,5.0,4.64,4.73,0.5,0.0
+1985,fac_business_finance,Business and finance establishment,2,0.8375,0.0968,0.1019,53.75,54.34,6.0,6.07,5.7,0.0,0.0
+1985,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0906,0.0954,57.82,57.82,6.5,6.5,5.9,0.0,0.0
+1985,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.0824,0.0867,77.79,77.79,16.5,16.5,16.02,1.0,1.0
+1985,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0601,0.0633,57.82,57.82,6.5,6.5,5.9,0.0,0.0
+1986,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.2337,0.2304,67.06,67.44,6.16,6.08,5.91,1.0,0.3333
+1986,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1642,0.1619,68.25,68.25,5.5,5.5,5.49,1.0,0.5
+1986,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1581,0.1559,67.81,68.67,7.0,6.76,6.88,1.0,0.5
+1986,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.1059,0.1044,60.72,61.89,6.0,5.64,5.73,0.5,0.0
+1986,fac_business_finance,Business and finance establishment,2,0.8375,0.1034,0.1019,54.74,55.34,7.0,7.07,6.7,0.0,0.0
+1986,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0968,0.0954,58.82,58.82,7.5,7.5,6.9,0.0,0.0
+1986,fac_judicial_establishment,Supreme Court / federal judicial establishment,1,0.7125,0.088,0.0867,78.79,78.79,17.5,17.5,17.02,1.0,1.0
+1986,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0642,0.0633,58.82,58.82,7.5,7.5,6.9,0.0,0.0
+1987,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1764,0.224,57.03,57.91,1.49,1.49,0.76,0.5,0.0
+1987,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.1226,0.1556,61.72,62.89,7.0,6.63,6.73,0.5,0.0
+1987,fac_business_finance,Business and finance establishment,2,0.8375,0.1196,0.1519,55.74,56.34,8.0,8.07,7.7,0.0,0.0
+1987,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.112,0.1422,59.82,59.82,8.5,8.5,7.9,0.0,0.0
+1987,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.095,0.1206,64.52,64.52,0.5,0.5,0.48,1.0,0.0
+1987,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.615,0.0879,0.1115,66.55,66.55,5.49,5.49,4.96,1.0,0.0
+1987,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0743,0.0943,59.82,59.82,8.5,8.5,7.9,0.0,0.0
+1988,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.16,0.1863,58.03,58.91,2.5,2.5,1.76,0.5,0.0
+1988,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1543,0.1796,62.83,62.98,4.0,4.08,3.31,0.5,0.0
+1988,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.1111,0.1294,62.72,63.89,8.0,7.64,7.73,0.5,0.0
+1988,fac_business_finance,Business and finance establishment,2,0.8375,0.1085,0.1263,57.5,58.2,5.0,4.49,4.7,0.5,0.0
+1988,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1016,0.1182,62.32,62.32,1.5,1.5,0.89,1.0,0.0
+1988,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0861,0.1003,65.53,65.53,1.5,1.5,1.48,1.0,0.0
+1988,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0699,0.0814,58.1,58.1,1.5,1.5,0.66,0.0,0.0
+1988,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0674,0.0784,62.32,62.32,1.5,1.5,0.89,1.0,0.0
+1989,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1446,0.1863,59.03,59.91,3.5,3.5,2.76,0.5,0.0
+1989,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1395,0.1796,59.14,59.14,1.5,1.47,1.04,0.0,0.0
+1989,fac_business_finance,Business and finance establishment,2,0.8375,0.0981,0.1263,58.5,59.2,6.0,5.49,5.7,0.5,0.0
+1989,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0918,0.1182,63.32,63.32,2.5,2.5,1.89,1.0,0.0
+1989,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0779,0.1003,60.32,60.32,0.5,0.5,0.07,1.0,0.0
+1989,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0632,0.0814,59.1,59.1,2.5,2.5,1.66,0.0,0.0
+1989,fac_republican_party,Republican Party elected coalition,1,0.533,0.0624,0.0804,59.18,59.18,0.5,0.5,0.43,0.0,0.0
+1989,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0609,0.0784,63.32,63.32,2.5,2.5,1.89,1.0,0.0
+1989,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0381,0.049,58.89,58.89,10.5,10.5,10.5,0.0,0.0
+1990,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1325,0.1863,60.03,60.91,4.5,4.5,3.76,0.5,0.0
+1990,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1278,0.1796,60.14,60.14,2.5,2.46,2.04,1.0,0.0
+1990,fac_business_finance,Business and finance establishment,2,0.8375,0.0899,0.1263,59.49,60.2,7.0,6.49,6.7,0.5,0.0
+1990,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0841,0.1182,64.32,64.32,3.5,3.5,2.89,1.0,0.0
+1990,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0714,0.1003,61.32,61.32,1.49,1.49,1.07,1.0,0.0
+1990,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0579,0.0814,60.1,60.1,3.5,3.5,2.66,1.0,0.0
+1990,fac_republican_party,Republican Party elected coalition,1,0.533,0.0572,0.0804,60.18,60.18,1.49,1.49,1.43,1.0,0.0
+1990,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0558,0.0784,64.32,64.32,3.5,3.5,2.89,1.0,0.0
+1990,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0349,0.049,59.89,59.89,11.5,11.5,11.5,0.0,0.0
+1991,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1325,0.1863,61.03,61.91,5.49,5.49,4.76,0.5,0.0
+1991,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1278,0.1796,61.14,61.14,3.5,3.46,3.04,1.0,0.0
+1991,fac_business_finance,Business and finance establishment,2,0.8375,0.0899,0.1263,60.49,61.2,8.0,7.49,7.7,0.5,0.0
+1991,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0841,0.1182,65.32,65.32,4.5,4.5,3.89,1.0,0.0
+1991,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0714,0.1003,62.32,62.32,2.49,2.49,2.07,1.0,0.0
+1991,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0579,0.0814,61.1,61.1,4.5,4.5,3.66,1.0,0.0
+1991,fac_republican_party,Republican Party elected coalition,1,0.533,0.0572,0.0804,61.18,61.18,2.49,2.49,2.43,1.0,0.0
+1991,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0558,0.0784,65.32,65.32,4.5,4.5,3.89,1.0,0.0
+1991,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0349,0.049,60.89,60.89,12.5,12.5,12.5,1.0,0.0
+1992,fac_judicial_establishment,Supreme Court / federal judicial establishment,3,1.7575,0.1655,0.2457,56.03,57.29,4.83,5.01,4.07,0.3333,0.0
+1992,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1121,0.1665,62.14,62.14,4.5,4.47,4.04,1.0,0.0
+1992,fac_business_finance,Business and finance establishment,2,0.8375,0.0789,0.1171,61.49,62.2,9.0,8.49,8.7,0.5,0.0
+1992,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0738,0.1096,66.32,66.32,5.5,5.5,4.89,1.0,0.0
+1992,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0626,0.093,63.32,63.32,3.5,3.5,3.07,1.0,0.0
+1992,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0508,0.0755,62.1,62.1,5.5,5.5,4.66,1.0,0.0
+1992,fac_republican_party,Republican Party elected coalition,1,0.533,0.0502,0.0745,62.18,62.18,3.5,3.5,3.43,1.0,0.0
+1992,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.049,0.0727,66.32,66.32,5.5,5.5,4.89,1.0,0.0
+1992,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0306,0.0454,61.89,61.89,13.5,13.5,13.5,1.0,0.0
+1993,fac_judicial_establishment,Supreme Court / federal judicial establishment,3,1.7575,0.1942,0.2457,57.03,58.29,5.83,6.01,5.07,0.3333,0.0
+1993,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1316,0.1665,65.39,65.46,3.5,3.4,3.05,1.0,0.0
+1993,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0948,0.1199,65.28,65.87,7.5,5.8,7.47,1.0,0.0
+1993,fac_business_finance,Business and finance establishment,2,0.8375,0.0925,0.1171,62.49,63.2,10.0,9.49,9.7,0.5,0.0
+1993,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0866,0.1096,67.32,67.32,6.5,6.5,5.89,1.0,0.0
+1993,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0735,0.093,64.32,64.32,4.5,4.5,4.07,1.0,0.0
+1993,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0597,0.0755,63.1,63.1,6.5,6.5,5.66,1.0,0.0
+1993,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0575,0.0727,67.32,67.32,6.5,6.5,5.89,1.0,0.0
+1994,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2585,0.297,58.85,59.75,5.5,5.75,4.78,0.5,0.0
+1994,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.135,0.1552,56.58,56.98,1.49,1.49,1.14,0.5,0.0
+1994,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0973,0.1118,66.28,66.87,8.49,6.8,8.47,1.0,0.0
+1994,fac_business_finance,Business and finance establishment,2,0.8375,0.095,0.1091,63.49,64.2,11.0,10.49,10.7,0.5,0.0
+1994,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0889,0.1021,68.32,68.32,7.5,7.5,6.89,1.0,0.0
+1994,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0754,0.0866,65.32,65.32,5.49,5.49,5.07,1.0,0.0
+1994,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0612,0.0704,44.48,44.48,1.49,1.49,0.83,0.0,0.0
+1994,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.059,0.0677,68.32,68.32,7.5,7.5,6.89,1.0,0.0
+1995,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2585,0.297,59.85,60.75,6.5,6.75,5.78,0.5,0.25
+1995,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.135,0.1552,57.58,57.98,2.49,2.49,2.13,0.5,0.0
+1995,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0973,0.1118,67.28,67.87,9.5,7.8,9.47,1.0,0.0
+1995,fac_business_finance,Business and finance establishment,2,0.8375,0.095,0.1091,64.49,65.2,12.0,11.49,11.7,0.5,0.0
+1995,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0889,0.1021,69.32,69.32,8.5,8.5,7.89,1.0,0.0
+1995,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0754,0.0866,52.04,52.04,0.5,0.5,0.49,0.0,0.0
+1995,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0612,0.0704,45.48,45.48,2.49,2.49,1.83,0.0,0.0
+1995,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.059,0.0677,69.32,69.32,8.5,8.5,7.89,1.0,0.0
+1996,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2395,0.2734,60.85,61.75,7.5,7.75,6.78,0.75,0.25
+1996,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1397,0.1595,53.88,53.88,1.0,1.0,0.77,0.0,0.0
+1996,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1251,0.1428,58.58,58.98,3.5,3.5,3.13,0.5,0.5
+1996,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0901,0.1029,68.28,68.87,10.5,8.8,10.47,1.0,0.5
+1996,fac_business_finance,Business and finance establishment,2,0.8375,0.088,0.1004,65.5,66.2,13.0,12.49,12.7,1.0,0.5
+1996,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0824,0.094,70.32,70.32,9.5,9.5,8.89,1.0,1.0
+1996,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0567,0.0647,46.48,46.48,3.5,3.5,2.83,0.0,0.0
+1996,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0546,0.0623,70.32,70.32,9.5,9.5,8.89,1.0,1.0
+1997,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2395,0.2734,61.85,62.75,8.5,8.75,7.78,0.75,0.25
+1997,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1397,0.1595,54.88,54.89,2.0,2.0,1.77,0.0,0.0
+1997,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.191,0.1251,0.1428,53.8,54.01,2.5,2.43,2.14,0.5,0.0
+1997,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0901,0.1029,63.51,62.69,9.5,7.32,9.47,1.0,0.0
+1997,fac_business_finance,Business and finance establishment,2,0.8375,0.088,0.1004,66.5,67.2,14.0,13.49,13.7,1.0,0.5
+1997,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0824,0.094,71.32,71.32,10.5,10.5,9.89,1.0,1.0
+1997,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0567,0.0647,47.48,47.48,4.5,4.5,3.83,0.0,0.0
+1997,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0546,0.0623,71.32,71.32,10.5,10.5,9.89,1.0,1.0
+1998,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2214,0.233,62.85,63.75,9.5,9.75,8.77,0.75,0.25
+1998,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.1838,0.1935,51.7,51.48,2.82,2.71,2.41,0.3333,0.0
+1998,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1291,0.1359,55.88,55.88,3.0,3.0,2.77,0.0,0.0
+1998,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1244,0.1309,46.98,46.74,3.49,3.18,2.9,0.0,0.0
+1998,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0833,0.0877,64.51,63.69,10.49,8.31,10.46,1.0,0.0
+1998,fac_business_finance,Business and finance establishment,2,0.8375,0.0813,0.0856,67.5,68.2,15.0,14.49,14.7,1.0,0.5
+1998,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0761,0.0801,72.32,72.32,11.5,11.5,10.89,1.0,1.0
+1998,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0505,0.0532,72.32,72.32,11.5,11.5,10.89,1.0,1.0
+1999,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2214,0.233,63.85,64.75,10.5,10.75,9.77,0.75,0.25
+1999,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.1838,0.1935,52.7,52.48,3.82,3.71,3.41,0.3333,0.0
+1999,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1291,0.1359,57.61,57.61,2.0,2.0,1.76,0.0,0.0
+1999,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1244,0.1309,47.98,47.74,4.49,4.18,3.9,0.0,0.0
+1999,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0833,0.0877,65.51,64.69,11.5,9.31,11.46,1.0,0.0
+1999,fac_business_finance,Business and finance establishment,2,0.8375,0.0813,0.0856,68.49,69.2,16.0,15.49,15.7,1.0,0.5
+1999,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0761,0.0801,73.32,73.32,12.5,12.5,11.89,1.0,1.0
+1999,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0505,0.0532,73.32,73.32,12.5,12.5,11.89,1.0,1.0
+2000,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2214,0.233,64.84,65.75,11.5,11.75,10.77,0.75,0.25
+2000,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.1838,0.1935,53.7,53.48,4.83,4.72,4.41,0.3333,0.0
+2000,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1291,0.1359,58.61,58.61,3.0,3.0,2.76,0.0,0.0
+2000,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1244,0.1309,48.98,48.75,5.5,5.19,4.9,0.0,0.0
+2000,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.858,0.0833,0.0877,66.51,65.69,12.5,10.32,12.47,1.0,0.0
+2000,fac_business_finance,Business and finance establishment,2,0.8375,0.0813,0.0856,69.5,70.2,17.0,16.49,16.7,1.0,0.5
+2000,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0761,0.0801,74.32,74.32,13.5,13.5,12.89,1.0,1.0
+2000,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0505,0.0532,74.32,74.32,13.5,13.5,12.89,1.0,1.0
+2001,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2139,0.2869,65.84,66.75,12.5,12.75,11.77,0.75,0.25
+2001,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.287,0.1207,0.162,53.01,52.6,2.5,2.68,2.15,0.0,0.0
+2001,fac_business_finance,Business and finance establishment,2,0.8375,0.0786,0.1054,70.5,71.2,18.0,17.49,17.7,1.0,0.5
+2001,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0735,0.0987,75.32,75.32,14.5,14.5,13.89,1.0,1.0
+2001,fac_intelligence_community,Intelligence community leadership,1,0.741,0.0695,0.0932,48.49,48.49,4.5,4.5,3.97,0.0,0.0
+2001,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0624,0.0837,59.49,59.49,2.5,2.5,2.48,0.0,0.0
+2001,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0488,0.0654,75.32,75.32,14.5,14.5,13.89,1.0,1.0
+2001,fac_neoconservatives,Neoconservative / interventionist hawks,1,0.507,0.0476,0.0638,57.53,57.53,0.5,0.5,0.33,0.0,0.0
+2001,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0305,0.0409,70.89,70.89,22.5,22.5,22.5,1.0,1.0
+2002,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,2.403,0.1986,0.2386,53.72,53.58,2.49,2.66,2.02,0.0,0.0
+2002,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.1884,0.2264,66.84,67.75,13.5,13.75,12.77,0.75,0.25
+2002,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1059,0.1272,53.69,53.03,3.49,3.8,2.9,0.0,0.0
+2002,fac_neoconservatives,Neoconservative / interventionist hawks,2,0.975,0.0806,0.0968,53.75,53.94,1.49,1.49,1.15,0.0,0.0
+2002,fac_business_finance,Business and finance establishment,2,0.8375,0.0692,0.0832,71.5,72.2,19.0,18.49,18.7,1.0,0.5
+2002,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0648,0.0779,76.32,76.32,15.5,15.5,14.89,1.0,1.0
+2002,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.055,0.066,60.49,60.49,3.5,3.5,3.48,1.0,0.0
+2002,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.043,0.0516,76.32,76.32,15.5,15.5,14.89,1.0,1.0
+2002,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0269,0.0323,71.89,71.89,23.5,23.5,23.5,1.0,1.0
+2003,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,2.403,0.1877,0.2238,54.72,54.58,3.49,3.66,3.02,0.0,0.0
+2003,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.1781,0.2124,67.84,68.75,14.5,14.75,13.78,0.75,0.5
+2003,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1039,0.1239,56.42,56.42,2.5,2.5,2.49,0.5,0.0
+2003,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1001,0.1193,54.69,54.03,4.49,4.8,3.9,0.0,0.0
+2003,fac_neoconservatives,Neoconservative / interventionist hawks,2,0.975,0.0762,0.0908,54.74,54.93,2.49,2.49,2.15,0.0,0.0
+2003,fac_business_finance,Business and finance establishment,2,0.8375,0.0654,0.078,72.49,73.2,20.0,19.49,19.7,1.0,0.5
+2003,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0612,0.073,77.32,77.32,16.5,16.5,15.89,1.0,1.0
+2003,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0406,0.0484,77.32,77.32,16.5,16.5,15.89,1.0,1.0
+2003,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0254,0.0303,72.89,72.89,24.5,24.5,24.5,1.0,1.0
+2004,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,2.403,0.1877,0.2238,55.72,55.59,4.5,4.67,4.02,0.25,0.0
+2004,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.1781,0.2124,68.84,69.75,15.5,15.75,14.78,0.75,0.5
+2004,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1039,0.1239,57.43,57.43,3.5,3.5,3.49,0.5,0.0
+2004,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1001,0.1193,55.7,55.04,5.5,5.81,4.89,0.0,0.0
+2004,fac_neoconservatives,Neoconservative / interventionist hawks,2,0.975,0.0762,0.0908,55.75,55.94,3.5,3.5,3.15,0.5,0.0
+2004,fac_business_finance,Business and finance establishment,2,0.8375,0.0654,0.078,73.5,74.2,21.0,20.49,20.7,1.0,0.5
+2004,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0612,0.073,78.32,78.32,17.5,17.5,16.89,1.0,1.0
+2004,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0406,0.0484,78.32,78.32,17.5,17.5,16.89,1.0,1.0
+2004,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0254,0.0303,73.89,73.89,25.5,25.5,25.5,1.0,1.0
+2005,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2028,0.2439,69.84,70.75,16.5,16.75,15.78,0.75,0.5
+2005,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,2.264,0.2014,0.2422,53.53,53.56,2.5,2.47,2.16,0.25,0.0
+2005,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1183,0.1423,58.42,58.43,4.5,4.5,4.49,0.5,0.0
+2005,fac_business_finance,Business and finance establishment,2,0.8375,0.0745,0.0896,74.5,75.2,22.0,21.49,21.7,1.0,0.5
+2005,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0698,0.0839,79.32,79.32,18.5,18.5,17.89,1.0,1.0
+2005,fac_intelligence_community,Intelligence community leadership,1,0.54,0.048,0.0578,60.9,60.9,4.5,4.5,3.82,1.0,0.0
+2005,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0463,0.0556,79.32,79.32,18.5,18.5,17.89,1.0,1.0
+2005,fac_neoconservatives,Neoconservative / interventionist hawks,1,0.468,0.0416,0.0501,51.96,51.96,4.5,4.5,3.96,0.0,0.0
+2005,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0289,0.0348,74.89,74.89,26.5,26.5,26.5,1.0,1.0
+2006,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,2.426,0.2147,0.248,56.61,56.86,2.24,2.15,1.94,0.5,0.0
+2006,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2018,0.233,63.27,62.28,12.75,11.81,12.02,0.5,0.5
+2006,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1177,0.1359,59.42,59.42,5.5,5.5,5.49,0.5,0.0
+2006,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1134,0.1309,61.59,61.55,3.0,2.6,2.46,1.0,0.0
+2006,fac_business_finance,Business and finance establishment,2,0.8375,0.0741,0.0856,61.61,60.28,13.5,11.6,13.46,0.5,0.5
+2006,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0694,0.0801,52.55,52.55,0.5,0.5,0.41,0.0,0.0
+2006,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.046,0.0532,52.55,52.55,0.5,0.5,0.41,0.0,0.0
+2006,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0288,0.0332,75.89,75.89,27.5,27.5,27.5,1.0,1.0
+2007,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,2.426,0.2153,0.2661,57.61,57.86,3.24,3.15,2.94,0.5,0.0
+2007,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2023,0.25,64.27,63.28,13.75,12.81,13.02,0.5,0.5
+2007,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1137,0.1405,62.59,62.55,3.99,3.6,3.46,1.0,0.0
+2007,fac_business_finance,Business and finance establishment,2,0.8375,0.0743,0.0918,62.6,61.28,14.49,12.59,14.46,0.5,0.5
+2007,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0696,0.086,53.55,53.55,1.49,1.49,1.41,0.0,0.0
+2007,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.059,0.0729,67.58,67.58,0.5,0.5,0.49,1.0,0.0
+2007,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0461,0.057,53.55,53.55,1.49,1.49,1.41,0.0,0.0
+2007,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0288,0.0356,76.89,76.89,28.5,28.5,28.5,1.0,1.0
+2008,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,2.426,0.2153,0.2661,58.61,58.86,4.25,4.16,3.94,0.5,0.0
+2008,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2023,0.25,65.27,64.28,14.75,13.81,14.02,0.75,0.5
+2008,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1137,0.1405,63.59,63.55,5.0,4.61,4.46,1.0,0.0
+2008,fac_business_finance,Business and finance establishment,2,0.8375,0.0743,0.0918,63.61,62.28,15.5,13.6,15.46,0.5,0.5
+2008,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0696,0.086,54.55,54.55,2.5,2.5,2.41,0.0,0.0
+2008,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.059,0.0729,68.58,68.58,1.5,1.5,1.49,1.0,0.0
+2008,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0461,0.057,54.55,54.55,2.5,2.5,2.41,0.0,0.0
+2008,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0288,0.0356,77.89,77.89,29.5,29.5,29.5,1.0,1.0
+2009,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.1916,0.2696,66.27,65.28,15.75,14.81,15.02,0.75,0.5
+2009,fac_business_finance,Business and finance establishment,3,1.325,0.1113,0.1567,59.03,57.61,11.17,9.41,11.11,0.3333,0.3333
+2009,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1076,0.1515,67.96,68.43,4.5,3.87,4.1,1.0,0.5
+2009,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.278,0.1074,0.1511,67.96,68.26,4.5,4.11,4.1,1.0,0.5
+2009,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0659,0.0927,55.55,55.55,3.5,3.5,3.41,0.0,0.0
+2009,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0559,0.0786,69.58,69.58,2.5,2.5,2.49,1.0,0.0
+2009,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0437,0.0615,55.55,55.55,3.5,3.5,3.41,0.0,0.0
+2009,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0273,0.0384,78.89,78.89,30.5,30.5,30.5,1.0,1.0
+2010,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.1839,0.2596,67.27,66.28,16.75,15.81,16.02,0.75,0.5
+2010,fac_business_finance,Business and finance establishment,4,1.65,0.1331,0.1879,64.25,62.22,9.25,8.46,9.21,0.5,0.5
+2010,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1033,0.1458,68.96,69.43,5.5,4.87,5.1,1.0,0.5
+2010,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.278,0.1031,0.1455,68.96,69.26,5.5,5.1,5.1,1.0,0.5
+2010,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0632,0.0893,56.55,56.55,4.5,4.5,4.41,0.0,0.0
+2010,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0536,0.0757,70.58,70.58,3.5,3.5,3.49,1.0,1.0
+2010,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0419,0.0592,56.55,56.55,4.5,4.5,4.41,0.0,0.0
+2010,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0262,0.037,79.89,79.89,31.5,31.5,31.5,1.0,1.0
+2011,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.1962,0.2848,68.27,67.28,17.74,16.81,17.02,0.75,0.5
+2011,fac_business_finance,Business and finance establishment,4,1.65,0.142,0.2061,65.25,63.22,10.24,9.45,10.21,0.5,0.5
+2011,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1145,0.1661,66.6,66.6,2.5,2.5,2.49,1.0,0.5
+2011,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0675,0.0979,57.55,57.55,5.49,5.49,5.41,0.0,0.0
+2011,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.576,0.0496,0.072,66.9,66.9,10.49,10.49,9.82,1.0,0.0
+2011,fac_intelligence_community,Intelligence community leadership,1,0.54,0.0465,0.0675,66.9,66.9,10.49,10.49,9.82,1.0,0.0
+2011,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0448,0.065,57.55,57.55,5.49,5.49,5.41,0.0,0.0
+2011,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.028,0.0406,80.89,80.89,32.5,32.5,32.5,1.0,1.0
+2012,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.1884,0.2325,69.27,68.28,18.75,17.81,18.02,0.75,0.5
+2012,fac_business_finance,Business and finance establishment,4,1.65,0.1364,0.1683,66.25,64.22,11.25,10.46,11.21,0.5,0.5
+2012,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1099,0.1356,67.6,67.6,3.5,3.5,3.49,1.0,0.5
+2012,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1059,0.1306,63.78,63.13,6.5,5.72,5.82,0.5,0.0
+2012,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),2,1.278,0.1056,0.1303,63.78,63.37,6.5,6.01,5.82,0.5,0.0
+2012,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0648,0.08,58.55,58.55,6.5,6.5,6.41,0.0,0.0
+2012,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.6825,0.0564,0.0696,69.19,68.59,17.5,16.74,17.25,0.5,0.5
+2012,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.043,0.053,58.55,58.55,6.5,6.5,6.41,0.0,0.0
+2013,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2009,0.2178,70.27,69.28,19.75,18.81,19.02,0.75,0.5
+2013,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.1668,0.1809,65.41,64.99,4.5,4.15,4.18,0.6667,0.0
+2013,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1172,0.1271,68.6,68.6,4.5,4.5,4.49,1.0,0.5
+2013,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1129,0.1224,63.34,62.47,6.5,5.56,6.07,0.5,0.0
+2013,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.2155,0.1071,0.1161,69.98,69.58,12.5,10.18,12.3,0.6667,0.3333
+2013,fac_business_finance,Business and finance establishment,3,1.1625,0.1024,0.1111,72.38,70.81,14.83,14.38,14.8,0.6667,0.6667
+2013,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0691,0.0749,59.55,59.55,7.5,7.5,7.41,0.0,0.0
+2013,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0458,0.0497,59.55,59.55,7.5,7.5,7.41,0.0,0.0
+2014,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2009,0.2178,71.27,70.28,20.75,19.81,20.02,0.75,0.5
+2014,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.1668,0.1809,60.96,61.01,1.49,1.49,1.18,0.3333,0.3333
+2014,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1172,0.1271,69.6,69.6,5.5,5.5,5.49,1.0,0.5
+2014,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1129,0.1224,56.16,56.57,1.49,1.49,1.06,0.0,0.0
+2014,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.2155,0.1071,0.1161,70.98,70.58,13.5,11.17,13.3,0.6667,0.6667
+2014,fac_business_finance,Business and finance establishment,3,1.1625,0.1024,0.1111,75.82,74.84,13.17,12.07,13.14,1.0,0.6667
+2014,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0691,0.0749,67.88,67.88,0.5,0.5,0.41,1.0,0.0
+2014,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0458,0.0497,67.88,67.88,0.5,0.5,0.41,1.0,0.0
+2015,fac_judicial_establishment,Supreme Court / federal judicial establishment,4,2.28,0.2009,0.2178,72.27,71.28,21.74,20.81,21.02,1.0,0.5
+2015,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.1668,0.1809,61.96,62.01,2.49,2.49,2.18,0.3333,0.3333
+2015,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1172,0.1271,69.49,69.49,2.5,2.5,2.49,1.0,0.5
+2015,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1129,0.1224,57.16,57.57,2.49,2.49,2.06,0.0,0.0
+2015,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.2155,0.1071,0.1161,71.98,71.58,14.5,12.17,14.3,0.6667,0.6667
+2015,fac_business_finance,Business and finance establishment,3,1.1625,0.1024,0.1111,76.82,75.84,14.16,13.07,14.13,1.0,0.6667
+2015,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0691,0.0749,68.88,68.88,1.49,1.49,1.4,1.0,0.0
+2015,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0458,0.0497,68.88,68.88,1.49,1.49,1.4,1.0,0.0
+2016,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,1.893,0.1753,0.1904,62.96,63.02,3.5,3.5,3.18,0.6667,0.3333
+2016,fac_judicial_establishment,Supreme Court / federal judicial establishment,3,1.7575,0.1627,0.1767,70.92,69.89,20.17,19.23,19.44,1.0,0.3333
+2016,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1231,0.1338,60.39,60.39,1.5,1.5,1.08,0.5,0.5
+2016,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1186,0.1288,58.16,58.58,3.5,3.5,3.07,0.5,0.0
+2016,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.2155,0.1125,0.1222,72.98,72.58,15.5,13.18,15.3,1.0,0.6667
+2016,fac_business_finance,Business and finance establishment,3,1.1625,0.1076,0.1169,77.82,76.85,15.17,14.07,15.14,1.0,0.6667
+2016,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0726,0.0788,69.89,69.89,2.5,2.5,2.41,1.0,0.0
+2016,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0481,0.0523,69.89,69.89,2.5,2.5,2.41,1.0,0.0
+2017,fac_business_finance,Business and finance establishment,5,2.183,0.2172,0.2773,71.25,69.57,9.9,8.26,9.84,0.8,0.6
+2017,fac_judicial_establishment,Supreme Court / federal judicial establishment,3,1.7575,0.1749,0.2233,71.92,70.89,21.17,20.23,20.44,1.0,0.3333
+2017,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1323,0.169,61.39,61.39,2.5,2.5,2.08,0.5,0.5
+2017,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.078,0.0996,70.88,70.88,3.5,3.5,3.41,1.0,1.0
+2017,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.6825,0.0679,0.0867,74.19,73.59,22.5,21.74,22.25,1.0,0.5
+2017,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.615,0.0612,0.0781,65.27,65.27,0.5,0.5,0.41,1.0,0.0
+2017,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0517,0.0661,70.88,70.88,3.5,3.5,3.41,1.0,1.0
+2018,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,3.011,0.2442,0.2613,58.38,58.56,0.7,0.69,0.32,0.4,0.0
+2018,fac_judicial_establishment,Supreme Court / federal judicial establishment,3,1.7575,0.1425,0.1525,72.92,71.89,22.17,21.23,21.44,1.0,0.6667
+2018,fac_business_finance,Business and finance establishment,4,1.65,0.1338,0.1432,72.13,70.07,12.25,10.6,12.2,0.75,0.5
+2018,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1079,0.1154,62.39,62.39,3.5,3.5,3.08,0.5,0.5
+2018,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1039,0.1112,56.64,57.45,0.99,0.92,0.51,0.5,0.0
+2018,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0636,0.068,65.4,65.4,0.5,0.5,0.4,1.0,0.0
+2018,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.6825,0.0554,0.0592,75.19,74.59,23.5,22.74,23.25,1.0,0.5
+2018,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0422,0.0451,65.4,65.4,0.5,0.5,0.4,1.0,0.0
+2018,fac_neoconservatives,Neoconservative / interventionist hawks,1,0.507,0.0411,0.044,69.61,69.61,0.5,0.5,0.23,1.0,0.0
+2019,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,3.011,0.2556,0.2773,59.38,59.56,1.69,1.68,1.32,0.4,0.2
+2019,fac_judicial_establishment,Supreme Court / federal judicial establishment,3,1.7575,0.1492,0.1619,73.92,72.89,23.16,22.22,22.44,1.0,0.6667
+2019,fac_business_finance,Business and finance establishment,4,1.65,0.1401,0.152,73.12,71.07,13.25,11.6,13.2,0.75,0.5
+2019,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1087,0.118,57.64,58.45,1.99,1.91,1.51,0.5,0.0
+2019,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0666,0.0722,66.4,66.4,1.49,1.49,1.4,1.0,0.0
+2019,fac_globalists,Globalists / foreign-policy internationalists (analytical label),2,0.6825,0.0579,0.0629,76.19,75.59,24.5,23.74,24.25,1.0,0.5
+2019,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0565,0.0612,77.36,77.36,4.5,4.5,4.49,1.0,1.0
+2019,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0441,0.0479,66.4,66.4,1.49,1.49,1.4,1.0,0.0
+2019,fac_neoconservatives,Neoconservative / interventionist hawks,1,0.507,0.043,0.0467,70.61,70.61,1.49,1.49,1.23,1.0,1.0
+2020,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),3,2.426,0.2322,0.2579,57.57,57.9,2.75,2.74,2.35,0.25,0.0
+2020,fac_judicial_establishment,Supreme Court / federal judicial establishment,3,1.7575,0.1682,0.1868,74.92,73.89,24.17,23.23,23.44,1.0,0.6667
+2020,fac_business_finance,Business and finance establishment,4,1.65,0.1579,0.1754,74.13,72.07,14.25,12.6,14.2,0.75,0.5
+2020,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1226,0.1362,58.64,59.45,3.0,2.92,2.51,0.5,0.0
+2020,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.075,0.0833,67.4,67.4,2.5,2.5,2.4,1.0,0.0
+2020,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0636,0.0707,78.36,78.36,5.5,5.5,5.49,1.0,1.0
+2020,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0498,0.0553,67.4,67.4,2.5,2.5,2.4,1.0,0.0
+2020,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0311,0.0345,89.89,89.89,41.5,41.5,41.5,1.0,1.0
+2021,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,2.478,0.2446,0.2521,55.89,56.38,1.5,1.43,1.27,0.25,0.0
+2021,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.365,0.1347,0.1389,64.9,61.32,14.5,10.5,14.46,0.3333,0.3333
+2021,fac_congressional_leadership,Congressional leadership establishment,1,1.33,0.1313,0.1353,79.36,79.36,6.5,6.5,6.49,1.0,1.0
+2021,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1265,0.1303,59.88,60.72,2.5,2.19,2.1,0.5,0.0
+2021,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1219,0.1256,69.72,69.22,23.5,22.42,22.72,1.0,0.5
+2021,fac_business_finance,Business and finance establishment,2,0.8375,0.0827,0.0852,77.03,75.77,22.5,19.72,22.45,1.0,0.5
+2021,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0774,0.0798,68.4,68.4,3.5,3.5,3.4,1.0,0.0
+2021,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0513,0.0529,68.4,68.4,3.5,3.5,3.4,1.0,0.0
+2022,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,2.478,0.2446,0.2704,56.89,57.38,2.49,2.42,2.27,0.5,0.0
+2022,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.365,0.1347,0.1489,65.9,62.32,15.49,11.49,15.46,0.6667,0.3333
+2022,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1265,0.1398,60.88,61.72,3.49,3.18,3.1,0.5,0.0
+2022,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1219,0.1347,70.72,70.22,24.5,23.42,23.72,1.0,0.5
+2022,fac_business_finance,Business and finance establishment,2,0.8375,0.0827,0.0914,78.03,76.77,23.5,20.72,23.45,1.0,0.5
+2022,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0774,0.0855,69.4,69.4,4.5,4.5,4.4,1.0,0.0
+2022,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.0656,0.0726,80.36,80.36,7.5,7.5,7.49,1.0,1.0
+2022,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0513,0.0567,69.4,69.4,4.5,4.5,4.4,1.0,0.0
+2023,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,2.478,0.2458,0.2704,57.89,58.38,3.49,3.42,3.27,0.5,0.0
+2023,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.365,0.1354,0.1489,66.9,63.32,16.49,12.49,16.46,0.6667,0.3333
+2023,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1271,0.1398,61.88,62.72,4.49,4.18,4.09,0.5,0.0
+2023,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1225,0.1347,71.72,71.22,25.49,24.42,24.72,1.0,0.5
+2023,fac_business_finance,Business and finance establishment,2,0.8375,0.0831,0.0914,79.03,77.77,24.5,21.72,24.45,1.0,1.0
+2023,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0778,0.0855,70.4,70.4,5.49,5.49,5.4,1.0,1.0
+2023,fac_congressional_leadership,Congressional leadership establishment,1,0.665,0.066,0.0726,81.36,81.36,8.5,8.5,8.49,1.0,1.0
+2023,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0516,0.0567,70.4,70.4,5.49,5.49,5.4,1.0,1.0
+2024,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),4,2.478,0.2446,0.2521,58.89,59.38,4.5,4.43,4.27,0.5,0.0
+2024,fac_globalists,Globalists / foreign-policy internationalists (analytical label),3,1.365,0.1347,0.1389,67.9,64.32,17.5,13.5,17.46,0.6667,0.3333
+2024,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1313,0.1353,67.39,67.39,5.5,5.5,5.08,0.5,0.5
+2024,fac_intelligence_community,Intelligence community leadership,2,1.281,0.1265,0.1303,62.88,63.72,5.5,5.19,5.1,0.5,0.0
+2024,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1219,0.1256,72.72,72.22,26.5,25.42,25.72,1.0,0.5
+2024,fac_business_finance,Business and finance establishment,2,0.8375,0.0827,0.0852,80.03,78.77,25.5,22.72,25.45,1.0,1.0
+2024,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.0774,0.0798,71.4,71.4,6.5,6.5,6.4,1.0,1.0
+2024,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0513,0.0529,71.4,71.4,6.5,6.5,6.4,1.0,1.0
+2025,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1712,0.2152,58.95,58.95,1.5,1.5,1.08,0.5,0.0
+2025,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1589,0.1999,73.72,73.22,27.5,26.42,26.72,1.0,1.0
+2025,fac_business_finance,Business and finance establishment,2,0.8375,0.1078,0.1355,81.03,79.77,26.5,23.72,26.45,1.0,1.0
+2025,fac_federal_reserve,Federal Reserve / monetary-policy establishment,1,0.784,0.1009,0.1269,72.4,72.4,7.5,7.5,7.4,1.0,1.0
+2025,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.615,0.0792,0.0995,54.1,54.1,0.5,0.5,0.44,0.0,0.0
+2025,fac_republican_party,Republican Party elected coalition,1,0.533,0.0686,0.0863,54.1,54.1,0.5,0.5,0.44,0.0,0.0
+2025,fac_technocratic_centrist,Technocratic centrist / managerial elite,1,0.52,0.0669,0.0841,72.4,72.4,7.5,7.5,7.4,1.0,1.0
+2025,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0418,0.0526,94.89,94.89,46.5,46.5,46.5,1.0,1.0
+2026,fac_congressional_leadership,Congressional leadership establishment,2,1.33,0.1908,0.3026,59.95,59.95,2.5,2.5,2.08,0.5,0.0
+2026,fac_judicial_establishment,Supreme Court / federal judicial establishment,2,1.235,0.1772,0.281,74.72,74.22,28.5,27.42,27.72,1.0,1.0
+2026,fac_natsec_establishment,Deep State / national security establishment (analytical proxy),1,0.615,0.0882,0.1399,55.09,55.09,1.49,1.49,1.44,0.0,0.0
+2026,fac_republican_party,Republican Party elected coalition,1,0.533,0.0765,0.1213,55.09,55.09,1.49,1.49,1.44,0.0,0.0
+2026,fac_business_finance,Business and finance establishment,1,0.3575,0.0513,0.0813,90.67,90.67,46.5,46.5,46.5,1.0,1.0
+2026,fac_globalists,Globalists / foreign-policy internationalists (analytical label),1,0.325,0.0466,0.0739,95.89,95.89,47.5,47.5,47.5,1.0,1.0

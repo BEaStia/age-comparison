@@ -1,0 +1,105 @@
+{
+  "snapshot_date": "2026-05-05",
+  "files": {
+    "persons.csv": [
+      "person_id",
+      "name",
+      "birth_date",
+      "death_date",
+      "country_label",
+      "notes",
+      "source_url"
+    ],
+    "positions.csv": [
+      "person_id",
+      "position",
+      "institution",
+      "start_date",
+      "end_date",
+      "is_ruler",
+      "is_core_elite",
+      "tier",
+      "influence_weight",
+      "notes",
+      "source_url"
+    ],
+    "political_entries.csv": [
+      "person_id",
+      "political_entry_date",
+      "elite_entry_date",
+      "ruling_circle_entry_date",
+      "notes",
+      "source_url"
+    ],
+    "events.csv": [
+      "event_id",
+      "date",
+      "event_name",
+      "event_type",
+      "severity",
+      "elite_initiated",
+      "confidence",
+      "decision_domain",
+      "initiator_group",
+      "initiator_person_id",
+      "initiator_faction_id",
+      "event_scope",
+      "notes",
+      "source_url"
+    ],
+    "factions.csv": [
+      "faction_id",
+      "faction_name",
+      "faction_type",
+      "start_year",
+      "end_year",
+      "description",
+      "notes",
+      "source_url"
+    ],
+    "person_factions.csv": [
+      "person_id",
+      "faction_id",
+      "confidence",
+      "start_year",
+      "end_year",
+      "relation_type",
+      "notes",
+      "source_url"
+    ],
+    "faction_relations.csv": [
+      "source_faction_id",
+      "target_faction_id",
+      "relation_type",
+      "start_year",
+      "end_year",
+      "intensity",
+      "confidence",
+      "notes",
+      "source_url"
+    ],
+    "elite_edges.csv": [
+      "source_person_id",
+      "target_person_id",
+      "edge_type",
+      "start_year",
+      "end_year",
+      "weight",
+      "confidence",
+      "notes",
+      "source_url"
+    ],
+    "periods.csv": [
+      "period_id",
+      "label",
+      "start_year",
+      "end_year",
+      "slug",
+      "label_ru",
+      "label_en",
+      "notes"
+    ]
+  },
+  "source_policy": "Each researched table includes a source_url column where practical. URLs are plain text for spreadsheet import compatibility.",
+  "warning": "Deep State/globalists are analytical proxy labels, not proof of a conspiracy."
+}

@@ -1,0 +1,665 @@
+{
+  "meta": {
+    "years": {
+      "start": 1945,
+      "end": 2026
+    },
+    "counts": {
+      "persons": 121,
+      "events": 20,
+      "elite_events": 14,
+      "factions": 13,
+      "person_factions": 234
+    }
+  },
+  "insights": [
+    {
+      "key": "ruler_vs_political",
+      "ru": "Возраст правителя почти совпадает с политическим возрастом: r=0.331.",
+      "en": "Ruler age is tightly aligned with political age: r=0.331."
+    },
+    {
+      "key": "age_vs_renewal",
+      "ru": "Чем старше core elite, тем слабее renewal_5y: r=-0.347.",
+      "en": "Older core elite coincides with weaker 5-year renewal: r=-0.347."
+    },
+    {
+      "key": "ruler_vs_core",
+      "ru": "Возраст правителя ближе к взвешенному возрасту core elite, чем к простому среднему: r=0.505.",
+      "en": "Ruler age tracks weighted core age more closely than plain mean age: r=0.505."
+    },
+    {
+      "key": "events_signal",
+      "ru": "Годы с более старой core elite обычно связаны с числом elite-initiated событий: r=0.031.",
+      "en": "Years with older core elite are associated with elite-initiated event volume: r=0.031."
+    }
+  ],
+  "correlations": {
+    "elite": {
+      "ruler_age": {
+        "ruler_age": 1.0,
+        "ruler_political_age": 0.331,
+        "core_mean_age": 0.416,
+        "core_weighted_mean_age": 0.505,
+        "core_share_60_plus": 0.316,
+        "core_share_70_plus": 0.282,
+        "renewal_5y": -0.005,
+        "events_count": 0.042,
+        "elite_initiated_events_count": 0.006
+      },
+      "ruler_political_age": {
+        "ruler_age": 0.331,
+        "ruler_political_age": 1.0,
+        "core_mean_age": -0.069,
+        "core_weighted_mean_age": -0.038,
+        "core_share_60_plus": 0.042,
+        "core_share_70_plus": -0.165,
+        "renewal_5y": -0.139,
+        "events_count": -0.008,
+        "elite_initiated_events_count": -0.022
+      },
+      "core_mean_age": {
+        "ruler_age": 0.416,
+        "ruler_political_age": -0.069,
+        "core_mean_age": 1.0,
+        "core_weighted_mean_age": 0.99,
+        "core_share_60_plus": 0.776,
+        "core_share_70_plus": 0.911,
+        "renewal_5y": -0.347,
+        "events_count": 0.101,
+        "elite_initiated_events_count": 0.031
+      },
+      "core_weighted_mean_age": {
+        "ruler_age": 0.505,
+        "ruler_political_age": -0.038,
+        "core_mean_age": 0.99,
+        "core_weighted_mean_age": 1.0,
+        "core_share_60_plus": 0.776,
+        "core_share_70_plus": 0.885,
+        "renewal_5y": -0.355,
+        "events_count": 0.089,
+        "elite_initiated_events_count": 0.023
+      },
+      "core_share_60_plus": {
+        "ruler_age": 0.316,
+        "ruler_political_age": 0.042,
+        "core_mean_age": 0.776,
+        "core_weighted_mean_age": 0.776,
+        "core_share_60_plus": 1.0,
+        "core_share_70_plus": 0.638,
+        "renewal_5y": -0.455,
+        "events_count": 0.091,
+        "elite_initiated_events_count": 0.045
+      },
+      "core_share_70_plus": {
+        "ruler_age": 0.282,
+        "ruler_political_age": -0.165,
+        "core_mean_age": 0.911,
+        "core_weighted_mean_age": 0.885,
+        "core_share_60_plus": 0.638,
+        "core_share_70_plus": 1.0,
+        "renewal_5y": -0.29,
+        "events_count": 0.072,
+        "elite_initiated_events_count": -0.019
+      },
+      "renewal_5y": {
+        "ruler_age": -0.005,
+        "ruler_political_age": -0.139,
+        "core_mean_age": -0.347,
+        "core_weighted_mean_age": -0.355,
+        "core_share_60_plus": -0.455,
+        "core_share_70_plus": -0.29,
+        "renewal_5y": 1.0,
+        "events_count": 0.185,
+        "elite_initiated_events_count": 0.204
+      },
+      "events_count": {
+        "ruler_age": 0.042,
+        "ruler_political_age": -0.008,
+        "core_mean_age": 0.101,
+        "core_weighted_mean_age": 0.089,
+        "core_share_60_plus": 0.091,
+        "core_share_70_plus": 0.072,
+        "renewal_5y": 0.185,
+        "events_count": 1.0,
+        "elite_initiated_events_count": 0.86
+      },
+      "elite_initiated_events_count": {
+        "ruler_age": 0.006,
+        "ruler_political_age": -0.022,
+        "core_mean_age": 0.031,
+        "core_weighted_mean_age": 0.023,
+        "core_share_60_plus": 0.045,
+        "core_share_70_plus": -0.019,
+        "renewal_5y": 0.204,
+        "events_count": 0.86,
+        "elite_initiated_events_count": 1.0
+      }
+    },
+    "faction": {
+      "normalized_power_share": {
+        "normalized_power_share": 1.0,
+        "mean_age": -0.127,
+        "weighted_mean_age": -0.127,
+        "mean_political_age": -0.056,
+        "weighted_mean_political_age": -0.058,
+        "members_count": 0.501,
+        "raw_power_share": 0.866
+      },
+      "mean_age": {
+        "normalized_power_share": -0.127,
+        "mean_age": 1.0,
+        "weighted_mean_age": 0.998,
+        "mean_political_age": 0.516,
+        "weighted_mean_political_age": 0.509,
+        "members_count": 0.025,
+        "raw_power_share": -0.132
+      },
+      "weighted_mean_age": {
+        "normalized_power_share": -0.127,
+        "mean_age": 0.998,
+        "weighted_mean_age": 1.0,
+        "mean_political_age": 0.507,
+        "weighted_mean_political_age": 0.503,
+        "members_count": 0.014,
+        "raw_power_share": -0.132
+      },
+      "mean_political_age": {
+        "normalized_power_share": -0.056,
+        "mean_age": 0.516,
+        "weighted_mean_age": 0.507,
+        "mean_political_age": 1.0,
+        "weighted_mean_political_age": 0.998,
+        "members_count": 0.021,
+        "raw_power_share": -0.088
+      },
+      "weighted_mean_political_age": {
+        "normalized_power_share": -0.058,
+        "mean_age": 0.509,
+        "weighted_mean_age": 0.503,
+        "mean_political_age": 0.998,
+        "weighted_mean_political_age": 1.0,
+        "members_count": -0.002,
+        "raw_power_share": -0.095
+      },
+      "members_count": {
+        "normalized_power_share": 0.501,
+        "mean_age": 0.025,
+        "weighted_mean_age": 0.014,
+        "mean_political_age": 0.021,
+        "weighted_mean_political_age": -0.002,
+        "members_count": 1.0,
+        "raw_power_share": 0.727
+      },
+      "raw_power_share": {
+        "normalized_power_share": 0.866,
+        "mean_age": -0.132,
+        "weighted_mean_age": -0.132,
+        "mean_political_age": -0.088,
+        "weighted_mean_political_age": -0.095,
+        "members_count": 0.727,
+        "raw_power_share": 1.0
+      }
+    }
+  },
+  "cross_tabs": {
+    "initiator_group_x_decision_domain": {
+      "rows": [
+        "Executive",
+        "Executive/Congress",
+        "Executive/Congress/security agencies",
+        "Executive/Defense",
+        "Executive/Defense/Coalition",
+        "Executive/Defense/NSC",
+        "Executive/Defense/State",
+        "Executive/Public health agencies",
+        "Executive/State Department",
+        "Executive/State Department/Congress",
+        "Executive/Treasury/Federal Reserve/Congress",
+        "Private transnational policy network"
+      ],
+      "cols": [
+        "domestic_security",
+        "economy_finance",
+        "elite_network",
+        "foreign_policy",
+        "foreign_policy_economy",
+        "foreign_policy_governance",
+        "health_policy",
+        "public_health",
+        "security_alliance",
+        "war"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_totals": [
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "col_totals": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ]
+    },
+    "faction_type_x_decision_domain": {
+      "rows": [
+        "ideological_network",
+        "institutional_network",
+        "ngo_think_tank_network",
+        "party",
+        "socioeconomic_network"
+      ],
+      "cols": [
+        "domestic_security",
+        "economy_finance",
+        "elite_network",
+        "foreign_policy",
+        "foreign_policy_economy",
+        "foreign_policy_governance",
+        "health_policy",
+        "public_health",
+        "security_alliance",
+        "war"
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "row_totals": [
+        0,
+        14,
+        0,
+        0,
+        0
+      ],
+      "col_totals": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5
+      ]
+    }
+  },
+  "event_summaries": {
+    "periods": [
+      {
+        "period_id": "per_cold_war_early",
+        "period_label": "Early Cold War",
+        "events_count": 3,
+        "mean_severity": 4.333333333333333,
+        "max_severity": 5
+      },
+      {
+        "period_id": "per_vietnam_detente",
+        "period_label": "Vietnam, détente and institutional strain",
+        "events_count": 4,
+        "mean_severity": 3.75,
+        "max_severity": 5
+      },
+      {
+        "period_id": "per_reagan_bush",
+        "period_label": "Reagan-Bush conservative ascendancy",
+        "events_count": 1,
+        "mean_severity": 5.0,
+        "max_severity": 5
+      },
+      {
+        "period_id": "per_war_on_terror",
+        "period_label": "War on Terror",
+        "events_count": 3,
+        "mean_severity": 4.666666666666667,
+        "max_severity": 5
+      },
+      {
+        "period_id": "per_financial_crisis_obama",
+        "period_label": "Financial crisis aftermath and Obama era",
+        "events_count": 1,
+        "mean_severity": 4.0,
+        "max_severity": 4
+      },
+      {
+        "period_id": "per_populist_polarization",
+        "period_label": "Populist polarization and institutional conflict",
+        "events_count": 2,
+        "mean_severity": 4.5,
+        "max_severity": 5
+      }
+    ],
+    "top_severity_5": [
+      {
+        "date": "1949-04-04",
+        "event_id": "evt_1949_nato",
+        "event_name": "North Atlantic Treaty signed"
+      },
+      {
+        "date": "1964-08-07",
+        "event_id": "evt_1964_tonkin",
+        "event_name": "Gulf of Tonkin Resolution"
+      },
+      {
+        "date": "1965-03-08",
+        "event_id": "evt_1965_vietnam_escalation",
+        "event_name": "U.S. combat troops land in Vietnam"
+      },
+      {
+        "date": "1991-01-17",
+        "event_id": "evt_1991_gulf_war",
+        "event_name": "Operation Desert Storm begins"
+      },
+      {
+        "date": "2003-03-20",
+        "event_id": "evt_2003_iraq_invasion",
+        "event_name": "U.S.-led invasion of Iraq begins"
+      },
+      {
+        "date": "2008-10-03",
+        "event_id": "evt_2008_tarp",
+        "event_name": "Emergency Economic Stabilization Act / TARP signed"
+      },
+      {
+        "date": "2020-03-13",
+        "event_id": "evt_2020_covid_emergency",
+        "event_name": "COVID-19 national emergency declared"
+      }
+    ],
+    "low_confidence": []
+  },
+  "periods": [
+    {
+      "period_id": "per_cold_war_early",
+      "label": "Early Cold War",
+      "start_year": 1945,
+      "end_year": 1962,
+      "slug": "early-cold-war",
+      "label_ru": "Ранняя холодная война",
+      "label_en": "Early Cold War",
+      "notes": "Containment, NATO, Korea, early CIA/NSC architecture."
+    },
+    {
+      "period_id": "per_vietnam_detente",
+      "label": "Vietnam, détente and institutional strain",
+      "start_year": 1963,
+      "end_year": 1980,
+      "slug": "vietnam-detente",
+      "label_ru": "Вьетнам, разрядка и институциональный кризис",
+      "label_en": "Vietnam, détente and institutional strain",
+      "notes": "Vietnam escalation, Watergate, Trilateral/CFR network salience."
+    },
+    {
+      "period_id": "per_reagan_bush",
+      "label": "Reagan-Bush conservative ascendancy",
+      "start_year": 1981,
+      "end_year": 1992,
+      "slug": "reagan-bush",
+      "label_ru": "Консервативный подъём Рейгана-Буша",
+      "label_en": "Reagan-Bush conservative ascendancy",
+      "notes": "Cold War end, Gulf War, defense/intelligence continuity."
+    },
+    {
+      "period_id": "per_globalization_unipolar",
+      "label": "Globalization and unipolar moment",
+      "start_year": 1993,
+      "end_year": 2000,
+      "slug": "globalization-unipolar",
+      "label_ru": "Глобализация и однополярный момент",
+      "label_en": "Globalization and unipolar moment",
+      "notes": "Post-Cold War liberal internationalism."
+    },
+    {
+      "period_id": "per_war_on_terror",
+      "label": "War on Terror",
+      "start_year": 2001,
+      "end_year": 2008,
+      "slug": "war-on-terror",
+      "label_ru": "Война с терроризмом",
+      "label_en": "War on Terror",
+      "notes": "9/11, Patriot Act, Iraq/Afghanistan."
+    },
+    {
+      "period_id": "per_financial_crisis_obama",
+      "label": "Financial crisis aftermath and Obama era",
+      "start_year": 2009,
+      "end_year": 2016,
+      "slug": "obama-era",
+      "label_ru": "Посткризисный период и эпоха Обамы",
+      "label_en": "Financial crisis aftermath and Obama era",
+      "notes": "TARP aftermath, ACA, multilateral reset."
+    },
+    {
+      "period_id": "per_populist_polarization",
+      "label": "Populist polarization and institutional conflict",
+      "start_year": 2017,
+      "end_year": 2026,
+      "slug": "populist-polarization",
+      "label_ru": "Популистская поляризация и институциональный конфликт",
+      "label_en": "Populist polarization and institutional conflict",
+      "notes": "Trump, Biden, Jan 6, renewed Trump presidency; active through 2026-05-05 snapshot."
+    }
+  ]
+}
