@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "power-age"
+version = "0.1.0"
+description = "MVP for studying biological and political age of ruling elites."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas",
+  "numpy",
+  "matplotlib",
+  "pydantic",
+  "typer",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+[project.scripts]
+power-age = "power_age.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

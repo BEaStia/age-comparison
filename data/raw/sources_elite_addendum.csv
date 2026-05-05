@@ -1,0 +1,7 @@
+entity_type,entity_id,row_hint,source_url,note
+method,politburo_members,,https://en.wikipedia.org/wiki/Politburo_of_the_Communist_Party_of_the_Soviet_Union,Use as navigation only; verify dates with dedicated biographies before academic use
+method,soviet_leaders,,https://en.wikipedia.org/wiki/List_of_leaders_of_the_Soviet_Union,Navigation source for Soviet leader periods
+method,russian_security_council_current,,https://en.kremlin.ru/structure/security-council/members,Current Russian Security Council membership list
+method,russian_security_council_about,,https://en.kremlin.ru/structure/security-council,Council is chaired by the President; secretary answers directly to the President
+method,russian_government_current,,https://government.ru/en/persons/,Current Russian Government senior officials
+method,presidential_administration_current,,https://en.kremlin.ru/structure/administration/members,Current Presidential Executive Office key officials

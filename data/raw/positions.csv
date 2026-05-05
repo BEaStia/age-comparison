@@ -1,0 +1,126 @@
+person_id,position,start_date,end_date,tier,institution,influence_weight,is_ruler,is_core_elite,notes
+alexander_i,emperor,1801-03-24,1825-12-01,1,monarchy,1.0,True,True,
+nicholas_i,emperor,1825-12-01,1855-03-02,1,monarchy,1.0,True,True,
+alexander_ii,emperor,1855-03-02,1881-03-13,1,monarchy,1.0,True,True,
+alexander_iii,emperor,1881-03-13,1894-11-01,1,monarchy,1.0,True,True,
+nicholas_ii,emperor,1894-11-01,1917-03-15,1,monarchy,1.0,True,True,
+lenin,chairman_sovnarkom,1917-11-08,1924-01-21,1,party_state,1.0,True,True,
+stalin,general_secretary,1922-04-03,1953-03-05,1,party_state,1.0,True,True,
+khrushchev,first_secretary,1953-09-14,1964-10-14,1,party_state,1.0,True,True,
+brezhnev,general_secretary,1964-10-14,1982-11-10,1,party_state,1.0,True,True,
+andropov,general_secretary,1982-11-12,1984-02-09,1,party_state,1.0,True,True,
+chernenko,general_secretary,1984-02-13,1985-03-10,1,party_state,1.0,True,True,
+gorbachev,general_secretary,1985-03-11,1991-08-24,1,party_state,1.0,True,True,
+yeltsin,president_rsfsr_rf,1991-07-10,1999-12-31,1,presidential,1.0,True,True,
+putin,president_rf,2000-05-07,2008-05-07,1,presidential,1.0,True,True,
+medvedev,president_rf,2008-05-07,2012-05-07,1,presidential,1.0,True,True,
+putin,president_rf,2012-05-07,,1,presidential,1.0,True,True,
+kosygin,core_elite_sovmin_politburo,1964-10-15,1980-10-23,2,party_state,0.65,False,True,Chairman of Council of Ministers / Politburo core; curated influence interval
+podgorny,core_elite_politburo_state,1960-05-04,1977-05-24,2,party_state,0.55,False,True,Presidium chair / Politburo core; curated influence interval
+suslov,core_elite_ideology_politburo,1952-10-16,1982-01-25,2,party_state,0.7,False,True,Ideology / Politburo core; curated influence interval
+kirilenko,core_elite_secretariat_politburo,1962-04-23,1982-11-22,2,party_state,0.55,False,True,Secretariat / Politburo core; curated influence interval
+mazurov,core_elite_sovmin_politburo,1965-03-26,1978-11-27,2,party_state,0.45,False,True,Government / Politburo core; curated influence interval
+pelshe,core_elite_party_control_politburo,1966-04-08,1983-05-29,2,party_state,0.45,False,True,Party control / Politburo core; curated influence interval
+ustinov,core_elite_defense_politburo,1976-03-05,1984-12-20,2,party_state,0.6,False,True,Defense / Politburo core; curated influence interval
+gromyko,core_elite_foreign_affairs_politburo,1973-04-27,1988-09-30,2,party_state,0.55,False,True,Foreign affairs / Politburo core; curated influence interval
+andropov,core_elite_kgb_politburo,1967-05-18,1982-11-12,2,party_state,0.65,False,True,KGB chair / Politburo core before becoming ruler
+chernenko,core_elite_secretariat_politburo,1978-11-27,1984-02-13,2,party_state,0.55,False,True,Secretariat / Politburo core before becoming ruler
+gorbachev,core_elite_secretariat_politburo,1979-11-27,1985-03-11,2,party_state,0.55,False,True,Secretariat / Politburo core before becoming ruler
+tikhonov,core_elite_sovmin_politburo,1979-11-27,1985-09-27,2,party_state,0.5,False,True,Council of Ministers / Politburo core; curated influence interval
+grishin,core_elite_moscow_politburo,1971-04-09,1986-02-18,2,party_state,0.45,False,True,Moscow party / Politburo core; curated influence interval
+romanov,core_elite_leningrad_politburo,1976-03-05,1985-07-01,2,party_state,0.45,False,True,Leningrad party / Politburo core; curated influence interval
+aliyev,core_elite_security_politburo,1982-11-22,1987-10-21,2,party_state,0.45,False,True,Politburo core; curated influence interval
+ligachev,core_elite_secretariat_politburo,1985-04-23,1990-07-14,2,party_state,0.5,False,True,Secretariat / Politburo core; curated influence interval
+ryzhkov,core_elite_sovmin_politburo,1985-09-27,1991-01-14,2,party_state,0.55,False,True,Council of Ministers / Politburo core; curated influence interval
+shevardnadze,core_elite_foreign_affairs_politburo,1985-07-02,1990-12-20,2,party_state,0.5,False,True,Foreign affairs / Politburo core; curated influence interval
+yakovlev,core_elite_ideology_politburo,1987-06-26,1990-07-14,2,party_state,0.45,False,True,Reform ideology / Politburo core; curated influence interval
+yazov,core_elite_defense,1987-05-30,1991-08-22,2,party_state,0.5,False,True,Defense minister; curated influence interval
+kryuchkov,core_elite_kgb,1988-10-01,1991-08-22,2,party_state,0.5,False,True,KGB chair; curated influence interval
+lukyanov,core_elite_supreme_soviet,1990-03-15,1991-08-22,3,party_state,0.35,False,True,Supreme Soviet chair; curated influence interval
+gaidar,core_elite_economic_reform_government,1991-11-06,1992-12-14,2,presidential,0.55,False,True,Acting prime minister / economic reform core; curated influence interval
+chubais,core_elite_privatization_administration,1991-11-10,1998-03-23,2,presidential,0.45,False,True,Privatization / administration influence interval; approximate
+chernomyrdin,core_elite_prime_minister,1992-12-14,1998-03-23,2,presidential,0.65,False,True,Prime minister; curated influence interval
+primakov,core_elite_security_foreign_pm,1996-01-09,1999-05-12,2,presidential,0.55,False,True,Foreign affairs / prime minister / security-influence interval
+stepashin,core_elite_security_pm,1994-03-03,1999-08-09,2,presidential,0.45,False,True,Security/government influence interval; approximate
+kiriyenko,core_elite_prime_minister,1998-04-24,1998-08-23,2,presidential,0.55,False,True,Prime minister; curated influence interval
+voloshin,core_elite_presidential_administration,1999-03-19,2003-10-30,2,presidential,0.65,False,True,Head of presidential administration; curated influence interval
+kasyanov,core_elite_prime_minister,2000-05-17,2004-02-24,2,presidential,0.55,False,True,Prime minister; curated influence interval
+surkov,core_elite_presidential_administration,1999-08-03,2011-12-27,2,presidential,0.55,False,True,Presidential administration / domestic politics; approximate
+sechin,core_elite_presidential_administration_security,1999-12-31,2012-05-21,2,presidential,0.55,False,True,Presidential administration / security-energy bloc; approximate
+sobyanin,core_elite_presidential_administration,2005-11-14,2010-10-21,2,presidential,0.55,False,True,Head of presidential administration; curated influence interval
+kudrin,core_elite_finance,2000-05-18,2011-09-26,2,presidential,0.5,False,True,Finance minister / economic bloc; curated influence interval
+patrushev,core_elite_security,1999-08-09,2024-05-12,2,presidential,0.65,False,True,FSB director / Security Council secretary; curated influence interval
+bortnikov,core_elite_fsb,2008-05-12,,2,presidential,0.6,False,True,FSB director; current/open interval
+lavrov,core_elite_foreign_affairs,2004-03-09,,2,presidential,0.55,False,True,Foreign minister; current/open interval
+shoigu,core_elite_defense_security_council,2012-11-06,,2,presidential,0.65,False,True,Defense minister then Security Council secretary; current/open interval
+gerasimov,core_elite_general_staff,2012-11-09,,2,presidential,0.55,False,True,Chief of General Staff; current/open interval
+nabiullina,core_elite_central_bank,2013-06-24,,3,presidential,0.45,False,True,Central Bank governor; current/open interval
+matviyenko,core_elite_federation_council,2011-09-21,,3,presidential,0.35,False,True,Federation Council chair; current/open interval
+volodin,core_elite_state_duma,2016-10-05,,3,presidential,0.4,False,True,State Duma chair; current/open interval
+kiriyenko,core_elite_presidential_administration,2016-10-05,,2,presidential,0.7,False,True,First deputy chief of presidential administration; current/open interval
+mishustin,core_elite_prime_minister,2020-01-16,,2,presidential,0.6,False,True,Prime minister; current/open interval
+belousov,core_elite_defense,2024-05-14,,2,presidential,0.55,False,True,Defense minister; current/open interval
+kolokoltsev,core_elite_interior,2012-05-21,,2,presidential,0.45,False,True,Interior minister; current/open interval
+naryshkin,core_elite_foreign_intelligence,2016-10-05,,2,presidential,0.45,False,True,Foreign intelligence director; current/open interval
+zolotov,core_elite_national_guard,2016-04-05,,2,presidential,0.5,False,True,National Guard director; current/open interval
+siluanov,core_elite_finance,2011-12-16,,3,presidential,0.4,False,True,Finance minister; current/open interval
+medvedev,core_elite_prime_minister,2012-05-08,2020-01-16,2,presidential,0.65,False,True,Prime minister after presidency
+medvedev,core_elite_security_council_deputy,2020-01-16,,2,presidential,0.55,False,True,Deputy chair of Security Council; current/open interval
+speransky,informal_reformer_state_secretary,1808-01-01,1812-03-29,2,monarchy,0.55,False,True,curated core influence interval
+arakcheev,informal_court_military_administrator,1815-01-01,1825-12-01,2,monarchy,0.55,False,True,curated core influence interval
+kochubey,minister_interior_core_adviser,1802-09-20,1807-11-24,2,monarchy,0.45,False,True,
+kochubey,minister_interior_core_adviser,1819-11-04,1823-06-28,2,monarchy,0.45,False,True,
+novosiltsev,private_committee_member,1801-01-01,1803-01-01,3,monarchy,0.35,False,True,approximate interval
+czartoryski,foreign_minister_private_committee,1804-01-01,1806-06-17,2,monarchy,0.4,False,True,
+barclay_de_tolly,minister_of_war,1810-01-20,1812-09-24,2,monarchy,0.5,False,True,
+nesselrode,foreign_policy_chancellor,1816-08-09,1856-04-15,2,monarchy,0.5,False,True,long foreign-policy influence interval
+uvarov,minister_of_education_ideologist,1833-03-21,1849-10-20,3,monarchy,0.35,False,True,
+kankrin,minister_of_finance,1823-04-22,1844-05-01,2,monarchy,0.5,False,True,
+benckendorff,third_section_chief,1826-07-15,1844-09-23,2,monarchy,0.5,False,True,
+gorchakov,foreign_minister_chancellor,1856-04-15,1882-03-09,2,monarchy,0.55,False,True,
+milyutin,minister_of_war,1861-11-09,1881-05-21,2,monarchy,0.55,False,True,
+reutern,minister_of_finance,1862-01-23,1878-07-07,2,monarchy,0.5,False,True,
+valuev,minister_of_interior,1861-04-23,1868-03-09,2,monarchy,0.45,False,True,
+pobedonostsev,ober_procurator_holy_synod_ideologist,1880-04-24,1905-10-19,2,monarchy,0.5,False,True,high ideological influence
+loris_melikov,minister_of_interior_reformer,1880-08-18,1881-05-16,2,monarchy,0.55,False,True,
+witte,minister_of_finance,1892-08-30,1903-08-16,2,monarchy,0.55,False,True,
+witte,chairman_council_of_ministers,1905-10-19,1906-04-22,2,monarchy,0.65,False,True,
+plehve,minister_of_interior,1902-04-04,1904-07-28,2,monarchy,0.5,False,True,
+stolypin,chairman_council_of_ministers_minister_interior,1906-07-08,1911-09-18,2,monarchy,0.7,False,True,
+kokovtsov,minister_finance_chairman_council_ministers,1904-02-05,1914-01-30,2,monarchy,0.55,False,True,
+polivanov,minister_of_war,1915-06-13,1916-03-15,2,monarchy,0.45,False,True,
+sturmer,chairman_council_of_ministers,1916-01-20,1916-11-10,2,monarchy,0.55,False,True,
+protopopov,minister_of_interior,1916-09-16,1917-03-15,2,monarchy,0.5,False,True,
+rodzianko,duma_chairman,1911-03-22,1917-10-06,3,monarchy_parliament,0.35,False,True,
+alexandra_feodorovna,informal_court_influence,1915-01-01,1917-03-15,3,monarchy_court,0.25,False,True,controversial informal influence; use sensitivity analysis
+rasputin,informal_court_influence,1912-01-01,1916-12-30,3,monarchy_court,0.2,False,True,controversial informal influence; use sensitivity analysis
+lvov,provisional_government_minister_chairman,1917-03-15,1917-07-21,1,provisional_government,0.8,True,True,
+kerensky,provisional_government_war_minister_chairman,1917-03-15,1917-11-07,1,provisional_government,0.9,True,True,
+trotsky,politburo_military_leader,1917-10-23,1927-11-12,2,party_state,0.75,False,True,
+zinoviev,politburo_party_leader,1917-10-23,1926-07-23,2,party_state,0.55,False,True,
+kamenev,politburo_party_state_leader,1917-10-23,1926-07-23,2,party_state,0.55,False,True,
+sverdlov,central_committee_chairman,1917-11-08,1919-03-16,2,party_state,0.6,False,True,
+dzerzhinsky,cheka_ogpu_chairman,1917-12-20,1926-07-20,2,security_party,0.65,False,True,
+rykov,sovnarkom_chairman_politburo,1921-04-03,1930-12-19,2,party_state,0.65,False,True,
+bukharin,politburo_ideologist,1919-03-25,1929-11-17,2,party_state,0.55,False,True,
+molotov,politburo_sovnarkom_foreign_affairs,1921-03-16,1957-06-29,2,party_state,0.7,False,True,
+kaganovich,politburo_party_leader,1930-07-13,1957-06-29,2,party_state,0.6,False,True,
+voroshilov,politburo_defense_leader,1925-01-01,1960-07-16,2,party_military,0.6,False,True,
+mikoyan,politburo_government_leader,1935-02-01,1964-10-14,2,party_state,0.55,False,True,
+ordzhonikidze,politburo_industry_leader,1926-07-23,1937-02-18,2,party_industry,0.55,False,True,
+kirov,politburo_party_leader,1930-07-13,1934-12-01,2,party_state,0.5,False,True,
+zhdanov,politburo_ideology_leader,1939-03-22,1948-08-31,2,party_ideology,0.55,False,True,
+beria,nkvd_mgb_politburo_leader,1938-11-25,1953-06-26,2,security_party,0.7,False,True,
+malenkov,politburo_government_leader,1946-03-18,1957-06-29,2,party_state,0.65,False,True,
+bulganin,government_defense_politburo,1948-02-18,1958-09-05,2,party_state,0.5,False,True,
+suslov,politburo_ideology_leader,1952-10-16,1964-10-14,2,party_ideology,0.55,False,True,continues after 1964 in later addendum if present
+kosygin,government_economic_leader,1960-05-04,1964-10-14,2,party_state,0.45,False,True,continues after 1964 in later addendum if present
+podgorny,politburo_party_state_leader,1960-05-04,1964-10-14,2,party_state,0.45,False,True,continues after 1964 in later addendum if present
+kirilenko,politburo_party_leader,1962-04-25,1964-10-14,2,party_state,0.4,False,True,continues after 1964 in later addendum if present
+ponomarenko,presidium_candidate_state_leader,1952-10-16,1953-03-05,3,party_state,0.3,False,True,
+shelepin,kgb_chairman_party_secretary,1958-12-25,1964-10-14,2,security_party,0.5,False,True,continues after 1964 in later addendum if present
+semichastny,kgb_chairman,1961-11-13,1964-10-14,2,security_party,0.45,False,True,continues after 1964 in later addendum if present
+ustinov,defense_industry_leader,1941-06-09,1964-10-14,3,defense_industry,0.35,False,True,not always formal top political leader; include for war/defense-industry lens
+gromyko,foreign_minister,1957-02-15,1964-10-14,2,diplomacy,0.45,False,True,continues after 1964 in later addendum if present
+zhukov,defense_minister_presidium,1955-02-09,1957-10-26,2,military_party,0.55,False,True,
+furtseva,presidium_secretariat_culture,1956-02-27,1961-10-31,3,party_culture,0.35,False,True,

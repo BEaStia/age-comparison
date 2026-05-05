@@ -1,0 +1,7 @@
+period_id,state_form,start_year,end_year,selection_rule,notes
+ussr_1964_1982,USSR,1964,1982,General Secretary + Politburo + Sovmin + defense + KGB + foreign affairs,Brezhnev-era elite aging; use curated influence intervals
+ussr_1982_1985,USSR,1982,1985,General Secretary + Politburo + Sovmin + defense + KGB + foreign affairs,Gerontocratic transition
+ussr_1985_1991,USSR,1985,1991,General Secretary/President + Politburo + reformist leadership + Sovmin + security/military,Perestroika and elite renewal
+rf_1991_1999,Russian Federation,1991,1999,President + prime minister/government + presidential administration + security bloc + economic reformers,Post-Soviet transition
+rf_2000_2012,Russian Federation,2000,2012,President/Prime Minister + presidential administration + government + security bloc + key economic officials,Consolidation period
+rf_2012_2026,Russian Federation,2012,2026,President + presidential administration + Security Council + government + security bloc + foreign affairs + Central Bank,Late Putin-era core elite

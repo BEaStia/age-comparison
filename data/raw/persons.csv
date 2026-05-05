@@ -1,0 +1,111 @@
+person_id,name_ru,name_en,birth_date,death_date,origin_group,notes
+alexander_i,Александр I,Alexander I,1777-12-23,1825-12-01,dynasty,
+nicholas_i,Николай I,Nicholas I,1796-07-06,1855-03-02,dynasty_army,
+alexander_ii,Александр II,Alexander II,1818-04-29,1881-03-13,dynasty,
+alexander_iii,Александр III,Alexander III,1845-03-10,1894-11-01,dynasty,
+nicholas_ii,Николай II,Nicholas II,1868-05-18,1918-07-17,dynasty,
+lenin,Владимир Ленин,Vladimir Lenin,1870-04-22,1924-01-21,revolutionary_party,
+stalin,Иосиф Сталин,Joseph Stalin,1878-12-18,1953-03-05,party,
+khrushchev,Никита Хрущёв,Nikita Khrushchev,1894-04-15,1971-09-11,party,
+brezhnev,Леонид Брежнев,Leonid Brezhnev,1906-12-19,1982-11-10,party,
+andropov,Юрий Андропов,Yuri Andropov,1914-06-15,1984-02-09,party_security,
+chernenko,Константин Черненко,Konstantin Chernenko,1911-09-24,1985-03-10,party,
+gorbachev,Михаил Горбачёв,Mikhail Gorbachev,1931-03-02,2022-08-30,party,
+yeltsin,Борис Ельцин,Boris Yeltsin,1931-02-01,2007-04-23,party_regional,
+putin,Владимир Путин,Vladimir Putin,1952-10-07,,security_administration,
+medvedev,Дмитрий Медведев,Dmitry Medvedev,1965-09-14,,law_administration,
+kosygin,Алексей Косыгин,Alexei Kosygin,1904-02-21,1980-12-18,party_government,USSR core elite; dates need verification
+podgorny,Николай Подгорный,Nikolai Podgorny,1903-02-18,1983-01-12,party,USSR core elite; dates need verification
+suslov,Михаил Суслов,Mikhail Suslov,1902-11-21,1982-01-25,party_ideology,USSR core elite; dates need verification
+kirilenko,Андрей Кириленко,Andrei Kirilenko,1906-09-08,1990-05-12,party,USSR core elite; dates need verification
+mazurov,Кирилл Мазуров,Kirill Mazurov,1914-04-07,1989-12-19,party_government,USSR core elite; dates need verification
+pelshe,Арвид Пельше,Arvid Pelshe,1899-02-07,1983-05-29,party_control,USSR core elite; dates need verification
+ustinov,Дмитрий Устинов,Dmitry Ustinov,1908-10-30,1984-12-20,military_industry,USSR core elite; dates need verification
+gromyko,Андрей Громыко,Andrei Gromyko,1909-07-18,1989-07-02,diplomacy_party,USSR core elite; dates need verification
+tikhonov,Николай Тихонов,Nikolai Tikhonov,1905-05-14,1997-06-01,party_government,USSR core elite; dates need verification
+grishin,Виктор Гришин,Viktor Grishin,1914-09-18,1992-05-25,party_moscow,USSR core elite; dates need verification
+romanov,Григорий Романов,Grigory Romanov,1923-02-07,2008-06-03,party,USSR core elite; dates need verification
+aliyev,Гейдар Алиев,Heydar Aliyev,1923-05-10,2003-12-12,party_security,USSR core elite; dates need verification
+ligachev,Егор Лигачёв,Yegor Ligachev,1920-11-29,2021-05-07,party,USSR core elite; dates need verification
+ryzhkov,Николай Рыжков,Nikolai Ryzhkov,1929-09-28,2024-02-28,party_government,USSR core elite; dates need verification
+shevardnadze,Эдуард Шеварднадзе,Eduard Shevardnadze,1928-01-25,2014-07-07,party_diplomacy,USSR core elite; dates need verification
+yakovlev,Александр Яковлев,Alexander Yakovlev,1923-12-02,2005-10-18,party_ideology,USSR core elite; dates need verification
+yazov,Дмитрий Язов,Dmitry Yazov,1924-11-08,2020-02-25,military,USSR core elite; dates need verification
+kryuchkov,Владимир Крючков,Vladimir Kryuchkov,1924-02-29,2007-11-23,security,USSR core elite; dates need verification
+lukyanov,Анатолий Лукьянов,Anatoly Lukyanov,1930-05-07,2019-01-09,party_parliament,USSR core elite; dates need verification
+gaidar,Егор Гайдар,Yegor Gaidar,1956-03-19,2009-12-16,economics_government,RF core elite; dates need verification
+chubais,Анатолий Чубайс,Anatoly Chubais,1955-06-16,,economics_government,RF core elite; dates need verification
+chernomyrdin,Виктор Черномырдин,Viktor Chernomyrdin,1938-04-09,2010-11-03,government_energy,RF core elite; dates need verification
+stepashin,Сергей Степашин,Sergei Stepashin,1952-03-02,,security_government,RF core elite; dates need verification
+primakov,Евгений Примаков,Yevgeny Primakov,1929-10-29,2015-06-26,diplomacy_security_government,RF core elite; dates need verification
+kiriyenko,Сергей Кириенко,Sergei Kiriyenko,1962-07-26,,government_administration,RF core elite; dates need verification
+voloshin,Александр Волошин,Alexander Voloshin,1956-03-03,,presidential_administration,RF core elite; dates need verification
+kasyanov,Михаил Касьянов,Mikhail Kasyanov,1957-12-08,,government_finance,RF core elite; dates need verification
+surkov,Владислав Сурков,Vladislav Surkov,1964-09-21,,presidential_administration,RF core elite; dates need verification
+sechin,Игорь Сечин,Igor Sechin,1960-09-07,,security_administration_energy,RF core elite; dates need verification
+sobyanin,Сергей Собянин,Sergey Sobyanin,1958-06-21,,presidential_administration_regional,RF core elite; dates need verification
+kudrin,Алексей Кудрин,Alexei Kudrin,1960-10-12,,finance_government,RF core elite; dates need verification
+patrushev,Николай Патрушев,Nikolai Patrushev,1951-07-11,,security,RF core elite; dates need verification
+bortnikov,Александр Бортников,Alexander Bortnikov,1951-11-15,,security,RF core elite; dates need verification
+lavrov,Сергей Лавров,Sergey Lavrov,1950-03-21,,diplomacy,RF core elite; dates need verification
+shoigu,Сергей Шойгу,Sergei Shoigu,1955-05-21,,security_defense_government,RF core elite; dates need verification
+gerasimov,Валерий Герасимов,Valery Gerasimov,1955-09-08,,military,RF core elite; dates need verification
+nabiullina,Эльвира Набиуллина,Elvira Nabiullina,1963-10-29,,economics_central_bank,RF core elite; dates need verification
+matviyenko,Валентина Матвиенко,Valentina Matviyenko,1949-04-07,,party_parliament,RF core elite; dates need verification
+volodin,Вячеслав Володин,Vyacheslav Volodin,1964-02-04,,presidential_administration_parliament,RF core elite; dates need verification
+mishustin,Михаил Мишустин,Mikhail Mishustin,1966-03-03,,government_tax,RF core elite; dates need verification
+belousov,Андрей Белоусов,Andrei Belousov,1959-03-17,,economics_defense_government,RF core elite; dates need verification
+kolokoltsev,Владимир Колокольцев,Vladimir Kolokoltsev,1961-05-11,,security_interior,RF core elite; dates need verification
+naryshkin,Сергей Нарышкин,Sergey Naryshkin,1954-10-27,,security_diplomacy_administration,RF core elite; dates need verification
+zolotov,Виктор Золотов,Viktor Zolotov,1954-01-27,,security,RF core elite; dates need verification
+siluanov,Антон Силуанов,Anton Siluanov,1963-04-12,,finance_government,RF core elite; dates need verification
+speransky,Михаил Сперанский,Mikhail Speransky,1772-01-12,1839-02-23,bureaucracy_reformer,
+arakcheev,Алексей Аракчеев,Alexey Arakcheyev,1769-10-04,1834-05-03,military_court,
+kochubey,Виктор Кочубей,Viktor Kochubey,1768-11-22,1834-06-15,aristocracy_bureaucracy,
+novosiltsev,Николай Новосильцев,Nikolay Novosiltsev,1761-04-24,1838-04-20,aristocracy_bureaucracy,birth date may require verification
+czartoryski,Адам Чарторыйский,Adam Czartoryski,1770-01-14,1861-07-15,aristocracy_diplomacy,
+barclay_de_tolly,Михаил Барклай-де-Толли,Michael Andreas Barclay de Tolly,1761-12-27,1818-05-26,military,
+nesselrode,Карл Нессельроде,Karl Nesselrode,1780-12-14,1862-03-23,diplomacy,
+uvarov,Сергей Уваров,Sergey Uvarov,1786-09-05,1855-09-16,bureaucracy_ideology,
+kankrin,Егор Канкрин,Georg von Cancrin,1774-11-26,1845-09-22,finance_bureaucracy,
+benckendorff,Александр Бенкендорф,Alexander von Benckendorff,1781-07-04,1844-09-23,security_court,
+gorchakov,Александр Горчаков,Alexander Gorchakov,1798-07-15,1883-03-11,diplomacy,
+milyutin,Дмитрий Милютин,Dmitry Milyutin,1816-07-10,1912-01-25,military_reformer,
+reutern,Михаил Рейтерн,Mikhail von Reutern,1820-09-24,1890-08-23,finance_bureaucracy,
+valuev,Пётр Валуев,Pyotr Valuev,1815-10-04,1890-01-27,bureaucracy,
+pobedonostsev,Константин Победоносцев,Konstantin Pobedonostsev,1827-05-21,1907-03-23,ideology_church_bureaucracy,
+loris_melikov,Михаил Лорис-Меликов,Mikhail Loris-Melikov,1824-10-21,1888-12-24,military_security_reformer,
+witte,Сергей Витте,Sergei Witte,1849-06-29,1915-03-13,finance_bureaucracy,
+plehve,Вячеслав Плеве,Vyacheslav von Plehve,1846-04-20,1904-07-28,security_bureaucracy,
+stolypin,Пётр Столыпин,Pyotr Stolypin,1862-04-14,1911-09-18,bureaucracy_reformer,
+kokovtsov,Владимир Коковцов,Vladimir Kokovtsov,1853-04-18,1943-01-29,finance_bureaucracy,
+polivanov,Алексей Поливанов,Alexei Polivanov,1855-03-16,1920-09-25,military,
+sturmer,Борис Штюрмер,Boris Sturmer,1848-07-27,1917-09-09,bureaucracy_court,
+protopopov,Александр Протопопов,Alexander Protopopov,1866-12-18,1918-10-27,bureaucracy,
+rodzianko,Михаил Родзянко,Mikhail Rodzianko,1859-02-21,1924-01-24,parliamentary_elite,
+alexandra_feodorovna,Александра Фёдоровна,Alexandra Feodorovna,1872-06-06,1918-07-17,dynasty_court,controversial informal influence
+rasputin,Григорий Распутин,Grigori Rasputin,1869-01-21,1916-12-30,court_informal,controversial informal influence
+lvov,Георгий Львов,Georgy Lvov,1861-11-02,1925-03-07,liberal_aristocracy,
+kerensky,Александр Керенский,Alexander Kerensky,1881-05-04,1970-06-11,socialist_liberal,
+trotsky,Лев Троцкий,Leon Trotsky,1879-11-07,1940-08-21,revolutionary_party_military,
+zinoviev,Григорий Зиновьев,Grigory Zinoviev,1883-09-23,1936-08-25,revolutionary_party,
+kamenev,Лев Каменев,Lev Kamenev,1883-07-18,1936-08-25,revolutionary_party,
+sverdlov,Яков Свердлов,Yakov Sverdlov,1885-06-03,1919-03-16,revolutionary_party,
+dzerzhinsky,Феликс Дзержинский,Felix Dzerzhinsky,1877-09-11,1926-07-20,security_party,
+rykov,Алексей Рыков,Alexei Rykov,1881-02-25,1938-03-15,party_government,
+bukharin,Николай Бухарин,Nikolai Bukharin,1888-10-09,1938-03-15,party_ideology,
+molotov,Вячеслав Молотов,Vyacheslav Molotov,1890-03-09,1986-11-08,party_government_diplomacy,
+kaganovich,Лазарь Каганович,Lazar Kaganovich,1893-11-22,1991-07-25,party,
+voroshilov,Климент Ворошилов,Kliment Voroshilov,1881-02-04,1969-12-02,military_party,
+mikoyan,Анастас Микоян,Anastas Mikoyan,1895-11-25,1978-10-21,party_government,
+ordzhonikidze,Серго Орджоникидзе,Sergo Ordzhonikidze,1886-10-24,1937-02-18,party_industry,
+kirov,Сергей Киров,Sergei Kirov,1886-03-27,1934-12-01,party,
+zhdanov,Андрей Жданов,Andrei Zhdanov,1896-02-26,1948-08-31,party_ideology,
+beria,Лаврентий Берия,Lavrenty Beria,1899-03-29,1953-12-23,security_party,
+malenkov,Георгий Маленков,Georgy Malenkov,1902-01-08,1988-01-14,party_government,
+bulganin,Николай Булганин,Nikolai Bulganin,1895-06-11,1975-02-24,government_military_party,
+ponomarenko,Пантелеймон Пономаренко,Panteleimon Ponomarenko,1902-08-09,1984-01-18,party_state,
+shelepin,Александр Шелепин,Alexander Shelepin,1918-08-18,1994-10-24,security_party_youth,
+semichastny,Владимир Семичастный,Vladimir Semichastny,1924-01-15,2001-01-12,security_party,
+zhukov,Георгий Жуков,Georgy Zhukov,1896-12-01,1974-06-18,military,
+furtseva,Екатерина Фурцева,Yekaterina Furtseva,1910-12-07,1974-10-24,party_culture,

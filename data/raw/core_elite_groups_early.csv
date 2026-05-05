@@ -1,0 +1,11 @@
+period_id,state_form,start_year,end_year,selection_rule,notes
+empire_alexander_i,Russian Empire,1801,1825,"emperor + key ministers + informal reform/court circle","Includes Private Committee/Speransky/Arakcheev as curated influence intervals"
+empire_nicholas_i,Russian Empire,1825,1855,"emperor + finance + foreign affairs + security + education ideology + war","Strong role of Third Section and fiscal/military bureaucracy"
+empire_alexander_ii,Russian Empire,1855,1881,"emperor + reform ministers + finance + war + foreign affairs + interior","Great Reforms require reform-minister lens"
+empire_alexander_iii_nicholas_ii,Russian Empire,1881,1905,"emperor + interior/security + finance + ideology/church + foreign affairs","Conservative reaction and modernization tensions"
+empire_1905_1917,Russian Empire,1905,1917,"emperor + Council of Ministers + Duma leadership + court influence + war/interior/finance","Post-1905 institutions and informal court influence handled separately"
+provisional_1917,Russia,1917,1917,"Provisional Government leaders + soviet/party challengers","Very unstable dual-power period"
+early_soviet_1917_1924,RSFSR/USSR,1917,1924,"Lenin + Politburo + Sovnarkom + Cheka + military leadership","Revolution/civil-war elite"
+stalin_consolidation_1924_1934,USSR,1924,1934,"Stalin + Politburo + Sovnarkom + OGPU + industrial/party leaders","Factional consolidation"
+stalin_high_1934_1953,USSR,1934,1953,"Stalin + Politburo/Presidium + security + defense + government/industry","Formal title is less reliable than curated influence"
+post_stalin_1953_1964,USSR,1953,1964,"First Secretary + Presidium + government + KGB + defense + foreign affairs + ideology","Collective leadership then Khrushchev dominance"
