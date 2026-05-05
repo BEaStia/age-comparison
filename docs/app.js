@@ -1148,7 +1148,13 @@
                 <div class="correlation-item">
                   <strong>${escapeHtml(watchLabel)}</strong>
                   <div class="small-note">
-                    ${escapeHtml((state.lang === "ru" ? (forecast.key_indicators_to_watch_ru || []) : (forecast.key_indicators_to_watch_en || [])).join(", ") || (state.lang === "ru" ? "Сигналы еще не заданы." : "Indicators are not yet set."))}
+                    ${escapeHtml(
+                      (state.lang === "ru"
+                        ? (forecast.key_indicators_to_watch_ru || forecast.key_indicators_to_watch || [])
+                        : (forecast.key_indicators_to_watch_en || forecast.key_indicators_to_watch || []))
+                        .map((item) => labelForForecastIndicator(item))
+                        .join(", ") || (state.lang === "ru" ? "Сигналы еще не заданы." : "Indicators are not yet set.")
+                    )}
                   </div>
                 </div>
               </div>
@@ -1349,6 +1355,45 @@
       developmental_bureaucratic_model: "модель бюрократического развития",
     };
     return labels[modelId] || fallback || modelId;
+  }
+
+  function labelForForecastIndicator(value) {
+    if (state.lang !== "ru") {
+      return value;
+    }
+    const labels = {
+      security_elite_share: "доля силовой элиты",
+      faction_concentration: "концентрация фракций",
+      recent_purge_or_repression_events: "недавние чистки или подавление",
+      war_or_external_pressure: "война или внешнее давление",
+      turnover_decline: "снижение обновления элиты",
+      major_crisis: "крупный кризис",
+      divided_government: "разделенное управление",
+      high_severity_event_rate: "частота событий высокой severity",
+      natsec_elite_share: "доля национально-безопасностной элиты",
+      finance_elite_share: "доля финансовой элиты",
+      judicial_elite_share: "доля судебной элиты",
+    };
+    if (labels[value]) {
+      return labels[value];
+    }
+    const normalized = String(value)
+      .replaceAll("_", " ")
+      .toLowerCase();
+    const fallback = {
+      "security elite share": "доля силовой элиты",
+      "faction concentration": "концентрация фракций",
+      "recent purge or repression events": "недавние чистки или подавление",
+      "war or external pressure": "война или внешнее давление",
+      "turnover decline": "снижение обновления элиты",
+      "major crisis": "крупный кризис",
+      "divided government": "разделенное управление",
+      "high severity event rate": "частота событий высокой severity",
+      "natsec elite share": "доля национально-безопасностной элиты",
+      "finance elite share": "доля финансовой элиты",
+      "judicial elite share": "доля судебной элиты",
+    };
+    return fallback[normalized] || String(value);
   }
 
   function labelForDimension(tab, key) {
