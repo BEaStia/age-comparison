@@ -154,6 +154,25 @@
         color: var(--text);
       }
 
+      .model-callout {
+        margin-top: 14px;
+        padding: 12px 14px;
+        border: 1px solid rgba(15, 118, 110, 0.24);
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(15, 118, 110, 0.08), rgba(15, 118, 110, 0.03));
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+      }
+
+      .model-callout strong {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--accent);
+      }
+
+      .model-callout a {
+        font-weight: 600;
+      }
+
       main {
         padding: 6px 0 28px;
       }
@@ -553,6 +572,13 @@
         </div>
         <div class="meta" id="meta"></div>
         <nav class="nav" id="nav"></nav>
+        <div class="model-callout">
+          <strong>New: model recommendation and scenario forecast</strong>
+          <div>
+            Open the <a href="#guidance">model section</a> to see the selected family,
+            the rationale, and the cautious forecast guidance.
+          </div>
+        </div>
       </div>
     </header>
 

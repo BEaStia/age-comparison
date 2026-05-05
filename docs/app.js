@@ -31,6 +31,7 @@
       nav: {
         overview: "Обзор",
         correlations: "Корреляции",
+        guidance: "Модель",
         forecasts: "Прогнозы",
         interactive: "Интерактив",
         core: "Элита",
@@ -42,6 +43,7 @@
       sections: {
         overview: "Обзор",
         correlations: "Выводы по корреляциям",
+        guidance: "Рекомендация модели",
         forecasts: "Прогнозные сигналы",
         interactive: "Интерактивные графики",
         core: "Возраст элиты и правителя",
@@ -86,6 +88,7 @@
       nav: {
         overview: "Overview",
         correlations: "Correlations",
+        guidance: "Model",
         forecasts: "Forecasts",
         interactive: "Interactive",
         core: "Elite",
@@ -97,6 +100,7 @@
       sections: {
         overview: "Overview",
         correlations: "Correlation takeaways",
+        guidance: "Model recommendation",
         forecasts: "Forecast signals",
         interactive: "Interactive charts",
         core: "Elite age and ruler age",
@@ -841,6 +845,7 @@
     return [
       link("#overview", nav.overview),
       link("#correlations", nav.correlations),
+      link("#guidance", nav.guidance),
       link("#forecasts", nav.forecasts),
       link("#interactive", nav.interactive),
       link("#core", nav.core),
@@ -859,6 +864,7 @@
     return [
       sectionOverview(),
       sectionCorrelations(),
+      sectionModelGuidance(),
       sectionForecasts(),
       sectionInteractiveCharts(),
       sectionFigures("core", "core"),
@@ -922,9 +928,12 @@
   function sectionCorrelations() {
     const insights = state.data.insights || [];
     const correlationCards = CORRELATION_DEFS.map((group) => {
-      const items = group.items
+      const items = getCorrelationItems(group.section, group.items)
         .map((item) => {
           const value = getCorrelation(group.section, item.x, item.y);
+          if (value === null || value === undefined) {
+            return null;
+          }
           return `
             <div class="correlation-item">
               <strong>${escapeHtml(item[state.lang])}</strong>
@@ -934,7 +943,12 @@
             </div>
           `;
         })
+        .filter(Boolean)
         .join("");
+
+      if (!items) {
+        return null;
+      }
 
       return `
         <div class="signal-card">
@@ -942,7 +956,7 @@
           <div class="correlation-list">${items}</div>
         </div>
       `;
-    }).join("");
+    }).filter(Boolean).join("");
 
     return `
       <section id="correlations" class="section-anchor">
@@ -981,6 +995,154 @@
               <div class="correlation-list">
                 ${correlationCards}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  function sectionModelGuidance() {
+    const guidance = state.data?.model_guidance || {};
+    const selection = guidance.selection || {};
+    const forecast = guidance.forecast || {};
+    const family = guidance.selected_family || {};
+    const supportingSignals = Array.isArray(selection.supporting_signals) ? selection.supporting_signals : [];
+    const missingWarnings = Array.isArray(selection.missing_data_warnings) ? selection.missing_data_warnings : [];
+    const nextFeatures = Array.isArray(selection.recommended_next_features) ? selection.recommended_next_features : [];
+    const forecastWarnings = Array.isArray(forecast.warnings) ? forecast.warnings : [];
+
+    const modelLabel = family.label || selection.recommended_model || "model";
+    const confidence = selection.confidence == null ? "n/a" : formatNumber(Number(selection.confidence), 2);
+
+    return `
+      <section id="guidance" class="section-anchor">
+        <div class="section-head">
+          <h2>${escapeHtml(getText("sections.guidance"))}</h2>
+          <p class="section-note">
+            ${escapeHtml(
+              state.lang === "ru"
+                ? "Этот блок отделяет описательную историю от корреляции и от сценарного прогноза. Он показывает, какая модель лучше подходит для данного страны-периода и почему."
+                : "This block separates descriptive history from correlation and scenario forecast. It shows which model fits the current country-period best and why."
+            )}
+          </p>
+        </div>
+        <div class="content">
+          <div class="signal-grid">
+            <div class="signal-card">
+              <strong>${escapeHtml(
+                state.lang === "ru" ? "Рекомендуемая модель" : "Recommended model"
+              )}</strong>
+              <div class="correlation-list">
+                <div class="correlation-item">
+                  <strong>${escapeHtml(selection.recommended_model || "n/a")}</strong>
+                  <div class="small-note">
+                    ${escapeHtml(
+                      state.lang === "ru"
+                        ? `Семейство: ${modelLabel}`
+                        : `Family: ${modelLabel}`
+                    )}
+                  </div>
+                  <div class="small-note">
+                    ${escapeHtml(
+                      state.lang === "ru"
+                        ? `Уверенность: ${confidence}`
+                        : `Confidence: ${confidence}`
+                    )}
+                  </div>
+                  <div class="small-note">
+                    ${escapeHtml(selection.rationale || (state.lang === "ru" ? "Рационализация основана на priors и наблюдаемых сигналах." : "Rationale is based on priors and observed signals."))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="signal-card">
+              <strong>${escapeHtml(
+                state.lang === "ru" ? "Почему это лучше age-only модели" : "Why not age-only"
+              )}</strong>
+              <div class="correlation-list">
+                ${(supportingSignals.length ? supportingSignals : [state.lang === "ru" ? "Сигналы пока недостаточно специфичны." : "Signals are still too sparse."])
+                  .map(
+                    (signal) => `
+                      <div class="correlation-item">${escapeHtml(signal)}</div>
+                    `
+                  )
+                  .join("")}
+              </div>
+              ${missingWarnings.length ? `<div class="small-note" style="margin-top:10px;">${escapeHtml(state.lang === "ru" ? "Ограничения данных" : "Data limitations")}</div>` : ""}
+              <div class="correlation-list">
+                ${missingWarnings
+                  .map((warning) => `<div class="correlation-item">${escapeHtml(warning)}</div>`)
+                  .join("")}
+              </div>
+            </div>
+            <div class="signal-card">
+              <strong>${escapeHtml(
+                state.lang === "ru" ? "Сценарный прогноз" : "Scenario forecast"
+              )}</strong>
+              <div class="correlation-list">
+                <div class="correlation-item">
+                  <div><strong>${escapeHtml(forecast.forecast_type || "scenario")}</strong></div>
+                  <div class="small-note">
+                    ${escapeHtml(
+                      state.lang === "ru"
+                        ? `Горизонт: ${forecast.forecast_horizon_years || "n/a"} лет`
+                        : `Horizon: ${forecast.forecast_horizon_years || "n/a"} years`
+                    )}
+                  </div>
+                  <div class="small-note">
+                    ${escapeHtml(
+                      state.lang === "ru"
+                        ? `Цель: ${forecast.target || "n/a"}`
+                        : `Target: ${forecast.target || "n/a"}`
+                    )}
+                  </div>
+                  <div class="small-note">${escapeHtml(forecast.baseline_assessment || "")}</div>
+                  <div class="small-note" style="margin-top:8px;">
+                    <strong>${escapeHtml(state.lang === "ru" ? "Upside" : "Upside")}</strong>
+                    ${escapeHtml(forecast.upside_scenario || "")}
+                  </div>
+                  <div class="small-note" style="margin-top:8px;">
+                    <strong>${escapeHtml(state.lang === "ru" ? "Downside" : "Downside")}</strong>
+                    ${escapeHtml(forecast.downside_scenario || "")}
+                  </div>
+                </div>
+                <div class="correlation-item">
+                  <strong>${escapeHtml(state.lang === "ru" ? "Наблюдать" : "Watch")}</strong>
+                  <div class="small-note">
+                    ${escapeHtml((forecast.key_indicators_to_watch || []).join(", ") || (state.lang === "ru" ? "Сигналы еще не заданы." : "Indicators are not yet set."))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="signal-card">
+              <strong>${escapeHtml(
+                state.lang === "ru" ? "Что добавить в следующий проход" : "What to add next"
+              )}</strong>
+              <div class="correlation-list">
+                ${(nextFeatures.length ? nextFeatures : [state.lang === "ru" ? "Дополнительные признаки не определены." : "No additional features are defined."])
+                  .map(
+                    (feature) => `
+                      <div class="correlation-item">${escapeHtml(feature)}</div>
+                    `
+                  )
+                  .join("")}
+              </div>
+              <div class="small-note" style="margin-top:10px;">
+                ${escapeHtml(
+                  state.lang === "ru"
+                    ? "Это не детерминистический прогноз. Он сценарный и ограничен качеством доступных данных."
+                    : "This is not a deterministic forecast. It is scenario-based and bounded by data quality."
+                )}
+              </div>
+              <div class="small-note" style="margin-top:10px;">
+                ${escapeHtml(
+                  state.lang === "ru"
+                    ? "Любые сигналы, не подтвержденные несколькими независимыми слоями, следует считать слабой гипотезой, а не выводом."
+                    : "Any signal not confirmed by multiple independent layers should be treated as a weak hypothesis, not a conclusion."
+                )}
+              </div>
+              ${forecastWarnings.length ? `<div class="correlation-list" style="margin-top:10px;">${forecastWarnings.map((warning) => `<div class="correlation-item">${escapeHtml(warning)}</div>`).join("")}</div>` : ""}
             </div>
           </div>
         </div>
@@ -1101,6 +1263,38 @@
     return `${labelFor(x)} ↔ ${labelFor(y)}`;
   }
 
+  function getCorrelationItems(section, items) {
+    if (section !== "event") {
+      return items;
+    }
+
+    const eventMatrix = state.data?.correlations?.event;
+    if (eventMatrix && Object.keys(eventMatrix).length) {
+      return items;
+    }
+
+    return [
+      {
+        x: "events_count",
+        y: "elite_initiated_events_count",
+        ru: "Чем больше событий в целом, тем больше elite-initiated событий.",
+        en: "More total events coincide with more elite-initiated events.",
+      },
+      {
+        x: "core_mean_age",
+        y: "elite_initiated_events_count",
+        ru: "Возраст core elite слабо связан с числом elite-initiated событий.",
+        en: "Core elite age is only weakly related to elite-initiated event volume.",
+      },
+      {
+        x: "renewal_5y",
+        y: "elite_initiated_events_count",
+        ru: "Обновление за 5 лет связано с числом elite-initiated событий.",
+        en: "5-year renewal is linked with elite-initiated event volume.",
+      },
+    ];
+  }
+
   function labelFor(key) {
     return VARIABLE_LABELS[state.lang][key] || key;
   }
@@ -1136,9 +1330,43 @@
   }
 
   function buildForecastSignals() {
+    const modelGuidance = state.data?.model_guidance || null;
     const elite = state.data?.correlations?.elite || {};
     const faction = state.data?.correlations?.faction || {};
     const event = state.data?.correlations?.event || {};
+    const signals = [];
+
+    if (modelGuidance?.selection && modelGuidance?.forecast) {
+      const selection = modelGuidance.selection;
+      const forecast = modelGuidance.forecast;
+      const family = modelGuidance.selected_family || {};
+      const confidenceValue = Number(selection.confidence || 0);
+      signals.push({
+        title: {
+          ru: "Рекомендуемая модель",
+          en: "Recommended model",
+        },
+        body: {
+          ru:
+            `Для этого периода рекомендуемая модель: ${selection.recommended_model}. ` +
+            `${forecast.baseline_assessment || ""}` +
+            (family.label ? ` Это соответствует семейству: ${family.label}.` : ""),
+          en:
+            `Recommended model for this period: ${selection.recommended_model}. ` +
+            `${forecast.baseline_assessment || ""}` +
+            (family.label ? ` This maps to the family: ${family.label}.` : ""),
+        },
+        evidence: {
+          ru:
+            `Уверенность: ${formatNumber(confidenceValue, 2)}. ` +
+            (selection.rationale ? `Причина: ${selection.rationale}` : "Причина задана данными и priors."),
+          en:
+            `Confidence: ${formatNumber(confidenceValue, 2)}. ` +
+            (selection.rationale ? `Reason: ${selection.rationale}` : "Reason is driven by data and priors."),
+        },
+        confidence: forecastConfidence(confidenceValue),
+      });
+    }
 
     const rulerPolitical = elite?.ruler_age?.ruler_political_age ?? null;
     const coreRenewal = elite?.core_mean_age?.renewal_5y ?? null;
@@ -1160,7 +1388,7 @@
     const eventSeverity = event?.elite_initiated_events_count?.elite_initiated_max_severity ?? null;
     const turbulenceSignal = eventSeverity ?? eventVolume ?? eventRenewal;
 
-    return [
+    return signals.concat([
       {
         title: {
           ru: "Обновление элиты",
@@ -1388,7 +1616,7 @@
         },
         confidence: forecastConfidence(turbulenceSignal),
       },
-    ];
+    ]);
   }
 
   function forecastConfidence(value) {

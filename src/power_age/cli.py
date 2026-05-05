@@ -21,6 +21,8 @@ from power_age.factions import (
     compute_elite_fragmentation,
 )
 from power_age.load_data import load_all_data, load_events
+from power_age.model_guidance import build_model_guidance_payload, render_model_guidance_report
+from power_age.site_data import write_site_data
 from power_age.validate import validate_events, validate_faction_references
 
 app = typer.Typer(help="Power age research MVP.")
@@ -388,7 +390,6 @@ def plot_factions_periods(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dat
     from power_age.faction_visualize import plot_faction_power_share_stacked
 
     faction_year = _load_faction_year_or_build(dataset)
-    data = load_all_data(_dataset_root(dataset))
     period_groups = _load_period_groups(dataset)
     figures_dir = _figures_dir(dataset)
     figures_dir.mkdir(parents=True, exist_ok=True)
@@ -653,6 +654,38 @@ def summary(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="D
     typer.echo("События по типам:")
     for event_type, count in event_counts.items():
         typer.echo(f"  {event_type}: {count}")
+
+
+@app.command("model-guidance")
+def model_guidance(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
+    """Print model selection and cautious forecast guidance."""
+    data = load_all_data(_dataset_root(dataset))
+    start_year, end_year = dataset_year_span(data, dataset)
+    raw_path = _raw_dir(dataset)
+    available_files = {path.name for path in raw_path.glob("*") if path.is_file()}
+    country_series = data["persons"].get("country_label") if "country_label" in data["persons"].columns else None
+    country = (
+        str(country_series.dropna().iloc[0])
+        if country_series is not None and not country_series.dropna().empty
+        else dataset.upper()
+    )
+    guidance = build_model_guidance_payload(
+        dataset,
+        data,
+        country,
+        start_year,
+        end_year,
+        available_files,
+    )
+    typer.echo(render_model_guidance_report(guidance))
+
+
+@app.command("build-docs-data")
+def build_docs_data(dataset: str = typer.Option(DEFAULT_DATASET_ID, "--dataset", help="Dataset id")) -> None:
+    """Rebuild docs/site-data.json and docs/series-data.json for a dataset."""
+    site_path, series_path = write_site_data(dataset, PROJECT_ROOT / "docs" / "data")
+    typer.echo(f"Saved docs data to {site_path}")
+    typer.echo(f"Saved docs series to {series_path}")
 
 
 if __name__ == "__main__":

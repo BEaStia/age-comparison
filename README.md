@@ -130,6 +130,21 @@ PNG-файлы сохраняются в `outputs/figures` для `russia` и в
 python -m power_age.cli summary
 ```
 
+Посмотреть рекомендацию модели и сценарный прогноз:
+
+```bash
+python -m power_age.cli model-guidance
+python -m power_age.cli model-guidance --dataset usa
+```
+
+Этот отчет разделяет:
+
+- descriptive historical analysis;
+- correlation;
+- weak forecast;
+- scenario forecast;
+- unsupported speculation.
+
 События:
 
 ```bash
@@ -250,6 +265,18 @@ python -m power_age.cli faction-summary --dataset usa
 - `events_by_period.png`
 - `events_by_domain.png`
 - `event_severity_timeline.png`
+
+### Model guidance
+
+Проект поддерживает дополнительный слой выбора модели по стране и периоду. Он использует registry моделей и priors из `codex_country_model_extension/model_families.yml` и `codex_country_model_extension/country_period_model_priors.yml`.
+
+Чтобы добавить новую модель:
+
+1. Добавь новый `model_id` в `codex_country_model_extension/model_families.yml`.
+2. Укажи `required_data`, `recommended_data`, `recommended_metrics`, `forecast_features`, `forecast_targets`, `selection_signals`, `interpretation_template`, `forecast_template` и `warnings`.
+3. Добавь или обнови priors для стран и периодов в `codex_country_model_extension/country_period_model_priors.yml`.
+4. При необходимости расширь heuristics в `src/power_age/model_guidance.py`.
+5. Добавь тест на новый сценарий в `tests/test_model_guidance.py`.
 
 Фракционные принадлежности требуют ручной проверки источников и sensitivity analysis. Они являются исследовательскими аннотациями, а не фактом.
 
